@@ -43,6 +43,7 @@ def main(argv: list[str] | None = None) -> int:
             limit=args.limit,
             from_filter=args.from_filter,
             subject_filter=args.subject_filter,
+            readonly=args.dry_run,
         )
         articles = []
         for message in messages:

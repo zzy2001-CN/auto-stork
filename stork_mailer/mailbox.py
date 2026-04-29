@@ -46,9 +46,10 @@ class ImapClient:
         limit: int = 10,
         from_filter: str = "stork",
         subject_filter: str = "stork",
+        readonly: bool = False,
     ) -> list[MailMessage]:
         conn = self._connection()
-        conn.select(mailbox)
+        self.select_mailbox(mailbox, readonly=readonly)
         since = (date.today() - timedelta(days=lookback_days)).strftime("%d-%b-%Y")
         status, data = conn.uid("SEARCH", None, "SINCE", since)
         if status != "OK" or not data:
@@ -77,10 +78,49 @@ class ImapClient:
         for uid in uids:
             conn.uid("STORE", uid, "+FLAGS", "(\\Seen)")
 
+    def select_mailbox(self, mailbox: str = "INBOX", readonly: bool = False) -> None:
+        conn = self._connection()
+        candidates = unique_mailbox_candidates(mailbox)
+        errors: list[str] = []
+
+        for candidate in candidates:
+            status, data = conn.select(candidate, readonly=readonly)
+            if status == "OK":
+                return
+            errors.append(f"{candidate}: {format_imap_response(data)}")
+
+        raise RuntimeError(
+            "Unable to select IMAP mailbox. Tried "
+            + ", ".join(candidates)
+            + ". Server responses: "
+            + " | ".join(errors)
+        )
+
     def _connection(self) -> imaplib.IMAP4_SSL:
         if self.connection is None:
             raise RuntimeError("IMAP connection is not open")
         return self.connection
+
+
+def unique_mailbox_candidates(mailbox: str) -> list[str]:
+    candidates = [mailbox, "INBOX", '"INBOX"']
+    unique: list[str] = []
+    for candidate in candidates:
+        if candidate and candidate not in unique:
+            unique.append(candidate)
+    return unique
+
+
+def format_imap_response(data) -> str:
+    if not data:
+        return "<empty>"
+    parts = []
+    for item in data:
+        if isinstance(item, bytes):
+            parts.append(item.decode("utf-8", errors="replace"))
+        else:
+            parts.append(str(item))
+    return "; ".join(parts)
 
 
 def parse_email_message(uid: bytes, raw: bytes) -> MailMessage:
