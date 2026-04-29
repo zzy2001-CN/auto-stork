@@ -15,6 +15,20 @@ class FakeConnection:
         return "NO", [b"no such mailbox"]
 
 
+class IdConnection:
+    def __init__(self) -> None:
+        self.commands = []
+
+    def _simple_command(self, command: str, argument: str):
+        self.commands.append((command, argument))
+        return "OK", [b"ID completed"]
+
+
+class FailingIdConnection:
+    def _simple_command(self, command: str, argument: str):
+        raise Exception("unexpected")
+
+
 class AlwaysFailConnection:
     def select(self, mailbox: str, readonly: bool = False):
         return "NO", [b"no such mailbox"]
@@ -40,3 +54,15 @@ def test_select_mailbox_raises_clear_error() -> None:
 
     with pytest.raises(RuntimeError, match="Unable to select IMAP mailbox"):
         client.select_mailbox("Archive")
+
+
+def test_send_client_id_sends_imap_id() -> None:
+    client = ImapClient("imap.example.com", 993, "user", "code")
+    fake = IdConnection()
+    client.connection = fake
+
+    client.send_client_id()
+
+    assert fake.commands
+    assert fake.commands[0][0] == "ID"
+    assert "auto-stork" in fake.commands[0][1]

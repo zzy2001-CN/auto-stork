@@ -9,6 +9,9 @@ from email.message import Message
 from email.utils import parsedate_to_datetime
 
 
+imaplib.Commands.setdefault("ID", ("AUTH", "SELECTED"))
+
+
 @dataclass(frozen=True)
 class MailMessage:
     uid: bytes
@@ -29,6 +32,7 @@ class ImapClient:
     def __enter__(self) -> "ImapClient":
         self.connection = imaplib.IMAP4_SSL(self.host, self.port)
         self.connection.login(self.username, self.auth_code)
+        self.send_client_id()
         return self
 
     def __exit__(self, exc_type, exc, tb) -> None:
@@ -77,6 +81,19 @@ class ImapClient:
         conn = self._connection()
         for uid in uids:
             conn.uid("STORE", uid, "+FLAGS", "(\\Seen)")
+
+    def send_client_id(self) -> None:
+        conn = self._connection()
+        client_id = (
+            '("name" "auto-stork" '
+            '"version" "1.0.0" '
+            '"vendor" "zzy2001-CN" '
+            '"support-email" "kefu@188.com")'
+        )
+        try:
+            conn._simple_command("ID", client_id)
+        except imaplib.IMAP4.error:
+            pass
 
     def select_mailbox(self, mailbox: str = "INBOX", readonly: bool = False) -> None:
         conn = self._connection()
