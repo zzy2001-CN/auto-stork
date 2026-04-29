@@ -1,0 +1,1193 @@
+Received: from mta207-ab1.mtasv.net (unknown [50.31.205.207])
+	by gzmx27 (Coremail) with SMTP id 0igvCgC31Tm3q+5pPKrfAQ--.18087S2;
+	Mon, 27 Apr 2026 08:20:08 +0800 (CST)
+X-KumoRef: eyJfQF8iOiJcXF8vIiwicmVjaXBpZW50Ijoiem91eml5YW5nMjAwMUAxNjMuY29tIn0=
+DKIM-Signature: v=1; a=rsa-sha256; d=pm.mtasv.net; s=pm20250806; c=relaxed/relaxed;
+	bh=KrV8AojHizUVyPSIQr1ddwVNwyOjEFV0kHJ0cnjXsEg=;
+	h=from:to:subject:date:mime-version:content-type:sender:cc:date:message-id;
+	t=1777249205; x=1777854005;
+	b=RqfTPHOcKpGEPEC692p1+xED0jP1EL8T9ekO4IzOogXX8ccl4teGghKGUHKT1Qa8GyFO7rxAI
+	JDFtiZFeJTnB7+uYZHaZLT3uOX/I5Jt3HYmDI4tV4JFTnlvgH+24zvzW5wQLrNIv077U8DzUwrH
+	7VV9N0FfuxNPXG59muuOb3ohnTfIKPmRQkUVmQPo/yQElCk4e5TgrcCHKjSfwmthReZ44PVciEl
+	lxVppKXq/R5nMDgxFhySvGCbW+XM/pareCp6SKqUWxTnTGayQvjqsymVQHaUJMPIakvXN4T7Fyz
+	F04FzOstG2lfw4FaETKdqctODFcKXZ8XNXJuLtNoPbGw==;
+Received: from ip-172-26-31-155.us-east-2.compute.internal (172.26.31.155)
+  by production-pmta-useast2.internal.postmarkapp.com (KumoMTA 10.97.242.151) 
+  with ESMTP id d721752941ce11f1bc440292cb89fe79 for <zouziyang2001@163.com>;
+  Mon, 27 Apr 2026 00:20:05 +0000
+DKIM-Signature: v=1; a=rsa-sha256; d=storkapp.me; s=20151231015352.pm;
+	c=relaxed/relaxed; i=support@storkapp.me; t=1777249205; x=1777422005;
+	h=date:date:from:from:message-id:reply-to:reply-to:sender:subject:subject:to:
+	to:cc:feedback-id:mime-version:content-type;
+	bh=KrV8AojHizUVyPSIQr1ddwVNwyOjEFV0kHJ0cnjXsEg=;
+	b=ezwHegH+EZsjqv9aa3p0RiTU59LsWDN2ikQJvYPUm6xoCXKKAh4xcI/aKXZTQxA3eH3r4dOWJz1
+	bpUvHuZaHg2ILe/SuoPQ/qFrp5nfLv+Fk3PMltKBtVwt6E4tW0PxKV0ltQcEjEzeuR1FUVEDTv+NJ
+	Ik4YlwCM8jkMzw/9Yfg=
+From: Stork <support@storkapp.me>
+Date: Mon, 27 Apr 2026 00:20:05 +0000
+Subject: Stork has brought you 10 new publications for semi-supervised etc
+Message-Id: <5a437e38-14cf-48b0-b8f9-6b329229fc69@mtasv.net>
+Reply-To: support@storkapp.me
+To: zouziyang2001@163.com
+Feedback-ID: s1522384-YWxlcnRfMTYzLmNvbQ==:s1522384:a66485:postmark
+X-Complaints-To: abuse@postmarkapp.com
+X-Job: 66485_1522384
+X-PM-Message-Id: 5a437e38-14cf-48b0-b8f9-6b329229fc69
+X-PM-Tag: alert_163.com
+X-PM-RCPT: |bTB8NjY0ODV8MTUyMjM4NHx6b3V6aXlhbmcyMDAxQDE2My5jb20=|
+X-PM-Message-Options: v1;1.mD6jwvRomCvtC6ECrVzJxg.8RU6My0Wfv9yUc6bB4WabsYAzzt00qHwsISPUcNW1lLQgfNNesj_56EWRQyiC2496g70jwrL486WyMQAefxPFzjFDX9OCHIXGfCWBoizKHCI-tkZL5zoUDW6dBCMgvhruV2o1KMvPmeROnDB9aP8DIDnOVomYaRSVMyIRae5PXa0CqTcoYhv7YssN1Ft04zm
+MIME-Version: 1.0
+X-virtual-MTA: mta207-ab1
+X-PM-MTA-Pool: transactional-3
+Content-Type: multipart/alternative;
+	boundary=mk3-65c9c338cabf42a890942a6a15444cc0; charset=UTF-8
+X-CM-TRANSID:0igvCgC31Tm3q+5pPKrfAQ--.18087S2
+Authentication-Results: gzmx27; spf=pass smtp.mail=pm_bounces@pm-bounc
+	es.storkapp.me; dkim=pass header.i=@pm.mtasv.net; dkim=pass header.i=@
+	storkapp.me
+X-Coremail-Antispam: 1Uf129KBjvJXoWxGFyxZFW8Xr15tFyxCw15Jwb_yoW7JFyDpa
+	srX3WfJFW5Aw1YkF4vva45Jr1akrnxGay3K347ZF95KFyrCas0gFyxta4YvFyqvFW8WF98
+	tF4YqFn7Cw4kArDanT9S1TB71UUUUU7qnTZGkaVYY2UrUUUUjbIjqfuFe4nvWSU5nxnvy2
+	9KBjDUYxBIdaVFxhVjvjDU0xZFpf9x0J8OhZsUUUUU=
+Sender: pm_bounces@pm-bounces.storkapp.me
+
+--mk3-65c9c338cabf42a890942a6a15444cc0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Dear =E5=AD=90=E6=89=AC,=20
+
+Stork has brought you 10 new publications.
+
+=E5=9C=A8=E6=B5=8F=E8=A7=88=E5=99=A8=E9=87=8C=E9=98=85=E8=AF=BB: https://ww=
+w.storkapp.cn/paper/showEmail.php?id=3D153802835&email=3Dzouziyang2001@163.=
+com&userID=3D494201=20
+=E4=B8=8B=E8=BD=BD=E6=96=87=E7=8C=AE=E9=B8=9F=E6=89=8B=E6=9C=BAapp: https:/=
+/www.storkapp.cn/marketing/templates/Stork1/app_download.php
+
+Add a new researcher or keyword to track(https://www.storkapp.cn/main.php)
+
+"Medical Image Segmentation" AND "Deep Learning"
+
+(Papers)
+
+ResTRANS3D hybrid framework for data-efficient 3D medical image segmentatio=
+n. by Yibo Sun, Weitong Chen (2026) iScience (impact factor: 4.1) 2 =E5=8C=BA=
+ =E5=85=8D=E8=B4=B9=E5=85=A8=E6=96=87
+PMID: 42028007 doi: 10.1016/j.isci.2026.115328
+    =20
+
+
+https://www.storkapp.cn/paper/showPaper.php?id=3D2484867657&displayKey=3Db6=
+itNJuPrQ
+
+
+Enhanced ResU-Net for brain tumor segmentation using EfficientNetB0, Channe=
+l Attention, and ASPP. by Majid Behzadpour, Ebrahim Azizi, Bengie Ortiz, Ka=
+i Wu (2026) Biomed Phys Eng Express (impact factor: 1.6) 4 =E5=8C=BA
+PMID: 42030976 doi: 10.1088/2057-1976/ae6459
+    =20
+
+
+https://www.storkapp.cn/paper/showPaper.php?id=3D2484867656&displayKey=3DSk=
+xKVztYqo
+
+
+(Awarded Grants)
+
+(Preprint)
+
+
+semi-supervised
+
+(Papers)
+
+FedSemiDG: Domain generalized federated semi-supervised medical image segme=
+ntation. by Zhipeng Deng, Zhe Xu, Tsuyoshi Isshiki, Yefeng Zheng (2026) Med=
+ Image Anal (impact factor: 11.8) 1 =E5=8C=BA
+PMID: 42030628 doi: 10.1016/j.media.2026.104096
+    =20
+
+
+https://www.storkapp.cn/paper/showPaper.php?id=3D2484867659&displayKey=3D8c=
+lV6p4RBk
+
+
+Biologically-inspired semi-supervised semantic segmentation for biomedical =
+imaging. by Luca Ciampi, Gabriele Lagani, Giuseppe Amato, Fabrizio Falchi (=
+2026) Neural Netw (impact factor: 6.3) 2 =E5=8C=BA
+PMID: 42019158 doi: 10.1016/j.neunet.2026.108925
+    =20
+
+
+https://www.storkapp.cn/paper/showPaper.php?id=3D2484867661&displayKey=3DrS=
+BqNLFmcG
+
+
+Comorbidity-aware transfer learning for neuro-developmental disorder diagno=
+sis. by Xin Wen, Shijie Guo, =E2=80=A6, Rui Cao (2026) Neural Netw (impact =
+factor: 6.3) 2 =E5=8C=BA
+PMID: 42001626 doi: 10.1016/j.neunet.2026.108980
+    =20
+
+
+https://www.storkapp.cn/paper/showPaper.php?id=3D2484867665&displayKey=3DAd=
+YlJZiNPy
+
+
+Enhancing the Performance of Event-Related Potential-Based Brain-Computer I=
+nterfaces under Cognitive Distraction: A Multiwindow Adaptive Approach. by =
+Minju Kim, Dojin Heo, Jongsu Kim, Sung-Phil Kim (2026) IEEE Trans Neural Sy=
+st Rehabil Eng (impact factor: 5.2) 2 =E5=8C=BA TOP
+PMID: 42009354 doi: 10.1109/TNSRE.2026.3685282
+    =20
+
+
+https://www.storkapp.cn/paper/showPaper.php?id=3D2484867664&displayKey=3D9X=
+re8S3P6N
+
+
+SSABE-TSCM: drift-aware and interpretable financial sentiment analysis for =
+low-resource Bangla via adaptive semi-supervised and temporal contrastive m=
+odeling. by Iftakhar Khandokar, Priya Deshpande (2026) Front Artif Intell (=
+impact factor: 4.7) 4 =E5=8C=BA =E5=85=8D=E8=B4=B9=E5=85=A8=E6=96=87
+PMID: 42027777 doi: 10.3389/frai.2026.1724407
+    =20
+
+
+https://www.storkapp.cn/paper/showPaper.php?id=3D2484867660&displayKey=3DRu=
+CkQhB3pt
+
+
+
+https://link.springer.com/article/10.1186/s40462-026-00658-6?utm_medium=3De=
+xternal_display&utm_source=3Dstork&utm_content=3Demail&utm_term=3Dnull&utm_=
+campaign=3DCONR_JRNLS_AWA1_CN_CNPL_0034V_STKRE
+
+
+LapGAT: A Semi-Supervised Learning Framework for Drug-Target Interaction Pr=
+ediction. by Lianjun Song, Wei Yuan, Xinyu Pei (2026) Mol Inform (impact fa=
+ctor: 3.1) 4 =E5=8C=BA
+PMID: 42011802 doi: 10.1002/minf.70028
+    =20
+
+
+https://www.storkapp.cn/paper/showPaper.php?id=3D2484867663&displayKey=3D8V=
+JqmNzuBF
+
+
+
+https://link.springer.com/article/10.1007/s10278-026-01965-5?utm_medium=3De=
+xternal_display&utm_source=3Dstork&utm_content=3Demail&utm_term=3Dnull&utm_=
+campaign=3DCONR_JRNLS_AWA1_CN_CNPL_0034V_STKRE
+
+
+-------------
+Recommend Stork:https://www.storkapp.cn/accountCenter/recommend.php
+Manage my keyword list: https://www.storkapp.cn/main.php
+Update my profile: https://www.storkapp.cn/accountCenter/update_account.php=
+?firsttime=3D1
+
+To stop receiving emails from Stork, please log in Stork, enter the Account=
+ page, scroll to the bottom, and click the "Delete my account" button. If y=
+ou just need to pause the alerts for some time, go to the Setting page, and=
+ choose Pause.
+
+--mk3-65c9c338cabf42a890942a6a15444cc0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang=3D"en">
+<head>
+<meta charset=3D"UTF-8">
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.=
+0">
+<title>Stork Emails</title>
+<style>
+.features-container{overflow-x:auto;white-space:wrap;padding:10px 0;overflo=
+w-x:hidden;flex-wrap:wrap;display:flex;justify-content:space-around}.featur=
+es-container::-webkit-scrollbar{height:8px}.features-container::-webkit-scr=
+ollbar-track{background-color:#f1f1f1}.features-container::-webkit-scrollba=
+r-thumb{background-color:#ddd;border-radius:10px}.features-container::-webk=
+it-scrollbar-thumb:hover{background-color:#888}.feature-item{flex:0 0 auto;=
+padding:0 10px}.feature-item img{width:128px;height:auto;display:block}.fea=
+ture-block{display:flex;flex-direction:column;align-items:center;padding:0 =
+10px}.feature-img:hover{background:#eee}.feature-img{width:64px;height:auto=
+;border:1px solid #efefef;border-radius:30px;display:block;padding:10px;bac=
+kground:#fff}.feature-name{margin-top:5px;text-align:center;font-size:14px;=
+width:64px;overflow:hidden;text-overflow:ellipsis;padding:10px;font-size:1.=
+1em}.adv_feature_block{background:#f7f7f7;max-width:760px;padding:20px;bord=
+er-radius:20px;text-align:center}.hr{border:none;border-top:3px solid #009f=
+e3;margin:10px 0;max-width:800px}.stork_adv_title{font-size:1.2em}
+.stork_full_text{padding: 1px 4px 2px;		  -webkit-border-radius: 3px;		  -m=
+oz-border-radius: 3px;		  border-radius: 3px;		  font-weight: bold;		  line=
+-height: 24px;		  color: green;		  vertical-align: baseline;		  white-space=
+: nowrap;text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);		  background-color: wh=
+ite; border:1px solid green}
+</style>
+</head>
+<body>=E5=AD=90=E6=89=AC, <p>
+<p>
+=E6=96=87=E7=8C=AE=E9=B8=9F=E4=B8=BA=E6=82=A8=E6=90=9C=E7=B4=A2=E5=88=B0=E4=
+=BA=8610=E7=AF=87=E6=96=B0=E6=96=87=E7=8C=AE=E3=80=82  <a href=3D'https://w=
+ww.storkapp.cn/g/XOhfYZp3E9X5a85L-5qkvhMiTieDca-galRFxdNuWcu7e7trKyCy5V_Xo7=
+k1VnnlWyiTuTETAaNGuZOMy-7LPOS_7WUdWZqvT2x2OaxR6QZhQbwJPMk1cKbE9AV6aEQrwlbKh=
+bUCnRrbcSI6RXi6bv561mXAvmlAq8B3cDJiR3yrbYk1051zNIL6qUbWjaXsvJ2EYG3IvXdJgtZR=
+s6S9ug~~'>=E5=90=AC=E6=96=87=E7=8C=AE</a><img style=3D'vertical-align:middl=
+e' src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/images/listen.png=
+'>=EF=BC=8C=E6=88=96<a href=3D'https://www.storkapp.cn/g/3HtTpqFEBODJ2_a27v=
+0B1rzNlDZvYt0vGdyP_4CHIjMxShbJ-vwZGnPkVeQ2r3FVXTqKuz4VUWFnz5elwJGCX_VKB5wug=
+nLskZyQLhpaZtG7uj1rPBtrHxZuQRrMcr49gapG1_8ntg9s1D1g5exkLVtJXMEShw3glcUOlohH=
+H5k2cl5vS8MYgIVZN7v2BRms'>=E5=9C=A8=E6=B5=8F=E8=A7=88=E5=99=A8=E9=87=8C=E9=98=
+=85=E8=AF=BB</a><img style=3D'vertical-align:middle' src=3D'https://stork-f=
+iles.oss-cn-beijing.aliyuncs.com/images/browser.png'>=EF=BC=8C=E6=88=96<a h=
+ref=3D'https://www.storkapp.cn/g/D7Ck-QiOCLMGt9FXBnQx0Y9wE_BTT9jcJEuj-NGzFV=
+DDFRaiDnfT1Fi0hlcuoYBKvV-hQe59rGP7-s4RmVZ9ym9NjI4NGZ_392N4IO6y_xSgwovN7K2hh=
+Mc_89fTW5vf1W_w6shlrT8OthlMgwDIsA~~'>=E4=B8=8B=E8=BD=BD=E6=96=87=E7=8C=AE=E9=
+=B8=9F=E6=89=8B=E6=9C=BAapp</a><img style=3D'vertical-align:middle' src=3D'=
+https://stork-files.oss-cn-beijing.aliyuncs.com/images/mobile.png'>   <p>
+<a href=3D'https://www.storkapp.cn/g/MibHz3Vra2oN6-IvhsqEndGnbQt3z_bMGJsERR=
+T5AjEjPnznyN2F6dDvS_inlY6BMs1CfJBRzgN87TMyQgA7KAD_FcANCiseOMSdqYERQCiVmDV_S=
+rCsACxpBAoU27KD'><span style=3D'background:yellow'>=E5=8C=97=E5=A4=A7=E7=94=
+=9F=E7=A7=91=E9=99=A2=E5=BD=AD=E5=85=B0=E6=85=A7=E6=8E=A8=E8=8D=90=E5=A4=A7=
+=E5=AE=B6=E7=94=A8=E6=96=87=E7=8C=AE=E9=B8=9F=E8=B7=9F=E8=BF=9B=E6=96=87=E7=
+=8C=AE</span></a><p>
+ <p>
+<span style=3D'font-size:1.4em'><b>"Medical Image Segmentation" AND "Deep L=
+earning"</b></span> =C2=A0=C2=A0=C2=A0<a target=3D'_blank' href=3D'https://=
+www.storkapp.cn/g/u8tCrXTtscRq8fRSr6MaHWx5OjrycHT0bWVmWp15WBfvvPR5pBumdX3F2=
+GeExKfUVBmFAH7-E6z99EHbdIRp0NWmVyQItxpZOHHKn8QwxWVsZaQTO5JoveCRJcxWmLDN05Hp=
+PiB0aR4r0xco0h1BHCHfZO2pRjS1TeJDlwXpHsU~'><span style=3D'font-size:1.2em'><=
+img style=3D'vertical-align:middle' width=3D'20' src=3D'https://stork-files=
+.oss-cn-beijing.aliyuncs.com/meta/logo.png'> =E5=A4=A7=E5=88=86=E6=9E=90</s=
+pan></a><div style=3D'padding-left:5px;padding-right:5px;background:#009fe3=
+;color:#fff;display: inline-block'>Papers</div><p>
+<div id=3D'stork-paper-2484867657' style=3D'border-left: solid #009fe3;padd=
+ing-left:5px;background:#ffffff'>
+<a target=3D_blank href=3D'https://www.storkapp.cn/g/pLRktHZiX3eHQXT_Fu3gfc=
+dscUtdK4cka21qM0NMhMBiKz8H0zk7eC8RyiEehsjlvmZkaRMEgxybFfBldaymOHEDQRas9nmUA=
+UqUT5fPpbWhrDKbmRwC-5QfADmWjRv_dI_8iSH5stdccCTeQor5k1zZ4EEXOw2l0qgJPZzG-uw~=
+'>ResTRANS3D hybrid framework for data-efficient 3D <b>medical</b> <b>image=
+</b> <b>segmentation</b>.</a> by Yibo Sun, Weitong Chen (2026) <span style=3D=
+'background:rgba(255,255,0,0.41);'>iScience (impact factor: 4.1)</span> <sp=
+an style=3D'padding: 1px 4px 2px;		  -webkit-border-radius: 3px;		  -moz-bo=
+rder-radius: 3px;		  border-radius: 3px;		  font-weight: bold;		  line-heig=
+ht: 24px;		  color: #ffffff;		  vertical-align: baseline;		  white-space: n=
+owrap;text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);		  background-color: #383;=
+'>2 =E5=8C=BA</span> <a target=3D'_blank' href=3D'https://www.storkapp.cn/g=
+/6ktzRFF10kmcj3V5C2iDFDMst1IgLGzSN6KfOmUHJmJdkxW_jt2J7qhTuHiEbQlRQxtDsTqVKR=
+1R_7L4xtbKtqCbrEGP6qI95l231Z2lTubc7umCeUvTnlxwRd6sPR0N7sevdjqU8x4H05moEiGsc=
+N7e9LYxFxf2E1TUCZO46TA~'><span class=3D'stork_full_text'>=E5=85=8D=E8=B4=B9=
+=E5=85=A8=E6=96=87</span></a><br>
+<span style=3D'color:#666'>PMID: 42028007 doi: 10.1016/j.isci.2026.115328</=
+span><br>
+<a href=3D'mailto:?subject=3DStork:%20ResTRANS3D+hybrid+framework+for+data-=
+efficient+3D+medical+image+segmentation.&body=3DI%27d+like+to+share+a+paper=
++with+you.%0A%0DResTRANS3D+hybrid+framework+for+data-efficient+3D+medical+i=
+mage+segmentation.%0A%0Dby+Yibo+Sun%2C+Weitong+Chen+%282026%29%0A%0Dhttps%3=
+A%2F%2Fwww.storkapp.me%2Fpubpaper%2F42028007%0A%0DPowered+by+Stork%2C+new+p=
+ublication+alert+tool%3A+https%3A%2F%2Fwww.storkapp.me'><img src=3D'https:/=
+/stork-files.oss-cn-beijing.aliyuncs.com/images/em-32.png' height=3D'16' ti=
+tle=3D'email' alt=3D'email'></a> <a href=3D'https://www.storkapp.cn/g/vOxC5=
+uZ0sBR1hW9VfzoEPMxnWBKATo2DmTFgq95my_KmVCxFw4cGrg3pxqyETpowM25Ecgbgm_JTaJH4=
+l-sd4sz6w6kZZOQfr_5b3tZZTC88xmXGgLeZ45nxxS8Rw_N4d3MCJIn_NSHSaf59kp_M7mFM4t_=
+qxO2x-eBkfTxbEo8~'><img src=3D'https://stork-files.oss-cn-beijing.aliyuncs.=
+com/images/we-32.png' height=3D'16' title=3D'=E5=BE=AE=E4=BF=A1' alt=3D'=E5=
+=BE=AE=E4=BF=A1'></a> <a href=3D'https://www.storkapp.cn/g/jbNAFEqz7jYtkIk8=
+ucbKEUqTPhWm5MEB617H5sL6As7p7P-gIpyGnIlrak8uoGhDFNRoHMmko9KOLse0VfeYZVY12NR=
+W19OTptSs_0c2tg_hreFZXUnItyT3uivgG6ES6XpjxlwNEnKMPq53fBxz9_Ha-WTt0nOrM3Izpe=
+d55XETVt0l2bR7w6Qyxeh7JhPSbTd0pMSyPxfw5DSJO2WjVQ~~'><img src=3D'https://sto=
+rk-files.oss-cn-beijing.aliyuncs.com/images/qz-32.png' height=3D'16' title=3D=
+'QQ=E7=A9=BA=E9=97=B4' alt=3D'QQ=E7=A9=BA=E9=97=B4'></a> <a href=3D'https:/=
+/www.storkapp.cn/g/s1yrMPq1aDplDKPu3uHi9OMYSNx1XMGSTkT7p4zgfI_60FqxhoNwMhv4=
+3rstOAN7skTBv-OrLg-zCFS4sc10w58n3e2SLhBapiDKXHaLhwy6oUnExHJh1tsJl0raj-rXXq_=
+1WMPM-X_hVKfEfJIEo_SUAlcRdjZkm80OsDWcifE9Ahk0fWZYfZvSJEwSdh0OvW0GCLkacfgzIQ=
+upL6k5tsMzgG9oH6Xw9GElcRKOmhU7dpgvL1f3dPs97npDN3PQZ8Trus07OtOElOLajS7OlJFC6=
+bfn4IuNd5a002Sm3BY~'><img src=3D'https://stork-files.oss-cn-beijing.aliyunc=
+s.com/images/qq-32.png' height=3D'16' title=3D'QQ=E5=A5=BD=E5=8F=8B' alt=3D=
+'QQ=E5=A5=BD=E5=8F=8B'></a> <a href=3D'https://www.storkapp.cn/g/kPiqx5Cwek=
+WW9wtVISiuYQoeUGawJjvIbPVoh-UTwZUNi3B_acklODgQAIeAAdydp9TOHbRboMB-XTqWLdSeV=
+5CptMQLbbzkPRuFQD0ft-NNdFR5mWDQEl6PLKzM9534uGb_vwGQVDfGRtnG8JFgT7InZ3HnY_3v=
+laDPlR6irHAJ3AZXv3RvbiHkg_ciLOJaQW0JbnV3CKbUipXRF4g8Tav1-T168qSK-VqXBDifElt=
+FUD1ID4fQ1s42_VDtLDLqDQF-kjbChewkrE--is8ooCXSHFfYR2equ6CFrZOe6S4~'><img src=
+=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/images/weibo-32.png' he=
+ight=3D'16' title=3D'=E6=96=B0=E6=B5=AA=E5=BE=AE=E5=8D=9A' alt=3D'=E6=96=B0=
+=E6=B5=AA=E5=BE=AE=E5=8D=9A'></a>=20
+</div>
+<img src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/img/1blank.png'=
+ height=3D'5'/>
+<div id=3D'stork-paper-2484867656' style=3D'border-left: solid #009fe3;padd=
+ing-left:5px;background:#efefef'>
+<a target=3D_blank href=3D'https://www.storkapp.cn/g/rnlNjt_Tnn5dr9LRD62UWa=
+TjaiDU0p11t9Zeqv46a7KZd3MxBRUs_55rcKu_dh6W_G63rX6-1tLBzg-RIkuplgzSYfcK63fIQ=
+PcJ8-gX2DNEjNmj6Yf9hlU5_UM2x-hDQJoD6a06heoY7jfTSwwD3DWfBa9lrkJCzcZ8yiRd_Qk~=
+'>Enhanced ResU-Net for brain tumor <b>segmentation</b> using EfficientNetB=
+0, Channel Attention, and ASPP.</a> by Majid Behzadpour, Ebrahim Azizi, Ben=
+gie Ortiz, Kai Wu (2026) <span style=3D'background:rgba(255,255,0,0.16);'>B=
+iomed Phys Eng Express (impact factor: 1.6)</span> <span style=3D'padding: =
+1px 4px 2px;		  -webkit-border-radius: 3px;		  -moz-border-radius: 3px;		  =
+border-radius: 3px;		  font-weight: bold;		  line-height: 24px;		  color: #=
+ffffff;		  vertical-align: baseline;		  white-space: nowrap;text-shadow: 0 =
+-1px 0 rgba(0, 0, 0, 0.25);		  background-color: #cec;'>4 =E5=8C=BA</span><=
+br>
+<span style=3D'color:#666'>PMID: 42030976 doi: 10.1088/2057-1976/ae6459</sp=
+an><br>
+<a href=3D'mailto:?subject=3DStork:%20Enhanced+ResU-Net+for+brain+tumor+seg=
+mentation+using+EfficientNetB0%2C+Channel+Attention%2C+and+ASPP.&body=3DI%2=
+7d+like+to+share+a+paper+with+you.%0A%0DEnhanced+ResU-Net+for+brain+tumor+s=
+egmentation+using+EfficientNetB0%2C+Channel+Attention%2C+and+ASPP.%0A%0Dby+=
+Majid+Behzadpour%2C+Ebrahim+Azizi%2C+Bengie+Ortiz%2C+Kai+Wu+%282026%29%0A%0=
+Dhttps%3A%2F%2Fwww.storkapp.me%2Fpubpaper%2F42030976%0A%0DPowered+by+Stork%=
+2C+new+publication+alert+tool%3A+https%3A%2F%2Fwww.storkapp.me'><img src=3D=
+'https://stork-files.oss-cn-beijing.aliyuncs.com/images/em-32.png' height=3D=
+'16' title=3D'email' alt=3D'email'></a> <a href=3D'https://www.storkapp.cn/=
+g/hPOjs429wzNT1GYNUrSc3OQVvKcTdqMlAq82Km7ihy-37hNAcSnhfwG1lUtuWXryPGFRlMD2y=
+fIBbK8kk1jr0PMQy63hqJ4EtxHloqczfnmawDj3OFlI17PnpN0cHTxoZiFJLsYdpySVS4DsYK9x=
+hBGOaqidYJXLVCkMOHYFc4I~'><img src=3D'https://stork-files.oss-cn-beijing.al=
+iyuncs.com/images/we-32.png' height=3D'16' title=3D'=E5=BE=AE=E4=BF=A1' alt=
+=3D'=E5=BE=AE=E4=BF=A1'></a> <a href=3D'https://www.storkapp.cn/g/EhSP5I7Gs=
+4LtSQBVZ7qFF2k1VAfGrsID4ceYPmet6JE6eRNJFCnv9S_AM21xJ05Og2ApkC4iRwXK6-RlaoE_=
+VCRqqn5XUhxoV6a90JctMmh_5suQgYQhBlv1ZrO16Pn13bdFbyQYHKP15S0r3_AXJRI3nFsGg_w=
+Bua1TNJexzdz3mLG--hYPdmo7m9dvPOGcnw6WwlzxynWOob-I_Y1A0A~~'><img src=3D'http=
+s://stork-files.oss-cn-beijing.aliyuncs.com/images/qz-32.png' height=3D'16'=
+ title=3D'QQ=E7=A9=BA=E9=97=B4' alt=3D'QQ=E7=A9=BA=E9=97=B4'></a> <a href=3D=
+'https://www.storkapp.cn/g/2IqtzCxpJNP7MHCbaPd7s7NC3HOHP3YibZ0OdxDpI_yyBJsd=
+SjUWRTdVX_7KpOYEhAFFYQpsYUN3pG-8TWTvK4lyeYEEPHdwSX1Fi5D4_REsj7SyECOjmqZXVAz=
+tXi8yfP8NBElWEchvRiYNaT5Krvqghs59dDhD-cdDP3ejzuB0yatkMElouMs3Z5S79bkf7KSzmk=
+XBW7WImDqMik9Vb2B48T4RVO6_XVkkf0TRCr5UPxVcLwrbbO8kq2ZCAvajwVXnllGjzLZVehTsh=
+CMl774z-7IrnD-w86zZwuLXs3X_6aN2qkP9ZoVT4hiU9iuo6YhgAT3OsN8-A04MO2G_pw~~'><i=
+mg src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/images/qq-32.png'=
+ height=3D'16' title=3D'QQ=E5=A5=BD=E5=8F=8B' alt=3D'QQ=E5=A5=BD=E5=8F=8B'>=
+</a> <a href=3D'https://www.storkapp.cn/g/r7dvJdl5cgsJ2-4367U7EdmJ5Glt8yV5O=
+38OL33RIRXL4P48ZN-qe_4Gc-ob85fcZa_cYRYyHVYqZT-Ud1Lu_YGGm4YjMNejzhMPE2Txhunu=
+MR0fiwWprIBkT9CEuf0PogmMftwUvLOo2x5hdXffbTJFgmoUU8-f4Jn3D-MAjIL9b19eoa_SsPX=
+9yeXzf2xmKGbsdBNpBmLEvZkbo7Abpx39eyLTp8N758woNJy1GULRQB8AQrmx5vNkAE6jIGiRkT=
+V0vHFISV8W1fSPPoL3R0mXW-o9R1jZEQL4tfHmxSqpTyt-sVb0e-Dz7yJn9u9O'><img src=3D=
+'https://stork-files.oss-cn-beijing.aliyuncs.com/images/weibo-32.png' heigh=
+t=3D'16' title=3D'=E6=96=B0=E6=B5=AA=E5=BE=AE=E5=8D=9A' alt=3D'=E6=96=B0=E6=
+=B5=AA=E5=BE=AE=E5=8D=9A'></a>=20
+</div>
+<img src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/img/1blank.png'=
+ height=3D'5'/>
+<img  src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/img/1blank.png=
+' height=3D'5' style=3D'display:block'/><div style=3D'padding-left:5px;padd=
+ing-right:5px;background:#070;color:#fff;display: inline-block'>Awarded Gra=
+nts</div> (<a href=3D'https://www.storkapp.cn/g/WkL_MdiXIrKTWaG53qgpuqwiS2w=
+fzbmtVJqkCM2wQDSd-2FoM7TJ99OGp22MCCnsCz3Lntj9qfxWok_NJpGHp7-IyooRQ7_O2_JdS1=
+PWj5w~'>Search Grants</a>)<p>
+<div style=3D'margin-bottom:10px'>=E7=9C=8B=E7=9C=8B=E6=9C=80=E8=BF=91=E7=BE=
+=8E=E5=9B=BD=E7=A7=91=E7=A0=94=E5=9F=BA=E9=87=91=E9=87=8C=E6=9C=89=E6=B2=A1=
+=E6=9C=89=E5=8C=85=E5=90=AB "Medical Image Segmentation" AND "Deep Learning=
+" =E7=9A=84=E7=BB=93=E6=9E=9C=EF=BC=9F<a target=3D'_blank' href=3D'https://=
+www.storkapp.cn/g/GwdDRzC322G1TjFnElrWZ4WmFTuEBr24pQ0DHIHqvg8okVW686PNFydT4=
+bOCcpvazm69Bvl4LSW9mj6V2OIPXe49d4wGvlTjXDgEGoYtBKpxsPWlC-IM5FUd45eUPs08'>=E7=
+=BE=8E=E5=9B=BD=E5=9B=BD=E7=AB=8B=E5=8D=AB=E7=94=9F=E7=A0=94=E7=A9=B6=E9=99=
+=A2=EF=BC=88NIH=EF=BC=89=E7=BB=8F=E8=B4=B9=E6=95=B0=E6=8D=AE=E5=BA=93=EF=BC=
+=88=E4=B8=AD=E8=8B=B1=E7=89=88=EF=BC=89=E4=BB=8B=E7=BB=8D</a></div><img  sr=
+c=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/img/1blank.png' height=
+=3D'5' style=3D'display:block'/><div style=3D'padding-left:5px;padding-righ=
+t:5px;background:#ED7D31;color:#fff;display: inline-block'>Preprint</div> <=
+p>
+<div>=E7=9C=8B=E7=9C=8B=E6=9C=80=E8=BF=91=E9=A2=84=E5=8D=B0=E6=96=87=E7=8C=AE=
+=EF=BC=88preprint=EF=BC=89=E6=95=B0=E6=8D=AE=E5=BA=93=E9=87=8C=E6=9C=89=E6=B2=
+=A1=E6=9C=89=E5=8C=85=E5=90=AB "Medical Image Segmentation" AND "Deep Learn=
+ing" =E7=9A=84=E7=BB=93=E6=9E=9C=EF=BC=9F<a target=3D'_blank' href=3D'https=
+://www.storkapp.cn/g/LBbT0jhBr0Uwgnb3_3DHn12aZu6oUbrlmYQJeftT7wakKeurFOF6tp=
+_dM4tr0r-XpOLN4xCiRgTsnbVxyfg9hH4NciQ5LaxWbkjIhEE6VMb3jbStZXLTbrbZmBODLtxXO=
+nvv-2VTbFQqlMFBYSDorg~~'>=E9=A2=84=E5=8D=B0=E6=96=87=E7=8C=AE=E6=8E=A8=E9=80=
+=81=E4=BB=8B=E7=BB=8D</a></div><p>
+<div style=3D"text-align:center;background:#efefef;padding-top: 5px;padding=
+-bottom: 0px;">
+<a href=3D'https://www.storkapp.cn/g/iGut4RYE0-v4hNwkySzcNJLFy1Rwm8JfhrkhOc=
+VCUwBU1c0A1bF6ytdeIeTB2NsS22JCG0TlJYUpeAWCtC9cVX50DVMWEYw7Lw3ylWagIWo~'>=E6=
+=99=BA=E5=9B=BE=EF=BC=8C=E4=B8=93=E4=B8=9A=E7=BB=98=E5=9B=BE=E4=B8=8D=E7=94=
+=A8=E6=84=81</a><p>
+<a href=3D'https://www.storkapp.cn/g/yJ1dXpAK2Ut5M8XXNm0RfVyH8FFJoW6YCDZj8o=
+Ry7P0B31HKIbs3p8LhKta9j7QIiqyvjriWS_bgfViK_LypA87Szi49hrD8Kck9Zg7ouvU~'>
+<img src=3D'https://stork-files.oss-accelerate.aliyuncs.com/marketing/ads/a=
+ifigure.png' style=3D"max-width:600px;max-height:400px">
+</a>
+</div><div style=3D"border: 1px dotted gray; border-radius: 10px;  padding:=
+ 10px; margin-bottom:20px"><p><strong>=E4=BD=BF=E7=94=A8=E6=8A=80=E5=B7=A7=E5=
+=92=8C=E6=9B=B4=E6=96=B0</strong></p><p><a href=3D'https://www.storkapp.cn/=
+g/kzwWeX6RT8loQJggGCgsZzT0Es16X-84MI630zP9GhbuG4kbEmXFZM2x9oH4F-UBTDqbQMqCb=
+XnK8iC_aV9TVrnbA6nw5VRt8WuKgm2u9FcTEAQRUyd4yABio8QsYcmJMuoOkJhVU_Hp-e2VDVi_=
+DQ~~' target=3D'_blank'>=E8=B4=B5=E5=B7=9E=E5=8C=BB=E7=A7=91=E5=A4=A7=E5=AD=
+=A6=E9=83=AD=E6=AC=A0=E6=AC=A0=E8=AF=BE=E9=A2=98=E7=BB=84=E4=BD=BF=E7=94=A8=
+=E6=96=87=E7=8C=AE=E9=B8=9F=E5=8F=91=E8=A1=A8=E6=96=87=E7=AB=A0</a></p>
+<p><a href=3D'https://www.storkapp.cn/g/Br1wIkPtIg8Z1SobUuptvQ7zrvvHMsgt6OR=
+VJl-HAsnfROSEBLkW6Nck1ABJDEBFjOmnwegd9o51x_uKA87k9GjJlGpMbngw_vq6bhioDMh7e6=
+Y9Vq6y3sMKW9_rUp8n' target=3D'_blank'>=E5=9B=9B=E5=B7=9D=E5=B8=88=E8=8C=83=E5=
+=A4=A7=E5=AD=A6=E8=84=91=E4=B8=8E=E5=BF=83=E7=90=86=E7=A7=91=E5=AD=A6=E7=A0=
+=94=E7=A9=B6=E9=99=A2=E7=8E=8B=E4=B8=80=E5=B3=B0=E8=AF=BE=E9=A2=98=E7=BB=84=
+=E4=BD=BF=E7=94=A8=E6=96=87=E7=8C=AE=E9=B8=9F=E5=8F=91=E8=A1=A8=E6=96=87=E7=
+=AB=A0</a></p>
+<p><a href=3D'https://www.storkapp.cn/g/pCqRI4s6u2w6oA6IJ5xFGziLGCzHY8dAKNa=
+j6faJ4BmTLOCIwg0CMeqlJi2_iFspjZcv1e5I4jJ1o6LgB9XDQZeRbbyXdGBDnTZSONAmPVVmP0=
+RcmDLcMEpXpvpE_O4O' target=3D'_blank'>=E5=8C=88=E7=89=99=E5=88=A9=E8=B5=9B=E6=
+=A0=BC=E5=BE=B7=E5=A4=A7=E5=AD=A6Attila Feh=C3=A9r=E4=BD=BF=E7=94=A8=E6=96=87=
+=E7=8C=AE=E9=B8=9F=E5=8F=91=E8=A1=A8=E6=96=87=E7=AB=A0</a></p>
+<p><a href=3D'https://www.storkapp.cn/g/u1NFZglxVYB9qi36LPhmEVwTlZ4srXHeHVE=
+PzuVQDxnjS7y6hvQ2Sezwq2rfhKggDVQHVZ-NlU_OvrWvhBLzZwEIh9tB0q6jE39O5uIOS7hDbN=
+Jm1n8tXjQx5AFN0__M' target=3D'_blank'>=E3=80=90=E5=8F=A5=E6=B5=B7=E6=9B=B4=E6=
+=96=B0=E3=80=91=E6=94=AF=E6=8C=81=E6=8C=89=E5=BD=B1=E5=93=8D=E5=9B=A0=E5=AD=
+=90=E7=AD=9B=E9=80=89=E5=8F=A5=E5=AD=90</a></p>
+<p><a href=3D'https://www.storkapp.cn/g/Iep0Wm6EQf8RjgE1K4GuQpL2bmJ4oxK41na=
+1J_2rAeSpN4Qh240nmgylzUjWAREG-GIENBsKvnO8bviqkijIlySL9oVdfO31g3lMWpqn3JewKO=
+qz5b8GQvtGaFOXgEjW' target=3D'_blank'>Claude Mythos=E6=9C=89=E8=B6=A3=E7=9A=
+=84=E8=A1=8C=E4=B8=BA</a></p>
+</div>
+<p>
+<span style=3D'font-size:1.4em'><b>semi-supervised</b></span> =C2=A0=C2=A0=C2=
+=A0<a target=3D'_blank' href=3D'https://www.storkapp.cn/g/dEhIGQ0DAWrrNP1Vz=
+kbFbSbJ7qt04xlfj58wR-mPJvJ5UtQoFySA-mGtPoUU9-HatVCR3oBENdIlOhuvyrYQZlJYUDL5=
+ZIeR0bXUf73t4NiCEc3c1nDIc8NZmD2lOsuY'><span style=3D'font-size:1.2em'><img =
+style=3D'vertical-align:middle' width=3D'20' src=3D'https://stork-files.oss=
+-cn-beijing.aliyuncs.com/meta/logo.png'> =E5=A4=A7=E5=88=86=E6=9E=90</span>=
+</a><div style=3D'padding-left:5px;padding-right:5px;background:#009fe3;col=
+or:#fff;display: inline-block'>Papers</div><p>
+<div id=3D'stork-paper-2484867659' style=3D'border-left: solid #009fe3;padd=
+ing-left:5px;background:#ffffff'>
+<a target=3D_blank href=3D'https://www.storkapp.cn/g/dCLlwVEXyiGC6UsKBz1_cV=
+GUJxI6ufZmhz3K4EqBdDUbRLICSnsKv-w22YXZY5B31Ekh3oYGnZb1-aXRrpG_KeYx2TE14N5EJ=
+2P9mYmLj8u056P6KDJfus1TY6BsWOiYTFlagCcwjU9LVeouHsM6Xapnr4a8ZyDh79oIwASkNDY~=
+'>FedSemiDG: Domain generalized federated <b>semi-supervised</b> medical im=
+age segmentation.</a> by Zhipeng Deng, Zhe Xu, Tsuyoshi Isshiki, Yefeng Zhe=
+ng (2026) <span style=3D'background:rgba(255,255,0,1);'>Med Image Anal (imp=
+act factor: 11.8)</span> <span style=3D'padding: 1px 4px 2px;		  -webkit-bo=
+rder-radius: 3px;		  -moz-border-radius: 3px;		  border-radius: 3px;		  fon=
+t-weight: bold;		  line-height: 24px;		  color: #ffffff;		  vertical-align:=
+ baseline;		  white-space: nowrap;text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25)=
+;		  background-color: #060;'>1 =E5=8C=BA</span><br>
+<span style=3D'color:#666'>PMID: 42030628 doi: 10.1016/j.media.2026.104096<=
+/span><br>
+<a href=3D'mailto:?subject=3DStork:%20FedSemiDG%3A+Domain+generalized+feder=
+ated+semi-supervised+medical+image+segmentation.&body=3DI%27d+like+to+share=
++a+paper+with+you.%0A%0DFedSemiDG%3A+Domain+generalized+federated+semi-supe=
+rvised+medical+image+segmentation.%0A%0Dby+Zhipeng+Deng%2C+Zhe+Xu%2C+Tsuyos=
+hi+Isshiki%2C+Yefeng+Zheng+%282026%29%0A%0Dhttps%3A%2F%2Fwww.storkapp.me%2F=
+pubpaper%2F42030628%0A%0DPowered+by+Stork%2C+new+publication+alert+tool%3A+=
+https%3A%2F%2Fwww.storkapp.me'><img src=3D'https://stork-files.oss-cn-beiji=
+ng.aliyuncs.com/images/em-32.png' height=3D'16' title=3D'email' alt=3D'emai=
+l'></a> <a href=3D'https://www.storkapp.cn/g/-ACrOJVgTZt4g58RaB9aw7rmFc2XAm=
+jv3Fq21g-KjdlX1ceDdUExrTwwZqMt_1m_8sssS-3bVCc4sHcwkDp1i3N-QW6kShwdrg8P3IUbe=
+VcpD2Bo9tdV7e45z4aYZ4MkYrjKJFHrHODb3VDZA0h_1fp3_lTqeif64KRGsb60IdY~'><img s=
+rc=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/images/we-32.png' hei=
+ght=3D'16' title=3D'=E5=BE=AE=E4=BF=A1' alt=3D'=E5=BE=AE=E4=BF=A1'></a> <a =
+href=3D'https://www.storkapp.cn/g/fU78GHyJRwE9NmkzJfxWonwDe_98sOGoN3bI19qrA=
+UpDyKD5Y0l9-gmDshBY0SWEbN2hvACXPlvGv9ou18wlJ04UpRO3v6a-kJihBr4DWrsKFEovBSvD=
+3gopvG6tDoIki7FXaKwX0QwvEppDvQLPIioX0HDIml4HBznBGF8YgwUcLH-gQbg52mXSOY8TBPJ=
+331ssHCmSipC8Z3EA97bwRQ~~'><img src=3D'https://stork-files.oss-cn-beijing.a=
+liyuncs.com/images/qz-32.png' height=3D'16' title=3D'QQ=E7=A9=BA=E9=97=B4' =
+alt=3D'QQ=E7=A9=BA=E9=97=B4'></a> <a href=3D'https://www.storkapp.cn/g/wF1O=
+9zdR7cIz06Aqso6fOq_cDYhx0wH0FrFXk1V6kHTj0rHrAPZek4sZj2L5P1WAJfSN6pbxVbF8SmF=
+S7AeUK6NcibPsbNxlEgY5jaVoL7ypxK5eIa5RRYKAzKL9CT1_JLw-RICcXbnBez0MDsGUiIqDoZ=
+xO_vnIR51tu62hwzh8Cv3hZYlVqWwFfUy7KVlfxdjzcK7LAqUJc1q8RjIsArtZ8GMJnBmTPCeqZ=
+biGb8FMoUH8hwUGx7A-g2BKU7L4NsMSBUzsWcuePhDkczgLX8syMNlqTjjgMkyExRXoYMox--Fb=
+HFflXzBfXrsG1ZxG'><img src=3D'https://stork-files.oss-cn-beijing.aliyuncs.c=
+om/images/qq-32.png' height=3D'16' title=3D'QQ=E5=A5=BD=E5=8F=8B' alt=3D'QQ=
+=E5=A5=BD=E5=8F=8B'></a> <a href=3D'https://www.storkapp.cn/g/Xsj92OLSYP3H2=
+CEwIcmbgTkPXGVyOfd4an34eTZdNQlMle3oFBtuvS1FfZ1e_4uwBP4ddOzvQ9AOd6Yct1J7azun=
+8_wlK80hoEUqMigwTc4IZJnq1hMmVvowiig-aEK1z5yvhhi1ccyqnpwQ-KzUeGokX7ot8zk82Y3=
+kXLZgh6EsLAqMx6Yu2t09Dk2jDFsFPxlWFHVnbKB7LVMrXVFA1ah2NkZUh9z1rb7PjVRIKvD6qQ=
+srmsu9QyRybq1exM9H2iZ0IAuw6cx1zCCj0ec_Pb2hCjnY5AX8ihjTmMNHuxg~'><img src=3D=
+'https://stork-files.oss-cn-beijing.aliyuncs.com/images/weibo-32.png' heigh=
+t=3D'16' title=3D'=E6=96=B0=E6=B5=AA=E5=BE=AE=E5=8D=9A' alt=3D'=E6=96=B0=E6=
+=B5=AA=E5=BE=AE=E5=8D=9A'></a>=20
+</div>
+<img src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/img/1blank.png'=
+ height=3D'5'/>
+<div id=3D'stork-paper-2484867661' style=3D'border-left: solid #009fe3;padd=
+ing-left:5px;background:#efefef'>
+<a target=3D_blank href=3D'https://www.storkapp.cn/g/G_Ahq7-5WRqFE__HvQj84W=
+LHVwBzM4oDEepHFRDnsNxuuvHpeA5t4cz35FDrEkspsZWI6RX4kv5LYd3Zc_8kOPwAfPYdwfSA1=
+jjBKDp3yxR56pOaGseycy7YyAj3OA2LyYHAJiXC6isAunI5KyCHvMUNyDVsLpilHRfWGwHoBb4~=
+'>Biologically-inspired <b>semi-supervised</b> semantic segmentation for bi=
+omedical imaging.</a> by Luca Ciampi, Gabriele Lagani, Giuseppe Amato, Fabr=
+izio Falchi (2026) <span style=3D'background:rgba(255,255,0,0.63);'>Neural =
+Netw (impact factor: 6.3)</span> <span style=3D'padding: 1px 4px 2px;		  -w=
+ebkit-border-radius: 3px;		  -moz-border-radius: 3px;		  border-radius: 3px=
+;		  font-weight: bold;		  line-height: 24px;		  color: #ffffff;		  vertica=
+l-align: baseline;		  white-space: nowrap;text-shadow: 0 -1px 0 rgba(0, 0, =
+0, 0.25);		  background-color: #383;'>2 =E5=8C=BA</span><br>
+<span style=3D'color:#666'>PMID: 42019158 doi: 10.1016/j.neunet.2026.108925=
+</span><br>
+<a href=3D'mailto:?subject=3DStork:%20Biologically-inspired+semi-supervised=
++semantic+segmentation+for+biomedical+imaging.&body=3DI%27d+like+to+share+a=
++paper+with+you.%0A%0DBiologically-inspired+semi-supervised+semantic+segmen=
+tation+for+biomedical+imaging.%0A%0Dby+Luca+Ciampi%2C+Gabriele+Lagani%2C+Gi=
+useppe+Amato%2C+Fabrizio+Falchi+%282026%29%0A%0Dhttps%3A%2F%2Fwww.storkapp.=
+me%2Fpubpaper%2F42019158%0A%0DPowered+by+Stork%2C+new+publication+alert+too=
+l%3A+https%3A%2F%2Fwww.storkapp.me'><img src=3D'https://stork-files.oss-cn-=
+beijing.aliyuncs.com/images/em-32.png' height=3D'16' title=3D'email' alt=3D=
+'email'></a> <a href=3D'https://www.storkapp.cn/g/5eUhymSKDi-87xYWU6udwUlJK=
+nYiKD56Xc3L8eDP4oMn3CWEf7xHz5QRS1qO1ipAiczpgGCKQDJDZFOdzDdCTp2Yc3cTGNPA93vS=
+v0OzyS9aBVIWgpF6POXAjOU1tyhIoAFCXrSrzfMoU5QWoEY2H2sxNr0UA5Cc5lP0V2mkVaA~'><=
+img src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/images/we-32.png=
+' height=3D'16' title=3D'=E5=BE=AE=E4=BF=A1' alt=3D'=E5=BE=AE=E4=BF=A1'></a=
+> <a href=3D'https://www.storkapp.cn/g/m55Yfp3AMUdPF70GO8qeXgVO4wr9cuOsbJqI=
+Nh8mp0O9i2WMkEDhkQfrUjcJ0C6nyiwOv3iFrWmST5L3X4Mx-GhEjLcGvZheqlhlJu9xkAEdDVL=
+vtDZdQ7ETd75RUeblC7Mab6apu3uyOkTUse5xsKqRfZLnTWzU50EYhdTjen-_H61wK9dTrSoGBv=
+97UotcTb_bvLZ_qD4JOFnFpV981g~~'><img src=3D'https://stork-files.oss-cn-beij=
+ing.aliyuncs.com/images/qz-32.png' height=3D'16' title=3D'QQ=E7=A9=BA=E9=97=
+=B4' alt=3D'QQ=E7=A9=BA=E9=97=B4'></a> <a href=3D'https://www.storkapp.cn/g=
+/vLhpw7vgJBs4mnd6kNm4lQZSohLPLyPVtRwyk79xDIesyUY_XzYdoDTa5CoGY2pOMDOQ8zmWSH=
+Tkxgfu-OdOSmO3RsTLn5ovcLfA1WApvHERDoOoYp2nExY4NM_yndq7-yYeufcXyuDQxdjkaJNfC=
+BgN4QRHZCRSTLt2_avyTUOe5CLZi0IzkvSewJj6yuyQ3OwEFUd5MmpwMo-klshBWQNMldOk0Ern=
+zTIpr40KWFJR-PEcialPMXPsxU9-V4wWgjSgTghXWz2LMzc7aJDpcwqK04uqf_Qnv39NZqoFSfV=
+WZ41WtcU30NKv8nV6Xvh0'><img src=3D'https://stork-files.oss-cn-beijing.aliyu=
+ncs.com/images/qq-32.png' height=3D'16' title=3D'QQ=E5=A5=BD=E5=8F=8B' alt=3D=
+'QQ=E5=A5=BD=E5=8F=8B'></a> <a href=3D'https://www.storkapp.cn/g/fpyFrnd5Qk=
+He-p4gosIkdMOiok0BUPaKAgrnctCET0jLGsOn5C0aX100v5NwSD0nYPeXFGpkAF9CrdQLGaRE5=
+bal4eBqfiQwEISgUyKvKqYArLvJ4B8Z-Ezs9xP5XinkMeUe62qnviQkBcZl6p-4_XmN0WpEZXrT=
+04pWdpX7fo_tnanBW-LeZxCs2LmzodenhzPMVv4Gv3YGBmzMjsBmFEv38qOSMPeDe-qPeXVAdev=
+GCbHN6QVkvNTWhtocFXxp0C2AyUOGNIuCvRaSPzXacppCEeTuOW3noCfKCdhO0M4~'><img src=
+=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/images/weibo-32.png' he=
+ight=3D'16' title=3D'=E6=96=B0=E6=B5=AA=E5=BE=AE=E5=8D=9A' alt=3D'=E6=96=B0=
+=E6=B5=AA=E5=BE=AE=E5=8D=9A'></a>=20
+</div>
+<img src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/img/1blank.png'=
+ height=3D'5'/>
+<div id=3D'stork-paper-2484867665' style=3D'border-left: solid #009fe3;padd=
+ing-left:5px;background:#ffffff'>
+<a target=3D_blank href=3D'https://www.storkapp.cn/g/g0aIr3TRPEhxoMyGfR4qC9=
+Al1nRgcUVMIEYhdOtUHwjguWpoCiXPTJYDhy5G4sHdQboVDOk0xBXtevuTgSk0x9Q0OH1lgmle9=
+vEX6AxHSUi1heyK6sUbTIXL-aa8JcwN3lS0OKzQe6Xi8xrj_8707NfFPVtMGuxZzvGhE1vJ42o~=
+'>Comorbidity-aware transfer learning for neuro-developmental disorder diag=
+nosis.</a> by Xin Wen, Shijie Guo, =E2=80=A6, Rui Cao (2026) <span style=3D=
+'background:rgba(255,255,0,0.63);'>Neural Netw (impact factor: 6.3)</span> =
+<span style=3D'padding: 1px 4px 2px;		  -webkit-border-radius: 3px;		  -moz=
+-border-radius: 3px;		  border-radius: 3px;		  font-weight: bold;		  line-h=
+eight: 24px;		  color: #ffffff;		  vertical-align: baseline;		  white-space=
+: nowrap;text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);		  background-color: #3=
+83;'>2 =E5=8C=BA</span><br>
+<span style=3D'color:#666'>PMID: 42001626 doi: 10.1016/j.neunet.2026.108980=
+</span><br>
+<a href=3D'mailto:?subject=3DStork:%20Comorbidity-aware+transfer+learning+f=
+or+neuro-developmental+disorder+diagnosis.&body=3DI%27d+like+to+share+a+pap=
+er+with+you.%0A%0DComorbidity-aware+transfer+learning+for+neuro-development=
+al+disorder+diagnosis.%0A%0Dby+Xin+Wen%2C+Shijie+Guo%2C+%E2%80%A6%2C+Rui+Ca=
+o+%282026%29%0A%0Dhttps%3A%2F%2Fwww.storkapp.me%2Fpubpaper%2F42001626%0A%0D=
+Powered+by+Stork%2C+new+publication+alert+tool%3A+https%3A%2F%2Fwww.storkap=
+p.me'><img src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/images/em=
+-32.png' height=3D'16' title=3D'email' alt=3D'email'></a> <a href=3D'https:=
+//www.storkapp.cn/g/UZMfyN-os6d6ibcNNSZqIbqDD4yD5kq2yyOiDOxM5QI1_UcsnldCOcd=
+Tzj6fFyUcDW45IlX_e7jSPF-NX3NngIbdzn64aqQFWrBr8X2Dl57G6hIm-VSDAosd8R2__Eu9uR=
+ew9uBLTgYGo7wTH_EcKuLbBiRANjBfvXg9ejvClrQ~'><img src=3D'https://stork-files=
+.oss-cn-beijing.aliyuncs.com/images/we-32.png' height=3D'16' title=3D'=E5=BE=
+=AE=E4=BF=A1' alt=3D'=E5=BE=AE=E4=BF=A1'></a> <a href=3D'https://www.storka=
+pp.cn/g/oEaPhopJCx2_pQ7qbTd3hOyaJJYk3s2WfOmCmGB3KQ6CDzbHSBPcGjMF6guWIgHOUgQ=
+6hOTEsEj4_8Fwtz0I3wlzav6toI2MdRyy_3UivsRpcdWHIT4evZG44KlsidlE_BkAL6ujqNMCnw=
+zV4e-WJjyhnENKHg_wE3CbT6zRpvr4IZ2il9TMfMCF6en9v8KF2GiJuz7domEHoyvEleJFqg~~'=
+><img src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/images/qz-32.p=
+ng' height=3D'16' title=3D'QQ=E7=A9=BA=E9=97=B4' alt=3D'QQ=E7=A9=BA=E9=97=B4=
+'></a> <a href=3D'https://www.storkapp.cn/g/WyFaYK_SmsimFeiB3WyzRfnkOJ04uR9=
+WATec-1ACCHlpQ-TPozcPWHA93beIZBMTHWIwXHidfKwl-mNKIQimPi10xxYSjpvbl65p8FlT60=
+rO7HLpnFZ1OTnyclInkxzEx0_CeYZtjnsn6Wkz8AWZG-sMrmcZJcDndA7eTcjaEKtnJzE5xhr3M=
+c8hjXLTwjiLwBFtT4-rPMDDSrg8RaMcMlSp6sDG14pFhITJqtSZsgWIAg_g6vYkxjT0n7LfhPgd=
+87RoxOxtSyB_H7JPIM95JBcChQxahiixZiTu00OAnHjgxyv7f8u6iA65fv0wjYlS'><img src=3D=
+'https://stork-files.oss-cn-beijing.aliyuncs.com/images/qq-32.png' height=3D=
+'16' title=3D'QQ=E5=A5=BD=E5=8F=8B' alt=3D'QQ=E5=A5=BD=E5=8F=8B'></a> <a hr=
+ef=3D'https://www.storkapp.cn/g/1rQMAkLP6RzP1zPZkKPoGPyKLY9ausE9VnYh54HFLvO=
+UlgipebjaITwR4TXW9FlWu-D9jxYvwgFXT7v-wwXCmg13O3V2W8JSHXiZpX74HG9NbpvQFWVr2q=
+Fb-EJmyYisavzHXtnsc7GizGLt70pBP1Y-Mg1YN6AbdC6kflkbqf9cvIpZOLsTs3ZvcSxTTj_qZ=
+WMoJlOzBJyl1DMjQM-VoM9ZBVP08GlU4SsRUkxCGJx0nB3pbqWNJY3vo3kaDDcAhhGDNRWPS0j7=
+7ENlQCCz7XKONk3zN39b88n-HbjiI1U~'><img src=3D'https://stork-files.oss-cn-be=
+ijing.aliyuncs.com/images/weibo-32.png' height=3D'16' title=3D'=E6=96=B0=E6=
+=B5=AA=E5=BE=AE=E5=8D=9A' alt=3D'=E6=96=B0=E6=B5=AA=E5=BE=AE=E5=8D=9A'></a>=
+=20
+</div>
+<img src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/img/1blank.png'=
+ height=3D'5'/>
+<div id=3D'stork-paper-2484867664' style=3D'border-left: solid #009fe3;padd=
+ing-left:5px;background:#efefef'>
+<a target=3D_blank href=3D'https://www.storkapp.cn/g/gAygSN8v1chVhG_r5CwdJI=
+PL0YbA_NNRZRil5V5Z-USvD8kTbW-Wkn0bx1DMe4nUa5AIyPu0GUUE0LDxVAHzhBfpsJEnSi9-R=
+H8h8IBj5vY1cRFcjSONdVjj5TZFZa7-zc32vwlIcAjiY-t3r2sBhg4jHZR-i5DxypGFip-VzAU~=
+'>Enhancing the Performance of Event-Related Potential-Based Brain-Computer=
+ Interfaces under Cognitive Distraction: A Multiwindow Adaptive Approach.</=
+a> by Minju Kim, Dojin Heo, Jongsu Kim, Sung-Phil Kim (2026) <span style=3D=
+'background:rgba(255,255,0,0.52);'>IEEE Trans Neural Syst Rehabil Eng (impa=
+ct factor: 5.2)</span> <span style=3D'padding: 1px 4px 2px;		  -webkit-bord=
+er-radius: 3px;		  -moz-border-radius: 3px;		  border-radius: 3px;		  font-=
+weight: bold;		  line-height: 24px;		  color: #ffffff;		  vertical-align: b=
+aseline;		  white-space: nowrap;text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);	=
+	  background-color: #383;'>2 =E5=8C=BA</span> <span style=3D'padding: 1px =
+4px 2px;		  -webkit-border-radius: 3px;		  -moz-border-radius: 3px;		  bord=
+er-radius: 3px;		  font-weight: bold;		  line-height: 24px;		  color: #ffff=
+ff;		  vertical-align: baseline;		  white-space: nowrap;text-shadow: 0 -1px=
+ 0 rgba(0, 0, 0, 0.25);		  background-color: #198754;'>TOP</span><br>
+<span style=3D'color:#666'>PMID: 42009354 doi: 10.1109/TNSRE.2026.3685282</=
+span><br>
+<a href=3D'mailto:?subject=3DStork:%20Enhancing+the+Performance+of+Event-Re=
+lated+Potential-Based+Brain-Computer+Interfaces+under+Cognitive+Distraction=
+%3A+A+Multiwindow+Adaptive+Approach.&body=3DI%27d+like+to+share+a+paper+wit=
+h+you.%0A%0DEnhancing+the+Performance+of+Event-Related+Potential-Based+Brai=
+n-Computer+Interfaces+under+Cognitive+Distraction%3A+A+Multiwindow+Adaptive=
++Approach.%0A%0Dby+Minju+Kim%2C+Dojin+Heo%2C+Jongsu+Kim%2C+Sung-Phil+Kim+%2=
+82026%29%0A%0Dhttps%3A%2F%2Fwww.storkapp.me%2Fpubpaper%2F42009354%0A%0DPowe=
+red+by+Stork%2C+new+publication+alert+tool%3A+https%3A%2F%2Fwww.storkapp.me=
+'><img src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/images/em-32.=
+png' height=3D'16' title=3D'email' alt=3D'email'></a> <a href=3D'https://ww=
+w.storkapp.cn/g/B2BpjpzKTjWTSJkZgzvVvx8pc9o20oc08opWOoHpr_HdJIz_8RkjwIEM28S=
+L3NFYFkS35ZwgBYRVf9BKBWfjK1AWiaQee2KiC_lo1X-bwH81qFpUfGKQ4L-h1xht_wZQGNJPzK=
+ckVO-jWnKSeLlelnu0T5mfWZQXEnw_wnfT_HA~'><img src=3D'https://stork-files.oss=
+-cn-beijing.aliyuncs.com/images/we-32.png' height=3D'16' title=3D'=E5=BE=AE=
+=E4=BF=A1' alt=3D'=E5=BE=AE=E4=BF=A1'></a> <a href=3D'https://www.storkapp.=
+cn/g/zU6O6rRAaE1zp3lsumu4czz_BuJOXd8Cesmc3-RcM2-GpG1oJRBxheeHEbo3NrZEuHAV_h=
+EkNomNJX0S-cAlygymkkB9-ubxFF-I4KFUZGWZ7goh40UlMykrRMO-hvxx0_l-roHsiTcv5hEwz=
+i0fras3kgl86Z_oNYx6WyxuUum-n92CiwKBVLzTs4CdR-dcEFVcyBxpv-VWPaT_j3RpPA~~'><i=
+mg src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/images/qz-32.png'=
+ height=3D'16' title=3D'QQ=E7=A9=BA=E9=97=B4' alt=3D'QQ=E7=A9=BA=E9=97=B4'>=
+</a> <a href=3D'https://www.storkapp.cn/g/i_bDJ1wrKR_evRvt2Ye2LJPsbYW76ErXw=
+VJgFsVmWmH4yJTmcEfcslFgO1cPbTZ6EH7u-EyUDsdscJ7N3B8V4PXA-QczlKQJBIeuQBAgZ3vQ=
+NimFDGG0Ones-SAGju4_Whhjr3Ox8h4sWaXo5PekmIimgJXGgaUyTSW4RLUi0SPxlEIwh2h0_kM=
+mo_ej_liDe0KP1EKuYP09Av4eEk3pWd7BmUkpaWIquC7SwLr_BtOcM374bAwAukOxU79obLTQ59=
+I0whOmtfgtRCUtSAlXno6YjjgTQnt_PpNkbToqM6kBJSxO40Xu5PF7nl7DKXu2WrhakjOB4wl3N=
+ASKScrdEIbVs2ba_dU7R__mL_p68f1EWwnrWb5f2AnVpky9xaoS6X3LYgullFT494ZDZXsZFg~~=
+'><img src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/images/qq-32.=
+png' height=3D'16' title=3D'QQ=E5=A5=BD=E5=8F=8B' alt=3D'QQ=E5=A5=BD=E5=8F=8B=
+'></a> <a href=3D'https://www.storkapp.cn/g/9b9q_rNFSkHXKuZn_VYJdxoBupv1xYD=
+VECBAJVCXarVLDpTQWBJYYCRLPyEjyuWbXkq8dA4UT8I95aAp4JKq421cHtjfct34Ig4njbQygS=
+UKVjT4gdga7hDEHgXCLl8edc8GR4GAidXUUaH0TH-yeS8nsqhN4qInFv-i8y6OJCy3QTDePaus4=
+baTN9zNgq3QWYHg7LfAkxitwdyyLdzkPXmmoYRx3HairnYWRpuiMW7oJIdpN5it84ZRQZutvKkS=
+F6hvjJj4hEVaxDyed75G-EatAxBnWI6AkoO3VPCtlacL444NXcYmok4ZnAOFMAOIlGfPDplBVfC=
+i084eWdOdEcp3YoJoc9Qu-ZCIfc157lXHOEiD10g_3BFHy-P1KCAX'><img src=3D'https://=
+stork-files.oss-cn-beijing.aliyuncs.com/images/weibo-32.png' height=3D'16' =
+title=3D'=E6=96=B0=E6=B5=AA=E5=BE=AE=E5=8D=9A' alt=3D'=E6=96=B0=E6=B5=AA=E5=
+=BE=AE=E5=8D=9A'></a>=20
+</div>
+<img src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/img/1blank.png'=
+ height=3D'5'/>
+<div id=3D'stork-paper-2484867660' style=3D'border-left: solid #009fe3;padd=
+ing-left:5px;background:#ffffff'>
+<a target=3D_blank href=3D'https://www.storkapp.cn/g/BnBqGe7lwRsAgj7Raz76Nj=
+DdxvwDdo_7d8bXl-60tTMFYnrPB_8fDNit4GP63Qfcr3Cw49kqmPC_HaxjytwK4BLclrugBYPWm=
+ta5sbpMHK9isIRix8SsMGpv6LK3E_DQOHtfaXegHABlOCFzCmSgeo5QfZ8nFt_VfNvZLKLAjpg~=
+'>SSABE-TSCM: drift-aware and interpretable financial sentiment analysis fo=
+r low-resource Bangla via adaptive <b>semi-supervised</b> and temporal cont=
+rastive modeling.</a> by Iftakhar Khandokar, Priya Deshpande (2026) <span s=
+tyle=3D'background:rgba(255,255,0,0.47);'>Front Artif Intell (impact factor=
+: 4.7)</span> <span style=3D'padding: 1px 4px 2px;		  -webkit-border-radius=
+: 3px;		  -moz-border-radius: 3px;		  border-radius: 3px;		  font-weight: b=
+old;		  line-height: 24px;		  color: #ffffff;		  vertical-align: baseline;	=
+	  white-space: nowrap;text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);		  backgr=
+ound-color: #cec;'>4 =E5=8C=BA</span> <a target=3D'_blank' href=3D'https://=
+www.storkapp.cn/g/cpYZlXmZCIVcCh5H6VS-VDF8mN-NR7BK7ob7E1arrmGiyPAiHiPF3F3Wf=
+h56NfnnCh2oQAp90UjxPtWcKkSnmqtpFGnvXRea91oBBlfFsQH5_7ozedgeXwsAASkgd5snYUGp=
+BR0Gs8BH4obObzozijw5x2-pkJFJuKwnVFP0N0A~'><span class=3D'stork_full_text'>=E5=
+=85=8D=E8=B4=B9=E5=85=A8=E6=96=87</span></a><br>
+<span style=3D'color:#666'>PMID: 42027777 doi: 10.3389/frai.2026.1724407</s=
+pan><br>
+<a href=3D'mailto:?subject=3DStork:%20SSABE-TSCM%3A+drift-aware+and+interpr=
+etable+financial+sentiment+analysis+for+low-resource+Bangla+via+adaptive+se=
+mi-supervised+and+temporal+contrastive+modeling.&body=3DI%27d+like+to+share=
++a+paper+with+you.%0A%0DSSABE-TSCM%3A+drift-aware+and+interpretable+financi=
+al+sentiment+analysis+for+low-resource+Bangla+via+adaptive+semi-supervised+=
+and+temporal+contrastive+modeling.%0A%0Dby+Iftakhar+Khandokar%2C+Priya+Desh=
+pande+%282026%29%0A%0Dhttps%3A%2F%2Fwww.storkapp.me%2Fpubpaper%2F42027777%0=
+A%0DPowered+by+Stork%2C+new+publication+alert+tool%3A+https%3A%2F%2Fwww.sto=
+rkapp.me'><img src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/image=
+s/em-32.png' height=3D'16' title=3D'email' alt=3D'email'></a> <a href=3D'ht=
+tps://www.storkapp.cn/g/BAvVfgnyGcIxTdA6yZVlPaoHwnB1QbrNHzDVMyUCATG7T8v0-fY=
+5LZBEkzHvbOVi5gX3veyN-9ybVV7x7jzFMSJb9IPNNfXGae3d21fUXpuwXzhCIUGmnXljvMqYPj=
+eA_UmSVmohKNCoVuDqC2-a4wywv9EPUmCZdESGiHm93bU~'><img src=3D'https://stork-f=
+iles.oss-cn-beijing.aliyuncs.com/images/we-32.png' height=3D'16' title=3D'=E5=
+=BE=AE=E4=BF=A1' alt=3D'=E5=BE=AE=E4=BF=A1'></a> <a href=3D'https://www.sto=
+rkapp.cn/g/5GTVb4sa7WRSzkwjSY2qvknybF7I0y_BRPMjxQ5EBRaU-G4Svme5yGwtr6YSPw58=
+OKV-WldzZxrylVSa0Y2jgMfsELEgL8l0gJ6XEOvuMLHqUafHMXaZClMa-4ppdOXb0gBtPRoMfaG=
+WbbkbxAdsNBwT8Tbph61OouTmcuSu7Iv0bzwwo5w_tiOCiRTtSjHaEPDrd0bkdfKicvL0207HZQ=
+~~'><img src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/images/qz-3=
+2.png' height=3D'16' title=3D'QQ=E7=A9=BA=E9=97=B4' alt=3D'QQ=E7=A9=BA=E9=97=
+=B4'></a> <a href=3D'https://www.storkapp.cn/g/wVZE9Ng5OHhwKvpGxGFXiTXtCKbI=
+CsZ0q9x9cEJR5fQNL2CVpPfhgUxflfVpiQOMNj04WTGNgkBRIuAfEcdlQZ2NklWbU4uFqeT_4xy=
+DxircjDMeg5WHgkLClLKnkjbH3J_zhcAHovwhl7kFi4iqgZWW3m4AG4j_xaxWP3e3IFRovCNqrf=
+AUU5rKs9TI4E4Jux6mV9BD17xrRz-zXjbOCIPDFIQ5uwn1dbLeR6d6TYnSM4ju1TrA2Q1e1JCqV=
+11ao9FDuDHGqo-zGcnxoxZWXYBXqCtubN8HIY8pm5APCdRww4tZsTjGOQ3Y1cOwG8NpvVD9T0u1=
+Uvkx5pzKS00J-42Aj2n_3AdlTSfRgdwKPeqMpZUl_biBqGV4D3QLNhtttcd3mUGjN9NgPk72flB=
+ozfYbd2an1sVlUux1GYgi5do~'><img src=3D'https://stork-files.oss-cn-beijing.a=
+liyuncs.com/images/qq-32.png' height=3D'16' title=3D'QQ=E5=A5=BD=E5=8F=8B' =
+alt=3D'QQ=E5=A5=BD=E5=8F=8B'></a> <a href=3D'https://www.storkapp.cn/g/q-9g=
+PXU337kHers0wKNWMnUw-oEIYJOF_uHlAQSyjEHDGHw366saHB67t80sLtAHzictKXvMN39y3cH=
+IKn920H86rEy9wTn_LDFvguXNzzNd4PIX7DVyRr1IZSeZCtYU7_xJ8Ru7YFSiZ1qee5M_4HALWU=
+kLeqzWAZzmrTuLBz8mb7JjJJT5pFlQa8QTMdcKwayqCcBI1qwbi57pu4tU-Us6Rwhka-dV5m40I=
+f2lfYcGTmUqjhdveu4OrBwvgfpqgx706WjafyRs7rI2UAOe3gWVpDaYIE5tPvVT073O-zvEI4Hs=
+r1ursS0InkqeK0vQAgC46JD2xoW3GaB9VspTNU3iJUU0Zm40zJNhil0PROkrN1N7e5_XMuauNva=
+R-6JSISZvNK-j1BtGu-5-NUMqMA~~'><img src=3D'https://stork-files.oss-cn-beiji=
+ng.aliyuncs.com/images/weibo-32.png' height=3D'16' title=3D'=E6=96=B0=E6=B5=
+=AA=E5=BE=AE=E5=8D=9A' alt=3D'=E6=96=B0=E6=B5=AA=E5=BE=AE=E5=8D=9A'></a>=20
+</div>
+<img src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/img/1blank.png'=
+ height=3D'5'/>
+<div id=3D'stork-paper-2484867658' style=3D'border-left: solid #009fe3;padd=
+ing-left:5px;background:#efefef'>
+<a href=3D'https://www.storkapp.cn/g/8YlP6CSwf_OClIyPMcStufUBkFjoLmRDDt0_q-=
+TK5NvAoBV5knqAevcA8qOujLemBmWdaY5yaTzLRgDDTNbXgbJMz4V7-tZqG0ICvRSBju2V1suNx=
+KS19XOKRdP2b0KRtDkc9cVOmKOPjxpiUYz4tXaoSm_QQcaxeIG9E-uOMr-6svU0e55H2qJVK3rT=
+C0dns_L6SrK6ViazWF3vM3Apr0ZLnYTnrS53Pbt7NKZmnPvgNggNZqQR3u0BbwVk3Wq4uWNDG0G=
+F9tqlgR8aCVSr7B9Wp27W1ZBc5PZEwEI4WNa6k5WfQG3_roHxgJmPqZZT' <span style=3D'p=
+adding: 1px 4px 2px;		  -webkit-border-radius: 3px;		  -moz-border-radius: =
+3px;		  border-radius: 3px;		  font-weight: bold;		  line-height: 24px;		  =
+color: green;		  vertical-align: baseline;		  white-space: nowrap;text-shad=
+ow: 0 -1px 0 rgba(0, 0, 0, 0.25);		  background-color: white; border:1px so=
+lid green'>=E7=9B=B4=E6=8E=A5=E5=88=B0=E6=9C=9F=E5=88=8A=E9=93=BE=E6=8E=A5<=
+/span></a> =C2=A0<a target=3D_blank href=3D'https://www.storkapp.cn/g/knDR7=
+skO9F5HW9tDrTjSaufACEU3Q3pd7PW99T8mPx3kIygbeT_AJ2T7zPOTbms367R6Ucn368B9bGTq=
+OUfYWfW7S5OkzL4TeF0sxwDg2TzBfEpj9ONCUklGnpcdh6lutstAcM6hMEYXsNhTbTrEuma8htX=
+71YPZzVu7Fv2_Zd9Gq-AKyJSk_eY_9qCmrLzkbI3FW6SiFlkzpcozcoP9fJhl1-SfCD5iX4kFzq=
+JgBmkbm3ZTLDu7BA-qT-QRjpDV-iI8OWhXG-oSe9d6r1UwKY-ExUdca-yoSp0vu1-SuKBYSVw0A=
+6dlwbh0hp8wt6_a'>The 'aukward' use of hidden Markov models in a pursuit-div=
+ing seabird: <b>semi-supervised</b> HMMs improve behavioural classification=
+ and energetic inference in auks.</a> by Astrid Dedieu, Sam Cox, =E2=80=A6,=
+ Mark Jessopp (2026) <span style=3D'background:rgba(255,255,0,0.39);'>Mov E=
+col (impact factor: 3.9)</span> <span style=3D'padding: 1px 4px 2px;		  -we=
+bkit-border-radius: 3px;		  -moz-border-radius: 3px;		  border-radius: 3px;=
+		  font-weight: bold;		  line-height: 24px;		  color: #ffffff;		  vertical=
+-align: baseline;		  white-space: nowrap;text-shadow: 0 -1px 0 rgba(0, 0, 0=
+, 0.25);		  background-color: #060;'>1 =E5=8C=BA</span><br>
+<span style=3D'color:#666'>PMID: 42032788 doi: 10.1186/s40462-026-00658-6</=
+span><br>
+<a href=3D'mailto:?subject=3DStork:%20The+%5C%27aukward%5C%27+use+of+hidden=
++Markov+models+in+a+pursuit-diving+seabird%3A+semi-supervised+HMMs+improve+=
+behavioural+classification+and+energetic+inference+in+auks.&body=3DI%27d+li=
+ke+to+share+a+paper+with+you.%0A%0DThe+%5C%27aukward%5C%27+use+of+hidden+Ma=
+rkov+models+in+a+pursuit-diving+seabird%3A+semi-supervised+HMMs+improve+beh=
+avioural+classification+and+energetic+inference+in+auks.%0A%0Dby+Astrid+Ded=
+ieu%2C+Sam+Cox%2C+%E2%80%A6%2C+Mark+Jessopp+%282026%29%0A%0Dhttps%3A%2F%2Fw=
+ww.storkapp.me%2Fpubpaper%2F42032788%0A%0DPowered+by+Stork%2C+new+publicati=
+on+alert+tool%3A+https%3A%2F%2Fwww.storkapp.me'><img src=3D'https://stork-f=
+iles.oss-cn-beijing.aliyuncs.com/images/em-32.png' height=3D'16' title=3D'e=
+mail' alt=3D'email'></a> <a href=3D'https://www.storkapp.cn/g/P4Udp5l7fHWO2=
+XMtPGjvktyaOBe68bwbxtnXX9GJfACeI7QsUvg7g-_l1Jz52I3v12HPx2dWllRyix2rWMlxczGw=
+8BUAxFBr502W5CEqzKrplHal2C54BUDu6Ndyr6sftLkVR_LCCOaP_L_NJ-9YQEYEudchcdkGmbl=
+jhJQqnRI~'><img src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/imag=
+es/we-32.png' height=3D'16' title=3D'=E5=BE=AE=E4=BF=A1' alt=3D'=E5=BE=AE=E4=
+=BF=A1'></a> <a href=3D'https://www.storkapp.cn/g/2jhnmSHRfmIH-vGal8nyf0oKg=
+I15jTWPhmBfDR4zcq3ZcNW42oU9dkgP5ed9wmAjBhclMojjDbNE_OKTQMXMyFUsdPBYrcEmnbk5=
+AwWfGC9gji1TwC5qsXYwF56_prBwy4sDQpDNmopYkSSLruq0Ca3CwKZpSjyQ2fox8Wo7lNYGyuB=
+FfbLdhkgAGLusP68athu6KRAuuGOZHX23f1Sb-Q~~'><img src=3D'https://stork-files.=
+oss-cn-beijing.aliyuncs.com/images/qz-32.png' height=3D'16' title=3D'QQ=E7=A9=
+=BA=E9=97=B4' alt=3D'QQ=E7=A9=BA=E9=97=B4'></a> <a href=3D'https://www.stor=
+kapp.cn/g/Ue_4xRU-bg34D72ka2H5iBn4K3teFQJ-L3HgCG1-bbBNwPM3lq6gve-BiHBttozsr=
+x6CwNACcaKTDap2jD0vz9xQJMYpWgZn6JmRrpRBUHqv9WuRiUGtSt1gc5ZeL6yeaBslX5TjoSos=
+dEDhswEhTQpv_AwcJHzQUiF1_bkrwb5SLUja3uHMe1qF_4yUZCg7kG3X0atuOZHBBT6-3McFaaV=
+9GFAJthvDHgpGOhwi0ZVs37ky87mlS0wUtdCRSlnl0onh3k0s5ji0ETTb8X_5KNKSEEV1GGZ0NV=
+okgPRX0Xbj3-Xt82r1AyiYsUTVqlkcwSEZiqnc2G3wTZXymkrm88FwpmXu8dlEEvWMaCbT6uviv=
+ZEUsZcihSWV_P8nCNnqw22Uaamk-DhujD-rmzadSy55SOxJ97MxYkcwzK2QiMc~'><img src=3D=
+'https://stork-files.oss-cn-beijing.aliyuncs.com/images/qq-32.png' height=3D=
+'16' title=3D'QQ=E5=A5=BD=E5=8F=8B' alt=3D'QQ=E5=A5=BD=E5=8F=8B'></a> <a hr=
+ef=3D'https://www.storkapp.cn/g/isFOD9fj2HQxOrAbwgyX_TNtYSzHaeH9l5ibQQYxMfm=
+0G3xVQaAVONpuc8aOND0fz88UpNB3X63zO86bqOKhEokxu0AErI0ahsGja_XSQQTUDH7lJ5izlY=
+DPXXgY5w61DQMVOYQfEBsMaHBAiyM3zyxjwY_SG4fAER12DkrasmLm6BzEyPYjthexSudMU0WQp=
+m5DI6kOZ9GWWOeNvCsKA_VrkREm-r7qhxJwtlK8_dmRJn9kL9AB3wWyo-KFq86vGB_t0WV4BZdo=
+woX7ZGb1HxT5JlzfZH8mT25KXOWd05FWRM2_NQOLMf1nzMqUt4KkKADHOeocCfsHsC4uFnOHULT=
+Og2I0l4VDPUuDB64-eWuSWgcCTFRocKlxIzALAPWzyUxShGUKiYY19f3l8QinvaamdMItYDLmFY=
+1iqvFjrPk~'><img src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/ima=
+ges/weibo-32.png' height=3D'16' title=3D'=E6=96=B0=E6=B5=AA=E5=BE=AE=E5=8D=9A=
+' alt=3D'=E6=96=B0=E6=B5=AA=E5=BE=AE=E5=8D=9A'></a>=20
+</div>
+<img src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/img/1blank.png'=
+ height=3D'5'/>
+<div id=3D'stork-paper-2484867663' style=3D'border-left: solid #009fe3;padd=
+ing-left:5px;background:#ffffff'>
+<a target=3D_blank href=3D'https://www.storkapp.cn/g/b1Ptx8krpm4k6xvvxPD559=
+IXnVLqN-AgcTETpXnI8y8nzc0bKzRPeBYpuVMtb1K3kbkSjlN24iy3NT82_7XjYBzibRVHUZgyz=
+Qd89Cn8UMs9LjV1-pcSQDdO5TEUD-8JXR3W8_Tbqso3Rc7E0J73jz1zMWqil1zJS-je4mQRGqU~=
+'>LapGAT: A <b>Semi-Supervised</b> Learning Framework for Drug-Target Inter=
+action Prediction.</a> by Lianjun Song, Wei Yuan, Xinyu Pei (2026) <span st=
+yle=3D'background:rgba(255,255,0,0.31);'>Mol Inform (impact factor: 3.1)</s=
+pan> <span style=3D'padding: 1px 4px 2px;		  -webkit-border-radius: 3px;		 =
+ -moz-border-radius: 3px;		  border-radius: 3px;		  font-weight: bold;		  l=
+ine-height: 24px;		  color: #ffffff;		  vertical-align: baseline;		  white-=
+space: nowrap;text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);		  background-colo=
+r: #cec;'>4 =E5=8C=BA</span><br>
+<span style=3D'color:#666'>PMID: 42011802 doi: 10.1002/minf.70028</span><br=
+>
+<a href=3D'mailto:?subject=3DStork:%20LapGAT%3A+A+Semi-Supervised+Learning+=
+Framework+for+Drug-Target+Interaction+Prediction.&body=3DI%27d+like+to+shar=
+e+a+paper+with+you.%0A%0DLapGAT%3A+A+Semi-Supervised+Learning+Framework+for=
++Drug-Target+Interaction+Prediction.%0A%0Dby+Lianjun+Song%2C+Wei+Yuan%2C+Xi=
+nyu+Pei+%282026%29%0A%0Dhttps%3A%2F%2Fwww.storkapp.me%2Fpubpaper%2F42011802=
+%0A%0DPowered+by+Stork%2C+new+publication+alert+tool%3A+https%3A%2F%2Fwww.s=
+torkapp.me'><img src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/ima=
+ges/em-32.png' height=3D'16' title=3D'email' alt=3D'email'></a> <a href=3D'=
+https://www.storkapp.cn/g/5l2pSPwWTHBP_EcoTosXYZY9QtqskWBntG4wMrFoT3W-RQRWO=
+OaL4jMsHJ7pomZognfVx8bHz15ZUtuyIAhlxHtXTykogosJu3A4CUoZvCpwlOOGGkNc-w7Sb2iP=
+ota_t5ZzwwBr8HX2Y85WlH6q-cIHWjGCXXffXdTgm_-xWJc~'><img src=3D'https://stork=
+-files.oss-cn-beijing.aliyuncs.com/images/we-32.png' height=3D'16' title=3D=
+'=E5=BE=AE=E4=BF=A1' alt=3D'=E5=BE=AE=E4=BF=A1'></a> <a href=3D'https://www=
+.storkapp.cn/g/gsa6AEieKrckRLjmAcJX5lV9qJokjlVwlGeVSd-7tQ3PrWPsMkIO3lxYsL51=
+FRjipGgdnLz34aPJiOwZETzHT6mQES1tu7gusNs5QQH_iC-QQsAPLE18p_GU4Uo-WOOeOsKUWOl=
+QNZSFKxJezEwj0HOSFW3Q1KYzYZpaJbilpnDhDMerE1J-uziS7NWOfwqTvzy-7wMGobjVeC_3o_=
+-bpg~~'><img src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/images/=
+qz-32.png' height=3D'16' title=3D'QQ=E7=A9=BA=E9=97=B4' alt=3D'QQ=E7=A9=BA=E9=
+=97=B4'></a> <a href=3D'https://www.storkapp.cn/g/Nkle7FfTrWlfg4pwJ3OACzGO_=
+QHJ_qTH43p66isQw6ZXIbtOJOZAc-fDCBnboBHwKtuDpshRjoyAEcMfaTrPGN9kgOz6M6NJx9Xg=
+HCti74vwLkF3p5JrFiCOwcgXWbBnM5gcQO2hFNZbfaj4zPgKDt66rnyMSNszLQf3di3QZYlToB6=
+RNCpfTTJ7hLugP67wI6-QvH2pq4ICyPe0kLe0P-EHm9eFzgkFqQIFGVw7Kaiohuhr53c9L5G4qW=
+GeCyzt62bRRLvE6qcgeYBNg4Ea2LOp6jRN3ODo-hlhGKrP43yK9V_Jufd-TH6ciaw-YxkT'><im=
+g src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/images/qq-32.png' =
+height=3D'16' title=3D'QQ=E5=A5=BD=E5=8F=8B' alt=3D'QQ=E5=A5=BD=E5=8F=8B'><=
+/a> <a href=3D'https://www.storkapp.cn/g/69COcRpnNQvBh-aePHXRQdYb4W1ARkGl6K=
+7v4vdnxiqcVRAXnuHsUB5bOHgq3cRDqr7PLm1ajgnCttkRnsOKbMzh_-cFpmRLGXtsTCCOfPjmd=
+UPZXdBV3y_Kh5W37JggMovRMhIhAzyh2yzkioVw_BX05hZbo_YV15yv-wFUtoj_I9KBY7kXjqfg=
+H13fe4fb8LGX2hjtq2A6QyRwz7g7nDCaRy2dJSuhkDM6P3XwnchrdhovPIHNJZBDketPoN2A63k=
+rs5z5DHlKWzkwii9f7WTEhVrzi1jsPTAQsaIHONoEZfwMxDLEoL1-xrtuW1Ry'><img src=3D'=
+https://stork-files.oss-cn-beijing.aliyuncs.com/images/weibo-32.png' height=
+=3D'16' title=3D'=E6=96=B0=E6=B5=AA=E5=BE=AE=E5=8D=9A' alt=3D'=E6=96=B0=E6=B5=
+=AA=E5=BE=AE=E5=8D=9A'></a>=20
+</div>
+<img src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/img/1blank.png'=
+ height=3D'5'/>
+<div id=3D'stork-paper-2484867662' style=3D'border-left: solid #009fe3;padd=
+ing-left:5px;background:#efefef'>
+<a href=3D'https://www.storkapp.cn/g/fSgD9zAb4lRW-q2E4popSkFaZIrXWiK7vJ9qXX=
+-Hqd2PvXgoteoIUI_qTYkHkDx_G7X931QxhbrrkzKWsu5r5hfNFeYAnKzTjOBsDYa539ZUPNk-K=
+hSivyskDD6MBXDeT-5cnPJEhu4KxjqQabf6LMy33W8xmc5IqEmGY6CxTdPEGHLJ_FrlfuKM48br=
+oABmSucTKUOFrQrXHtgee9smnWA0FHJc1J96_ieYsLtCPWE_nxG2YvEwJYembqh4gkoVVPLovNn=
+KiTRzsAoaKYSLhdmbk-_z_9KiiHNmXGDkgHfV5lO_9IrqJR9ebZHUbgH4' <span style=3D'p=
+adding: 1px 4px 2px;		  -webkit-border-radius: 3px;		  -moz-border-radius: =
+3px;		  border-radius: 3px;		  font-weight: bold;		  line-height: 24px;		  =
+color: green;		  vertical-align: baseline;		  white-space: nowrap;text-shad=
+ow: 0 -1px 0 rgba(0, 0, 0, 0.25);		  background-color: white; border:1px so=
+lid green'>=E7=9B=B4=E6=8E=A5=E5=88=B0=E6=9C=9F=E5=88=8A=E9=93=BE=E6=8E=A5<=
+/span></a> =C2=A0<a target=3D_blank href=3D'https://www.storkapp.cn/g/iJjCe=
+DPIeNPeftV0UfBtpx3qd8fXTyU5OeryDQD-G4HSG9zPN0IkmDUoFwZ4jckRNfloCpmVke_PfJcC=
+O9paEMxF7UKd7g1hm5Qt0FD68oEIp7yiRzlwCduv6tVzbbvJ0npNEGy50BRvcC-pkhnj3DjffE9=
+VynYxEZBhML61NBr7cMQw5BhIX-RQ1k4zae9upCFpT7LAs5_20TqlSNFmNUs_AqJxb907fGvObX=
+IwCsvXrkznw0UucoRofhIWpNU4dlj50UexMhQdMs5Aq5aL1beG-ppTo2acoHbWSeviR_dKdj760=
+yTdJjUI_b0JNZdp'><b>Semi-supervised</b> Learning with Online Knowledge Dist=
+illation for Skin Lesion Classification.</a> by Siyamalan Manivannan (2026)=
+ J Imaging Inform Med<br>
+<span style=3D'color:#666'>PMID: 42014611 doi: 10.1007/s10278-026-01965-5</=
+span><br>
+<a href=3D'mailto:?subject=3DStork:%20Semi-supervised+Learning+with+Online+=
+Knowledge+Distillation+for+Skin+Lesion+Classification.&body=3DI%27d+like+to=
++share+a+paper+with+you.%0A%0DSemi-supervised+Learning+with+Online+Knowledg=
+e+Distillation+for+Skin+Lesion+Classification.%0A%0Dby+Siyamalan+Manivannan=
++%282026%29%0A%0Dhttps%3A%2F%2Fwww.storkapp.me%2Fpubpaper%2F42014611%0A%0DP=
+owered+by+Stork%2C+new+publication+alert+tool%3A+https%3A%2F%2Fwww.storkapp=
+.me'><img src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/images/em-=
+32.png' height=3D'16' title=3D'email' alt=3D'email'></a> <a href=3D'https:/=
+/www.storkapp.cn/g/1S4xYn9fvyQHhDa0xJ9f6BR6fzHwEF7pg1LYfRKm_o_7-Ujisyc3YeFI=
+vQEFL6AKz6hfrAvLlGLeTJUx5vF1FqOyjKSmDe_VCOZhwWwuA2fxMLVWPeO2HFQTB3tHKfL7YSr=
+bV_nFFMfwfjPEKzqUqlhPEbx27pnH5e8MElYWbs0~'><img src=3D'https://stork-files.=
+oss-cn-beijing.aliyuncs.com/images/we-32.png' height=3D'16' title=3D'=E5=BE=
+=AE=E4=BF=A1' alt=3D'=E5=BE=AE=E4=BF=A1'></a> <a href=3D'https://www.storka=
+pp.cn/g/GILOYtS7u8rEJUMYU7TNQmZIyioY3sufy8lL551LW727zt42iouwx-6lIm9SxkGeBPv=
+7abhIRWMCj79F9sigrDz948iiF2bYdX1aHcqpIhYmpjYAKkaOd2HyP0S1TWxTdMv7etyh4rclEM=
+u0SXjg_1z7otW06TDF6lSKK9JMbfCNHf2E3_oZuyoPSpZp7NaD8wlxiD7KBW5pzafpITNodg~~'=
+><img src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/images/qz-32.p=
+ng' height=3D'16' title=3D'QQ=E7=A9=BA=E9=97=B4' alt=3D'QQ=E7=A9=BA=E9=97=B4=
+'></a> <a href=3D'https://www.storkapp.cn/g/-2_2BeJH9TpcLyD7gZyQwXLZsUcqjEw=
+GWCse_sX8nS3grbg24Kp6_cg0uibgUaaJylrXb7Mz7MD6KD9nHu7U5GAXvsXJx8Bj8wmYBWXuwS=
+K6UiX3u9HssOuuVpOojdFUVl7XxLvT2r09THwdoJ8P6I_ZZTXikyaFzF6jy9KAvXl60bWS9kZBz=
+aeWQO2ODaivyTvJU0FCdm96BjeOYieqZ7vnb7C3o8lY7uwMUX1CR1QLz_FRaMNLyfMl61QMfclG=
+mdcwOuHxQZQeA8N6Sct4JvwYkrzT7O7JpLiOegO4j_RtnuONt5r7FP3gVUO3GZSo'><img src=3D=
+'https://stork-files.oss-cn-beijing.aliyuncs.com/images/qq-32.png' height=3D=
+'16' title=3D'QQ=E5=A5=BD=E5=8F=8B' alt=3D'QQ=E5=A5=BD=E5=8F=8B'></a> <a hr=
+ef=3D'https://www.storkapp.cn/g/678D2I68iPaAKb8tWIPkBTw6q6PbkU71qE-2WMExKkT=
+SGVe0hssKlDvJLg3kQNLUgddbwXgqTMHsPDNF1n7QWd1k-8vTF8nMYYf1HcLAmYrOFk0C5rjXAt=
+sySg1t5wsHDebSouwmbvEoJecMUG1uV03MYz5as9IwIMnkFsJ4vLs8wPrk3Ik5sTuMUv9Ige6sD=
+q9bTUVE_V51nfw2MdeCJKVouLR8udiCSfdFpsWv7P40OttWetWu1mHcvpHIhrH8_NLwx2xtwE4A=
+9FRX2gSrbU1QLYxCxwAUCVQ5AQ4TgMQ61IDOGW8NAQuddSm8fYAD'><img src=3D'https://s=
+tork-files.oss-cn-beijing.aliyuncs.com/images/weibo-32.png' height=3D'16' t=
+itle=3D'=E6=96=B0=E6=B5=AA=E5=BE=AE=E5=8D=9A' alt=3D'=E6=96=B0=E6=B5=AA=E5=BE=
+=AE=E5=8D=9A'></a>=20
+</div>
+<img src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/img/1blank.png'=
+ height=3D'5'/>
+<hr class=3D'hr'>
+<div class=3D'adv_feature_block'>
+<div class=3D'stork_adv_title'>=E6=96=87=E7=8C=AE=E9=B8=9F Stork =E9=AB=98=E7=
+=BA=A7=E5=8A=9F=E8=83=BD=EF=BC=8C=E6=97=A9=E6=97=A5=E5=8F=91=E5=A5=BD=E6=96=
+=87=E7=AB=A0=E7=9A=84=E5=BF=85=E9=80=89=E5=B7=A5=E5=85=B7=EF=BC=8C=E6=AC=A2=
+=E8=BF=8E=E9=80=89=E8=B4=AD=E3=80=82<a href=3D'https://www.storkapp.cn/g/e0=
+sE8gudONZ_F_aFt_SqdyHsCHlyeCyLV9saFnKaeneFmW73T6oqzRedDqT9NDMhBIO3DYFk1fp6H=
+7Ceeowz9gt5dedlqi1V59R-zT9W_GyTmlIA1m63vK8skkhqjGj2Kn01uIBNf3H9D5dq420YfQ~~=
+'>=E4=BC=9A=E5=91=98=E5=92=8C=E9=9B=86=E4=BD=93=EF=BC=88=E5=AE=9E=E9=AA=8C=E5=
+=AE=A4=EF=BC=89=E4=BC=98=E6=83=A0</a></div><p><table border=3D'0' style=3D'=
+text-align:start'>
+<tr><td width=3D'60'><a href=3D'https://www.storkapp.cn/g/WIno3tMZHem-F4Qzn=
+mkENvGPJvj3euUF5V6FtmNXldduvvRZXSbCVfPSKra6bAAxRDktLbC6Ka3hb019sEfST4apnGUV=
+nSqG3yeve4LOoYY~'>
+<img width=3D'45' src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/ai=
+paper/aipaper_128.png'>
+</a>
+</td><td><a href=3D'https://www.storkapp.cn/g/aS8TKWoVfYQw96kfWewdCglzIkUBj=
+GvKmI98UFpCrqBHvcAshycGv6ngMkQGmgCcMYliRU087qxfhW_tjzOqb2fDc84XdlMd7ArAWn58=
+yhA~'>=E6=99=BA=E6=96=87</a><br><span>5=E5=88=86=E9=92=9F=E5=86=99=E5=87=BA=
+=E9=AB=98=E8=B4=A8=E9=87=8F=E8=AE=BA=E6=96=87=EF=BC=8C=E7=9C=9F=E5=AE=9E=E6=
+=96=87=E7=8C=AE=E5=BC=95=E7=94=A8</span></td></tr>
+<tr><td width=3D'60'><a href=3D'https://www.storkapp.cn/g/1KXKdIHo9ZxhkZ4h9=
+_qhhd2nTAxOmLGpZVQwn_xICed7ttjbN5iXne4bHNcq4ZrmqGkORmawxTNeBk8grI0qOMOvjghH=
+GaOPKJPLOTq1WqM~'>
+<img width=3D'45' src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/ai=
+figure/aifigure128.png'>
+</a>
+</td><td><a href=3D'https://www.storkapp.cn/g/P0DuSSBPoKekRjvOpHl6_dX-FeUuq=
+0Am1KMIvslr1OIc6h40GFxz8JtYg2CI07whvDt1w2e9Vy0oZo5cmsiA06X9zg_uDnBexiocgVTY=
+h7M~'>=E6=99=BA=E5=9B=BE</a><br><span>AI=E7=94=9F=E6=88=90=E7=A7=91=E5=AD=A6=
+=E8=AE=BA=E6=96=87=E5=9B=BE=E8=A1=A8</span></td></tr>
+<tr><td width=3D'60'><a href=3D'https://www.storkapp.cn/g/APRNZC2DzwfJd7XIK=
+f18UWXOQ6pwXNjQQAARdcuvFeAFTseNw7WcyyadyJuBBmDuepiekj3gQ99fkWp43W-OVIrQmP9A=
+3VLypC3WD6oXGx0~'>
+<img width=3D'45' src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/wr=
+iteassistant/writeassistant_128.png'>
+</a>
+</td><td><a href=3D'https://www.storkapp.cn/g/QxHX7J1H5GIMdclsm0HK0Lb3BZvmF=
+PuKCMpjRCCEzX2XDYIHHntJeYlullKDw3_UejmJfEIZiyM9IaZRbnP-wvN8jMXX_hWiaWtMduTz=
+eKA~'>=E5=86=99=E4=BD=9C=E5=8A=A9=E6=89=8B</a><br><span>=E6=8A=8A=E4=B8=AD=E5=
+=BC=8F=E8=8B=B1=E8=AF=AD=E6=94=B9=E5=86=99=E6=88=90=E5=9C=B0=E9=81=93=E4=B8=
+=93=E4=B8=9A=E7=9A=84=E8=8B=B1=E8=AF=AD=EF=BC=8C=E4=B9=9F=E5=8F=AF=E4=BB=A5=
+=E6=B6=A6=E8=89=B2=E4=B8=AD=E6=96=87=E3=80=82=E6=9C=89 Word =E6=8F=92=E4=BB=
+=B6</span></td></tr>
+<tr><td width=3D'60'><a href=3D'https://www.storkapp.cn/g/lC9ZYybT9GkwlL6Pa=
+gkNbdkbTiVxMp1J4JPUBOvMcITMErLUvuetgINi8pqhTSuBx8s_5TxoykJ5CoYmrhd4qEKCGa2V=
+GyC2YLY4iEykXQs~'>
+<img width=3D'45' src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/ch=
+atpaper/logo_128.png'>
+</a>
+</td><td><a href=3D'https://www.storkapp.cn/g/A8oBunDg8UctIp68Ct0lwUEHMoIwi=
+q5aPzcA5AJNv6Aw03_T4KoPROrvu_QvMj_8WO0qTtdj1njsoZ5x1ex1ISxmsAIoE76TzvtpQirW=
+qjA~'>ChatPaper</a><br><span>AI=E5=8A=A9=E6=89=8B=E5=B8=AE=E4=BD=A0=E8=BD=BB=
+=E6=9D=BE=E9=98=85=E8=AF=BB=E6=96=87=E7=8C=AE=EF=BC=8C=E5=9B=9E=E7=AD=94=E6=
+=82=A8=E7=9A=84=E9=97=AE=E9=A2=98</span></td></tr>
+<tr><td width=3D'60'><a href=3D'https://www.storkapp.cn/g/IzB2j2GXz3rkeIesA=
+RyeU1ObnB84xuZ8ROuNVX-qWlGyCsj5g1_2W8O1IKmheevkW5P0_ji5rjAadfS2i5KMPibWIfAM=
+lY9fHUg-BeDXD0E~'>
+<img width=3D'45' src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/tr=
+uecite/logo128.png'>
+</a>
+</td><td><a href=3D'https://www.storkapp.cn/g/IWLaps4DdbxMFkgu6g4y_AyPrlMFU=
+EhVFm1cFL2VEA1Eq93-ulTo9yvAIcJRTXlJd3yStnEYpJ9fJGkhvwarkX7gWa2wKBnahtiR-_qY=
+-AE~'>=E5=BC=95=E7=BB=8F=E6=8D=AE=E5=85=B8</a><br><span>=E8=87=AA=E5=8A=A8=E6=
+=9F=A5=E6=89=BE=E3=80=81=E5=BC=95=E7=94=A8=E6=96=87=E7=8C=AE=EF=BC=8C=E9=AA=
+=8C=E8=AF=81=E6=96=87=E7=8C=AE=E7=9C=9F=E5=AE=9E=E6=80=A7=EF=BC=8C=E8=A1=A5=
+=E5=85=A8=E5=8F=82=E8=80=83=E6=96=87=E7=8C=AE=E4=BF=A1=E6=81=AF</span></td>=
+</tr>
+<tr><td width=3D'60'><a href=3D'https://www.storkapp.cn/g/tLzClPl3ECdfiRFC6=
+ssX2yxCdCZVwPcpdi6Gp5OUuw6sDktzBbikyU-hfPJkqRc-eKMP0PxRQGgdJlmpWO-IP3CMCkaC=
+NIel8g02XNZBqDQBRgTrOCD3wliyEmjsbSsb'>
+<img width=3D'45' src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/im=
+ages/Stork_pro.png'>
+</a>
+</td><td><a href=3D'https://www.storkapp.cn/g/vxBK1V16fMc4Q4XEBG-kz4wcqWnny=
+YxMJXYMh-LNy5XubrVQE4_q_EAefbqYzYo0GVBOC-NslcadfF9FkPTWUF8iyxfR20emEPUtAUM-=
+vLfP8wWJC2Nktbh3876HSOWT'>=E6=96=87=E7=8C=AE=E9=B8=9F Pro</a><br><span>=E6=9B=
+=B4=E5=A4=9A=E5=85=B3=E9=94=AE=E8=AF=8D=E3=80=81=E5=8F=AA=E6=8E=A8=E9=80=81=
+=E5=A5=BD=E6=9C=9F=E5=88=8A=E6=96=87=E7=8C=AE=E3=80=81=E7=B2=BE=E7=BB=86=E8=
+=BF=87=E6=BB=A4=E3=80=81=E4=BF=9D=E5=AD=98=E6=96=87=E7=8C=AE=E3=80=81=E5=AF=
+=BC=E8=AF=BB</span></td></tr>
+<tr><td width=3D'60'><a href=3D'https://www.storkapp.cn/g/4VMIOR-JlEXteLScR=
+teTjvP37eNvpDUpPy7W4mXukVB7v8zrrFvatE-R93CZiXerCPG3WQyOjLbjzLfSn9vsAKHS3R0U=
+Q-vpJi45asOEYY1hnF4O7AelRlBArkHhMQVjioMOH7I1lqu2pRubYrNDiQ~~'>
+<img width=3D'45' src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/im=
+ages/translate.png'>
+</a>
+</td><td><a href=3D'https://www.storkapp.cn/g/V138RWc8tnQfG8P7iIeuT0dHD34Fj=
+5m76Bn3leacudCSepn6LiuXV_yKvEDBEP4AyTjQAz-QICHyHsV5wwhNWaP9lHB8hyCiB3zXm3gG=
+1mYuYvVYpk0ueLY60zBBioquyHeZ2OJ_-vEA9__k57WBuQ~~'>=E9=82=AE=E4=BB=B6=E6=96=87=
+=E7=8C=AE=E4=B8=AD=E8=8B=B1=E5=AF=B9=E7=85=A7</a><br><span>=E6=8E=A8=E9=80=81=
+=E7=9A=84=E9=82=AE=E4=BB=B6=E9=87=8C=E7=9A=84=E6=96=87=E7=8C=AE=E8=87=AA=E5=
+=8A=A8=E7=BF=BB=E8=AF=91=E6=88=90=E4=B8=AD=E6=96=87</span></td></tr>
+<tr><td width=3D'60'><a href=3D'https://www.storkapp.cn/g/SgyljW_zWFsRmplrV=
+duEptV4NssxK12FQF9kqRVa44MsolkYA6XWjMFjLeaQGo365ATCJiwI13wTUbb-ekgWLDw_xHat=
+xcZElfnrEuoOBPCzUfl0q5h0O2Y-_1tIr0oL'>
+<img width=3D'45' src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/im=
+ages/nihgrant.png'>
+</a>
+</td><td><a href=3D'https://www.storkapp.cn/g/paAWJK4ts9HvMNgsGblNFwJ0gx_GL=
+1OJVKY5vosovnlt3d0QuiYj6G-Scwxl-Ag38-zqZaCfhkZ75-7kYMI05As2_QQ8W-7lgCSaPzps=
+tA8YncJNhfLSveyRFlddwcnJ'>NIH=E7=BB=8F=E8=B4=B9=E6=95=B0=E6=8D=AE=E5=BA=93<=
+/a><br><span>=E4=B8=BA=E8=87=AA=E5=B7=B1=E7=94=B3=E8=AF=B7=E5=9F=BA=E9=87=91=
+=E6=89=BE=E7=81=B5=E6=84=9F</span></td></tr>
+<tr><td width=3D'60'><a href=3D'https://www.storkapp.cn/g/MEpyA-M8WmagEHRpX=
+AA32gW1JPMNtDPJJRzh1AFXQUM71tENyHG4IDGT76-vYlogmloeQABs7p4J8Dc7j5t-94tDSq_5=
+1sVNuXguYPmUkOti7hzhjDENYcq5_3jNtidOTQ5U-5znNLCRMoAHUZ197A~~'>
+<img width=3D'45' src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/im=
+ages/pubmed_cn.png'>
+</a>
+</td><td><a href=3D'https://www.storkapp.cn/g/kYi77smKhJrftYmmX7uatW_MyLsEv=
+rIwyXJ0rP0exuPtX0dU2sVDYxkSOICXV_Y3c0m5_vtjSD5ROFdjJCO3jP-HKAg66bYUdfwcINJ6=
+VGDWhiEaTVayreJzb-zIZoyTdPPmL5vM8xawjkdMYL7pbQ~~'>PubMed=E4=B8=AD=E8=8B=B1=E5=
+=AF=B9=E7=85=A7=E7=89=88</a><br><span>=E6=90=9C=E7=B4=A2PubMed=EF=BC=8C=E8=87=
+=AA=E5=8A=A8=E7=BF=BB=E8=AF=91=E6=88=90=E4=B8=AD=E6=96=87</span></td></tr>
+<tr><td width=3D'60'><a href=3D'https://www.storkapp.cn/g/QrzdX9LhE6v4TOA8c=
+7qOug-0ZQqhKsEfT8ivLZPWJi5gvRyBFiVljCDGsVBULGilWcmzR7fVc2V1NZt-LGolyJwYj_0P=
+agvKeHTvVzBs_t8ycXwIz1qpfghef3iUhvrv'>
+<img width=3D'45' src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/me=
+ta/logo.png'>
+</a>
+</td><td><a href=3D'https://www.storkapp.cn/g/N4MdTrGnU-yWJmM_HE1EqSNNQvcfU=
+kIAeoELCFmfs67e3M7GoPFZfdsgt559wP8VioLLdK8cWOxSbVd3GJoETl33qGyrtJ_HfzLQslHw=
+Pe-C_GAZZsuTjdSNu0aZCWBS'>=E5=A4=A7=E5=88=86=E6=9E=90</a><br><span>=E5=87=A0=
+=E5=88=86=E9=92=9F=E5=88=86=E6=9E=90=E5=87=A0=E5=8D=83=E7=AF=87=E6=96=87=E7=
+=8C=AE=EF=BC=8C=E9=B8=9F=E7=9E=B0=E4=B8=80=E4=B8=AA=E9=A2=86=E5=9F=9F</span=
+></td></tr>
+<tr><td width=3D'60'><a href=3D'https://www.storkapp.cn/g/ldKgxsAWnqLBYo1FW=
+BYRD0tYfn7IKaihlzM6l-I_Mdih6PQuxUqrRD34b8TjQw3zwpxQmKffEFnUFRr5af3kuxFBVfM8=
+FCCaG7dfV9x87NNdnFFebjF89eWeCXjmvAotZxi95C-L3URlrna4IOp5YQ~~'>
+<img width=3D'45' src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/go=
+ogle_scholar/logo.png'>
+</a>
+</td><td><a href=3D'https://www.storkapp.cn/g/R69M6s3NoNFR2z3VcdJzIQz4uRAdq=
+NMV_PyDpKMx-uXgSA5uW66CSiFi2fuTzjsEO9IDYYLm7nBK16x5a80DsDa8QUktSCewKygQdCm5=
+6AWjxIO-sVOnnOKzeZgjVq-CDceO6ZMsDROZP_I-rTTXNg~~'>=E6=B5=81=E7=95=85=E8=B0=B7=
+=E6=AD=8C=E5=AD=A6=E6=9C=AF</a><br><span>=E6=96=B9=E4=BE=BF=E6=90=9C=E7=B4=A2=
+=E8=B0=B7=E6=AD=8C=E5=AD=A6=E6=9C=AF</span></td></tr>
+<tr><td width=3D'60'><a href=3D'https://www.storkapp.cn/g/ggqEB-KR3d41nkITJ=
+rQZEISLM-rzbPwo6-lLF9gIl7oPIMtidU1v0QGg5-syHgWPvmhZ5Whpgiw3WPg9noiDwnExmMAw=
+QNgBmMugG58VwgRaoK0l7vZWoWTTSTCOPxBoli2n-u23-UAQ0z-I-jy1OA~~'>
+<img width=3D'45' src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/ci=
+tenet/logo.png'>
+</a>
+</td><td><a href=3D'https://www.storkapp.cn/g/AnW1-_JSy8HjSU90ax4r2gphmL1pd=
+z721izG_i_ZLdeh70zgGXImW1fvp0YYX6jJS1Hgpmi3l9T6wNScC8oDEkkfTNaocyZRLWuCXwZB=
+tqtO6TxoyAJIcl7wTfB5zp20Gow_N1G-6IAhaXJGoMSqwA~~'>=E6=96=87=E7=8C=AE=E5=BC=95=
+=E7=94=A8=E7=BD=91=E7=BB=9C</a><br><span>=E6=A0=B9=E6=8D=AE=E6=96=87=E7=8C=AE=
+=E5=BC=95=E7=94=A8=E7=BD=91=E7=BB=9C=E5=8F=91=E7=8E=B0=E7=BB=8F=E5=85=B8=E6=
+=96=87=E7=AB=A0</span></td></tr>
+<tr><td width=3D'60'><a href=3D'https://www.storkapp.cn/g/ZXWOwKNl7vhD_PE_r=
+DyPhkT2qAazQGGZQbY5gIt8rHAdH-S1PGvfTcFB02TQyqPOdvKgzxvrWwtHuyLslJAUvQUd1Uf0=
+e5gDFeF5rS3u9R5bYocNxpcsmUhGdOtQRDdTMmHdlVxXrJjZEGIq0INsNg~~'>
+<img width=3D'45' src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/ma=
+rketing/templates/Stork1/preprint_logo.png'>
+</a>
+</td><td><a href=3D'https://www.storkapp.cn/g/tZt50dawzp8qgjsa4C8DOMG2XgbV7=
+75XbCvGZoQTHMvw7A84TP_-glukOYZnH-mNSgNHdNfgVq4ngodFnWxkLUTso_9kg9xFIz4aigE3=
+2k4UcR2GUffobLFW-LSIezHPEA5j4CokiX4wi4JGa6j93A~~'>=E9=A2=84=E5=8D=B0=E6=96=87=
+=E7=8C=AE=E6=8E=A8=E9=80=81</a><br><span>=E6=9B=B4=E6=97=A9=E5=9C=B0=E4=BA=86=
+=E8=A7=A3=E6=96=B0=E6=96=87=E7=8C=AE</span></td></tr>
+<tr><td width=3D'60'><a href=3D'https://www.storkapp.cn/g/40WY9yKZ_lzt2habo=
+FhRSwcWHeDJMu2LunFtFVJoxn2i7xhL8aJsj1ACD-YusgDoumq9UwgzgPxlg4c-IirwuA4jSDI5=
+jvbi6qaGFz_UY2LiTx43C1olPcKDzjBCWSw7awsiCYwXWKw55ZAjCu80Lg~~'>
+<img width=3D'45' src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/se=
+ntence/sentence_sea_256.png'>
+</a>
+</td><td><a href=3D'https://www.storkapp.cn/g/7ukykHY3sCO3DE_MB2zMJ1DfpFztN=
+DmxCRrkBHiyPsfYDpjDwqjJMDcfeYBDao65ttt8OXu-5uRf8ruEHfUzSkcapDP40eOBy_tdPTm4=
+gQUAvggdW1LvQNLzoVTNIZNTYaJSCWrMWcFU6v5iVGTLpQ~~'>=E5=8F=A5=E6=B5=B7</a><br=
+><span>=E5=BA=9E=E5=A4=A7=E7=9A=84=E5=8F=A5=E5=AD=90=E6=95=B0=E6=8D=AE=E5=BA=
+=93=E5=B8=AE=E4=BD=A0=E5=86=99=E8=AE=BA=E6=96=87</span></td></tr>
+<tr><td width=3D'60'><a href=3D'https://www.storkapp.cn/g/tyVe4cX1L0Vadsmnr=
+kHh8OHWQnsJ_Tbx4SrvFyMlRFP5f5sueLx5KECJeObKt-FLh_hsoT2rO6RqgINZh6X1DXLOlg0h=
+z2QLefrA4iba_KMZstTxUxtei4LoRDI_gRUVQkA2lGLfQcEMU4nOXIP1LQ~~'>
+<img width=3D'45' src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/po=
+dcast/logo_128.png'>
+</a>
+</td><td><a href=3D'https://www.storkapp.cn/g/5CBmcWtlrAxErHaY_ZYY49D-denVm=
+OxbbdJ1EaN-ccvN82IvIgX8aN_ZFPsUD_QizaEjCqajLHT-g1w_i-9sz8mWA0WZpyD9PEFRXJDH=
+En8iwQzCjoOMQhyr5QKlvMHwqWX3e6CfaZvcuJ3_YWyv7A~~'>=E5=90=AC=E6=96=87=E7=8C=AE=
+</a><br><span>=E5=8F=AF=E4=BB=A5=E5=90=AC=E6=A0=87=E5=87=86=E8=8B=B1=E6=96=87=
+=E9=98=85=E8=AF=BB=E6=96=87=E7=8C=AE=E3=80=81=E5=88=B6=E4=BD=9C=E6=92=AD=E5=
+=AE=A2</span></td></tr>
+<tr><td width=3D'60'><a href=3D'https://www.storkapp.cn/g/j5PXcHi-hO1hgjdm_=
+cTIYQ7KP_cJKQ5gDOrYOoH06UYQsIFq8l_eD1WSY-vbs4k0aZ9u2XN_vkGFwf1zeYMa_y6HKo79=
+S3Phqd-9bRJUATH6whzltw3MS2WOxjORPtvuHzBZcq4G0p7ud96L-9oVig~~'>
+<img width=3D'45' src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/tr=
+anslate/translate.png'>
+</a>
+</td><td><a href=3D'https://www.storkapp.cn/g/iiKZn69G9MyXIKqrtDE9ewFGxCLGP=
+jjaIrzRBDsSxRR-V2vM_6xAhfCWXE4d_0bZYOGPlhePaYuLD-QT4IYdmka8ubgjlrONCjci5nN_=
+DWCAzqdGTLrXxAqc201gPINYrLuq3jEOvg4T9l2YZvrKDg~~'>=E5=85=A8=E6=96=87=E6=96=87=
+=E6=A1=A3=E4=BA=BA=E5=B7=A5=E6=99=BA=E8=83=BD=E7=BF=BB=E8=AF=91</a><br><spa=
+n>=E7=BF=BB=E8=AF=91=E6=96=87=E5=AD=97=E3=80=81PDF=E6=96=87=E4=BB=B6=E3=80=81=
+Word=E6=96=87=E4=BB=B6</span></td></tr>
+<tr><td width=3D'60'><a href=3D'https://www.storkapp.cn/g/R5sF8Ped-qpzARXqV=
+yGMFsWz_2tid9ce_iA1Y4zypE-fdaCUShqcftCjLzISXk_oz0xvZ-9sdzwWmKI2t60EzwfCDeHC=
+OhscesbMfdjL21H5XsCecdPpeH0XyxicXkuTfCIdtOOSOR1swyH_1kXMUw~~'>
+<img width=3D'45' src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/ai=
+journal/aijournal128.png'>
+</a>
+</td><td><a href=3D'https://www.storkapp.cn/g/T9-kHjbfuSr-Asc1tRtxB5qJN7Q1U=
+S5xunrj-Qqcc0LQ35MO4zar0hZk5PhPBjBE954hGbesOb3oFQZAvXhJ_8f3W22EO4jsMpcSN8f6=
+qp0GZ8PlDR4fDyeJDQYf5AQi6nFuiVeWdv5hJWdEZudkOA~~'>=E6=99=BA=E8=83=BD=E9=80=89=
+=E5=88=8A</a><br><span>=E6=A0=B9=E6=8D=AE=E6=82=A8=E7=9A=84=E8=AE=BA=E6=96=87=
+=E5=86=85=E5=AE=B9=EF=BC=8C=E6=99=BA=E8=83=BD=E6=90=9C=E7=B4=A2=E5=92=8C=E6=
+=8E=A8=E8=8D=90=E5=90=88=E9=80=82=E7=9A=84=E6=9C=9F=E5=88=8A</span></td></t=
+r>
+<tr><td width=3D'60'><a href=3D'https://www.storkapp.cn/g/Gu1a5M70S1RFbS18M=
+leOFv-QvlFQ_BsqXLYvo1D9nBLp1KtK0Cg6NdIgQdURJ8sYoqQt-MtJ3PbeZfXBuuz4kfOF-TJZ=
+-Rc9C4WPs46aP7Dexf5Gk224r4KauJceKfBTt9-o90F9BUoDmGGcYv5iAA~~'>
+<img width=3D'45' src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/im=
+ages/reading_guide_logo.png'>
+</a>
+</td><td><a href=3D'https://www.storkapp.cn/g/vfPD6Klz8pCg4oBR1AmcIzLQOps0K=
+ghiMzALz6Kp1o-CgvkK3blAOGjfo05J9iUxS20MZuWYRV4kAlHPKURJmGnYE_S6cpS9N68hlMqE=
+NzdtunPN-rQOCMyNwU5wN-26W0h2eTxdTQsUtAiugpB3Bg~~'>=E6=96=87=E7=8C=AE=E5=AF=BC=
+=E8=AF=BB</a><br><span>=E6=99=BA=E8=83=BD=E6=80=BB=E7=BB=93=E6=8E=A8=E9=80=81=
+=E7=9A=84=E6=96=87=E7=8C=AE=EF=BC=8C=E5=B8=AE=E4=BD=A0=E5=BF=AB=E9=80=9F=E4=
+=BA=86=E8=A7=A3=E6=96=87=E7=8C=AE=E5=86=85=E5=AE=B9</span></td></tr>
+</table></div><p>
+<hr class=3D'hr'><br><b><a href=3D'https://www.storkapp.cn/g/M_XorQw5tGuuHk=
+u7j3YAF-5WK6B7szQRJ-e-Yc_xpEr7H4cJsVoR5T4-389aj-1eHy3yCp6v0h5nAWRmJ34ybSI6a=
+n4usm75oKDZs-RXCcZXX9iG1mZyTfTUANLqc1_dFWgGPOqLUIPdd2PSRierJN8_-JJQF6wL4I7a=
+Gggg-1uFZIiunbVRD93iMlO8-6LQ'>=E5=AF=BC=E5=87=BA=E6=96=87=E7=8C=AE</a> | <a=
+ href=3D'https://www.storkapp.cn/g/OMRZhk4N56CN8r2nru4Y9rGZFz_Zhj8YUL3AaYRS=
+tzsfR-WofbLVpXnkVemLxyXxOjAqdfcitJeYpmk6H8oFJ17bF4IbH3lLi30gQwxvwsPd_vyeIk6=
+_JPB2TQuw4SPs'>=E7=BB=99=E6=9C=8B=E5=8F=8B=E5=90=8C=E4=BA=8B=E6=8E=A8=E8=8D=
+=90=E6=96=87=E7=8C=AE=E9=B8=9F</a> | <a href=3D'https://www.storkapp.cn/g/A=
+JNYvOzAZnChfwfv0Y7F0Of6J3BiZYBZF82JG19o9crbrVYSZhdvG8cT63m_S1jYLyWUMg8VGGVv=
+ssLYfQ97_8s6E6UAkcD--prABRn7ZaQ~'>=E7=AE=A1=E7=90=86=E3=80=81=E6=B7=BB=E5=8A=
+=A0=E5=85=B3=E9=94=AE=E8=AF=8D</a> | <a href=3D'https://www.storkapp.cn/g/k=
+lkzCb9hjIbm5MYp2pYjpeszdwJnkCAzRmEGZyxXkLUZZ49SmnVrJBDTjiIYmeve3jYm2F64x8LX=
+HWdE9h3TTJemfg77SoDgQ9HMq0nUIvqxjk-jRyrmLHMCLf6_rS5WHyrN9MNzX2-wZQ7pM-1VFg~=
+~'>=E6=9B=B4=E6=96=B0=E8=B4=A6=E6=88=B7=E4=BF=A1=E6=81=AF=E6=88=96=E5=AF=86=
+=E7=A0=81</a> | <a href=3D'https://www.storkapp.cn/g/_az8wy65j4vEo0tDFWweBN=
+StfNnIV7AlAsnbSATKMzSrXSh2w0_cZk9oYp-D6ngpTP9doj8bq1VgoVRJwhycfCk7eOw1ORaT2=
+nsQhM6Z6TWFBsfPpzcMPJDxrKD0EP1K_p69sOc1eMsUA_WjAzPvRw~~'>=E6=9B=B4=E6=94=B9=
+=E6=8E=A8=E9=80=81=E9=A2=91=E7=8E=87=E5=92=8C=E6=97=B6=E9=97=B4</a></b><p>
+<br>=E8=A6=81=E6=9A=82=E5=81=9C=E6=96=87=E7=8C=AE=E9=B8=9F=E6=8E=A8=E9=80=81=
+=E6=96=87=E7=8C=AE=EF=BC=8C=E5=8F=AF=E4=BB=A5=E5=88=B0<a href=3D'https://ww=
+w.storkapp.cn/g/0-m3I8hbQVK6qR846sUMc_0YXQkPd2Rs9Pu-1c_w1XdfL4jipqiycFJqgaP=
+VIZW5ZQ4HnlLpo6Bs7Kh4YHEsBq-5haCJFfg8_oVy9rsmCx_2kCsWf4rBMlsnEfvEEGBI3NjRxw=
+e_0ZpF07BNnaDSeg~~'>=E8=AE=BE=E7=BD=AE=E9=A1=B5=E9=9D=A2</a>=EF=BC=8C=E9=80=
+=89=E6=8B=A9=E6=9A=82=E5=81=9C=E3=80=82=E5=A6=82=E6=9E=9C=E8=A6=81=E5=AE=8C=
+=E5=85=A8=E5=88=A0=E9=99=A4=E6=82=A8=E6=96=87=E7=8C=AE=E9=B8=9F=E8=B4=A6=E5=
+=8F=B7=EF=BC=8C=E8=AF=B7=E5=88=B0<a href=3D'https://www.storkapp.cn/g/tA_eE=
+kWKTknfuI2WlBM5WEccj8gfslg-iUYJE9uAsnXZreEsXIbkS3qjTPYoui4Bz9rj44GWLSVD0EIf=
+mq7dxE539qkvdogGK5uPXbvQ2NaKOr5BYEe2ju5xhju3GI8qiNRBcW1_p6BYw9P1Hl-x0g~~'>=E8=
+=B4=A6=E6=88=B7=E4=BF=A1=E6=81=AF=E9=A1=B5=E9=9D=A2</a>=EF=BC=8C=E5=8D=95=E5=
+=87=BB=E5=88=A0=E9=99=A4=E8=B4=A6=E5=8F=B7=E5=B9=B6=E9=80=80=E5=87=BA=E6=8C=
+=89=E9=92=AE=E3=80=82<p>
+<br>=E8=AF=B7=E5=85=B3=E6=B3=A8=E6=88=91=E4=BB=AC=E5=BE=AE=E4=BF=A1=E5=85=AC=
+=E4=BC=97=E5=8F=B7=EF=BC=88<a target=3D'_blank' href=3D'https://www.storkap=
+p.cn/g/Zsts6MIKN2tBV0iSrkflFT6iNHZapvloFkKGD_1iwoDIQs0AdnARLyL9l4ngvvlNDbw0=
+41MGPAo--Qo5aZui2xgZLaSjvYj0bgzWCn91deifyJ_BmrRJ0MLEHVBnEYGE'>=E5=8F=AF=E4=BB=
+=A5=E9=A2=86=E5=8F=96=E4=BB=A3=E9=87=91=E5=88=B8</a>=EF=BC=89=E5=92=8C=E5=B0=
+=8F=E7=BA=A2=E4=B9=A6=E3=80=82=E6=88=91=E4=BB=AC=E4=BC=9A=E9=80=9A=E8=BF=87=
+=E8=BF=99=E4=BA=9B=E5=B9=B3=E5=8F=B0=E9=80=9A=E7=9F=A5=E4=BA=A7=E5=93=81=E6=
+=9B=B4=E6=96=B0=E3=80=81=E4=BC=98=E6=83=A0=E4=BF=A1=E6=81=AF=E7=AD=89=E3=80=
+=82<br><div><div style=3D'display:inline-block; margin:10px;text-align:cent=
+er;'><img src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/images/WeC=
+hatOfficial.jpg' height=3D'100' title=3D'=E6=96=87=E7=8C=AE=E9=B8=9F=E5=BE=AE=
+=E4=BF=A1=E5=85=AC=E4=BC=97=E5=8F=B7' alt=3D'=E6=96=87=E7=8C=AE=E9=B8=9F=E5=
+=BE=AE=E4=BF=A1=E5=85=AC=E4=BC=97=E5=8F=B7'><br><span style=3D'display:bloc=
+k; margin-top:5px;'>=E5=BE=AE=E4=BF=A1=E5=85=AC=E4=BC=97=E5=8F=B7</span></d=
+iv><div style=3D'display:inline-block; margin:10px;text-align:center;'><img=
+ src=3D'https://stork-files.oss-cn-beijing.aliyuncs.com/images/xiaohongshu.=
+jpg' height=3D'100' title=3D'=E6=96=87=E7=8C=AE=E9=B8=9F=E5=B0=8F=E7=BA=A2=E4=
+=B9=A6' alt=3D'=E6=96=87=E7=8C=AE=E9=B8=9F=E5=B0=8F=E7=BA=A2=E4=B9=A6'><br>=
+<span style=3D'display:block; margin-top:5px;'>=E5=B0=8F=E7=BA=A2=E4=B9=A6<=
+/span></div></div><p>
+<br>=E5=95=86=E4=B8=9A=E5=90=88=E4=BD=9C=E8=AF=B7=E6=9D=A5=E4=BF=A1=EF=BC=88=
+support@storkapp.me=EF=BC=89<p>
+<img src=3D'https://www.storkapp.cn/trackOpen.php?id=3D494201&eid=3D1538028=
+35'><p>
+<img src=3D'https://www.google-analytics.com/collect?v=3D1&tid=3DUA-6924145=
+8-1&cid=3D494201&t=3Devent&ec=3Demail&ea=3Dopen&el=3DOpenEmail-zouziyang200=
+1@163.com&dp=3D%2Femail%2Falert&dt=3DStork has brought you 10 new publicati=
+ons for semi-supervised etc'><img src=3D"https://ea.pstmrk.it/open?m=3Dv3_1=
+.HNDBmjzd_n4cCuCO5umXPg.c4M5A1bHjNi-0hw43QLf06RWgfeXdqqCu2Y3gwoeyqUjFlOXrGg=
+UKGUvOol2uAn2rE1uZKI8jIo37YidPaMleskqBGQa50_2mP6qD1jud8J4Gi65sbh8xlnQ1GAOXe=
+gPfsYTM4mI4f6SK7Kr34hIihapVaEULqO7bGCmpeDeTHxaUe4WE4b7sz8Ub6KebmkSKjkzid4or=
+N5pvhsZf_pdDZ9uVKgFNapFiOkN2Qa9qNoaodGMKR0HLXAlGkm67AMF5qOLOa5v0V77OnbTIGaP=
+dO7bqlo5XWbeU1jDjJli4s2hdQJ54Pzg4soD0SxRBl9tTl3h4Wa7xaZo3WupfBdrMnHFWjS7ror=
+kEl6fb5kVhcv6RBWV9-r5S58QOMs719H0uJoSiu7IaKmUUEK_JCO58UrsN8nmSx1iMEe7I-scFx=
+B_7bxpEI-kuU3id_6Z0VeTx94fevzBzZsOYGaF9HW3GGy2jg_8pNWDCzMFX1Oh5F17Zlo7Bc88K=
+_5L5rCsJ-MuHEcOU93oY5gZtMmZT8cC2CU0uhs8Rr41_xst0qaWta4" width=3D"1" height=3D=
+"1" border=3D"0" alt=3D"" />
+
+--mk3-65c9c338cabf42a890942a6a15444cc0--
