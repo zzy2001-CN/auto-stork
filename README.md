@@ -1,6 +1,6 @@
 # auto-stork
 
-Daily automation for reading Stork email digests from a 163 mailbox, filtering SCI/JCR Q1-Q2 papers related to semi-supervised medical image segmentation, and archiving the results as Markdown.
+Daily automation for reading Stork email digests from a 163 mailbox, searching OpenAlex and Semantic Scholar, filtering papers related to semi-supervised medical image segmentation, and archiving the results as Markdown.
 
 ## GitHub Secrets
 
@@ -8,6 +8,8 @@ Create these repository secrets before enabling the workflow:
 
 - `MAIL_USERNAME`: your 163 email address.
 - `MAIL_AUTH_CODE`: your 163 client authorization code, not your web login password.
+- `OPENALEX_API_KEY`: optional OpenAlex API key.
+- `SEMANTIC_SCHOLAR_API_KEY`: optional but recommended Semantic Scholar API key.
 
 The default IMAP endpoint is `imap.163.com:993` over SSL.
 
@@ -21,13 +23,25 @@ $env:MAIL_AUTH_CODE="your-client-auth-code"
 .\.venv\Scripts\python -m stork_mailer.cli --dry-run
 ```
 
+Run only the free literature APIs:
+
+```powershell
+.\.venv\Scripts\python -m stork_mailer.cli --sources openalex,semantic_scholar --dry-run
+```
+
 Parse a saved Stork email sample without connecting to IMAP:
 
 ```powershell
 .\.venv\Scripts\python -m stork_mailer.cli --sample samples\sample_stork_email.html --dry-run
 ```
 
-Without `--dry-run`, reports are written to `docs/stork/YYYY-MM-DD.md`. If no matching papers are found, no report is written.
+Without `--dry-run`, reports are written to `docs/stork/YYYY-MM-DD.md`. If no matching papers are found from any enabled source, no report is written.
+
+## Search Configuration
+
+Search settings live in `config/search.yml`.
+
+The default search window is 7 days, and each source retrieves at most 20 candidates for each query. OpenAlex and Semantic Scholar records do not include reliable SCI/JCR quartiles, so their quartile is reported as `Unknown`.
 
 ## GitHub Actions
 

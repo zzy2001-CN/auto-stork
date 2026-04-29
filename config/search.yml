@@ -1,0 +1,25 @@
+lookback_days: 7
+per_query_limit: 20
+sources:
+  - stork
+  - openalex
+  - semantic_scholar
+queries:
+  - semi-supervised medical image segmentation
+  - weakly supervised medical image segmentation
+  - scribble supervised segmentation
+  - pseudo-label medical image segmentation
+include_keywords:
+  - semi-supervised
+  - semisupervised
+  - semi supervised
+  - weakly supervised
+  - scribble
+  - pseudo-label
+  - pseudo label
+  - medical image segmentation
+  - medical image
+  - segmentation
+  - mri
+  - ct
+  - ultrasound

@@ -7,6 +7,8 @@ from typing import Iterable
 
 from bs4 import BeautifulSoup
 
+from stork_mailer.models import LiteratureItem
+
 
 RANKING_RE = re.compile(
     r"\b(?:JCR\s*)?Q\s*([12])\b|SCI\s*([一二12])\s*区|(?:中科院|CAS)\s*([一二12])\s*区",
@@ -74,6 +76,25 @@ def parse_stork_digest(content: str) -> list[Article]:
             articles.append(parsed)
 
     return dedupe_articles(articles)
+
+
+def parse_stork_digest_items(content: str) -> list[LiteratureItem]:
+    return [article_to_item(article) for article in parse_stork_digest(content)]
+
+
+def article_to_item(article: Article) -> LiteratureItem:
+    return LiteratureItem(
+        title=article.title,
+        source="Stork Email",
+        quartile=article.ranking,
+        innovation=article.innovation,
+        venue=article.journal,
+        doi=article.doi,
+        abstract=article.abstract,
+        matched_keywords=matched_topic_keywords(
+            " ".join(value for value in (article.title, article.abstract, article.journal) if value)
+        ),
+    )
 
 
 def html_to_text(content: str) -> str:
@@ -216,6 +237,11 @@ def is_relevant_article(article: Article) -> bool:
         )
     )
     return has_semi_supervised and has_medical_segmentation
+
+
+def matched_topic_keywords(text: str) -> tuple[str, ...]:
+    lower = text.lower()
+    return tuple(keyword for keyword in TOPIC_KEYWORDS if keyword in lower)
 
 
 def summarize_innovation(text: str, max_sentences: int = 2) -> str:
