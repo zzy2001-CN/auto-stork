@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import email
+import imaplib
 import os
 import sys
 from datetime import date
@@ -39,31 +40,7 @@ def main(argv: list[str] | None = None) -> int:
     stork_messages = []
 
     if "stork" in enabled_sources:
-        username = os.environ.get("MAIL_USERNAME")
-        auth_code = os.environ.get("MAIL_AUTH_CODE")
-        if not username or not auth_code:
-            print("MAIL_USERNAME and MAIL_AUTH_CODE are required for stork source.", file=sys.stderr)
-            return 2
-
-        host = os.environ.get("IMAP_HOST", "imap.163.com")
-        port = int(os.environ.get("IMAP_PORT", "993"))
-
-        with ImapClient(host, port, username, auth_code) as client:
-            stork_messages = client.fetch_recent_stork_messages(
-                mailbox=args.mailbox,
-                lookback_days=args.lookback_days,
-                limit=args.limit,
-                from_filter=args.from_filter,
-                subject_filter=args.subject_filter,
-                readonly=args.dry_run,
-            )
-            stork_items = []
-            for message in stork_messages:
-                stork_items.extend(parse_stork_digest_items(message.content))
-            grouped_results["Stork Email"] = dedupe_by_title(stork_items)
-
-            if not args.dry_run and stork_messages:
-                client.mark_seen([message.uid for message in stork_messages])
+        grouped_results["Stork Email"] = collect_stork_items(args)
 
     if "openalex" in enabled_sources:
         grouped_results["OpenAlex"] = collect_source(
@@ -135,6 +112,38 @@ def collect_source(name: str, fetcher):
         return dedupe_by_title(fetcher())
     except SourceError as exc:
         print(f"Warning: skipped {name}: {exc}", file=sys.stderr)
+        return []
+
+
+def collect_stork_items(args: argparse.Namespace):
+    username = os.environ.get("MAIL_USERNAME")
+    auth_code = os.environ.get("MAIL_AUTH_CODE")
+    if not username or not auth_code:
+        print("Warning: skipped Stork Email: MAIL_USERNAME or MAIL_AUTH_CODE is missing.", file=sys.stderr)
+        return []
+
+    host = os.environ.get("IMAP_HOST", "imap.163.com")
+    port = int(os.environ.get("IMAP_PORT", "993"))
+
+    try:
+        with ImapClient(host, port, username, auth_code) as client:
+            messages = client.fetch_recent_stork_messages(
+                mailbox=args.mailbox,
+                lookback_days=args.lookback_days,
+                limit=args.limit,
+                from_filter=args.from_filter,
+                subject_filter=args.subject_filter,
+                readonly=args.dry_run,
+            )
+            items = []
+            for message in messages:
+                items.extend(parse_stork_digest_items(message.content))
+
+            if not args.dry_run and messages:
+                client.mark_seen([message.uid for message in messages])
+            return dedupe_by_title(items)
+    except (imaplib.IMAP4.error, OSError, RuntimeError) as exc:
+        print(f"Warning: skipped Stork Email: {exc}", file=sys.stderr)
         return []
 
 
