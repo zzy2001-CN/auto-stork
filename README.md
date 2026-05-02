@@ -1,54 +1,98 @@
 # auto-stork
 
-Daily automation for reading Stork email digests from a 163 mailbox, searching OpenAlex and Semantic Scholar, filtering papers related to semi-supervised medical image segmentation, and archiving the results as Markdown.
+`auto-stork` is a lightweight, local-first literature recommendation agent. It collects papers from email alerts and public scholarly APIs, deduplicates records across sources, scores recommendations with transparent rules, and writes daily Markdown/HTML digests.
 
-## GitHub Secrets
+## Features
 
-Create these repository secrets before enabling the workflow:
+- Stork email ingestion through 163 IMAP.
+- OpenAlex and Semantic Scholar search.
+- PubMed E-utilities and arXiv API connectors.
+- Crossref metadata connector.
+- Connector skeletons for Web of Science, Elsevier, IEEE, alert emails, and OpenURL resolvers.
+- Profile-based search configuration.
+- DOI/source/title deduplication.
+- Rule-based recommendation scoring.
+- SQLite local storage to avoid repeated pushes.
+- Markdown and HTML daily reports.
 
-- `MAIL_USERNAME`: your 163 email address.
-- `MAIL_AUTH_CODE`: your 163 client authorization code, not your web login password.
-- `OPENALEX_API_KEY`: optional OpenAlex API key.
-- `SEMANTIC_SCHOLAR_API_KEY`: optional but recommended Semantic Scholar API key.
+## Setup
 
-The default IMAP endpoint is `imap.163.com:993` over SSL.
-
-## Run Locally
-
-```powershell
-python -m venv .venv
-.\.venv\Scripts\python -m pip install -r requirements.txt
-$env:MAIL_USERNAME="your-address@163.com"
-$env:MAIL_AUTH_CODE="your-client-auth-code"
-.\.venv\Scripts\python -m stork_mailer.cli --dry-run
-```
-
-Run only the free literature APIs:
+Install dependencies:
 
 ```powershell
-.\.venv\Scripts\python -m stork_mailer.cli --sources openalex,semantic_scholar --dry-run
+python -m pip install -r requirements.txt
 ```
 
-Parse a saved Stork email sample without connecting to IMAP:
+Initialize profile config:
 
 ```powershell
-.\.venv\Scripts\python -m stork_mailer.cli --sample samples\sample_stork_email.html --dry-run
+python -m stork_agent.cli init-config
 ```
 
-Without `--dry-run`, reports are written to `docs/stork/YYYY-MM-DD.md`. If no matching papers are found from any enabled source, no report is written.
+Run a local dry run:
 
-## Search Configuration
+```powershell
+python -m stork_agent.cli run-daily --dry-run
+```
 
-Search settings live in `config/search.yml`.
+The legacy command remains supported:
 
-The default search window is 7 days, and each source retrieves at most 20 candidates for each query. OpenAlex and Semantic Scholar records do not include reliable SCI/JCR quartiles, so their quartile is reported as `Unknown`.
+```powershell
+python -m stork_mailer.cli --dry-run
+```
 
-## GitHub Actions
+## Secrets And Environment
 
-The workflow runs every day at `00:00 UTC`, which is `08:00` in Beijing time, and can also be triggered manually from the Actions tab.
+Never commit real API keys, email passwords, or email authorization codes.
 
-When a report file is generated or changed, the workflow commits it back to the repository. If there are no matching papers, it exits successfully without committing.
+Use GitHub repository secrets or local environment variables:
 
-## Stork Email Samples
+- `MAIL_USERNAME`
+- `MAIL_AUTH_CODE`
+- `SEMANTIC_SCHOLAR_API_KEY`
+- `OPENALEX_API_KEY`
+- `NCBI_EMAIL`
+- `NCBI_API_KEY`
+- `OPENURL_BASE_URL`
 
-For better parsing accuracy, save a desensitized Stork email as `.html`, `.txt`, or `.eml` under `samples/` and test it with `--sample`. Remove private email addresses, unsubscribe tokens, and personal IDs before committing samples.
+Copy `.env.example` for local reference only. Keep real `.env` files untracked.
+
+## Commands
+
+```powershell
+python -m stork_agent.cli init-config
+python -m stork_agent.cli run-daily
+python -m stork_agent.cli run-daily --dry-run
+python -m stork_agent.cli test-source openalex
+python -m stork_agent.cli test-source semantic_scholar
+python -m stork_agent.cli test-source pubmed
+python -m stork_agent.cli test-source arxiv
+```
+
+Reports are written to:
+
+- `docs/stork/YYYY-MM-DD.md`
+- `docs/stork/YYYY-MM-DD.html`
+
+SQLite state is written to `data/stork_agent.sqlite3`.
+
+## Configuration
+
+Primary config lives in `config/profiles.yml`. Legacy `config/search.yml` is still accepted and converted into a default profile when `profiles.yml` is absent.
+
+Each profile supports:
+
+- `keywords`
+- `exclude_keywords`
+- `sources`
+- `lookback_days`
+- `daily_limit`
+- `min_score`
+- `focus_authors`
+- `focus_venues`
+- `strict_api_keys`
+
+## Safety Boundaries
+
+This project does not implement school account browser automation, SSO bypass, CAPTCHA bypass, password storage, or bulk PDF downloads. Institutional resources must be connected through official APIs, user-provided API keys, email alerts, OpenURL resolvers, or user-managed bibliographic exports.
+

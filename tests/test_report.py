@@ -19,10 +19,10 @@ def test_render_markdown_contains_required_fields_for_articles() -> None:
         date(2026, 4, 28),
     )
 
-    assert "# Stork 文献筛选日报 2026-04-28" in markdown
-    assert "## Stork Email" in markdown
-    assert "- 分区：Q1" in markdown
-    assert "- 创新点：A novel framework is proposed." in markdown
+    assert "# Literature Digest 2026-04-28" in markdown
+    assert "Total recommendations: 1" in markdown
+    assert "- Score: 0.0" in markdown
+    assert "- Innovation: A novel framework is proposed." in markdown
 
 
 def test_render_markdown_groups_multiple_sources() -> None:
@@ -53,7 +53,7 @@ def test_render_markdown_groups_multiple_sources() -> None:
         date(2026, 4, 28),
     )
 
-    assert "## OpenAlex" in markdown
-    assert "## Semantic Scholar" in markdown
-    assert "- 分区：Unknown" in markdown
-    assert "- 匹配关键词：semi-supervised medical image segmentation" in markdown
+    assert "## 1. OpenAlex Paper" in markdown
+    assert "## 2. Semantic Scholar Paper" in markdown
+    assert "- Source: OpenAlex" in markdown
+    assert "- Matched queries: semi-supervised medical image segmentation" in markdown

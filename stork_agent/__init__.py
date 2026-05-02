@@ -1,0 +1,2 @@
+"""Lightweight literature recommendation agent."""
+
