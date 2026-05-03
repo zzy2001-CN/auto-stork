@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import sqlite3
+from dataclasses import fields
 from datetime import datetime
 from pathlib import Path
 
@@ -70,7 +71,38 @@ class SQLiteStore:
         )
         self.conn.commit()
 
+    def recent_runs(self, limit: int = 10) -> list[dict]:
+        rows = self.conn.execute(
+            "SELECT run_date, profile, paper_count, created_at FROM daily_runs ORDER BY created_at DESC LIMIT ?",
+            (limit,),
+        ).fetchall()
+        return [
+            {"run_date": row[0], "profile": row[1], "paper_count": row[2], "created_at": row[3]}
+            for row in rows
+        ]
+
+    def recent_papers(self, limit: int = 20) -> list[PaperItem]:
+        rows = self.conn.execute("SELECT payload FROM papers ORDER BY last_seen DESC LIMIT ?", (limit,)).fetchall()
+        return [paper_from_payload(row[0]) for row in rows]
+
+    def save_feedback(self, paper_key_value: str, feedback: str) -> None:
+        self.conn.execute(
+            "INSERT INTO user_feedback(paper_key, feedback, created_at) VALUES (?, ?, ?)",
+            (paper_key_value, feedback, datetime.utcnow().isoformat()),
+        )
+        self.conn.commit()
+
 
 def paper_key(doi: str | None, title: str) -> str:
     return (doi or title).lower().strip()
+
+
+def paper_from_payload(payload: str) -> PaperItem:
+    raw = json.loads(payload)
+    allowed = {field.name for field in fields(PaperItem)}
+    cleaned = {key: value for key, value in raw.items() if key in allowed}
+    for key in ("authors", "keywords", "matched_queries"):
+        if key in cleaned and isinstance(cleaned[key], list):
+            cleaned[key] = tuple(cleaned[key])
+    return PaperItem(**cleaned)
 

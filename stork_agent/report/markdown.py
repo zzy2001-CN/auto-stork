@@ -36,6 +36,8 @@ def render_markdown(papers: list[PaperItem], profile: UserProfile, report_date: 
             lines.append(f"- DOI: {paper.doi}")
         if paper.url:
             lines.append(f"- URL: {paper.url}")
+        if paper.library_access_url:
+            lines.append(f"- Library Link: {paper.library_access_url}")
         if paper.matched_queries:
             lines.append(f"- Matched queries: {', '.join(paper.matched_queries)}")
         if paper.abstract:

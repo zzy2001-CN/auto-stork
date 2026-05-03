@@ -1,21 +1,20 @@
 profiles:
-  - name: default
-    keywords:
-      - semi-supervised medical image segmentation
-      - weakly supervised medical image segmentation
-      - scribble supervised segmentation
-      - pseudo-label medical image segmentation
-    exclude_keywords: []
-    sources:
-      - stork_email
-      - openalex
-      - semantic_scholar
-      - pubmed
-      - arxiv
-    lookback_days: 7
-    daily_limit: 20
-    min_score: 0
-    focus_authors: []
-    focus_venues: []
-    strict_api_keys: false
-
+- name: default
+  keywords:
+  - semi-supervised medical image segmentation
+  - weakly supervised medical image segmentation
+  - scribble supervised segmentation
+  - pseudo-label medical image segmentation
+  exclude_keywords: []
+  sources:
+  - stork_email
+  - openalex
+  - semantic_scholar
+  - pubmed
+  - arxiv
+  lookback_days: 7
+  daily_limit: 10
+  min_score: 0.01
+  focus_authors: []
+  focus_venues: []
+  strict_api_keys: false

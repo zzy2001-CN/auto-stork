@@ -2,12 +2,14 @@ from __future__ import annotations
 
 import os
 import sys
+from dataclasses import replace
 from datetime import date
 from datetime import timedelta
 from pathlib import Path
 
 from stork_agent.config import load_profiles
 from stork_agent.connectors import CONNECTORS
+from stork_agent.connectors.institutional import OpenURLResolver
 from stork_agent.deduper import dedupe_papers
 from stork_agent.models import PaperItem
 from stork_agent.models import UserProfile
@@ -70,7 +72,7 @@ def collect_profile_papers(profile: UserProfile, since: date) -> list[PaperItem]
         for warning in connector.warnings:
             print(f"Warning: {source_name}: {warning}", file=sys.stderr)
         papers.extend(filter_excluded(fetched, profile))
-    return papers
+    return attach_library_links(papers, env.get("OPENURL_BASE_URL"))
 
 
 def filter_excluded(papers: list[PaperItem], profile: UserProfile) -> list[PaperItem]:
@@ -92,4 +94,13 @@ def select_profile(profiles: list[UserProfile], name: str | None) -> UserProfile
         if profile.name == name:
             return profile
     raise ValueError(f"Unknown profile: {name}")
+
+
+def attach_library_links(papers: list[PaperItem], openurl_base_url: str | None) -> list[PaperItem]:
+    resolver = OpenURLResolver(openurl_base_url)
+    linked = []
+    for paper in papers:
+        library_url = resolver.resolve(paper.doi)
+        linked.append(replace(paper, library_access_url=library_url) if library_url else paper)
+    return linked
 

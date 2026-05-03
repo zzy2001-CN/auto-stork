@@ -33,6 +33,7 @@ def render_html(papers: list[PaperItem], profile: UserProfile, report_date: date
 
 def render_paper(paper: PaperItem, index: int) -> str:
     url = f'<p><a href="{escape(paper.url)}">Open record</a></p>' if paper.url else ""
+    library_url = f'<p><a href="{escape(paper.library_access_url)}">Library link</a></p>' if paper.library_access_url else ""
     abstract = f"<details><summary>Abstract</summary><p>{escape(paper.abstract)}</p></details>" if paper.abstract else ""
     return f"""<article>
   <h2>{index}. {escape(paper.title)}</h2>
@@ -41,6 +42,7 @@ def render_paper(paper: PaperItem, index: int) -> str:
   <p><strong>Reason:</strong> {escape(paper.recommendation_reason)}</p>
   <p><strong>Innovation:</strong> {escape(paper.innovation_summary)}</p>
   {url}
+  {library_url}
   {abstract}
 </article>"""
 
@@ -52,4 +54,3 @@ def write_html(papers: list[PaperItem], profile: UserProfile, report_date: date,
     path = output_dir / f"{report_date.isoformat()}.html"
     path.write_text(render_html(papers, profile, report_date), encoding="utf-8")
     return path
-

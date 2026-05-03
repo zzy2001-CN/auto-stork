@@ -69,6 +69,20 @@ python -m stork_agent.cli test-source pubmed
 python -m stork_agent.cli test-source arxiv
 ```
 
+Run the local Streamlit app:
+
+```powershell
+streamlit run scripts/run_app.py
+```
+
+The app provides:
+
+- Dashboard: recent recommendations, latest run, and source health.
+- Research Profile: edit profile keywords, exclusions, sources, authors, venues, limits, and score threshold.
+- Sources: inspect environment-secret status and set temporary session keys without writing them to config files.
+- Daily Digest: view historical Markdown reports and export Markdown/HTML.
+- Feedback: save local feedback such as favorite, not interested, more like this, and less like this.
+
 Reports are written to:
 
 - `docs/stork/YYYY-MM-DD.md`

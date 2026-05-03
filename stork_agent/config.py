@@ -89,3 +89,25 @@ def write_default_profiles(path: Path = PROFILES_PATH) -> bool:
     path.write_text(yaml.safe_dump(data, sort_keys=False, allow_unicode=True), encoding="utf-8")
     return True
 
+
+def save_profiles(profiles: list[UserProfile], path: Path = PROFILES_PATH) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    data = {
+        "profiles": [
+            {
+                "name": profile.name,
+                "keywords": list(profile.keywords),
+                "exclude_keywords": list(profile.exclude_keywords),
+                "sources": list(profile.sources),
+                "lookback_days": profile.lookback_days,
+                "daily_limit": profile.daily_limit,
+                "min_score": profile.min_score,
+                "focus_authors": list(profile.focus_authors),
+                "focus_venues": list(profile.focus_venues),
+                "strict_api_keys": profile.strict_api_keys,
+            }
+            for profile in profiles
+        ]
+    }
+    path.write_text(yaml.safe_dump(data, sort_keys=False, allow_unicode=True), encoding="utf-8")
+

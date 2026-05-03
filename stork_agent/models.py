@@ -40,6 +40,7 @@ class PaperItem:
     matched_queries: tuple[str, ...] = ()
     citation_count: int | None = None
     open_access_url: str | None = None
+    library_access_url: str | None = None
     recommendation_score: float = 0.0
     recommendation_reason: str = ""
     innovation_summary: str = ""
