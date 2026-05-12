@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Literature Digest 2026-05-12</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 960px; margin: 32px auto; line-height: 1.5; color: #1f2933; }
+    article { border-bottom: 1px solid #d9e2ec; padding: 20px 0; }
+    .meta { color: #52606d; font-size: 14px; }
+    .score { font-weight: 700; }
+  </style>
+</head>
+<body>
+  <h1>Literature Digest 2026-05-12</h1>
+  <p>Profile: <code>default</code>. Total recommendations: 10.</p>
+  <article>
+  <h2>1. PaMoSplat: Part-Aware Motion-Guided Gaussian Splatting for Dynamic Scene Reconstruction</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> While recent progress in 3DGS-based methods has advanced dynamic scene modeling, obtaining high-fidelity rendering and accurate tracking in scenarios with substantial, intricate motions remains significantly challenging. To address these challenges, we propose PaMoSplat, a novel dynamic Gaussian splatting framework incorporating part awareness and motion priors.</p>
+  <p><a href="http://arxiv.org/abs/2605.10307v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Dynamic scene reconstruction represents a fundamental yet demanding challenge in computer vision and robotics. While recent progress in 3DGS-based methods has advanced dynamic scene modeling, obtaining high-fidelity rendering and accurate tracking in scenarios with substantial, intricate motions remains significantly challenging. To address these challenges, we propose PaMoSplat, a novel dynamic Gaussian splatting framework incorporating part awareness and motion priors. Our approach is grounded in two key observations: 1) Parts serve as primitives for scene deformation, and 2) Motion cues from optical flow can effectively guide part motion. Specifically, PaMoSplat initializes by lifting multi-view segmentation masks into 3D space via graph clustering, establishing coherent Gaussian parts. For subsequent timestamps, we leverage a differential evolutionary algorithm to estimate the rigid motion of these parts using multi-view optical flow cues, providing a robust warm-start for further optimization. Additionally, PaMoSplat introduces an adaptive iteration count mechanism, internal learnable rigidity, and flow-supervised rendering loss to accelerate and optimize the training process. Comprehensive evaluations across diverse scenes, including real-world environments, demonstrate that PaMoSplat delivers superior rendering quality, improved tracking precision, and faster convergence compared to existing methods. Furthermore, it enables multiple part-level downstream applications, such as 4D scene editing.</p></details>
+</article>
+<article>
+  <h2>2. AgentRx: A Benchmark Study of LLM Agents for Multimodal Clinical Prediction Tasks</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Considering the fragmentation of healthcare data across hospital systems, collaborative agent frameworks present a promising direction to mitigate data sharing challenges. Our findings highlight that single agent frameworks outperform naive multi-agent systems, are better at handling multimodal data, and are better calibrated.</p>
+  <p><a href="http://arxiv.org/abs/2605.10286v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Building effective clinical decision support systems requires the synthesis of complex heterogeneous multimodal data. Such modalities include temporal electronic health records data, medical images, radiology reports, and clinical notes. Large language model (LLM)-based agents have shown impressive performance in various healthcare tasks, especially those involving textual modalities. Considering the fragmentation of healthcare data across hospital systems, collaborative agent frameworks present a promising direction to mitigate data sharing challenges. However, the effectiveness of LLM agents for multimodal clinical risk prediction remains largely unexamined. In this work, we conduct a systematic evaluation of LLM-based agents for clinical prediction tasks using large-scale real-world data. We assess performance in unimodal and multimodal settings and quantify performance gaps between single agent and multi-agent systems. Our findings highlight that single agent frameworks outperform naive multi-agent systems, are better at handling multimodal data, and are better calibrated. This underscores a critical need for improving multi-agent collaboration to better handle heterogeneous inputs. By open-sourcing our code and evaluation framework, this work offers a new benchmark to support future developments relating to agentic systems in healthcare.</p></details>
+</article>
+<article>
+  <h2>3. Scalable Gaussian process inference via neural feature maps</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> We present a theoretically grounded Gaussian process framework that leverages neural feature maps to construct expressive kernels. We further analyse the spectral properties of the induced kernels and introduce product feature-map kernels to address oversmoothing.</p>
+  <p><a href="http://arxiv.org/abs/2605.10285v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>We present a theoretically grounded Gaussian process framework that leverages neural feature maps to construct expressive kernels. We show that the learned feature map can be interpreted as an optimal low-rank approximation to a Gram matrix derived from an implied RKHS, from which we establish consistency of the GP posterior. We further analyse the spectral properties of the induced kernels and introduce product feature-map kernels to address oversmoothing. This simple yet powerful approach enables fast, scalable, and accurate exact GP inference with minimal upfront work. The flexibility of kernel design supports seamless application to both regression and classification tasks across diverse data modalities, including tabular inputs and structured domains such as images. On benchmark datasets, this approach surpasses pre-existing methods in terms of accuracy and training and prediction efficiency.</p></details>
+</article>
+<article>
+  <h2>4. Predictive Radiomics for Evaluation of Cancer Immune SignaturE in Glioblastoma: the PRECISE-GBM study</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Methods: This was a retrospective multicenter study using curated open-access anonymized imaging and genomic data from TCGA-GBM, CPTAC, IvyGAP, REMBRANDT and CGGA datasets.</p>
+  <p><a href="http://arxiv.org/abs/2605.10278v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Background: Radiogenomics allows identification of radiological biomarkers for genomic phenotypes. In glioblastoma, these biomarkers could potentially complement patient stratification strategies. We aim to develop and analytically validate radiological biomarkers that capture immune cell signatures within IDH-wildtype glioblastoma microenvironment using radiogenomic analysis. Methods: This was a retrospective multicenter study using curated open-access anonymized imaging and genomic data from TCGA-GBM, CPTAC, IvyGAP, REMBRANDT and CGGA datasets. Imaging data consisted of MRI-based radiomic features extracted from necrotic core, enhancing and edema regions of deep learning-based auto-segmented tumors. Radiomic feature selections were performed using nested cross-validated LASSO. Support vector machine and ensemble models were trained using seventeen immune and cell-specific score labels extracted from deconvoluted transcriptomic data using pan-cancer and glioblastoma immune signature matrices as reference standards. Seventeen classifier models trained in three cross-cohort strategies were validated on three held-out datasets assessing stability and generalizability. Results: One-hundred-and-seventy-six patients were included in the study. The immune-related radiomic signatures obtained after feature selection were shape, first order and higher order radiomic features. Models predicting macrophage subtype immune signature showed stable mean performance on balanced accuracy (0.67) and precision (0.89) metrics for three independent holdout datasets with ensemble model outperforming support vector machine model. Conclusion: Radiogenomic models non-invasively predicted the macrophage subtype M0 immune signature in IDH-wildtype glioblastoma. These biomarkers have the potential to stratify patients for immunotherapy within prospective glioblastoma clinical trials.</p></details>
+</article>
+<article>
+  <h2>5. PolarVSR: A Unified Framework and Benchmark for Continuous Space-Time Polarization Video Reconstruction</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> To this end, we propose the first space-time polarization video reconstruction architecture. The method jointly models polarization directions in space and time and uses a polarization-aware implicit neural representation for continuous, high-fidelity upsampling.</p>
+  <p><a href="http://arxiv.org/abs/2605.10275v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Polarimetric imaging captures surface polarization characteristics, such as the Degree of Linear Polarization (DoLP) and the Angle of Polarization (AoP). In mainstream Division of-Focal-Plane (DoFP) color polarization imaging, recovering polarization parameters from captured mosaic arrays remains a challenging inverse problem. Existing DoFP cameras also face hardware bottlenecks and often cannot support high-frame-rate acquisition, limiting polarimetric imaging in dynamic video tasks. These limitations motivate joint spatial and temporal enhancement. To this end, we propose the first space-time polarization video reconstruction architecture. The method jointly models polarization directions in space and time and uses a polarization-aware implicit neural representation for continuous, high-fidelity upsampling. By analyzing temporal variations in polarization parameters, we further introduce a flow-guided polarization variation loss to supervise polarization dynamics. We also establish the first large-scale color DoFP polarization video benchmark to support this research direction. Extensive experiments on this benchmark demonstrate the effectiveness of the method.</p></details>
+</article>
+<article>
+  <h2>6. Increasing the Efficiency of DETR for Maritime High-Resolution Images</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Compared to state-of-the-art methods like RT-DETR with ResNet50 backbone, our approach achieves a better balance between performance and computational efficiency in maritime object detection.</p>
+  <p><a href="http://arxiv.org/abs/2605.10269v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Maritime object detection is critical for the safe navigation of unmanned surface vessels (USVs), requiring accurate recognition of obstacles from small buoys to large vessels. Real-time detection is challenging due to long distances, small object sizes, large-scale variations, edge computing limitations, and the high memory demands of high-resolution imagery. Existing solutions, such as downsampling or image splitting, often reduce accuracy or require additional processing, while memory-efficient models typically handle only limited resolutions. To overcome these limitations, we leverage Vision Mamba (ViM) backbones, which build on State Space Models (SSMs) to capture long-range dependencies while scaling linearly with sequence length. Images are tokenized into sequences for efficient high-resolution processing. For further computational efficiency, we design a tailored Feature Pyramid Network with successive downsampling and SSM layers, as well as token pruning to reduce unnecessary computation on background regions. Compared to state-of-the-art methods like RT-DETR with ResNet50 backbone, our approach achieves a better balance between performance and computational efficiency in maritime object detection.</p></details>
+</article>
+<article>
+  <h2>7. Knowledge Poisoning Attacks on Medical Multi-Modal Retrieval-Augmented Generation</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> In this paper, we propose M\textsuperscript{3}Att, a knowledge-poisoning framework designed for medical multimodal RAG systems, assuming only limited distribution knowledge of the underlying database. We first propose a unified framework that introduces imperceptible perturbations to visual inputs to manipulate retrieval probabilities.</p>
+  <p><a href="http://arxiv.org/abs/2605.10253v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Retrieval-augmented generation (RAG) is a widely adopted paradigm for enhancing LLMs in medical applications by incorporating expert multimodal knowledge during generation. However, the underlying retrieval databases may naturally contain, or be intentionally injected with, adversarial knowledge, which can perturb model outputs and undermine system reliability. To investigate this risk, prior studies have explored knowledge poisoning attacks in medical RAG systems. Nevertheless, most of them rely on the strong assumption that adversaries possess prior knowledge of user queries, which is unrealistic in deployments and substantially limits their practical applicability. In this paper, we propose M\textsuperscript{3}Att, a knowledge-poisoning framework designed for medical multimodal RAG systems, assuming only limited distribution knowledge of the underlying database. Our core idea is to inject covert misinformation into textual data while using paired visual data as a query-agnostic trigger to promote retrieval. We first propose a unified framework that introduces imperceptible perturbations to visual inputs to manipulate retrieval probabilities. Besides, due to the prior medical knowledge in LLMs, naively poisoned medical content with explicit factual errors can be corrected during generation. Thus, we leverage the inherent ambiguity of medical diagnosis and design a covert misinformation injection strategy that degrades diagnostic accuracy while evading model self-correction. Experiments on five LLMs and datasets demonstrate that M\textsuperscript{3}Att consistently produces clinically plausible yet incorrect generations. Codes: https://github.com/ypr17/M3Att.</p></details>
+</article>
+<article>
+  <h2>8. Diffeomorphic registration distances for Bayesian calibration of infinite-dimensional computer models</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Bayesian calibration offers a well-studied framework to provide reliable uncertainty quantification on the calibrated parameters. In this paper, Bayesian calibration is performed using distances from the large deformation diffeomorphic metric matching (LDDMM) framework.</p>
+  <p><a href="http://arxiv.org/abs/2605.10249v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>The simulation of physical phenomena with computer models relies on the estimation of physical and/or numerical parameters calibrated to fit experimental data. The approximations within the computer model and the errors in the measurements lead to uncertainties in the calibrated parameters. Bayesian calibration offers a well-studied framework to provide reliable uncertainty quantification on the calibrated parameters. When dealing with complex computer codes whose outputs are infinite-dimensional, Bayesian calibration may be extended by providing a relevant distance in the output space. In this paper, Bayesian calibration is performed using distances from the large deformation diffeomorphic metric matching (LDDMM) framework. LDDMM distances can provide a suitable metric for infinite-dimensional shapes such as scalar fields (i.e. images) or function graphs. This metric can be interpreted as the minimal energy deformation required to transform one shape into another. As such, it provides a readily interpretable metric for Bayesian calibration. On top of this, the representation of the diffeomorphism group as an exponential transformation of an RKHS is compatible with Bayesian inference and allows to define a predictive posterior distribution on the infinite-dimensional space shape.</p></details>
+</article>
+<article>
+  <h2>9. AdaptSplat: Adapting Vision Foundation Models for Feed-Forward 3D Gaussian Splatting</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Existing methods typically apply complex, architecture-specific designs on top of the generic pipeline of image feature extraction $\rightarrow$ multi-view interaction $\rightarrow$ feature decoding. However, constrained by the scale bottleneck of 3D training data and the low-pass filtering effect of deep networks, these methods still fall short in cross-domain generalization and high-frequency geometric fidelity.</p>
+  <p><a href="http://arxiv.org/abs/2605.10239v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>This work explores a simple yet powerful lightweight adapter design for feed-forward 3D Gaussian Splatting (3DGS). Existing methods typically apply complex, architecture-specific designs on top of the generic pipeline of image feature extraction $\rightarrow$ multi-view interaction $\rightarrow$ feature decoding. However, constrained by the scale bottleneck of 3D training data and the low-pass filtering effect of deep networks, these methods still fall short in cross-domain generalization and high-frequency geometric fidelity. To address these problems, we propose AdaptSplat, which demonstrates that without complex component engineering, introducing a single adapter of only 1.5M parameters into the generic architecture is sufficient to achieve superior performance. Specifically, we design a lightweight Frequency-Preserving Adapter (FPA) that extracts direction-aware high-frequency structural priors from the shallow features of a powerful vision foundation model backbone, and seamlessly integrates them into the generic pipeline via high-frequency positional encodings and adaptive residual modulation. This effectively compensates for the high-frequency attenuation caused by over-smoothing in deep features, improving the fitting accuracy of Gaussian primitives on complex surfaces and sharp boundaries. Extensive experiments demonstrate that AdaptSplat achieves state-of-the-art feed-forward reconstruction performance on multiple standard benchmarks, with stable generalization across domains. Code available at: https://github.com/xmw666/AdaptSplat.</p></details>
+</article>
+<article>
+  <h2>10. VPD-100K: Towards Generalizable and Fine-grained Visual Privacy Protection</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Privacy protection has become a critical requirement in the era of ubiquitous visual data sharing, imposing higher demands on efficient and robust privacy detection algorithms. However, current robust detection models are severely hindered by the lack of comprehensive datasets.</p>
+  <p><a href="http://arxiv.org/abs/2605.10229v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Privacy protection has become a critical requirement in the era of ubiquitous visual data sharing, imposing higher demands on efficient and robust privacy detection algorithms. However, current robust detection models are severely hindered by the lack of comprehensive datasets. Existing privacy-oriented datasets often suffer from limited scale, coarse-grained annotations, and narrow domain coverage, failing to capture the intricate details of sensitive information in realworld environments. To bridge this gap, we present a large-scale, fine-grained Visual Privacy Dataset (VPD-100K), designed to facilitate generalized privacy detection. We establish a holistic taxonomy comprising four primary domains: Human Presence, On-Screen Personally Identifiable Information (PII), Physical Identifiers, and Location Indicators, containing 100,000 images annotated with 33 fine-grained classes and over 190,000 object instances. Statistical analysis reveals that our dataset features long-tailed distributions, small object scales, and high visual complexity. These characteristics make the dataset particularly valuable for demanding, unconstrained applications such as live streaming, where actors frequently face unintentional, realtime information leakage. Furthermore, we design an effective frequency-enhanced lightweight module consisting of frequency-domain attention fusion and adaptive spectral gating mechanism that breaks the limitations of spatial pixel intensity to better capture the subtle details of sensitive information. Extensive experiments conducted on both diverse image and streaming videos benchmarks consistently demonstrate the effectiveness of our VPD-100K dataset and the wellcurated frequency mechanism. The code and dataset are available at https://vpd-100k.github.io/.</p></details>
+</article>
+</body>
+</html>
