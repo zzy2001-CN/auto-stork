@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Literature Digest 2026-05-14</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 960px; margin: 32px auto; line-height: 1.5; color: #1f2933; }
+    article { border-bottom: 1px solid #d9e2ec; padding: 20px 0; }
+    .meta { color: #52606d; font-size: 14px; }
+    .score { font-weight: 700; }
+  </style>
+</head>
+<body>
+  <h1>Literature Digest 2026-05-14</h1>
+  <p>Profile: <code>default</code>. Total recommendations: 10.</p>
+  <article>
+  <h2>1. From DES to KiDS: Domain adaptation for cross-survey detection of low-surface-brightness galaxies</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Upcoming large-scale surveys are expected to uncover large numbers of LSBGs, requiring robust automated methods to identify them across heterogeneous datasets.</p>
+  <p><a href="http://arxiv.org/abs/2605.13842v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Low-surface-brightness galaxies (LSBGs) are vital for understanding galaxy formation, but their diffuse nature makes them challenging to detect. Upcoming large-scale surveys are expected to uncover large numbers of LSBGs, requiring robust automated methods to identify them across heterogeneous datasets. As a precursor to the Legacy Survey of Space and Time (LSST) and Euclid, we explore domain adaptation techniques for cross-survey LSBG identification. Using models trained on the Dark Energy Survey (DES), we search for LSBGs in the Kilo-Degree Survey Data Release 5 (KiDS DR5). We used an ensemble consisting of one convolutional neural network (CNN) and two transformer models trained on DES cutouts and applied to KiDS DR5 imaging data. Structural parameters were estimated with galfitm, and photometric redshifts and stellar population properties were estimated through spectral energy distribution fitting with CIGALE. We identify 20,180 LSBGs and 434 ultra-diffuse galaxies (UDGs) in KiDS DR5. Their structural parameters are similar to known LSBGs from DES and the Hyper Suprime-Cam SSP Survey (HSC-SSP). The KiDS-LSBGs follow a continuous size-luminosity relation connecting classical dwarf galaxies and UDGs, and their colours are bimodal ($\sim73\%$ blue, $\sim27\%$ red). Cross-matching with spectroscopic and cluster catalogues provides redshifts for 4,913 systems, enabling a systematic characterisation of the star-forming main sequence of LSBGs. Strong environmental trends are evident, with cluster LSBGs and UDGs exhibiting redder colours and reduced star formation compared to non-cluster systems. We demonstrate that domain adaptation enables robust cross-survey LSBG identification with deep learning models, providing a scalable pathway for constructing homogeneous LSBG catalogues for the LSST and Euclid era.</p></details>
+</article>
+<article>
+  <h2>2. Unlocking Patch-Level Features for CLIP-Based Class-Incremental Learning</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Based on the above observation, we propose SPA (Semantic-guided Patch-level Alignment) for CLIP-based CIL, which aims to awaken long-neglected local representations within CLIP. Building upon these selected patches, we further employ optimal transport to align selected patch tokens with semantic tokens from class-wise descriptions, yielding a structured cross-modal alignment that improves recognition.</p>
+  <p><a href="http://arxiv.org/abs/2605.13835v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Class-Incremental Learning (CIL) enables models to continuously integrate new knowledge while mitigating catastrophic forgetting. Driven by the remarkable generalization of CLIP, leveraging pre-trained vision-language models has become a dominant paradigm in CIL. However, current work primarily focuses on aligning global image embeddings (i.e., [CLS] token) with their corresponding text prompts (i.e., [EOS] token). Despite their good performance, we find that they discard the rich patch-level semantic information inherent in CLIP&#x27;s encoders. For instance, when recognizing a rabbit, local patches may encode its distinctive cues, such as long ears and a fluffy tail, which can provide complementary evidence for recognition. Based on the above observation, we propose SPA (Semantic-guided Patch-level Alignment) for CLIP-based CIL, which aims to awaken long-neglected local representations within CLIP. Specifically, for each class, we first construct representative and diverse visual samples and feed them to GPT-5 as visual guidance to generate class-wise semantic descriptions. These descriptions are used to guide the selection of discriminative patch-level visual features. Building upon these selected patches, we further employ optimal transport to align selected patch tokens with semantic tokens from class-wise descriptions, yielding a structured cross-modal alignment that improves recognition. Furthermore, we introduce task-specific projectors for effective adaptation to downstream incremental tasks, and sample pseudo-features from stored class-wise Gaussian statistics to calibrate old-class representations, thereby mitigating catastrophic forgetting. Extensive experiments demonstrate that SPA achieves state-of-the-art performance.</p></details>
+</article>
+<article>
+  <h2>3. QLAM: A Quantum Long-Attention Memory Approach to Long-Sequence Token Modeling</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> In this work, we introduce one of the first studies to leverage the superposition property of quantum systems to enhance state-based sequence modeling. In particular, we propose Quantum Long-Attention Memory (QLAM), a hybrid quantum-classical memory mechanism that can be viewed as a quantum extension of state-space models.</p>
+  <p><a href="http://arxiv.org/abs/2605.13833v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Modeling long-range dependencies in sequential data remains a central challenge in machine learning. Transformers address this challenge through attention mechanisms, but their quadratic complexity with respect to sequence length limits scalability to long contexts. State-space models (SSMs) provide an efficient alternative with linear-time computation by evolving a latent state through recurrent updates, but their memory is typically formed via additive or linear transitions, which can limit their ability to capture complex global interactions across tokens. In this work, we introduce one of the first studies to leverage the superposition property of quantum systems to enhance state-based sequence modeling. In particular, we propose Quantum Long-Attention Memory (QLAM), a hybrid quantum-classical memory mechanism that can be viewed as a quantum extension of state-space models. Instead of maintaining a classical latent state updated through additive dynamics, QLAM represents the hidden state as a quantum state whose amplitudes encode a superposition of historical information. The state evolves through parameterized quantum circuits conditioned on the input, enabling a non-classical, globally update mechanism. In this way, QLAM preserves the recurrent and linear-time structure of SSMs while fundamentally enriching the memory representation through quantum superposition. Unlike attention mechanisms that explicitly compute pairwise interactions, QLAM implicitly captures global dependencies through the evolution of the quantum state, and retrieves task-relevant information via query-dependent measurements. We evaluate QLAM on sequential variants of standard image classification benchmarks, including sMNIST, sFashion-MNIST, and sCIFAR-10, where images are flattened into token sequences. Across all tasks, QLAM consistently improves over recurrent baselines and transformer-based models.</p></details>
+</article>
+<article>
+  <h2>4. On the Lie Foliation structure of Walker Manifolds</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> We study Walker manifolds, that is, pseudo-Riemannian manifolds $(M^n,g)$ admitting a null parallel distribution $\D$ of rank $r\leq\frac{n}{2}$. We show that $\D$ always integrates to a $G$-Lie foliation $\F_\D$, where $G$ is the simply connected Lie group with Lie algebra equal to the structure algebra $\g_\D$ of $\D$.</p>
+  <p><a href="http://arxiv.org/abs/2605.13820v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>We study Walker manifolds, that is, pseudo-Riemannian manifolds $(M^n,g)$ admitting a null parallel distribution $\D$ of rank $r\leq\frac{n}{2}$. We show that $\D$ always integrates to a $G$-Lie foliation $\F_\D$, where $G$ is the simply connected Lie group with Lie algebra equal to the structure algebra $\g_\D$ of $\D$. The transverse holonomy group of $(M,g)$ coincides with the image of the holonomy morphism $h:π_1(M)\to G$. We prove that $\mathrm{Ric}(X,\cdot)=0$ for all $X\inΓ(\D)$, and show that in dimension~$3$ the model group is always $\R$, while in dimension~$4$ with rank~$2$ the structure algebra is always abelian. A local classification distinguishes the abelian, nilpotent, and solvable cases, and a rigidity theorem shows that a minimal nilpotent Walker foliation of dimension~$4$ cannot be deformed into a non-nilpotent solvable one.</p></details>
+</article>
+<article>
+  <h2>5. Neurosymbolic Auditing of Natural-Language Software Requirements</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Over an extensive experimental evaluation on open-source hemodialysis safety requirements, we show that the LLM-based approach in VERIMED successfully reduces ambiguity-sensitive requirements and enables rigorous auditing of software requirements through SMT-based queries.</p>
+  <p><a href="http://arxiv.org/abs/2605.13817v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Natural-language software requirements are often ambiguous, inconsistent, and underspecified; in safety-critical domains, these defects propagate into formal models that verify the wrong specification and into implementations that ship unsafe behavior. We show that large language models, equipped with an SMT solver, can audit such requirements: translating them into formal logic, detecting ambiguity through stochastic variation in the generated formalization, and exposing inconsistency, vacuousness, and safety violations through solver queries on the resulting specification. We present VERIMED, a neurosymbolic pipeline that operationalizes this idea for medical-device software requirements, and report two findings. First, stochastic variation across independent formalizations is a signal of ambiguity: requirements that admit multiple plausible interpretations produce SMT-inequivalent formalizations, and bidirectional SMT equivalence checking turns this disagreement into a solver-checkable test. Second, the usefulness of symbolic feedback depends on its granularity: in counterexample-guided repair on a hemodialysis question-answering benchmark, concrete SMT counterexamples raise verified accuracy from 55.4% to 98.5%. Over an extensive experimental evaluation on open-source hemodialysis safety requirements, we show that the LLM-based approach in VERIMED successfully reduces ambiguity-sensitive requirements and enables rigorous auditing of software requirements through SMT-based queries.</p></details>
+</article>
+<article>
+  <h2>6. OmniLiDAR: A Unified Diffusion Framework for Multi-Domain 3D LiDAR Generation</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> To this end, we present OmniLiDAR, a unified text-conditioned diffusion framework that generates LiDAR scans in a shared range-image representation across eight representative domains spanning three shift types: adverse weather, sensor-configuration changes (e.g., reduced beams), and cross-platform acquisition (vehicle, drone, and quadruped). To enable training a single model over heterogeneous domains without isolating optimization by domain, we introduce a Cross-Domain Training Strategy (CDTS) that mixes domains within each mini-batch and leverages conditioning to steer generation.</p>
+  <p><a href="http://arxiv.org/abs/2605.13815v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>LiDAR scene generation is increasingly important for scalable simulation and synthetic data creation, especially under diverse sensing conditions that are costly to capture at scale. Typically, diffusion-based LiDAR generators are developed under single-domain settings, requiring separate models for different datasets or sensing conditions and hindering unified, controllable synthesis under heterogeneous distribution shifts. To this end, we present OmniLiDAR, a unified text-conditioned diffusion framework that generates LiDAR scans in a shared range-image representation across eight representative domains spanning three shift types: adverse weather, sensor-configuration changes (e.g., reduced beams), and cross-platform acquisition (vehicle, drone, and quadruped). To enable training a single model over heterogeneous domains without isolating optimization by domain, we introduce a Cross-Domain Training Strategy (CDTS) that mixes domains within each mini-batch and leverages conditioning to steer generation. We further propose Cross-Domain Feature Modeling (CDFM), which captures directional dependencies along azimuth and elevation axes to reflect the anisotropic scanning structure of range images, and Domain-Adaptive Feature Scaling (DAFS) as a lightweight modulation to account for structured domain-dependent feature shifts during denoising. In the absence of a public consolidated benchmark, we construct an 8-domain dataset by combining real-world scans with physically based weather simulation and systematic beam reduction while following official splits. Extensive experiments demonstrate strong generation fidelity and consistent gains in downstream use cases, including generative data augmentation for LiDAR semantic segmentation and 3D object detection, as well as robustness evaluation under corruptions, with consistent benefits in limited-label regimes.</p></details>
+</article>
+<article>
+  <h2>7. JANUS: Anatomy-Conditioned Gating for Robust CT Triage Under Distribution Shift</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> We introduce JANUS, a physiology-guided dual-stream architecture that conditions visual embeddings on macro-radiomic priors via Anatomically Guided Gating. It generalizes to an external dataset N=2000; AUROC 0.87), with the largest gains on findings defined by size and attenuation as well as improved calibration on both datasets.</p>
+  <p><a href="http://arxiv.org/abs/2605.13813v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Automated CT triage requires models that are simultaneously accurate across diverse pathologies and reliable under institutional shift. While Vision Transformers provide strong visual representations, many clinically significant findings are defined by quantitative imaging biomarkers rather than appearance alone. We introduce JANUS, a physiology-guided dual-stream architecture that conditions visual embeddings on macro-radiomic priors via Anatomically Guided Gating. On the MERLIN test set (N=5082), JANUS attains macro-AUROC 0.88 and AUPRC 0.74, outperforming all reproduced baselines. It generalizes to an external dataset N=2000; AUROC 0.87), with the largest gains on findings defined by size and attenuation as well as improved calibration on both datasets. We further quantify prediction suppression using the Physiological Veto Rate (PVR), showing that under domain shift JANUS reduces high-confidence false positives substantially more often than true positives. Together, these results are consistent with physically grounded conditioning that improves both discrimination and reliability in CT triage. Code is made publicly available at github repository https://github.com/lavsendahal/janus and model weights are at https://huggingface.co/lavsendahal/janus.</p></details>
+</article>
+<article>
+  <h2>8. VoxCor: Training-Free Volumetric Features for Multimodal Voxel Correspondence</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> We introduce VoxCor, a training-free fit--transform method for reusable volumetric feature representations from frozen 2D ViT foundation models. VoxCor improves the hardest cross-subject, cross-modality transfer settings, reduces encoder sensitivity for dense correspondence transfer, and yields registration performance competitive with handcrafted descriptors and learned 3D features.</p>
+  <p><a href="http://arxiv.org/abs/2605.13798v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Cross-modal 3D medical image analysis requires voxelwise representations that remain anatomically consistent across imaging contrasts, scanners, and acquisition protocols. Recent work has shown that frozen 2D Vision Transformer (ViT) foundation models can support such representations, but typical pipelines extract features along a single anatomical axis and adapt those features inside a registration solver for one image pair at a time, leaving complementary viewing directions unused and producing representations that do not transfer to new volumes. We introduce VoxCor, a training-free fit--transform method for reusable volumetric feature representations from frozen 2D ViT foundation models. During an offline fitting phase, VoxCor combines triplanar ViT inference with a compact closed-form weighted partial least squares (WPLS) projection that uses fitting-time voxel correspondences to select modality-stable anatomical directions in the triplanar feature space. At transform time, new volumes are mapped by triplanar ViT inference and linear projection alone, without fine-tuning or registration. Voxel correspondences can then be queried directly by nearest-neighbor search. We evaluate VoxCor on intra-subject Abdomen MR--CT and inter-subject HCP T2w--T1w tasks using deformable registration, voxelwise k-nearest-neighbor segmentation, and segmentation-center landmark localization. VoxCor improves the hardest cross-subject, cross-modality transfer settings, reduces encoder sensitivity for dense correspondence transfer, and yields registration performance competitive with handcrafted descriptors and learned 3D features. This positions VoxCor as a reusable feature layer for downstream multimodal analysis beyond pairwise registration. Code, configuration files, and implementation details are publicly available on GitHub at \href{https://github.com/guneytombak/VoxCor}{guneytombak/VoxCor}.</p></details>
+</article>
+<article>
+  <h2>9. LMPath: Language-Mediated Priors and Path Generation for Aerial Exploration</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> We also ran simulations to demonstrate how paths generated using LMPath outperform traditional path planning approaches for search missions.</p>
+  <p><a href="http://arxiv.org/abs/2605.13782v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Traditional autonomous UAV search missions rely on geometric coverage patterns that ignore the semantic context of the target, leading to significant time waste in large-scale environments. In this paper we present LMPath, a pipeline for generating language-mediated exploration priors for Unmanned Aerial Vehicle (UAV) search missions that leverages semantics. Given a basic geofence and an object of interest prompt, LMPath uses generative language models to determine what regions of the environment should contain that object and a foundation vision model ran over satellite imagery to segment sub-regions that form the exploration prior. This prior can then be used to generate UAV paths with various objectives, such as minimizing the expected time to locate the object of interest, maximizing the probability that the object is found given a limited travel distance, or narrowing down the search space to sub-regions that are most likely to contain the object. To demonstrate it&#x27;s capabilities, we used LMPath to generate various UAV paths and ran them using a real UAV over large-scale environments. We also ran simulations to demonstrate how paths generated using LMPath outperform traditional path planning approaches for search missions.</p></details>
+</article>
+<article>
+  <h2>10. RoboEvolve: Co-Evolving Planner-Simulator for Robotic Manipulation with Limited Data</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> To bridge this gap, we introduce RoboEvolve, a novel framework that couples a VLM planner and a VGM simulator into a mutually reinforcing co-evolutionary loop.</p>
+  <p><a href="http://arxiv.org/abs/2605.13775v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>The scalability of robotic manipulation is fundamentally bottlenecked by the scarcity of task-aligned physical interaction data. While vision-language models (VLMs) and video generation models (VGMs) hold promise for autonomous data synthesis, they suffer from semantic-spatial misalignment and physical hallucinations, respectively. To bridge this gap, we introduce RoboEvolve, a novel framework that couples a VLM planner and a VGM simulator into a mutually reinforcing co-evolutionary loop. Operating purely on unlabeled seed images, RoboEvolve leverages a cognitive-inspired dual-phase mechanism: (i) daytime exploration fosters physically grounded behavioral discovery through a semantic-controlled multi-granular reward, and (ii) nighttime consolidation mines &quot;near-miss&quot; failures to stabilize policy optimization. Guided by an autonomous progressive curriculum, the system naturally scales from simple atomic actions to complex tasks. Extensive experiments demonstrate that RoboEvolve (I) achieves superior effectiveness, elevating base planners by 30 absolute points and amplifying simulator success by 48% on average; (II) exhibits extreme data efficiency, surpassing fully supervised baselines with merely 500 unlabeled seeds--a 50x reduction; and (III) demonstrates robust continual learning without catastrophic forgetting.</p></details>
+</article>
+</body>
+</html>
