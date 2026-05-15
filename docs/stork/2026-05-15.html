@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Literature Digest 2026-05-15</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 960px; margin: 32px auto; line-height: 1.5; color: #1f2933; }
+    article { border-bottom: 1px solid #d9e2ec; padding: 20px 0; }
+    .meta { color: #52606d; font-size: 14px; }
+    .score { font-weight: 700; }
+  </style>
+</head>
+<body>
+  <h1>Literature Digest 2026-05-15</h1>
+  <p>Profile: <code>default</code>. Total recommendations: 10.</p>
+  <article>
+  <h2>1. ATLAS: Agentic or Latent Visual Reasoning? One Word is Enough for Both</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> A straightforward approach is to directly generate images via unified models during reasoning, but this is computationally expensive and architecturally non-trivial. However, agentic methods incur context-switching latency from external execution, while latent methods lack task generalization and are difficult to train with autoregressive parallelization.</p>
+  <p><a href="http://arxiv.org/abs/2605.15198v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Visual reasoning, often interleaved with intermediate visual states, has emerged as a promising direction in the field. A straightforward approach is to directly generate images via unified models during reasoning, but this is computationally expensive and architecturally non-trivial. Recent alternatives include agentic reasoning through code or tool calls, and latent reasoning with learnable hidden embeddings. However, agentic methods incur context-switching latency from external execution, while latent methods lack task generalization and are difficult to train with autoregressive parallelization. To combine their strengths while mitigating their limitations, we propose ATLAS, a framework in which a single discrete &#x27;word&#x27;, termed as a functional token, serves both as an agentic operation and a latent visual reasoning unit. Each functional token is associated with an internalized visual operation, yet requires no visual supervision and remains a standard token in the tokenizer vocabulary, which can be generated via next-token prediction. This design avoids verbose intermediate visual content generation, while preserving compatibility with the vanilla scalable SFT and RL training, without architectural or methodological modifications. To further address the sparsity of functional tokens during RL, we introduce Latent-Anchored GRPO (LA-GRPO), which stabilizes the training by anchoring functional tokens with a statically weighted auxiliary objective, providing stronger gradient updates. Extensive experiments and analyses demonstrate that ATLAS achieves superior performance on challenging benchmarks while maintaining clear interpretability. We hope ATLAS offers a new paradigm inspiring future visual reasoning research.</p></details>
+</article>
+<article>
+  <h2>2. RefDecoder: Enhancing Visual Generation with Conditional Video Decoding</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> We introduce RefDecoder, a reference-conditioned video VAE decoder by injecting high-fidelity reference image signal directly into the decoding process via reference attention. We demonstrate consistent improvements across several distinct decoder backbones (e.g., Wan 2.1 and VideoVAE+), achieving up to +2.1dB PSNR over the unconditional baselines on the Inter4K, WebVid, and Large Motion reconstruction benchmarks.</p>
+  <p><a href="http://arxiv.org/abs/2605.15196v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Video generation powers a vast array of downstream applications. However, while the de facto standard, i.e., latent diffusion models, typically employ heavily conditioned denoising networks, their decoders often remain unconditional. We observe that this architectural asymmetry leads to significant loss of detail and inconsistency relative to the input image. To address this, we argue that the decoder requires equal conditioning to preserve structural integrity. We introduce RefDecoder, a reference-conditioned video VAE decoder by injecting high-fidelity reference image signal directly into the decoding process via reference attention. Specifically, a lightweight image encoder maps the reference frame into the detail-rich high-dimensional tokens, which are co-processed with the denoised video latent tokens at each decoder up-sampling stage. We demonstrate consistent improvements across several distinct decoder backbones (e.g., Wan 2.1 and VideoVAE+), achieving up to +2.1dB PSNR over the unconditional baselines on the Inter4K, WebVid, and Large Motion reconstruction benchmarks. Notably, RefDecoder can be directly swapped into existing video generation systems without additional fine-tuning, and we report across-the-board improvements in subject consistency, background consistency, and overall quality scores on the VBench I2V benchmark. Beyond I2V, RefDecoder generalizes well to a wide range of visual generation tasks such as style transfer and video editing refinement.</p></details>
+</article>
+<article>
+  <h2>3. Aligning Latent Geometry for Spherical Flow Matching in Image Generation</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Under matched training, the method consistently improves class-conditional ImageNet-256 FID across different image tokenizers, leaves the diffusion architecture unchanged, and requires no auxiliary encoder or representation-alignment objective.</p>
+  <p><a href="http://arxiv.org/abs/2605.15193v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Latent flow matching for image generation usually transports Gaussian noise to variational autoencoder latents along linear paths. Both endpoints, however, concentrate in thin spherical shells, and a Euclidean chord leaves those shells even when preprocessing aligns their radii. By decomposing each latent token into radial and angular components, we show through component-swap probes that decoded perceptual and semantic content is carried predominantly by direction, with radius contributing much less. We therefore project data latents onto a fixed token radius, use the radial projection of Gaussian noise as the spherical prior, finetune the decoder with the encoder frozen, and replace linear interpolation with spherical linear interpolation. The resulting geodesic paths stay on the sphere at every timestep, and their velocity targets are purely angular by construction. Under matched training, the method consistently improves class-conditional ImageNet-256 FID across different image tokenizers, leaves the diffusion architecture unchanged, and requires no auxiliary encoder or representation-alignment objective.</p></details>
+</article>
+<article>
+  <h2>4. Strong Gravitational Lensing with the James Webb Space Telescope</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> The theory of General Relativity predicts that, since massive bodies curve spacetime, light from a distant source would be deflected by a foreground massive object -- a phenomenon known as \emph{Gravitational Lensing}. Historically, the strength of deflection of light from background stars by the sun, during the 1919 solar eclipse, supplied one of the first proofs for the theory of General Relativity.</p>
+  <p><a href="http://arxiv.org/abs/2605.15189v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>The theory of General Relativity predicts that, since massive bodies curve spacetime, light from a distant source would be deflected by a foreground massive object -- a phenomenon known as \emph{Gravitational Lensing}. Historically, the strength of deflection of light from background stars by the sun, during the 1919 solar eclipse, supplied one of the first proofs for the theory of General Relativity. However, it is only in the last few decades, with the advent of the Hubble Space Telescope and other large, ground-based facilities, that lensing has become a principal tool in modern astronomy. Lensing allows us to study both the matter content of the lensing bodies such as galaxies or clusters of galaxies, mainly dominated by the otherwise-invisible \emph{dark matter}, and the distant background sources that are being lensed by them. Strong gravitational lensing, where sources are substantially magnified and multiply imaged, is particularly useful to that end. The substantial magnification allows for a high-resolution view of the sources and to detect fainter and farther objects than would otherwise be possible; and image multiplicity helps in verifying the distance to them, and for studying variable or transient sources. Paired with the unprecedented capabilities of the James Webb Space Telescope (JWST), lensing now allows us to observe, detect, and study distant sources like never before. I summarise recent advances in strong-lensing applications and near-future prospects with JWST.</p></details>
+</article>
+<article>
+  <h2>5. Quantitative Video World Model Evaluation for Geometric-Consistency</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> We introduce PDI-Bench (Perspective Distortion Index), a quantitative framework for auditing geometric coherence in generated videos.</p>
+  <p><a href="http://arxiv.org/abs/2605.15185v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Generative video models are increasingly studied as implicit world models, yet evaluating whether they produce physically plausible 3D structure and motion remains challenging. Most existing video evaluation pipelines rely heavily on human judgment or learned graders, which can be subjective and weakly diagnostic for geometric failures. We introduce PDI-Bench (Perspective Distortion Index), a quantitative framework for auditing geometric coherence in generated videos. Given a generated clip, we obtain object-centric observations via segmentation and point tracking (e.g., SAM 2, MegaSaM, and CoTracker3), lift them to 3D world-space coordinates via monocular reconstruction, and compute a set of projective-geometry residuals capturing three failure dimensions: scale-depth alignment, 3D motion consistency, and 3D structural rigidity. To support systematic evaluation, we build PDI-Dataset, covering diverse scenarios designed to stress these geometric constraints. Across state-of-the-art video generators, PDI reveals consistent geometry-specific failure modes that are not captured by common perceptual metrics, and provides a diagnostic signal for progress toward physically grounded video generation and physical world model. Our code and dataset can be found at https://pdi-bench.github.io/.</p></details>
+</article>
+<article>
+  <h2>6. From Plans to Pixels: Learning to Plan and Orchestrate for Open-Ended Image Editing</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Prior agent based methods decompose such tasks but rely on handcrafted pipelines or teacher imitation, limiting flexibility and decoupling learning from actual editing outcomes. We propose an experiential framework for long-horizon image editing, where a planner generates structured atomic decompositions and an orchestrator selects tools and regions to execute each step.</p>
+  <p><a href="http://arxiv.org/abs/2605.15181v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Modern image editing models produce realistic results but struggle with abstract, multi step instructions (e.g., ``make this advertisement more vegetarian-friendly&#x27;&#x27;). Prior agent based methods decompose such tasks but rely on handcrafted pipelines or teacher imitation, limiting flexibility and decoupling learning from actual editing outcomes. We propose an experiential framework for long-horizon image editing, where a planner generates structured atomic decompositions and an orchestrator selects tools and regions to execute each step. A vision language judge provides outcome-based rewards for instruction adherence and visual quality. The orchestrator is trained to maximize these rewards, and successful trajectories are used to refine the planner. By tightly coupling planning with reward driven execution, our approach yields more coherent and reliable edits than single-step or rule-based multistep baselines.</p></details>
+</article>
+<article>
+  <h2>7. Detecting the Axion-Photon Conversion Background</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> The potential to detect axion dark matter through astrophysical processes has shown high promise in recent years. We therefore expand on previous work studying the axion-to-photon conversion efficacy of neutron stars and the interstellar medium (ISM) in this endeavor, respectively.</p>
+  <p><a href="http://arxiv.org/abs/2605.15175v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>The potential to detect axion dark matter through astrophysical processes has shown high promise in recent years. We therefore expand on previous work studying the axion-to-photon conversion efficacy of neutron stars and the interstellar medium (ISM) in this endeavor, respectively. For neutron stars (NS), we examine the possibility of a background signal emanating from all NS magnetospheres in the galaxy. Using a heuristic Galactic model, we find a significant background signal emanating from such magnetospheres in the Milky Way. This signal, while weak in absolute power ($\gtrsim 1$ mJy sr$^{-1}$ from the Galactic Center, at 2 GHz), can be detected through new statistical techniques with current instrumentation like the Atacama Large Millimeter Array (ALMA) at high radio frequencies (200 - 950 GHz). These techniques make use of higher order statistics like spectrally-limited ($\sim 300$ km s$^{-1}$) increases in confusion noise levels and kurtoses of survey images, and also show promise for general population estimation techniques. For the ISM, we consider Primakoff processes between free electrons and axions, and derive typical signal strengths of $10^{-15}$ Jy sr$^{-1}$ $\cdot$ $m_a$/eV, with a local, cosmological upper bound of $10^{-8}$ Jy sr$^{-1}$ $\cdot$ $m_a$/eV. Hence, we find that any diffuse axion signal from the ISM and other, large-scale, astrophysical plasmas to be too weak to be detected with modern technologies. We therefore find that the best avenue towards detecting a potential quantum chromodynamics (QCD) axion dark-matter particle is through the radio imaging of large swaths of the Galactic Center and other regions where we expect large numbers of pulsars and neutron stars.</p></details>
+</article>
+<article>
+  <h2>8. Evidential Reasoning Advances Interpretable Real-World Disease Screening</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> To address these challenges, we introduce EviScreen, an evidential reasoning framework for disease screening that leverages region-level evidence from historical cases. The proposed EviScreen offers retrospection interpretability through regional evidence retrieved from dual knowledge banks.</p>
+  <p><a href="http://arxiv.org/abs/2605.15171v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Disease screening is critical for early detection and timely intervention in clinical practice. However, most current screening models for medical images suffer from limited interpretability and suboptimal performance. They often lack effective mechanisms to reference historical cases or provide transparent reasoning pathways. To address these challenges, we introduce EviScreen, an evidential reasoning framework for disease screening that leverages region-level evidence from historical cases. The proposed EviScreen offers retrospection interpretability through regional evidence retrieved from dual knowledge banks. Using this evidential mechanism, the subsequent evidence-aware reasoning module makes predictions using both the current case and evidence from historical cases, thereby enhancing disease screening performance. Furthermore, rather than relying on post-hoc saliency maps, EviScreen enhances localization interpretability by leveraging abnormality maps derived from contrastive retrieval. Our method achieves superior performance on our carefully established benchmarks for real-world disease screening, yielding notably higher specificity at clinical-level recall. Code is publicly available at https://github.com/DopamineLcy/EviScreen.</p></details>
+</article>
+<article>
+  <h2>9. Does Synthetic Layered Design Data Benefit Layered Design Decomposition?</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Existing approaches either rely on scarce proprietary layered assets or construct partially synthetic data from limited structural priors. In this work, we investigate whether pure synthetic layered data can improve graphic design decomposition.</p>
+  <p><a href="http://arxiv.org/abs/2605.15167v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Recent advances in image generation have made it easy to produce high-quality images. However, these outputs are inherently flattened, entangling foreground elements, background, and text within a fixed canvas. As a result, flexible post-generation editing remains challenging, revealing a clear last-mile gap toward practical usability. Existing approaches either rely on scarce proprietary layered assets or construct partially synthetic data from limited structural priors. However, both strategies face fundamental challenges in scalability. In this work, we investigate whether pure synthetic layered data can improve graphic design decomposition. We make the assumption that, in graphic design, effective decomposition does not require modeling inter-layer dependencies as precisely as in natural-image composition, since design elements are often intentionally arranged as modular and semantically separable components. Concretely, we conduct a data-centric study based on CLD baseline, which is a state-of-the-art layer decomposition framework. Based on the baseline, we construct our own synthetic dataset, SynLayers, generate textual supervision using vision language models, and automate inference inputs with VLM-predicted bounding boxes. Our study reveals three key findings: (1) even training with purely synthetic data can outperform non-scalable alternatives such as the widely used PrismLayersPro dataset, demonstrating its viability as a scalable and effective substitute; (2) performance consistently improves with increased training data scale, while gains begin to saturate at around 50K samples; and (3) synthetic data enables balanced control over layer-count distributions, avoiding the layer-count imbalance commonly observed in real-world datasets. We hope this data-centric study encourages broader adoption of synthetic data as a practical foundation for layered design editing systems.</p></details>
+</article>
+<article>
+  <h2>10. Real geometric transcendence for the Gamma function</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> We show that the $x$-axis is the only real algebraic curve in $\mathbb R^2$ whose image via the Gamma function is contained in an algebraic curve. Our proof employs an elegant base-change argument due to Tamiozzo (2023) to deduce the result from the corresponding complex geometric transcendence result of Eterović, Padgett and Zhao (2025).</p>
+  <p><a href="http://arxiv.org/abs/2605.15117v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>We show that the $x$-axis is the only real algebraic curve in $\mathbb R^2$ whose image via the Gamma function is contained in an algebraic curve. Our proof employs an elegant base-change argument due to Tamiozzo (2023) to deduce the result from the corresponding complex geometric transcendence result of Eterović, Padgett and Zhao (2025). As an application, we use the complex and real geometric transcendence results to study analogues of the Manin--Mumford conjecture for the Gamma function.</p></details>
+</article>
+</body>
+</html>
