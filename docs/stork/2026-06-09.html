@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Literature Digest 2026-06-09</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 960px; margin: 32px auto; line-height: 1.5; color: #1f2933; }
+    article { border-bottom: 1px solid #d9e2ec; padding: 20px 0; }
+    .meta { color: #52606d; font-size: 14px; }
+    .score { font-weight: 700; }
+  </style>
+</head>
+<body>
+  <h1>Literature Digest 2026-06-09</h1>
+  <p>Profile: <code>default</code>. Total recommendations: 10.</p>
+  <article>
+  <h2>1. The Challenge of Cell Segmentation in Spatially Resolved Transcriptomics</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> However, the field lacks robust methodological guidance on one of its most fundamental analytical steps: how to accurately segment cells and assign spatially localized transcripts to them. We review current approaches, highlight key methodological limitations, including the lack of appropriate metrics and gold-standard benchmarks, and propose a community-driven path forward.</p>
+  <p><a href="http://arxiv.org/abs/2606.09675v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Spatially resolved transcriptomics (SRT) is transforming how we study tissues by measuring gene expression in cells in their spatial context. However, the field lacks robust methodological guidance on one of its most fundamental analytical steps: how to accurately segment cells and assign spatially localized transcripts to them. Major technical challenges include sparse molecular signals, transcript displacement, complex cellular morphologies, and the projection of three-dimensional tissue architecture onto two-dimensional imaging planes. These challenges make segmentation a major source of uncertainty, with errors that can propagate through downstream analyses and ultimately lead to misleading biological interpretations. Here, we argue that segmentation should be treated as a central unresolved problem in spatial omics rather than a routine preprocessing step. We review current approaches, highlight key methodological limitations, including the lack of appropriate metrics and gold-standard benchmarks, and propose a community-driven path forward. Establishing shared evaluation frameworks, scalable benchmark datasets, and transparent reporting standards will be essential for transforming SRT into a robust and reproducible foundation for biological discovery and clinical translation.</p></details>
+</article>
+<article>
+  <h2>2. Visual Prompting Meets Feature Reconstruction-Based Anomaly Detection with Dual-Teacher Supervision</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Recent Anomaly Detection methods achieve perfect detection and segmentation scores on well-established datasets, such as MVTec. However, many of these methods face challenges when foundational assumptions - such as consistent object scale, viewpoint, background, illumination, and centered placement - are violated.</p>
+  <p><a href="http://arxiv.org/abs/2606.09670v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Recent Anomaly Detection methods achieve perfect detection and segmentation scores on well-established datasets, such as MVTec. However, many of these methods face challenges when foundational assumptions - such as consistent object scale, viewpoint, background, illumination, and centered placement - are violated. Those variations that occur render anomaly detection methods unusable in many real-world scenarios. To address these limitations, we introduce three key contributions: (1) a visual prompting pipeline that isolates objects using foreground-background masking; (2) a mechanism for unfreezing the teacher in student-teacher models to improve domain adaptability; and (3) a data augmentation strategy leveraging diffusion-generated synthetic images to enhance anomaly detection performance. We achieve a 3.5 percentage point improvement over the previous state-of-the-art on the challenging AeBAD dataset by using the Masked Multiscale Reconstruction (MMR) model as our backbone.</p></details>
+</article>
+<article>
+  <h2>3. End-to-End Context Compression at Scale</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Furthermore, many methods require the input to fit within the target model&#x27;s context window, and are generally incompatible with modern production inference engines. However, existing approaches are not competitive with KV cache compression on the accuracy-efficiency frontier.</p>
+  <p><a href="http://arxiv.org/abs/2606.09659v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Long-context language model inference is bottlenecked by memory, as the KV cache grows with context length. Recent techniques to compress the KV cache fall short: they either degrade model quality substantially or require considerable time and compute to compress a single long prompt. Furthermore, many methods require the input to fit within the target model&#x27;s context window, and are generally incompatible with modern production inference engines. Encoder-decoder compressors, which map a long token sequence to a shorter sequence of latent embeddings consumed by a decoder, are an appealing alternative in principle. However, existing approaches are not competitive with KV cache compression on the accuracy-efficiency frontier. In this work, we revisit encoder-decoder compression and close this gap. We first perform an architecture search, pre-training many variants from scratch to determine how best to design and train encoder-decoder compressors. Guided by our findings, we continually pre-train a family of 0.6B-encoder, 4B-decoder models on over 350B tokens each, at compression ratios of 1:4, 1:8, and 1:16. We introduce Latent Context Language Models (LCLMs), a family of compressors that improve the Pareto frontier across general-task performance, compression speed, and peak memory usage. We demonstrate that LCLMs serve as efficient backbones for long-horizon agents, letting the agent skim through a compressed long context and adaptively expand relevant segments on demand.</p></details>
+</article>
+<article>
+  <h2>4. Muon Learns More Robust and Transferable Features than Adam</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Muon has recently emerged as a state-of-the-art optimizer for pretraining Large Language Models (LLMs) and vision classifiers. Despite its efficiency advantage over Adam and SGD, the feature-learning advantage of Muon remains unclear.</p>
+  <p><a href="http://arxiv.org/abs/2606.09658v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Muon has recently emerged as a state-of-the-art optimizer for pretraining Large Language Models (LLMs) and vision classifiers. Despite its efficiency advantage over Adam and SGD, the feature-learning advantage of Muon remains unclear. This paper investigates Muon&#x27;s feature-learning advantage through the lens of robustness and transferability. First, by evaluating pretrained models on corrupted images and texts, we show that features learned by Muon are consistently more robust than those learned by Adam and SGD across different architectures, including transformers and Convolutional Neural Networks (CNNs). Using trained layer-wise probes, we further show that this robustness advantage is reflected in larger logit margins across layers. Second, by training linear classifiers or fine-tuning full models from pretrained parameters on downstream tasks, we demonstrate that Muon-learned features transfer more effectively than those learned by Adam and SGD. This transferability advantage is further supported by the diversity of hidden states across layers, as measured by effective rank. Finally, in a representative classification problem with multi-component features, we prove that Muon attains larger margins and higher effective rank than Adam and SGD, providing theoretical support for our empirical findings.</p></details>
+</article>
+<article>
+  <h2>5. ArtiFact: A Large-Scale Multi-Modal Cultural Heritage Dataset</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> For cross-modal error detection, we introduce a curated taxonomy of seven error categories injected into 130209 records and show that reliably detecting subtle domain-specific errors such as material anachronisms and temporal shifts remain an open challenge.</p>
+  <p><a href="http://arxiv.org/abs/2606.09648v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Multi-modal data management has emerged as a central research topic in the database community, spanning data integration, semantic query processing, and data quality assessment. Despite this growing interest, the community lacks large-scale, real-world datasets combining tables, text, and images. We present ArtiFact, a multi-modal cultural heritage dataset of 651045 museum records collected from the Metropolitan Museum of Art, the Art Institute of Chicago, and the Rijksmuseum. We demonstrate the utility of ArtiFact through two downstream tasks. For cross-modal error detection, we introduce a curated taxonomy of seven error categories injected into 130209 records and show that reliably detecting subtle domain-specific errors such as material anachronisms and temporal shifts remain an open challenge. For semantic query processing, we show that current systems struggle with queries involving cultural proximity, ambiguous object types, and historically contingent terminology. Our results position ArtiFact as a challenging benchmark for multi-modal data management research.</p></details>
+</article>
+<article>
+  <h2>6. Lattice genome: representation and analysis of heterogeneous crystalline microstructures</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Inspired by the concept of a generalized materials genome, we introduce the notions of lattice gene and lattice genome for crystalline materials.</p>
+  <p><a href="http://arxiv.org/abs/2606.09611v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Inspired by the concept of a generalized materials genome, we introduce the notions of lattice gene and lattice genome for crystalline materials. A lattice gene is a compact representation of the local crystalline structure obtained by encoding the Kikuchi diffraction patterns with a variational autoencoder. We show that this representation satisfies key criteria for a materials gene: compactness, experimental accessibility, existence of a distance metric reflecting structural similarity, and sufficient information content for reconstructing the original diffraction patterns. The lattice genome is the spatially resolved collection of lattice genes across a representative area mapped by electron backscatter diffraction (EBSD), which captures mesoscale heterogeneity that ultimately controls properties. We demonstrate three applications of the lattice genome: (i) latent component maps that visualize grain-scale and intra-grain heterogeneities, (ii) domain segmentation based on distance and angle metrics in the latent space, and (iii) kernel and domain latent vector spreads that quantify intragranular heterogeneity as high-dimensional analogs of kernel average misorientation and grain orientation spread. All three tools are validated on microstructures of additively manufactured and wrought Ni-base superalloys in as-built and recrystallized conditions.</p></details>
+</article>
+<article>
+  <h2>7. TUDSR: Twice Upsampling-Diffusion for Higher Super-Resolution</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Thus, we present TUDSR, a Twice Upsampling-Diffusion framework for higher SR. The TUDSR framework mainly consists of two stages: the first involves training at $R$-resolution, and the second introduces a looped chunk-based training strategy at $NR$-resolution.</p>
+  <p><a href="http://arxiv.org/abs/2606.09608v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Diffusion-based generative models have achieved remarkable success in real-world image super-resolution (SR). With tiled diffusion techniques, these models can produce high-resolution images that exceed their native-supported resolution. However, the quality of such high-resolution (e.g $2048^2$) outputs often remains extremely poor, primarily due to two factors we consider: the image upsampling ratio (e.g $\times8$) exceeding the model&#x27;s native-supported upsampling ratio (e.g $\times4$), and the model&#x27;s native-supported resolution. In practice, training a native high-resolution model requires larger architectures, which incur significant computational overhead and GPU memory costs, making it hard on limited-resource equipment. Thus, we present TUDSR, a Twice Upsampling-Diffusion framework for higher SR. The TUDSR framework mainly consists of two stages: the first involves training at $R$-resolution, and the second introduces a looped chunk-based training strategy at $NR$-resolution. Each stage adapts a one-step GAN architecture comprising a generator and a discriminator. Based on SD2.1-base, we develop TUDSR-S, which achieves state-of-the-art performance across multiple benchmarks. Extensive experiments further demonstrate that TUDSR-S generates high-quality images at the resolutions of $1024^2$ and even $2048^2$, significantly outperforming existing approaches. Code is available at https://github.com/wuer5/TUDSR.</p></details>
+</article>
+<article>
+  <h2>8. Assessing Sample Quality in Conditional Generation under Compositional Shift</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> In biological imaging, selected samples preserve real morphological structure better and improve downstream predictive performance, while similar gains are observed on controlled vision benchmarks.</p>
+  <p><a href="http://arxiv.org/abs/2606.09601v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Conditional generators provide a natural tool for controllable generation, including settings where the desired condition is a new composition of observed attributes or experimental factors. In many applications, especially in scientific domains, such models are attractive to explore conditions for which real samples are rare, expensive, or not yet observed. However, this creates a circularity for evaluation: standard conditional quality metrics require a reference target distribution, but in the extrapolative regime that distribution is unavailable by definition. We address this problem with a post-hoc, per-sample trust score for assessing conditional samples using only the training distribution. The score combines two estimable quantities: global realism, measuring compatibility with the real data manifold, and attribute-wise faithfulness, measuring whether a sample is closer to the requested attributes than to plausible alternatives. We show that the score can recover meaningful comparisons across extrapolated generations, under a mild coverage condition on the observed attributes. These comparisons enable effective filtering, ranking, and abstention of generations and can be used directly on off-the-shelf pretrained models. In biological imaging, selected samples preserve real morphological structure better and improve downstream predictive performance, while similar gains are observed on controlled vision benchmarks. Finally, we show how the score can be applied during generation, enabling abstention before full decoding. Code is available at https://github.com/berkerdemirel/faithful-cond-gen.</p></details>
+</article>
+<article>
+  <h2>9. Clinically Grounded Privacy Evaluation of Medical LMs</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> We introduce a clinically grounded framework that evaluates leakage along a graded axis of adversarial access, ranging from publicly inferable demographics to leaked note fragments. Applying the framework to an LM pretrained on 378k clinical notes, we find that routine encounter metadata (i.e.</p>
+  <p><a href="http://arxiv.org/abs/2606.09590v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Medical language models (LMs) can memorize and reproduce protected health information, but privacy evaluations often focus on recovery of training text rather than disclosure under realistic threat models. We introduce a clinically grounded framework that evaluates leakage along a graded axis of adversarial access, ranging from publicly inferable demographics to leaked note fragments. At each tier, we measure verbatim memorization of patient-specific text and semantic leakage of sensitive diagnoses. Applying the framework to an LM pretrained on 378k clinical notes, we find that routine encounter metadata (i.e. name, date of birth, provider, practice, visit date) elicits high rates of verbatim memorization across a patient&#x27;s timeline and sensitive-diagnosis recovery (AUROC 0.91 for abortion, 0.81 for HIV). At the same time, exact-match memorization can overstate disclosure: 36% of memorized tokens reflect templated documentation. Our work highlights the risks of training on longitudinal clinical data, providing a practical framework for contextual privacy evaluation of medical LMs.</p></details>
+</article>
+<article>
+  <h2>10. Optical Reasoning: Rethinking Images as an Expressive Reasoning Medium Beyond Text</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Chain-of-Thought (CoT) improves the performance of Large Language Models (LLMs) and has been extended to Multimodal Large Language Models (MLLMs). In this work, we propose a bolder and more ambitious idea: could images alone serve as the reasoning medium for both language and multimodal tasks?</p>
+  <p><a href="http://arxiv.org/abs/2606.09585v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Chain-of-Thought (CoT) improves the performance of Large Language Models (LLMs) and has been extended to Multimodal Large Language Models (MLLMs). More recent work further moves from text-based multimodal reasoning toward interleaved-modal reasoning, where intermediate steps can incorporate both textual rationales and visual evidence. In this work, we propose a bolder and more ambitious idea: could images alone serve as the reasoning medium for both language and multimodal tasks? To explore this, we propose optical reasoning, which treats images as a standalone reasoning medium. We instantiate this concept with two variants: typographic-based optical reasoning, which optimizes visual layouts for compact rationale rendering, and graphical-based optical reasoning, which composes text and graphical elements into structured visual rationales. Across mathematical, scientific, and interleaved-modal reasoning benchmarks, optical reasoning can match or even exceed traditional text reasoning while reducing reasoning tokens by an average of 28.57% on language tasks and 16% on multimodal tasks, achieving 1.96 times the token efficiency of text reasoning. These results show that images can effectively and efficiently encode rationales while providing a unified visual canvas for reasoning.</p></details>
+</article>
+</body>
+</html>
