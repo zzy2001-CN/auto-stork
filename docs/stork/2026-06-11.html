@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Literature Digest 2026-06-11</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 960px; margin: 32px auto; line-height: 1.5; color: #1f2933; }
+    article { border-bottom: 1px solid #d9e2ec; padding: 20px 0; }
+    .meta { color: #52606d; font-size: 14px; }
+    .score { font-weight: 700; }
+  </style>
+</head>
+<body>
+  <h1>Literature Digest 2026-06-11</h1>
+  <p>Profile: <code>default</code>. Total recommendations: 10.</p>
+  <article>
+  <h2>1. Reroute, Don&#x27;t Remove: Recoverable Visual Token Routing for Vision-Language Models</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Existing visual-token reduction methods largely follow a rank-and-remove paradigm: they score visual tokens, keep a compact subset, and permanently discard the rest. We propose Reroute, a training-free plug-in that replaces removal with recoverable routing.</p>
+  <p><a href="http://arxiv.org/abs/2606.12412v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Vision-language models (VLMs) project images into hundreds to thousands of visual tokens, making decoder inference expensive in both attention computation and KV-cache memory. Existing visual-token reduction methods largely follow a rank-and-remove paradigm: they score visual tokens, keep a compact subset, and permanently discard the rest. We show that this irreversible action is fragile because visual-token importance changes across decoder depth; tokens ranked low at one stage may become relevant in later layers, especially for grounding-sensitive queries. We propose Reroute, a training-free plug-in that replaces removal with recoverable routing. At each routing stage, selected vision tokens pass through decoder blocks, while deferred tokens bypass the stage and re-enter the candidate pool at the next routing decision. Reroute reuses existing attention-score ranking rules and stage-wise schedules, preserving the theoretical TFLOPs and KV-cache budget class of the pruning method it augments. Across FastV, PDrop, and Nüwa variants on LLaVA-1.5 and Qwen backbones, reroute improves grounding under aggressive token reduction while maintaining general VQA performance. These results suggest that VLM token reduction should not be viewed only as irreversible pruning, but also as recoverable routing. The code can be found here: https://github.com/elmma/mllm-reroute/</p></details>
+</article>
+<article>
+  <h2>2. How Seemingly Inconsequential Design Choices Dictate Performance of LLMs in Pathology</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> The same configuration generalizes to two other models and to a fully held-out CPTAC cohort, where it improves Gemini 3 Flash by 23.4 percentage points without any task-specific tuning.</p>
+  <p><a href="http://arxiv.org/abs/2606.12407v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>General-purpose large language models (LLMs) are routinely used as baselines when evaluating specialized pathology models on whole-slide images (WSIs). Because WSIs exceed contemporary model context limits, LLM baselines routinely use small, high-magnification patches processed independently via majority voting, without systematic evaluation of seemingly inconsequential design choices such as patch size, patch count, and magnification. Generalist LLMs have consistently underperformed specialized systems, reinforcing the perception that domain-specific training or architectural adaptation is necessary for pathology tasks involving WSIs. Here, we conduct a systematic factorial analysis of four input design factors: inference mode, patch size, magnification, and patch count. We demonstrate that prior studies have overstated the gap between specialized models and general-purpose LLMs by choosing non-optimized input configurations. On the MultiPathQA benchmark, switching to a single balanced configuration (large patches at lower magnification, processed jointly) raises GPT-5 from 15.1% to 39.5% on cancer-type classification (TCGA) and from 38.1% to 62.9% on organ classification (GTEx). Per-task optimization yields further gains up to 43.9% (TCGA) and 71.6% (GTEx). The same configuration generalizes to two other models and to a fully held-out CPTAC cohort, where it improves Gemini 3 Flash by 23.4 percentage points without any task-specific tuning.</p></details>
+</article>
+<article>
+  <h2>3. FACTR 2: Learning External Force Sensing for Commodity Robot Arms Improves Policy Learning</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> We present Neural External Torque Estimation (NEXT), a data-driven method that estimates external joint torques without needing any dedicated force sensors. NEXT enables force-feedback teleoperation on low-cost arms and improves policy learning through Force-Informed Re-Sampling Training (FIRST), which up-samples pre-contact and contact segments during behavior cloning.</p>
+  <p><a href="http://arxiv.org/abs/2606.12406v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Contact-rich manipulation requires force sensitivity, but many robot arms lack dedicated force sensors due to their high cost. We present Neural External Torque Estimation (NEXT), a data-driven method that estimates external joint torques without needing any dedicated force sensors. NEXT trains in 1 minute from only 10 minutes of free-motion data, yet achieves estimates comparable to dedicated joint-torque sensors. NEXT enables force-feedback teleoperation on low-cost arms and improves policy learning through Force-Informed Re-Sampling Training (FIRST), which up-samples pre-contact and contact segments during behavior cloning. Across five long-horizon tasks, FIRST outperforms prior force-aware policies by over 17% in task progress. Together, NEXT and FIRST bring force-aware teleoperation and policy learning to off-the-shelf robots without additional sensing hardware. Video results and code are available at https://jasonjzliu.com/factr2</p></details>
+</article>
+<article>
+  <h2>4. World Pilot: Steering Vision-Language-Action Models with World-Action Priors</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> We present World Pilot, a VLA framework that augments the policy with priors from a World-Action Model (WAM), routed into the decision chain through two complementary pathways.</p>
+  <p><a href="http://arxiv.org/abs/2606.12403v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Vision-Language-Action (VLA) models inherit semantic grounding from large-scale pretraining and perform competently across in-distribution manipulation tasks. This grounding, however, is built on static image-text pairs, whereas manipulation is a continuous, contact-rich process whose dynamics this pretraining cannot capture. We present World Pilot, a VLA framework that augments the policy with priors from a World-Action Model (WAM), routed into the decision chain through two complementary pathways. Latent Steering conditions the perception layer on a scene-evolution latent, and Action Steering supplies an anticipated trajectory as a motion prior to the action generator. Together the two priors equip the VLA with an anticipated view of the scene and a trajectory-level motion hint alongside its semantic conditioning, and the scene-evolution prior remains effective even when supplied by a video-pretrained world model that has not been action-post-trained. World Pilot attains a state-of-the-art Total success rate of 84.7% on the LIBERO-Plus zero-shot OOD benchmark and the highest success rate on every real-robot setting across four manipulation tasks, with the largest margins under shifts in viewpoint, geometry, deformable state, and pose. Project Website: https://world-pilot.github.io/</p></details>
+</article>
+<article>
+  <h2>5. The carbon isotope ratio of β Pic b with high-resolution spectroscopy</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Isotopic ratios trace the formation and evolution of planets and link their atmospheres to the chemistry of their natal protoplanetary discs. We measure $^{12}\mathrm{C}/^{13}\mathrm{C} = 58^{+18}_{-15}$ in the atmosphere of the young super-Jupiter $β$ Pic b from 11 nights of CRIRES+ K-band spectroscopy ($\mathcal{R} \approx 100{,}000$) at the Very Large Telescope (VLT).</p>
+  <p><a href="http://arxiv.org/abs/2606.12401v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Isotopic ratios trace the formation and evolution of planets and link their atmospheres to the chemistry of their natal protoplanetary discs. We measure $^{12}\mathrm{C}/^{13}\mathrm{C} = 58^{+18}_{-15}$ in the atmosphere of the young super-Jupiter $β$ Pic b from 11 nights of CRIRES+ K-band spectroscopy ($\mathcal{R} \approx 100{,}000$) at the Very Large Telescope (VLT). We detect both $^{12}\mathrm{CO}$ and $^{13}\mathrm{CO}$ and constrain $^{12}\mathrm{C}/^{13}\mathrm{C}$ with a Bayesian retrieval jointly fitted with near-infrared photometry. The inferred $^{12}\mathrm{C}/^{13}\mathrm{C}$ is consistent with the present-day interstellar medium (ISM), is below the solar value, and is comparable to measurements in other young super-Jupiters. We also retrieve $T_{\rm eff} = 1629^{+30}_{-28}\,\mathrm{K}$, near-solar to mildly super-solar metallicity ([M/H]$ = 0.20^{+0.16}_{-0.12}$), a solar-like carbon-to-oxygen ratio (C/O$ = 0.52 \pm 0.03$), and tentative evidence for thick clouds. We analyse each night independently and combine the results of the six epochs with the highest signal-to-noise ratio (S/N), propagating night-to-night scatter into the final uncertainties. This provides an isotopic benchmark for a directly imaged planet interior to the CO snow line.</p></details>
+</article>
+<article>
+  <h2>6. Quantifying the Distribution of Biexciton Emission Efficiencies in Colloidal Quantum Shells</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Resolving this heterogeneity remains challenging with conventional particle-by-particle approaches. Here, we introduce a crosstalk-suppressed SPAD-array photon-correlation approach for high-throughput quantification of multi-photon emission from more than 1000 colloidal quantum shells.</p>
+  <p><a href="http://arxiv.org/abs/2606.12398v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>The efficiency of multi-photon emission is an important characteristic of quantum light sources. Bright multi-photon emission is desirable for high-power lighting and lasers, while its complete suppression is required for high-purity single-photon generation. In colloidal quantum emitters, multi-photon emission can vary significantly between individual particles. Resolving this heterogeneity remains challenging with conventional particle-by-particle approaches. Here, we introduce a crosstalk-suppressed SPAD-array photon-correlation approach for high-throughput quantification of multi-photon emission from more than 1000 colloidal quantum shells. By projecting two images of the same sample onto distant regions of the detector array, we avoid short-range crosstalk between detector pixels. Time gating suppresses dark-count coincidences and distinguishes individual emitters from clusters. Applying this method to quantum shells reveals a near-Gaussian distribution of biexciton emission efficiencies, with a mean of 0.55 and an estimated intrinsic standard deviation of 0.12. Intra-batch correlations between the biexciton efficiency and the particle brightness are consistent with the volume scaling of Auger quenching. These results establish SPAD-array photon correlation as a scalable route to resolve multi-photon heterogeneities in nanoparticle ensembles.</p></details>
+</article>
+<article>
+  <h2>7. Semantically-Aware Diver Activity Recognition Framework for Effective Underwater Multi-Human-Robot Collaboration</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Towards this goal, we introduce DAR-Net, a novel transformer-based framework that analyzes complex underwater scenes to classify diver activities. Our contribution lies in a semantically guided learning formulation that couples transformer-based temporal reasoning with pixel-level scene supervision.</p>
+  <p><a href="http://arxiv.org/abs/2606.12374v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Effective multi-human-robot collaboration is essential for expanding human-led operations in the challenging and high-risk underwater environment. For autonomous underwater vehicles (AUVs) to become true teammates, they must be able to comprehend their surroundings and recognize a diver&#x27;s activities to offer assistance and ensure safety. Towards this goal, we introduce DAR-Net, a novel transformer-based framework that analyzes complex underwater scenes to classify diver activities. Our contribution lies in a semantically guided learning formulation that couples transformer-based temporal reasoning with pixel-level scene supervision. This multi-loss training strategy explicitly aligns global activity recognition with local human-robot interaction semantics, which is particularly critical in low-visibility underwater conditions. To address the significant challenge of data scarcity in this domain, we present the first-ever Underwater Diver Activity (UDA) dataset, a foundational resource containing over 2,600 annotated images with pixel-level masks. Through rigorous experimental evaluations in a controlled environment, we demonstrate that DAR-Net achieves promising accuracy in recognizing six distinct diver activities, outperforming state-of-the-art models. While this dataset provides a crucial baseline, our work serves as a pioneering step, laying the groundwork for future research and facilitating the development of more intelligent, collaborative underwater robotic systems.</p></details>
+</article>
+<article>
+  <h2>8. A Turbo-Inference Strategy for Object Detection and Instance Segmentation</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Existing top-down instance segmentation methods usually follow a detect-then-segment paradigm, where an initial detector is used to recognize and localize objects with bounding boxes, followed by the segmentation of an instance mask within each bounding box. In such methods, the detection accuracy directly influences the subsequent segmentation performance.</p>
+  <p><a href="http://arxiv.org/abs/2606.12371v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Object detection and instance segmentation tasks are closely related. Existing top-down instance segmentation methods usually follow a detect-then-segment paradigm, where an initial detector is used to recognize and localize objects with bounding boxes, followed by the segmentation of an instance mask within each bounding box. In such methods, the detection accuracy directly influences the subsequent segmentation performance. However, previous research has seldom explored the impact of the instance segmentation task on object detection. In this paper, we present a turbo-inference strategy for the top-down methods that leverages the complementary information between detection and segmentation tasks iteratively. Specifically we design two modules: turbo-detection head and turbo-segmentation head, which facilitate communication between the tasks. The two modules form a closed loop that interlaces the detection and segmentation results without retraining the model. Comprehensive experiments on the COCO, iFLYTEK, and Cityscapes datasets demonstrate that our method substantially enhances both detection and segmentation accuracies with a certain increase in computational cost. The proposed method represents a tradeoff between prediction accuracy and inference speed. Codes are available at https://github.com/zhaozhen2333/Turbo-Learning.git.</p></details>
+</article>
+<article>
+  <h2>9. DepthMaster: Unified Monocular Depth Estimation for Perspective and Panoramic Images</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Existing methods are often tailored to specific camera types and struggle to produce accurate metric depth that generalizes across diverse settings. In this work, we introduce DepthMaster, a unified metric depth estimation framework.</p>
+  <p><a href="http://arxiv.org/abs/2606.12368v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>While monocular depth estimation has achieved significant progress, achieving generalized metric depth estimation for both narrow field-of-view (FoV) perspectives and $360^\circ$ panoramas remains an unsolved challenge. Existing methods are often tailored to specific camera types and struggle to produce accurate metric depth that generalizes across diverse settings. This limitation stems from two key challenges: the inherent geometric discrepancy between perspective and panoramic cameras, and the scarcity of panoramic training data with metric annotations. In this work, we introduce DepthMaster, a unified metric depth estimation framework. Rather than employing specialized networks to learn spherical distortions, we reformulate the problem by decomposing panoramic images into overlapping perspective patches. Crucially, distinct from prior projection-based methods that rely on ad-hoc architectural modifications to handle boundaries, we introduce a novel Correspondence Consistency Loss (CCL) and inject virtual projection cameras as geometric priors, allowing us to seamlessly stitch the patches while avoiding specialized operators and keeping the backbone largely compatible with standard Transformer designs. This strategy also resolves the geometric differences by unifying all inputs into a canonical perspective representation, and effectively circumvents data scarcity by directly unlocking powerful metric priors from vast perspective datasets. Trained on a mixed dataset that contains only one panorama dataset, DepthMaster achieves state-of-the-art zero-shot performance on 13 diverse datasets, outperforming not only universal methods but also leading specialist models in both perspective and panoramic domains.</p></details>
+</article>
+<article>
+  <h2>10. Local Stress Redistribution Controls Interactions between Hydraulic Fractures and Pre-existing Fractures</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Hydraulic fracture (HF) propagation in naturally fractured formations is strongly influenced by local stress states near pre-existing natural fractures (NFs). The role of NF-induced shear deformation and stress redistribution in controlling HF trajectories remains poorly characterized.</p>
+  <p><a href="http://arxiv.org/abs/2606.12347v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Hydraulic fracture (HF) propagation in naturally fractured formations is strongly influenced by local stress states near pre-existing natural fractures (NFs). The role of NF-induced shear deformation and stress redistribution in controlling HF trajectories remains poorly characterized. This study investigates how NF-induced stress redistribution governs HF-NF interactions through coupled laboratory experiments and poroelastic extended finite element simulations on intact and pre-fractured PMMA specimens under plane-strain conditions. Digital image correlation provides full-field measurements of displacement and strain evolution during mechanical loading and hydraulic fracturing. Under fixed-base, lateral confinement, and vertical compression boundary conditions, inclined NFs induce asymmetric stress redistribution and shear deformation, generating distinct local stress states prior to fluid injection. The results demonstrate that the HF trajectory is governed by the sign and spatial distribution of shear stress and shear strain components generated by NF orientation relative to the far-field maximum principal stress. Shear deformation that promotes compressive stress development adjacent to the NF causes the HF to deflect away, whereas shear deformation that reduces the effective normal stress along the NF promotes fracture attraction and linkage. Corresponding numerical reproduction of HF curvature in pre-fractured specimens requires mixed-mode (Mode I-II) fracture energy release criteria, while the intact specimen propagates in pure Mode I. Overall, the findings reveal a transition from tensile opening to shear-assisted mixed-mode propagation as local stress states evolve due to the presence of NFs, providing a mechanistic basis for predicting and controlling fracture trajectories in subsurface stimulation and storage applications.</p></details>
+</article>
+</body>
+</html>
