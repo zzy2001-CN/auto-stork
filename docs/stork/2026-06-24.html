@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Literature Digest 2026-06-24</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 960px; margin: 32px auto; line-height: 1.5; color: #1f2933; }
+    article { border-bottom: 1px solid #d9e2ec; padding: 20px 0; }
+    .meta { color: #52606d; font-size: 14px; }
+    .score { font-weight: 700; }
+  </style>
+</head>
+<body>
+  <h1>Literature Digest 2026-06-24</h1>
+  <p>Profile: <code>default</code>. Total recommendations: 10.</p>
+  <article>
+  <h2>1. DiffusionBench: On Holistic Evaluation of Diffusion Transformers</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> While methods improve the FID and related metrics, it is increasingly unclear whether they reflect real progress in generative modeling. We introduce NanoGen, a unified DiT training and evaluation framework.</p>
+  <p><a href="http://arxiv.org/abs/2606.24888v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Diffusion transformer (DiT) research on image generation has converged to a single evaluation setup: class-conditional generation on ImageNet. While methods improve the FID and related metrics, it is increasingly unclear whether they reflect real progress in generative modeling. The natural alternative, i.e., text-to-image (T2I) generation, is perceived as too costly or inconvenient to train and evaluate and is often skipped. We argue that this perception no longer holds. We introduce NanoGen, a unified DiT training and evaluation framework. NanoGen matches state-of-the-art DiT baselines on ImageNet and, with 12 lines of configuration change, also trains competitive text-to-image models. It currently supports RAE, VAE, pixel-space, and MeanFlow diffusion methods under both ImageNet and T2I setups. Under NanoGen, training T2I requires comparable compute to ImageNet. After training 21 latent diffusion models with NanoGen, we observe that method ranking shows no strong correlation between ImageNet and T2I generation: Pearson correlation is between -0.377 and -0.580 across three metrics. This suggests that a method which improves class-conditional ImageNet FID may show no corresponding improvement on T2I, clearly indicating the necessity of evaluating DiTs on both tasks. To this end, we summarize ImageNet and text-to-image results, which yields DiffusionBench, a holistic benchmark for DiT research. We recommend reporting DiffusionBench in place of ImageNet alone: methods that improve DiffusionBench are more likely to reflect broader progress.</p></details>
+</article>
+<article>
+  <h2>2. InSight: Self-Guided Skill Acquisition via Steerable VLAs</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> We present InSight, a framework that unlocks autonomous skill acquisition by rendering VLAs steerable at the primitive-action level (e.g., &quot;move gripper to the bowl&quot;, &quot;lift upward&quot;, &quot;pour the bottle&quot;). InSight consists of two primary stages: (1) an automated segmentation pipeline that partitions demonstrations into labeled primitives via VLM plan decomposition and end-effector poses to enable VLA primitive steerability, and (2) a VLM-guided data flywheel that identifies missing primitives required to accomplish a novel task, autonomously attempts demonstrations of the missing primitives with VLM-proposed low-level control, and automatically labels, stores, and integrates successful demonstra</p>
+  <p><a href="http://arxiv.org/abs/2606.24884v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Vision-language-action (VLA) models can learn manipulation skills from demonstrations, but their capabilities are bounded by the skills in the training data. We present InSight, a framework that unlocks autonomous skill acquisition by rendering VLAs steerable at the primitive-action level (e.g., &quot;move gripper to the bowl&quot;, &quot;lift upward&quot;, &quot;pour the bottle&quot;). InSight consists of two primary stages: (1) an automated segmentation pipeline that partitions demonstrations into labeled primitives via VLM plan decomposition and end-effector poses to enable VLA primitive steerability, and (2) a VLM-guided data flywheel that identifies missing primitives required to accomplish a novel task, autonomously attempts demonstrations of the missing primitives with VLM-proposed low-level control, and automatically labels, stores, and integrates successful demonstrations into the VLA training set. We evaluate InSight across simulation and real-world manipulation tasks, including block flipping, drawer closing, sweeping, twisting, and pouring, without any human demonstrations of these target skills. Once learned, these primitives can be composed to execute novel, long-horizon tasks without additional human demonstrations. Our findings demonstrate that primitive steerability provides a practical foundation for continual skill acquisition in VLA policies. Project website: https://insight-vla.github.io.</p></details>
+</article>
+<article>
+  <h2>3. BenchX: Benchmarking AI Models for Cancer Detection and Localization with Demographic and Protocol Biases</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Artificial intelligence (AI) has achieved remarkable success in medical imaging, but it is widely recognized that these models often perform inconsistently across real-world clinical settings. Such inconsistencies occur when patient demographics and imaging protocols vary, for example, in detecting small tumors, analyzing scans from different contrast phases, or evaluating patients of different ages or sexes.</p>
+  <p><a href="http://arxiv.org/abs/2606.24883v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Artificial intelligence (AI) has achieved remarkable success in medical imaging, but it is widely recognized that these models often perform inconsistently across real-world clinical settings. Such inconsistencies occur when patient demographics and imaging protocols vary, for example, in detecting small tumors, analyzing scans from different contrast phases, or evaluating patients of different ages or sexes. To quantify these inconsistencies, we develop a large-scale, open benchmark of 85,355 CT scans that systematically evaluates 12 tumor-detection AI models across tumor size, location, patient subgroup, and imaging protocol. We leverage large language models (LLMs) to extract and organize subgroup information from clinical data, which makes the analysis both scalable and reproducible. Our benchmark reveals that current state-of-the-art AI models, optimized for average accuracy, perform poorly in rare or underrepresented subgroups, such as young, female African Americans. However, collecting sufficient annotated data for these rare cases is often impractical. The benchmark provides a foundation for building more reliable and robust AI models for tumor detection and highlighting the need for rigorous, subgroup-level evaluation in medical imaging and computer vision. Datasets, code</p></details>
+</article>
+<article>
+  <h2>4. FLAT: Feedforward Latent Triangle Splatting for Geometrically Accurate Scene Generation</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> To this end, we introduce FLAT and, for the first time, show that triangle splats can be decoded directly from video diffusion latents. FLAT solves with two key ingredients: a ray-centered rotation parameterization for triangle regression and a novel product window function that improves gradient flow during differentiable triangle rendering.</p>
+  <p><a href="http://arxiv.org/abs/2606.24876v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Generating explorable 3D scenes from a single image requires strong generative priors and accurate geometric representations suitable for downstream use. Current video diffusion models offer high-quality generation and implicitly encode multi-view geometric structure in latent space. However, existing feedforward latent scene decoders typically output volumetric 3D Gaussians that lack a well-defined surface, limiting their use in simulation or standard graphics pipelines. This motivates decoding surface-aligned primitives that are not only renderable but also closer to explicit geometric assets. We ask whether compressed video diffusion latents can be mapped directly to explicit surface primitives in a single pass. To this end, we introduce FLAT and, for the first time, show that triangle splats can be decoded directly from video diffusion latents. Compared with decoding 3D Gaussians, predicting flat primitives is notoriously more challenging due to high sensitivity to primitive orientations, oftentimes leading to poor gradient flow. FLAT solves with two key ingredients: a ray-centered rotation parameterization for triangle regression and a novel product window function that improves gradient flow during differentiable triangle rendering. On standard benchmarks, FLAT achieves significantly better geometric accuracy while maintaining competitive visual quality compared to state-of-the-art feedforward baselines. We further show that a lightweight test-time refinement step converts the predicted triangle soup into a fully opaque, game-engine-ready representation that supports real-time rendering. By evaluating 3DGS, 2DGS, and triangle splatting variants under an identical training setup, we provide the first systematic analysis of representation tradeoffs in feedforward scene generation. The project page is available at https://flat-splat.github.io</p></details>
+</article>
+<article>
+  <h2>5. FLUX3D: High-Fidelity 3D Gaussian Generation with Diffusion-Aligned Sparse Representation</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Sparse voxel representation has emerged as a scalable foundation for image-to-3D Gaussian Splatting (3DGS) generation, yet current methods struggle to preserve high-frequency visual details of input images due to two structural bottlenecks. To address these issues, we propose FLUX3D, a scalable image-to-3DGS framework that boosts both representation learning and cross-modal alignment during generation.</p>
+  <p><a href="http://arxiv.org/abs/2606.24874v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Sparse voxel representation has emerged as a scalable foundation for image-to-3D Gaussian Splatting (3DGS) generation, yet current methods struggle to preserve high-frequency visual details of input images due to two structural bottlenecks. First, they adopt discriminative 2D features optimized for semantic abstraction to construct sparse voxel latents, which suppress reconstructive cues and induce a representation bottleneck. Second, in the generation stage, standard diffusion transformers lack effective mechanisms to align dense 2D image tokens with sparse 3D voxel latents, resulting in a cross-modal correspondence bottleneck. To address these issues, we propose FLUX3D, a scalable image-to-3DGS framework that boosts both representation learning and cross-modal alignment during generation. We first revisit 2D feature selection for sparse-voxel-based 3D representation learning, propose Diffusion-Aligned Structured Latents (DA-SLAT) and couple it with a decoder-only architecture to improve 3DGS reconstruction fidelity. We also design a sparse-structure-aware diffusion framework, which integrates the Sparse-structure Multimodal Diffusion Transformer (SMDiT) and Modal-Aware Rotary Positional Embedding (MARoPE) to achieve geometry-agnostic 2D-3D alignment. Extensive benchmark experiments demonstrate that FLUX3D yields substantial improvements in appearance fidelity and significantly outperforms all state-of-the-art (SOTA) methods in generating high-quality 3DGS assets.</p></details>
+</article>
+<article>
+  <h2>6. The 3D clustering of Lyman Alpha Emitters measured with DESI</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> We present a clustering analysis of Lyman-$α$ emitters (LAEs) using spectroscopic observations from the Dark Energy Spectroscopic Instrument (DESI) of candidates selected from the Blanco/DECam Intermediate-Band Imaging Survey (IBIS). We measure the two-point correlation function and the power spectrum, including cross-correlations with DESI quasars.</p>
+  <p><a href="http://arxiv.org/abs/2606.24852v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>We present a clustering analysis of Lyman-$α$ emitters (LAEs) using spectroscopic observations from the Dark Energy Spectroscopic Instrument (DESI) of candidates selected from the Blanco/DECam Intermediate-Band Imaging Survey (IBIS). We measure the two-point correlation function and the power spectrum, including cross-correlations with DESI quasars. Using both analytical and halo occupation distribution (HOD) simulation-based modeling, we find a linear bias of $b \sim 2.31$--$2.62$ for LAEs over the redshift range $2.26 &lt; z &lt; 3.41$. The analytical modeling also provides constraints on the strength of radiative transfer effects, while the HOD analysis characterizes the LAE-halo connection across multiple models. Finally, we quantify the magnitude of non-perturbative clustering effects such as Fingers of God in the LAE population, providing essential input for the accurate modeling of LAE-based cosmological analyses in forthcoming high-redshift surveys such as DESI-II.</p></details>
+</article>
+<article>
+  <h2>7. IV-CoT: Implicit Visual Chain-of-Thought for Structure-Aware Text-to-Image Generation</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> To address this issue, we propose Implicit Visual Chain-of-Thought (IV-CoT), a latent visual reasoning framework for query-conditioned image generation. To guide the structural queries, we introduce training-only sketch supervision, which encourages them to capture structure from sketches without requiring sketch extraction or intermediate decoding at inference time.</p>
+  <p><a href="http://arxiv.org/abs/2606.24849v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Unified multi-modal large language models (MLLMs) have achieved strong text-to-image generation quality, but still struggle with structure-aware prompt following, where object counts, spatial relations, attribute bindings, and coarse layouts must be preserved. We attribute this limitation in part to the entanglement of structural planning and appearance rendering within a single conditioning stream. To address this issue, we propose Implicit Visual Chain-of-Thought (IV-CoT), a latent visual reasoning framework for query-conditioned image generation. IV-CoT decomposes the visual conditioning queries into a structural-to-semantic cascade, where structural queries first form a latent visual plan and semantic queries then render appearance conditioned on this plan. To guide the structural queries, we introduce training-only sketch supervision, which encourages them to capture structure from sketches without requiring sketch extraction or intermediate decoding at inference time. IV-CoT performs implicit CoT reasoning in a single forward pass and achieves superior results on GenEval and T2I-CompBench. Visualizations and analyses demonstrate that the learned structural and semantic queries play complementary roles in structure-aware generation.</p></details>
+</article>
+<article>
+  <h2>8. Spherical-to-ERP Epipolar Rectification for Single-Axis Disparity in 360 Stereo</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Building on our previously introduced RAFT + Epipolar-Aligned Channel Selection (EACS) framework, originally developed for rectilinear and ERP stereo, we examine whether the same modular pipeline remains accurate when the input originates from spherical stereo imagery. These findings confirm that established ERP preprocessing can be effectively combined with our earlier RAFT+EACS method to enable practical, interpretable, and efficient disparity estimation from spherical stereo, providing a straightforward pathway for extending conventional stereo pipelines to 360 imaging.</p>
+  <p><a href="http://arxiv.org/abs/2606.24847v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Omnidirectional stereo images provide full-surround perception but violate the geometric assumptions of classical disparity estimation: in spherical or fisheye views, epipolar correspondences follow curved great-circle paths, producing two-dimensional displacements that cannot be treated as single-axis disparity before geometric rectification. In this work, we adopt a standard spherical-to-equirectangular (ERP) projection as a preprocessing step, which straightens epipolar curves and restores a one-dimensional disparity structure - horizontal for left-right rigs and vertical for top-bottom rigs. Building on our previously introduced RAFT + Epipolar-Aligned Channel Selection (EACS) framework, originally developed for rectilinear and ERP stereo, we examine whether the same modular pipeline remains accurate when the input originates from spherical stereo imagery. After ERP projection, dense optical flow from RAFT is reduced to disparity by retaining only the baseline-aligned flow component. Experiments on synthetic fisheye stereo datasets show that this spherical-to-ERP-to-RAFT+EACS pipeline produces accurate, smooth, and structurally consistent disparity maps at real-time speed. These findings confirm that established ERP preprocessing can be effectively combined with our earlier RAFT+EACS method to enable practical, interpretable, and efficient disparity estimation from spherical stereo, providing a straightforward pathway for extending conventional stereo pipelines to 360 imaging.</p></details>
+</article>
+<article>
+  <h2>9. Bridging the Manifold Gap: Riemannian Residual Line Search for One-Step Image Editing</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Our proposed method, Riemannian Residual Line Search, first builds a stronger edit by estimating the local time curvature of the prompt-delta field and projecting the corrected direction back onto the update norm of the original first-order energy-field transport estimation. On a 700-sample PIE-Bench++ evaluation across 10 edit type IDs, our method achieves state-of-the-art (SOTA) performance among current one-step update algorithms.</p>
+  <p><a href="http://arxiv.org/abs/2606.24844v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>One-step diffusion editors are fast because they avoid inversion and iterative optimization, but a single transport update must be aggressive enough to realize the target prompt and conservative enough to preserve the source image--and no fixed update strength satisfies both demands across edit types. We treat this tension as a post-hoc candidate-selection problem on top of energy-field transport rather than as a new editing model. Our proposed method, Riemannian Residual Line Search, first builds a stronger edit by estimating the local time curvature of the prompt-delta field and projecting the corrected direction back onto the update norm of the original first-order energy-field transport estimation. It then forms a small residual path from the source image to this strong edit, retains the original first-order output as one candidate, and picks the final image by maximizing target-prompt CLIP alignment. On a 700-sample PIE-Bench++ evaluation across 10 edit type IDs, our method achieves state-of-the-art (SOTA) performance among current one-step update algorithms.</p></details>
+</article>
+<article>
+  <h2>10. Overview: Extragalactic Continuum Science with the SKAO</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> In this article, we summarize the key science goals of the Extragalactic Continuum Science Working Group and the contributions of related chapters to Advancing Astrophysics with the SKA II (AASKAII).</p>
+  <p><a href="http://arxiv.org/abs/2606.24843v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Radio continuum observations provide a powerful probe of energetic processes that drive galaxy evolution across cosmic time. The combined sensitivity, angular resolution, and survey speed of the SKAO&#x27;s telescopes will enable transformative advances in extragalactic astronomy by revealing important details into the interplay between star formation, accretion onto supermassive black holes, magnetic fields, and cosmic rays in galaxies and their environments. In this article, we summarize the key science goals of the Extragalactic Continuum Science Working Group and the contributions of related chapters to Advancing Astrophysics with the SKA II (AASKAII). For star forming galaxies, this includes using multi-band SKA continuum observations to provide dust-unbiased measurements of the cosmic star-formation history and enable robust spectral energy distribution analyses of star-forming galaxies (SFGs) across cosmic time. This is alongside studies which will be crucial to uncover the physics and duty cycles of active galactic nuclei (AGN), clarify the origin of radio emission in radio-quiet AGN, and probe the co-evolution of black holes and their host galaxies. Moreover, the SKA&#x27;s sensitivity will also reveal diffuse synchrotron emission in galaxy clusters and the cosmic web, tracing cosmic-ray acceleration within large-scale magnetic fields. Extragalactic continuum studies with the SKA will combine wide area continuum surveys, multi-band studies and imaging over those fields which have an abundance of data across the electromagnetic spectrum. The capabilities of the SKA telescopes will position it as a cornerstone facility for addressing fundamental questions in galaxy formation and evolution.</p></details>
+</article>
+</body>
+</html>
