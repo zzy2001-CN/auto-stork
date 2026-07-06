@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Literature Digest 2026-07-06</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 960px; margin: 32px auto; line-height: 1.5; color: #1f2933; }
+    article { border-bottom: 1px solid #d9e2ec; padding: 20px 0; }
+    .meta { color: #52606d; font-size: 14px; }
+    .score { font-weight: 700; }
+  </style>
+</head>
+<body>
+  <h1>Literature Digest 2026-07-06</h1>
+  <p>Profile: <code>default</code>. Total recommendations: 10.</p>
+  <article>
+  <h2>1. Alignment Is All You Need For X-to-4D Generation</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> However, arbitrary user-defined modality-to-4D (X-to-4D) generation remains challenging due to the high cost of constructing diverse datasets and the limited scalability of existing methods. This paper presents Align4D, a flexible framework that translates any-modal input into coherent video-3D pairs, using video to guide 4D motion and 3D data to shape 4D geometry.</p>
+  <p><a href="http://arxiv.org/abs/2607.02516v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Generative diffusion models excel at synthesizing high-quality images, videos, and 3D content under multimodal control. However, arbitrary user-defined modality-to-4D (X-to-4D) generation remains challenging due to the high cost of constructing diverse datasets and the limited scalability of existing methods. This paper presents Align4D, a flexible framework that translates any-modal input into coherent video-3D pairs, using video to guide 4D motion and 3D data to shape 4D geometry. Align4D introduces three key techniques: (1) Object Distance Alignment, which searches Video-Aligned and Multiview-Aligned Object Distances (VAOD/MAOD), respectively, to reconcile 4D renderings with video and the priors of multiview diffusion models; (2) Motion-Geometry Joint Alignment, which constrains known and unknown views through synchronized video and 3D inputs, ensuring consistent 4D generation; and (3) Asynchronous Optimization, which decouples Gaussian attribute and deformation network training to enhance motion and geometry fidelity. We further propose the X4D dataset, which integrates prompt, image, video, and 3D data for benchmarking. Experiments on X4D and Consistent4D demonstrate that Align4D achieves state-of-the-art quality and consistency in X-to-4D generation. Project page: https://miaoqiaowei.github.io/Align4D/.</p></details>
+</article>
+<article>
+  <h2>2. PointDiT: Pixel-Space Diffusion for Monocular Geometry Estimation</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> State-of-the-art single-image 3D reconstruction methods often rely on complex hybrid architectures and loss functions, or compress geometry into latent spaces in order to leverage pre-trained latent diffusion models. We introduce a minimalist pixel-space Diffusion Transformer, built on a plain ViT, that operates directly on raw 3D point map patches and is conditioned on image tokens from a pre-trained DINOv3.</p>
+  <p><a href="http://arxiv.org/abs/2607.02515v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>State-of-the-art single-image 3D reconstruction methods often rely on complex hybrid architectures and loss functions, or compress geometry into latent spaces in order to leverage pre-trained latent diffusion models. In this work, we show that such architectural overhead and intricate loss formulations are unnecessary. We introduce a minimalist pixel-space Diffusion Transformer, built on a plain ViT, that operates directly on raw 3D point map patches and is conditioned on image tokens from a pre-trained DINOv3. Unlike existing latent diffusion approaches, we train our diffusion backbone entirely from scratch, eliminating the need for point map tokenizers. Despite its simplicity, our approach surpasses complex latent-based diffusion models while remaining significantly simpler than hybrid alternatives. Notably, it produces sharper geometric structure and is more robust in highly ambiguous regions, such as transparent objects.</p></details>
+</article>
+<article>
+  <h2>3. From SRA to Self-Flow: Data Augmentation or Self-Supervision?</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Representation alignment has become an effective way to accelerate diffusion transformer training and improve generation quality. Recent self-alignment methods, such as SRA and Self-Flow, further remove the dependency on external pretrained encoders by constructing alignment within the diffusion model itself.</p>
+  <p><a href="http://arxiv.org/abs/2607.02508v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Representation alignment has become an effective way to accelerate diffusion transformer training and improve generation quality. Recent self-alignment methods, such as SRA and Self-Flow, further remove the dependency on external pretrained encoders by constructing alignment within the diffusion model itself. However, the mechanism behind the improvement from SRA to Self-Flow, dual-time scheduling, remains under-examined: Self-Flow attributes its gain to interactions between tokens at different noise levels, where cleaner tokens help infer noisier ones. In this work, we revisit this explanation and ask whether the gain instead comes from data augmentation along the noise dimension. To disentangle these factors, we introduce Attention Separation, which preserves the same dual-timestep input as Self-Flow while blocking attention between tokens assigned to different noise levels. Surprisingly, removing such interaction does not degrade performance and can even improve it, suggesting that the improvement from SRA to Self-Flow mainly comes from data augmentation. Furthermore,We show that Attention Separation itself provides an augmentation effect by splitting a single image into multiple effective training parts to expand the training data. Based on these observations, we combine self-representation alignment with dual-timestep and attention-separation augmentation, and demonstrate the effectiveness of this design on ImageNet.</p></details>
+</article>
+<article>
+  <h2>4. Seek to Segment: Active Perception for Panoramic Referring Segmentation</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> To bridge this gap, we introduce a novel task: Active Panoramic Referring Segmentation (APRS). To tackle this challenging task, we propose PanoSeeker, a memory-augmented agent for efficient APRS.</p>
+  <p><a href="http://arxiv.org/abs/2607.02497v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Existing referring segmentation models passively process static images captured from fixed perspectives, limiting their applicability in Embodied AI, where agents must perform active perception in the continuous 360$^\circ$ environments. To bridge this gap, we introduce a novel task: Active Panoramic Referring Segmentation (APRS). In this setting, an agent is required to adjust its viewing direction ($Δθ, Δφ$) to explore the 360$^\circ$ environment, seeking the object specified by a user instruction for segmentation. To tackle this challenging task, we propose PanoSeeker, a memory-augmented agent for efficient APRS. Rather than relying on heuristic scanning, PanoSeeker integrates a Vision-Language Model (VLM) with EgoSphere, an explicit spatial visual memory. By progressively integrating sequential local observations into a unified 360$^\circ$ representation, EgoSphere enables the agent to plan efficient and non-redundant search trajectories. Once the target is found, the agent performs active viewpoint alignment and outputs the segmentation mask. Furthermore, we curate an expert-annotated search trajectory dataset with memory timelines for Supervised Fine-Tuning, followed by Reinforcement Learning post-training to explicitly optimize PanoSeeker&#x27;s exploration efficiency. Extensive experiments on our newly established APRS benchmark demonstrate that PanoSeeker achieves superior search efficiency and segmentation accuracy, significantly outperforming adapted state-of-the-art baselines.</p></details>
+</article>
+<article>
+  <h2>5. Towards Robustness against Typographic Attack with Training-free Concept Localization</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> To achieve interpretable and effective robustness against TA, we propose a novel, training-free mechanistic interpretability method. Our method provides sampling-based interpretations of hidden state representations and quantitatively attributes semantic versus lexical focus to individual attention heads.</p>
+  <p><a href="http://arxiv.org/abs/2607.02494v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Models trained via Contrastive Language-Image Pretraining (CLIP) serve as the foundational vision encoders for most modern Large Vision Language Models (LVLMs). Despite their widespread adoption, CLIP models exhibit a critical yet underexplored failure mode: irrelevant text appearing within images confounds visual representations, biasing them toward lexical meaning rather than true visual semantics. This robustness issue, commonly described as a Typographic Attack (TA), exposes a vulnerability that poses a significant risk to safety-critical applications such as autonomous driving. To achieve interpretable and effective robustness against TA, we propose a novel, training-free mechanistic interpretability method. Our method provides sampling-based interpretations of hidden state representations and quantitatively attributes semantic versus lexical focus to individual attention heads. Through probabilistic analysis and circuit mining, we isolate specific Vision Transformer (ViT) components that disproportionately encode lexical information, thereby identifying the mechanistic source of TA. We further show that simple interventions applied directly to the identified circuits, without any additional training, can substantially improve robustness against Typographic Attacks in object classification. These interventions, such as selective adjustment of attention weights, also outperform both supervised and training-free defense methods. Our experiments demonstrate that applying the proposed intervention to the vision encoders of several state-of-the-art LVLMs yields substantial gains in Visual Question Answering accuracy under Typographic Attack interference on RIO-Bench. These results confirm both the efficacy and the generalizability of our mechanistic approach. Code is released at https://github.com/Liu-524/SamplingTAR.</p></details>
+</article>
+<article>
+  <h2>6. Visually Grounded Self-Reflection for Vision-Language Models via Reinforcement Learning</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> To address this issue, we propose a novel reinforcement learning training framework VRRL, with two components explicitly designed to elicit visually grounded self-reflection. Second, we introduce buffered roll-ins from an experience replay buffer to expose the model to diverse failure states that it must learn to correct.</p>
+  <p><a href="http://arxiv.org/abs/2607.02490v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Large vision-language models can reason over multimodal inputs by generating textual chains of thought (CoT). A key capability exhibited in CoT reasoning is self-reflection: revisiting earlier decisions and correcting previous errors. However, existing LVLMs often fail to properly attend to visual inputs during reflection, limiting their ability to translate feedback into grounded corrections, especially for out-of-distribution images. To address this issue, we propose a novel reinforcement learning training framework VRRL, with two components explicitly designed to elicit visually grounded self-reflection. First, we randomly mask trajectory prefixes during training to emphasize recovery from incorrect intermediate predictions rather than making early mistakes. Second, we introduce buffered roll-ins from an experience replay buffer to expose the model to diverse failure states that it must learn to correct. We evaluate our approach on visual grounding tasks involving tables and charts, as well as spatial navigation benchmarks. While off-the-shelf and conventionally fine-tuned models degrade substantially under distribution shift, our method substantially improves average out-of-distribution accuracy over standard RL and reflection-oriented fine-tuning baselines by using self-reflection effectively.</p></details>
+</article>
+<article>
+  <h2>7. Combating Textual Noise and Redundancy: Entropy-Aware Dense Visual Token Pruning</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Visual token pruning is a crucial strategy for accelerating VLMs by compressing redundant image patches, yet existing methods often fail to preserve critical cues under dense instructions and fine-grained queries. To address these issues, we propose Entropy-Aware Dense Pruning (EADP), a framework that reformulates pruning as a structured compression problem.</p>
+  <p><a href="http://arxiv.org/abs/2607.02484v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Visual token pruning is a crucial strategy for accelerating VLMs by compressing redundant image patches, yet existing methods often fail to preserve critical cues under dense instructions and fine-grained queries. In this paper, we investigate this failure and identify two underlying bottlenecks: the widespread dispersion of textual noise that corrupts dense cross-modal scoring, and the feature fragmentation inherent to standard token selection. To address these issues, we propose Entropy-Aware Dense Pruning (EADP), a framework that reformulates pruning as a structured compression problem. EADP first leverages statistical entropy to quantify and filter out textual noise, yielding a robust, fine-grained instruction relevance score. Subsequently, instead of naive Top-K selection, EADP casts token selection as a submodular maximization problem with a spatial prior, explicitly ensuring a holistic and non-redundant visual representation. Extensive experiments demonstrate that EADP improves the accuracy-efficiency trade-off of VLMs, robustly preserving fine-grained visual cues under strict token budgets while achieving SoTA performance on challenging multimodal benchmarks.</p></details>
+</article>
+<article>
+  <h2>8. Interpretation-Oriented Cloud Removal via Observation-Anchored Residual Flow with Geo-Contextual Alignment</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> However, existing CR approaches often prioritize visual realism while overlooking their impact on subsequent analytical tasks, leading to semantic drift and degraded downstream performance. To address this issue, we propose Geo-Anchored Cloud Removal (GACR), a unified framework that jointly ensures faithful reconstruction and robust interpretability.</p>
+  <p><a href="http://arxiv.org/abs/2607.02471v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Cloud removal (CR) is essential for optical remote sensing, serving as a prerequisite for reliable downstream interpretation, such as semantic segmentation and change detection. However, existing CR approaches often prioritize visual realism while overlooking their impact on subsequent analytical tasks, leading to semantic drift and degraded downstream performance. To address this issue, we propose Geo-Anchored Cloud Removal (GACR), a unified framework that jointly ensures faithful reconstruction and robust interpretability. At its core, GACR incorporates Observation-Anchored Residual Flow (OAR-Flow), which reformulates CR as a physically grounded residual inversion process. By anchoring the generative trajectory to the cloudy observation rather than pure noise, OAR-Flow enables fast, stable, and faithful reconstruction. To further preserve semantic structures critical for downstream interpretation, GACR integrates Geo-Contextual Prior Alignment (GCPA) to constrain the reconstruction within a semantic manifold induced by a Vision Foundation Model (VFM). Consequently, GACR strictly maintains the spatial-semantic integrity of complex landscapes. Extensive experiments across six CR datasets and twelve downstream tasks demonstrate that GACR produces superior reconstruction quality while consistently improving downstream task accuracy. The code is available at https://github.com/wzy6055/GACR.</p></details>
+</article>
+<article>
+  <h2>9. OrbitQuant: Data-Agnostic Quantization for Image and Video Diffusion Transformers</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Post-training quantization (PTQ) is the natural remedy, yet DiT activations shift across timesteps, prompts, and guidance branches, forcing prior methods to re-fit calibration data for every new checkpoint or modality.</p>
+  <p><a href="http://arxiv.org/abs/2607.02461v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Diffusion transformers (DiTs) achieve state-of-the-art image and video generation, but their multi-step sampling and growing parameter count make inference expensive. Post-training quantization (PTQ) is the natural remedy, yet DiT activations shift across timesteps, prompts, and guidance branches, forcing prior methods to re-fit calibration data for every new checkpoint or modality. We present OrbitQuant, a data-agnostic weight-activation quantizer that bypasses range estimation by quantizing in a normalized, rotated basis. In this basis, a randomized permuted block-Hadamard (RPBH) rotation concentrates each coordinate around one fixed, known marginal regardless of the input, so a single Lloyd-Max codebook serves all timesteps, prompts, and layers of a given input dimension. We extend the same quantizer to weight rows offline, absorbing the rotation into the weights so that it cancels inside each linear layer and only a forward rotation on the activations remains at runtime. The same recipe transfers from image to video with no per-modality tuning. Across FLUX.1, Z-Image-Turbo, Wan 2.1, and CogVideoX, it sets the state of the art for PTQ at several low-bit settings. It also pushes PTQ of image diffusion transformers to W2A4 with usable generation quality.</p></details>
+</article>
+<article>
+  <h2>10. Understanding the Robustness of Distributed Self-Supervised Learning Frameworks Against Non-IID Data</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Recent research has introduced distributed self-supervised learning (D-SSL) approaches to leverage vast amounts of unlabeled decentralized data. However, D-SSL faces the critical challenge of data heterogeneity, and there is limited theoretical understanding of how different D-SSL frameworks respond to this challenge.</p>
+  <p><a href="http://arxiv.org/abs/2607.02447v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Recent research has introduced distributed self-supervised learning (D-SSL) approaches to leverage vast amounts of unlabeled decentralized data. However, D-SSL faces the critical challenge of data heterogeneity, and there is limited theoretical understanding of how different D-SSL frameworks respond to this challenge. To fill this gap, we present a rigorous theoretical analysis of the robustness of D-SSL frameworks under non-IID (non-independent and identically distributed) settings. Our results show that pre-training with Masked Image Modeling (MIM) is inherently more robust to heterogeneous data than Contrastive Learning (CL), and that the robustness of decentralized SSL increases with average network connectivity, implying that federated learning (FL) is no less robust than decentralized learning (DecL). These findings provide a solid theoretical foundation for guiding the design of future D-SSL algorithms. To further illustrate the practical implications of our theory, we introduce MAR loss, a refinement of the MIM objective with local-to-global alignment regularization. Extensive experiments across model architectures and distributed settings validate our theoretical insights, and additionally confirm the effectiveness of MAR loss as an application of our analysis.</p></details>
+</article>
+</body>
+</html>
