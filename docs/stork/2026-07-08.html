@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Literature Digest 2026-07-08</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 960px; margin: 32px auto; line-height: 1.5; color: #1f2933; }
+    article { border-bottom: 1px solid #d9e2ec; padding: 20px 0; }
+    .meta { color: #52606d; font-size: 14px; }
+    .score { font-weight: 700; }
+  </style>
+</head>
+<body>
+  <h1>Literature Digest 2026-07-08</h1>
+  <p>Profile: <code>default</code>. Total recommendations: 10.</p>
+  <article>
+  <h2>1. Analysis-by-Proxy: Localization Signals in VLMs Operating as Condition Encoders</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> To investigate whether this spatial understanding persists when the VLM is used as a condition encoder, we introduce Analysis-by-Proxy. In this framework, we train a lightweight, interpretable proxy model on the VLM&#x27;s intermediate representations using an auxiliary localization task.</p>
+  <p><a href="http://arxiv.org/abs/2607.06445v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Vision-Language Models (VLMs) are increasingly utilized as the conditioning backbone for diffusion-based image editing due to their remarkable multimodal reasoning capabilities. While standalone VLMs demonstrate strong localization capabilities, editing pipelines frequently struggle to maintain this accuracy, particularly in complex, multi-entity scenes. In this work, we investigate this performance gap, hypothesizing that it stems from treating the VLM as a condition encoder. In this role, the model is restricted to a single forward pass, preventing the autoregressive generation process for which it was optimized, thereby failing to fully expose its capabilities. To investigate whether this spatial understanding persists when the VLM is used as a condition encoder, we introduce Analysis-by-Proxy. In this framework, we train a lightweight, interpretable proxy model on the VLM&#x27;s intermediate representations using an auxiliary localization task. By analyzing the VLM through this proxy, we uncover the specific VLM representations that encode localization information. Our findings expose a fundamental mismatch between how spatial knowledge is represented within a VLM condition encoder and how it is extracted by current editing pipelines. We reveal that under single-pass constraints, the localization signal does not reliably propagate to the predefined layer configurations commonly used for conditioning. Instead, this crucial signal remains hidden within intermediate representations, at locations that vary depending on the input prompt. Using our introduced Analysis-by-Proxy framework, we reveal the fundamental failures of existing condition extraction strategies in editing pipelines, opening the door to more principled design of conditioning architectures.</p></details>
+</article>
+<article>
+  <h2>2. SIEVE: Structure-Aware Data Selection for Imitation Learning with VLA Models</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Existing data selection methods often assess demonstrations at either the trajectory or state-action level, missing the reusable structures that compose long-horizon behaviors. In this paper, we propose SIEVE, a structure-aware data selection method for VLA imitation learning.</p>
+  <p><a href="http://arxiv.org/abs/2607.06442v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Vision-Language-Action (VLA) models are typically trained by imitation learning on large-scale robot demonstration datasets, but more data does not necessarily yield better policies due to redundancy, noise, and uneven coverage. Existing data selection methods often assess demonstrations at either the trajectory or state-action level, missing the reusable structures that compose long-horizon behaviors. In this paper, we propose SIEVE, a structure-aware data selection method for VLA imitation learning. SIEVE views demonstrations as compositions of reusable primitives and transition interfaces. It first discovers visuo-motor primitives from segmented trajectories, then allocates selection budgets to composition patterns by maximizing reuse-aware structural exposure under diminishing returns. Finally, it selects medoid trajectories within each composition-pattern bucket to retain central, stable, and imitation-friendly demonstrations. Experiments across multiple datasets, benchmarks, and VLA models show that SIEVE consistently outperforms competitive data selection baselines. Notably, SIEVE can surpass full-data training while using only 50% of demonstrations and 50% of training steps, suggesting that reusable structure, captured through primitives and transitions, is an important signal for efficient VLA imitation learning.</p></details>
+</article>
+<article>
+  <h2>3. PIPBench: A Profile-Inclusive Framework for Personalized Image Generation Evaluation</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> To this end, we introduce PIPBench, the first profile-inclusive benchmark for evaluating personalized image generation. We further propose a novel data construction pipeline that leverages psychological and demographic profiling dimensions for both real-user data collection and scalable agent-based data generation.</p>
+  <p><a href="http://arxiv.org/abs/2607.06440v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Recent text-to-image models such as DALLE-3 excel at following diverse prompts yet remain blind to individual aesthetic preferences. We study personalized image generation, where models must align outputs with a user&#x27;s implicit visual preferences based on a few historically preferred images and a short prompt. To this end, we introduce PIPBench, the first profile-inclusive benchmark for evaluating personalized image generation. We further propose a novel data construction pipeline that leverages psychological and demographic profiling dimensions for both real-user data collection and scalable agent-based data generation. Using PIPBench, we conduct a thorough evaluation of representative line of methods. Our experiments reveal key limitations in existing methods, suggesting new challenges and opportunities for personalized text-to-image synthesis. Project page: https://wuyuhang05.github.io/PIPBench/</p></details>
+</article>
+<article>
+  <h2>4. TILDE: TILt-based Distributional Erasure for Concept Unlearning</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Existing methods often remove the target concept effectively, but practical unlearning also requires an equally fundamental property: the unlearned model should retain quality, diversity, and semantic coverage on benign generation. We propose TILDE, TILt-based Distributional Erasure, which formulates concept unlearning as a distributional alignment problem: the desired target is the minimum-deviation conditional distribution from the pretrained model under a forgetting constraint.</p>
+  <p><a href="http://arxiv.org/abs/2607.06432v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Concept unlearning in text-to-image diffusion models is critical for safe and practical deployment: with rising privacy concerns, copyright disputes, trademark constraints, and safety regulations, deployed systems must be able to suppress unwanted concepts after training. Existing methods often remove the target concept effectively, but practical unlearning also requires an equally fundamental property: the unlearned model should retain quality, diversity, and semantic coverage on benign generation. The gold standard is a retain-only model trained from scratch without the unwanted data. However, common erasure objectives do not specify which post-unlearning distribution should approximate this reference, leaving retention as an implicit consequence of the update rule. We propose TILDE, TILt-based Distributional Erasure, which formulates concept unlearning as a distributional alignment problem: the desired target is the minimum-deviation conditional distribution from the pretrained model under a forgetting constraint. This energy-tilted, anchor-free target suppresses concept-expressing images while preserving benign relative mass for each prompt. We instantiate this principle with residual $\nabla$-GFlowNet training, which learns the score correction induced by the forget energy relative to the pretrained diffusion model. Across objects, artistic styles, and characters, TILDE achieves strong forgetting while improving retention and distributional fidelity over prior baselines.</p></details>
+</article>
+<article>
+  <h2>5. What Images Cannot Say: Language-Guided Olfactory Representation Learning</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> We introduce SCENT, a multimodal framework that uses language guidance as a semantic bridge between vision and olfaction. Our approach leverages Vision-Language Models (VLMs) to generate scene descriptors capturing objects, environmental context, and plausible ambient smell cues suggested by the visual scene.</p>
+  <p><a href="http://arxiv.org/abs/2607.06402v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Images tell us what a scene looks like, but rarely what it would feel like to be there. While recent datasets pair visual scenes with electronic-nose measurements, aligning smell signals with images remains challenging because many olfactory cues arise from contextual environmental factors that are not directly visible in pixels. We introduce SCENT, a multimodal framework that uses language guidance as a semantic bridge between vision and olfaction. Our approach leverages Vision-Language Models (VLMs) to generate scene descriptors capturing objects, environmental context, and plausible ambient smell cues suggested by the visual scene. These descriptors provide semantic guidance for learning olfactory representations. We train a smell encoder that maps electronic-nose signals into a shared embedding space aligned with both visual and textual representations, and introduce a languageguided latent decomposition that separates object-specific odors from contextual environmental contributions. Experiments on the New York Smells dataset demonstrate that SCENT significantly improves crossmodal retrieval compared to vision-only baselines, achieving state-of-theart performance on smell-to-image and smell-to-text retrieval tasks. In addition, our framework produces interpretable olfactory representations that enable the disentanglement of complex smell mixtures. Our results reveal the importance of contextual semantic information for grounding olfactory perception in multimodal learning and pave the way for future research in this area.</p></details>
+</article>
+<article>
+  <h2>6. slicersim: A python package to simulate image slicer spectroscopic observations -- application to the Lazuli Spectrograph</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Integral Field Spectroscopy (IFS) is a key technique to study galaxies, stellar and planetary systems, and transients, by spatially splitting the scene and dispersing this light onto the detector. This technique is now central for many modern telescopes, including the Lazuli Space Observatory which will host a low spectral-resolution image slicer spectrograph.</p>
+  <p><a href="http://arxiv.org/abs/2607.06391v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Integral Field Spectroscopy (IFS) is a key technique to study galaxies, stellar and planetary systems, and transients, by spatially splitting the scene and dispersing this light onto the detector. This technique is now central for many modern telescopes, including the Lazuli Space Observatory which will host a low spectral-resolution image slicer spectrograph. To prepare for future IFS-equipped instruments and to better understand the systematics of current ones, realistic simulations are needed. We present slicersim, a Python package designed to simulate IFS observations. slicersim is a modular and flexible tool that allows the user to build a scene, define a telescope, a spectrograph, and a detector, and to simulate the resulting observation, including various sources of noise and instrumental effects. The package is designed to be easily extensible to any IFS, with a current focus on that from the Lazuli Space Observatory. In this paper, we present the structure and logic of the package, detailing its main components, and providing an example of its usage. Using slicersim we demonstrate the feasibility of a large cosmology campaign on Lazuli -- a sample of 8000 Type~Ia Supernovae uniformly distributed between $z=0$ and $z=1.5$, observed within the first few years of its operations for a typical average signal-to-noise of 25 per resolution element rest-frame optical wavelengths.</p></details>
+</article>
+<article>
+  <h2>7. VaseMuseum: Digital Intelligent Museum for Ancient Greek Pottery</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> First, open-ended interpretation requires grounding fine-grained 2D/3D visual evidence in specialized curatorial knowledge, yet the retrieval process may introduce weak sources and unverifiable references. To address these challenges, we propose VaseMuseum, a lightweight and modular multimodal agent framework for intelligent digital museums of ancient Greek pottery.</p>
+  <p><a href="http://arxiv.org/abs/2607.06374v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Vision-language models (VLMs) have made interactive digital museums increasingly feasible by connecting 3D digitization with natural-language artifact exploration. However, in cultural heritage domains such as ancient Greek pottery, reliable VLM assistance is limited by two challenges. First, open-ended interpretation requires grounding fine-grained 2D/3D visual evidence in specialized curatorial knowledge, yet the retrieval process may introduce weak sources and unverifiable references. Second, when the available evidence is incomplete, noisy, or ambiguous, VLMs often produce confident but unsupported answers instead of calibrated uncertainty. To address these challenges, we propose VaseMuseum, a lightweight and modular multimodal agent framework for intelligent digital museums of ancient Greek pottery. VaseMuseum combines an interactive virtual museum with VaseAgent, which supports both 2D images and 3D artifacts through multimodal perception, 3D-aware reasoning, external knowledge retrieval, and inference-time reliability control. Specifically, VaseAgent retrieves evidence from authoritative web and museum knowledge sources, and source-level control selects diverse and verifiable evidence before generation. Meanwhile, response-level control checks generated claims against the evidence pool and encourages neutral, evidence-bounded answers when support is insufficient or conflicting. Moreover, a training-free GRPO-style selection mechanism favors responses with valid references and calibrated confidence without updating the VLM backbone. Experiments in a realistic digital museum simulation show that VaseMuseum improves citation validity, reduces hallucinations on knowledge-intensive queries, and produces more neutral answers under ambiguity compared with search-enabled VLM baselines.</p></details>
+</article>
+<article>
+  <h2>8. TMF-RSE: Tri-Modal Fusion with Regional Semantics and Evidential Uncertainty for Lung Severity Scoring</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> We propose a tri-modal deep learning framework, TMF-RSE (Tri-Modal Fusion with Regional Semantics and Evidential Uncertainty), that combines appearance features from two-dimensional chest inputs, structural features from lung segmentation masks, and semantic features from vision-language models (VLMs) for severity quantification. Our approach employs complementary fusion mechanisms that integrate semantic guidance, structural priors, and hierarchical interactions across modalities.</p>
+  <p><a href="http://arxiv.org/abs/2607.06356v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Accurate quantification of lung disease severity from chest imaging is critical for clinical decision-making and resource allocation. We propose a tri-modal deep learning framework, TMF-RSE (Tri-Modal Fusion with Regional Semantics and Evidential Uncertainty), that combines appearance features from two-dimensional chest inputs, structural features from lung segmentation masks, and semantic features from vision-language models (VLMs) for severity quantification. Our approach employs complementary fusion mechanisms that integrate semantic guidance, structural priors, and hierarchical interactions across modalities. The model employs evidential regression to provide both severity predictions and uncertainty estimates. Experiments on the Per-COVID-19 CT and RALO datasets show that TMF-RSE outperforms recent transformer-based baselines, achieving MAE of 4.02 and Pearson correlation of 0.9629 on Per-COVID-19 validation, and 0.339 MAE / 0.973 PC on RALO geographic extent.</p></details>
+</article>
+<article>
+  <h2>9. Generalized Synthetic Image Detection with Enhanced RGB-Noise Representation Learning</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> To overcome these limitations, we propose RNSIDNet, a novel forensic framework that achieves robust detection through enhanced RGB-Noise representation learning. Specifically, our method employs a dual-branch architecture where global RGB semantics, extracted by an attention-refined CLIP backbone, dynamically modulate highfrequency noise artifacts captured by Bayar convolutions via a Feature-wise Linear Modulation (FiLM) module.</p>
+  <p><a href="http://arxiv.org/abs/2607.06354v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>The rapid advancement of large-scale generative models has accelerated the spread of highly deceptive AI-generated images, making generalized synthetic image detection a critical imperative. Existing forensic networks often struggle with cross-model generalization and realworld degradations due to their reliance on single-domain representations and conventional binary classification optimization. To overcome these limitations, we propose RNSIDNet, a novel forensic framework that achieves robust detection through enhanced RGB-Noise representation learning. Specifically, our method employs a dual-branch architecture where global RGB semantics, extracted by an attention-refined CLIP backbone, dynamically modulate highfrequency noise artifacts captured by Bayar convolutions via a Feature-wise Linear Modulation (FiLM) module. To further enhance the learned representations, we design a Hard Sample-aware Contrastive Learning (HSCL) strategy. By explicitly penalizing challenging training samples, HSCL reshapes the latent feature space to maximize the discriminative margin between pristine and synthetic domains. Extensive experiments across eight public benchmark datasets verify that our model achieves state-of-the-art performance, delivering superior generalization ability, robustness, and computational efficiency. Code and dataset will be publicly available on https://github.com/multimediaFor/RNSIDNet.</p></details>
+</article>
+<article>
+  <h2>10. Unravelling Turbulence and Magnetic Fields in Galaxy Clusters with SKA and XRISM</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> This chapter proposes a research framework to quantitatively investigate non-thermal components in the Intracluster Medium (ICM) of galaxy clusters, which are critical ingredients for governing energy transport, structure formation, and particle acceleration.</p>
+  <p><a href="http://arxiv.org/abs/2607.06346v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>This chapter proposes a research framework to quantitatively investigate non-thermal components in the Intracluster Medium (ICM) of galaxy clusters, which are critical ingredients for governing energy transport, structure formation, and particle acceleration. Turbulence, primarily driven by cluster mergers, is the leading mechanism for re-accelerating cosmic ray electrons (forming radio halos) and amplifying magnetic fields (via the turbulent dynamo). Observational understanding of both the turbulence and magnetic fields is rapidly evolving: the high-resolution X-ray spectrometer XRISM is directly measuring the velocity properties of the thermal ICM, providing insights into the kinetic energy of turbulence. Concurrently, high-sensitivity low-frequency radio observations, including SKA pathfinders, are mapping non-thermal components and magnetic structures through diffuse synchrotron emission and high-density Faraday Rotation Measure (RM) grids. The synergy between XRISM and SKA offers a decisive paradigm shift. XRISM&#x27;s velocity maps, with its high energy resolution (&lt;7 eV FWHM), combined with SKA-Mid&#x27;s capability to deliver high-resolution RM grids ($\sim 100$--$200~\rm deg^{-2}$) and high-dynamic-range imaging, will allow for the first direct, multi-wavelength comparison of the turbulent energy properties (from X-ray) and the magnetic field properties (from radio). This joint analysis will validate Magnetohydrodynamic (MHD) simulation predictions, clarify the process of turbulent energy cascade and decay, and ultimately lead to a comprehensive understanding of the co-evolution of turbulence, magnetic fields, and cosmic rays in the largest laboratories of the Universe.</p></details>
+</article>
+</body>
+</html>
