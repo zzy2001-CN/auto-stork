@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Literature Digest 2026-07-15</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 960px; margin: 32px auto; line-height: 1.5; color: #1f2933; }
+    article { border-bottom: 1px solid #d9e2ec; padding: 20px 0; }
+    .meta { color: #52606d; font-size: 14px; }
+    .score { font-weight: 700; }
+  </style>
+</head>
+<body>
+  <h1>Literature Digest 2026-07-15</h1>
+  <p>Profile: <code>default</code>. Total recommendations: 10.</p>
+  <article>
+  <h2>1. Open-KNEAD: Knowledge-grounded Nutrition Estimation via Agentic Decomposition</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> This raises a question: if retrieval no longer improves the overall estimate, can it still deliver the two things clinicians value, accurate portions and a traceable, item-by-item record? We introduce Open-KNEAD, a knowledge-grounded agentic framework for meal nutrition estimation that is training-free and locally deployable.</p>
+  <p><a href="http://arxiv.org/abs/2607.12911v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Multimodal Large Language Models (MLLMs) are increasingly used for dietary assessment from meal images, where retrieval-augmented grounding was shown to sharpen nutrition estimates. However, we find this premise no longer holds for current MLLMs. A modern MLLM&#x27;s direct estimate now matches or surpasses the full retrieval pipeline. This raises a question: if retrieval no longer improves the overall estimate, can it still deliver the two things clinicians value, accurate portions and a traceable, item-by-item record? We pursue this while preserving what matters for clinical adoption: minimal user burden (a single, unannotated meal image), explainability (an auditable record), and privacy (locally hosted inference). We introduce Open-KNEAD, a knowledge-grounded agentic framework for meal nutrition estimation that is training-free and locally deployable. Each decomposed food item is grounded to a Food and Nutrient Database for Dietary Studies (FNDDS) code via selective, nutrient-aware retrieval, composing an auditable per-item record. Across two open MLLM families and three cuisines, Open-KNEAD improves portion estimates over both prior grounding methods and direct estimation in most backbone-dataset settings. An agent-internal recipe-prior step further recovers the invisible cooking-added energy that biases estimates on non-US cuisine. The advantage is largest on the dietitian-verified ACETADA dataset, where the local open agent surpasses the direct portion estimates of two frontier closed models by roughly $30\%$ and $53\%$, all while keeping every meal image on local hardware. We release the Open-KNEAD framework and its agent-ready FNDDS knowledge base.</p></details>
+</article>
+<article>
+  <h2>2. Rank-1 Identity Consensus Predicts Gallery Enrollment in 1:N Face Matching More Accurately than Score Thresholding</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Most approaches threshold match scores, but scores shift substantially with image quality and gallery size and composition, making thresholds fixed before deployment brittle under realistic conditions. Our prior work introduced 1-consistency, the only method based on rank consensus across multiple independently trained matchers: a probe is labeled MP if all matchers return the same rank-1 identity.</p>
+  <p><a href="http://arxiv.org/abs/2607.12903v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>In operational 1:N face identification, a crucial question arises for each probe: is this person enrolled in the gallery or not? The stakes are high and asymmetric. Rejecting a mate-present (MP) probe loses a valid lead; accepting a mate-absent (MA) probe makes every returned candidate a false identification, at worst a wrongful arrest. Most approaches threshold match scores, but scores shift substantially with image quality and gallery size and composition, making thresholds fixed before deployment brittle under realistic conditions. Our prior work introduced 1-consistency, the only method based on rank consensus across multiple independently trained matchers: a probe is labeled MP if all matchers return the same rank-1 identity. This work stress-tests 1-consistency across 36 (gallery, probe quality) scenarios spanning four quality levels and two structural axes: images per identity and total enrolled identities. We benchmark against two score-thresholding methods that bracket what any deployed threshold could achieve. Fixed Score-Thresholding (FST), calibrated once on baseline conditions, collapses asymmetrically as quality degrades: MP recall falls below 2% while MA recall holds near 100%. Oracle Score-Thresholding (OST), re-tuned per scenario, is the best any threshold could theoretically do, yet for degraded probes 1-consistency matches it with zero tuning. The two differ mainly in error type (OST favors MP recall, 1-consistency favors MA recall), but on one axis 1-consistency does not merely match the oracle: when it labels a probe MP, it returns the correct mate 97-100% of the time versus OST&#x27;s 66-84% under severe degradation. In short, 1-consistency delivers oracle-level accuracy without the impossible requirement: it sets no threshold, so it needs no advance knowledge of the conditions a probe will arrive in, which is what makes it usable.</p></details>
+</article>
+<article>
+  <h2>3. Regular Curves, Singular Graphs: Cantor Parts and the Relaxed Willmore Energy</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> One might expect that finite relaxed elastic energy rules out diffuse singularities in the derivative, leaving only absolutely continuous and jump parts. This is suggested by the role of $SBV$ in free-discontinuity problems and by interpreting jumps as vertical segments of limiting graphs.</p>
+  <p><a href="http://arxiv.org/abs/2607.12899v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>One might expect that finite relaxed elastic energy rules out diffuse singularities in the derivative, leaving only absolutely continuous and jump parts. This is suggested by the role of $SBV$ in free-discontinuity problems and by interpreting jumps as vertical segments of limiting graphs. We show that it fails for the relaxed one-dimensional Willmore energy. We construct a continuous function $u\in BV((0,1))$ with $D^c u\neq0$ and $\overline{\mathcal{W}}(u)&lt;\infty $, so finite relaxed Willmore energy does not imply $u\in SBV((0,1))$. The idea is to concentrate the Cantor part exactly where the absolutely continuous slope blows up. There the singular diffuse measure meets the blow-up condition of the relaxation theorem, while the weighted curvature term stays integrable. Geometrically, the example shows that Cantor parts of $BV$-graph derivatives need not be intrinsic singularities of the underlying curve. The graph has an arc-length parametrization of class $C^1\cap W^{2,2}$, and a suitable rotation turns it into a Lipschitz graph whose derivative has no singular part. The construction also rescales to make the relaxed Willmore energy arbitrarily small, and it extends to relaxed $L^p$-curvature energies for all $p&gt;1$.</p></details>
+</article>
+<article>
+  <h2>4. Astra: an open-source fully autonomous robotic observatory control software</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Robotic and autonomous observatories are critical for modern time-domain and high-cadence astronomical surveys. The operation of these facilities requires complex software coordination to manage hardware, schedule observations, and ensure safety.</p>
+  <p><a href="http://arxiv.org/abs/2607.12898v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Robotic and autonomous observatories are critical for modern time-domain and high-cadence astronomical surveys. The operation of these facilities requires complex software coordination to manage hardware, schedule observations, and ensure safety. However, existing observatory control software are often proprietary and platform-locked or require complex message-brokering infrastructure. Here we present Astra (Automated Survey observaTory Robotised with Alpaca): an open-source, cross-platform Python system for the sustained, fully autonomous operation of astronomical observatories, requiring no external message-broker infrastructure. Astra controls observatory hardware via the ASCOM Alpaca protocol, and executes prescheduled observatory actions under continuous safety supervision. Its multi-device actions include plate-solve-based pointing correction with a local Gaia--2MASS catalogue fallback, PID-controlled autoguiding, and autofocus. A FastAPI web service provides a browser UI, REST and WebSocket APIs for real-time status, image previews, and SQLite-backed telemetry and logs. Astra has run in fully unattended production since January 2024, scaling to six telescopes across three facilities: the SPECULOOS-South network (4 $\times$ 1\,m class, Chile), SAINT-EX (1\,m class, Mexico), and the ETH Observatory (0.5\,m class, Switzerland), with no schedule aborts attributable to Astra software. Across the SPECULOOS-South network, it achieves sub-arcsecond autoguiding (0.11\unit{\arcsecond} median pointing scatter) and plate-solve failure rates below 1\% on three of the four telescopes (3\% on the narrowest-field unit), demonstrating that an open, standards-based software stack can meet the reliability demands of production survey astronomy.</p></details>
+</article>
+<article>
+  <h2>5. UniMedSeg: Unified In-Context Learning for Multi-Paradigm 2D/3D Medical Image Segmentation</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Medical image segmentation foundation models are expected to generalize across diverse clinical scenarios, yet existing universal methods remain fragmented by prompt paradigms and spatial dimensions. To address this bottleneck, we propose UniMedSeg, a Transformer-centric universal segmentation framework that maps visual examples, geometric interactions, language instructions, and 2D/3D images into a shared sequence space, enabling heterogeneous medical supervision to be jointly learned through a unified in-context interface without prompt- or dimension-specific branches.</p>
+  <p><a href="http://arxiv.org/abs/2607.12896v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Medical image segmentation foundation models are expected to generalize across diverse clinical scenarios, yet existing universal methods remain fragmented by prompt paradigms and spatial dimensions. Visual in-context learning, interactive segmentation, and language-guided segmentation are typically handled by paradigm-specific models, while 2D and 3D images are also modeled separately. Such isolation prevents heterogeneous annotations and data from being jointly absorbed by a single scalable model and limits cross-paradigm knowledge transfer. To address this bottleneck, we propose UniMedSeg, a Transformer-centric universal segmentation framework that maps visual examples, geometric interactions, language instructions, and 2D/3D images into a shared sequence space, enabling heterogeneous medical supervision to be jointly learned through a unified in-context interface without prompt- or dimension-specific branches. To overcome the long-sequence memory bottleneck caused by visual contexts, we introduce Decoupled Split Attention, which reduces attention complexity to linear while preserving hardware-friendly computation and focused context-target interaction. Extensively trained and evaluated on a large corpus curated from 27 public datasets, UniMedSeg achieves state-of-the-art performance across visual in-context, interactive, and language-guided segmentation without task-specific fine-tuning, demonstrating strong generalization on diverse held-out tasks. The code and model weights are publicly available at https://github.com/Lii1228/UniMedSeg</p></details>
+</article>
+<article>
+  <h2>6. Evaluating Large Language Models on Misconceptions in Multi-Turn Medical Conversations</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Yet current evaluation frameworks do not capture model behavior in these settings, where misconceptions can emerge, persist, or evolve over the course of a conversation. To study this, we introduce ThReadMed-QA, a multi-turn medical dialogue dataset of 2,437 patient-physician conversation threads comprising 8,204 question-answer pairs, derived from real patient interactions on AskDocs.</p>
+  <p><a href="http://arxiv.org/abs/2607.12884v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Patients seeking medical information often ask questions that embed incorrect assumptions or misconceptions. In such cases, safe medical communication requires not only answering the question, but identifying and correcting the underlying false belief. These interactions naturally unfold over multiple turns, a pattern now mirrored in interactions with LLMs. Yet current evaluation frameworks do not capture model behavior in these settings, where misconceptions can emerge, persist, or evolve over the course of a conversation. Whether LLMs can reliably correct such misconceptions over time remains largely unexamined. To study this, we introduce ThReadMed-QA, a multi-turn medical dialogue dataset of 2,437 patient-physician conversation threads comprising 8,204 question-answer pairs, derived from real patient interactions on AskDocs. This dataset enables systematic evaluation of whether models can detect and correct misconceptions under a multi-turn context. We evaluate five LLMs using a rubric-based LLM-as-a-Judge framework that scores responses based on their ability to identify and correct misconceptions. Our experiments reveal a consistent pattern: even frontier models that can address misconceptions in a single interaction degrade substantially over subsequent turns. GPT-5 and Claude-Haiku correct these false presuppositions around 85% on initial questions but drop to roughly 50% within two follow-ups. An oracle analysis replacing prior model outputs with physician responses shows that much of the degradation is driven by error propagation, while performance remains imperfect even under correct context. Even when models tend to correct misconceptions initially, their performance degrades substantially over later turns, leading to inconsistent and potentially unsafe guidance in patient-facing settings and highlighting the need for evaluation frameworks that capture multi-turn behavior.</p></details>
+</article>
+<article>
+  <h2>7. Metric-Guided Synthetic Image Data Rendering for Deep Learning compatible with Agentic AI</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> We present GraNatPy, a Python package with metrics to guide improvement of the rendered scene. We show that quantifiable increase in realism, diversity and size of rendered dataset correlates with improved visual perception of the scene and higher zero-shot performance of an object detection model.</p>
+  <p><a href="http://arxiv.org/abs/2607.12874v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Deep learning computer vision for scientific applications requires collecting and annotating large datasets in a laborious, expensive and error-prone process. Synthetic data generation through 3D modelling and rendering may simplify this process and increase the accuracy of annotations by generating them programmatically. However, minimising the domain gap between real and synthetic images visually is subjective and lacks systematic quantitative guidance. We present GraNatPy, a Python package with metrics to guide improvement of the rendered scene. We show that quantifiable increase in realism, diversity and size of rendered dataset correlates with improved visual perception of the scene and higher zero-shot performance of an object detection model. Furthermore, we demonstrated using photographs of virological plaque assays that gradient similarity affects performance on small object detection, which can be improved by mixing real and synthetic data. Finally, we turn procedural data rendering into an agentic skill (SynthClaw) to automate the procedural parameter optimisation.</p></details>
+</article>
+<article>
+  <h2>8. Statistical Non-linear Reconstruction Loss for Image Anomaly Detection</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Reconstruction-based methods are a cornerstone of unsupervised image anomaly detection, but they remain vulnerable to \emph{outlier leakage}, where standard mean squared error (MSE) loss drives the model to faithfully reconstruct anomalous patterns. We propose a Non-linear Reconstruction Loss that applies a sigmoid-based squashing function to suppress high-magnitude features, preventing outliers from dominating optimization while preserving sensitivity to normal patterns.</p>
+  <p><a href="http://arxiv.org/abs/2607.12866v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Reconstruction-based methods are a cornerstone of unsupervised image anomaly detection, but they remain vulnerable to \emph{outlier leakage}, where standard mean squared error (MSE) loss drives the model to faithfully reconstruct anomalous patterns. We propose a Non-linear Reconstruction Loss that applies a sigmoid-based squashing function to suppress high-magnitude features, preventing outliers from dominating optimization while preserving sensitivity to normal patterns. In addition, we introduce a statistical calibration scheme that selects the scaling factor $k$ from the confidence interval (CI) of the normal feature distribution, enabling data-driven control of the suppression strength. Our approach achieves competitive or superior anomaly detection performance compared to state-of-the-art methods, reaching 99.0\% Image-AUROC and 97.3\% Pixel-AUROC on MVTec-AD, and 95.3\% Image-AUROC and 99.0\% Pixel-AUROC on VisA. These results indicate that non-linear gradient suppression is an effective mechanism for mitigating outlier leakage and improving anomaly localization in unified industrial inspection settings. The implementation is available at https://github.com/mintii13/Statistical-Non-linear-Reconstruction-Loss.git.</p></details>
+</article>
+<article>
+  <h2>9. LARAD: Layout-Aware Road Anomaly Detection via Spatial-Logic Reasoning</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Current anomaly segmentation methods suffer from a fundamental blind spot: they over-rely on texture novelty to identify out-of-distribution (OoD) objects while ignoring contextual spatial logic. To address these issues, we propose Layout-Aware Road Anomaly Detection (LARAD), shifting the paradigm from appearance matching to spatial-logic reasoning.</p>
+  <p><a href="http://arxiv.org/abs/2607.12858v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Accurate open-world obstacle detection is critical for autonomous driving. Current anomaly segmentation methods suffer from a fundamental blind spot: they over-rely on texture novelty to identify out-of-distribution (OoD) objects while ignoring contextual spatial logic. Furthermore, mitigating the resulting false positives often requires cascading massive vision models, introducing unacceptable inference latency. To address these issues, we propose Layout-Aware Road Anomaly Detection (LARAD), shifting the paradigm from appearance matching to spatial-logic reasoning. First, we introduce the Spatial-Logic Violation Synthesis (SLVS) pipeline, which generates training samples that are texture-consistent yet spatially invalid, forcing the model to learn contextual violations. Second, we augment a standard closed-set segmentation network with a lightweight, OoD-guided attention branch. Extensive experiments demonstrate that LARAD significantly enhances robustness against logical anomalies and establishes a new state-of-the-art, all while retaining the high efficiency of a single-model architecture.</p></details>
+</article>
+<article>
+  <h2>10. The MICADO first light imager for the ELT: the SCAO module AIT in France, from the beta flat configuration towards the flat and final configurations</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> In this contribution I will first present the progress made in the AIT of the beta flat configuration and its closed loop results.</p>
+  <p><a href="http://arxiv.org/abs/2607.12854v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>MICADO is the designated ELT first light instrument, a near-infrared imager working at the diffraction limit of the telescope thanks to a SCAO and an MCAO mode. Since summer 2024, MICADO is in its AIT phase and all MICADO partners are currently integrating their subsystems. The MICADO SCAO module will follow three successive AIT phases in France: the beta flat configuration, the flat configuration and the final configuration. In this contribution I will first present the progress made in the AIT of the beta flat configuration and its closed loop results. I will then present the performed and on-going tasks for the flat and final configurations (manufacturing, delivery and integration of several SCAO subsystems and pieces of software) and the results obtained so far in the flat configuration. I will then conclude with the expected following steps of the SCAO module AIT in Garching.</p></details>
+</article>
+</body>
+</html>
