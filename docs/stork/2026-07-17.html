@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Literature Digest 2026-07-17</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 960px; margin: 32px auto; line-height: 1.5; color: #1f2933; }
+    article { border-bottom: 1px solid #d9e2ec; padding: 20px 0; }
+    .meta { color: #52606d; font-size: 14px; }
+    .score { font-weight: 700; }
+  </style>
+</head>
+<body>
+  <h1>Literature Digest 2026-07-17</h1>
+  <p>Profile: <code>default</code>. Total recommendations: 10.</p>
+  <article>
+  <h2>1. MM-IssueLoc: A Controlled Benchmark for Evaluating Visual Evidence in Multimodal Repository-Level Issue Localization</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> We introduce \textbf{MM-IssueLoc}, a controlled benchmark and evaluation protocol for repository-level localization with visual evidence. MM-IssueLoc turns visual evidence into an explicit evaluation variable, enabling future work to test whether systems improve by using visual evidence for localization, rather than by relying on text-only cues or downstream patch-generation effects.</p>
+  <p><a href="http://arxiv.org/abs/2607.15205v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Real repository issues routinely include visual evidence such as screenshots, error dialogs, rendered UI states, and logs, yet repository-level issue localization is evaluated mostly as a text-only task. Existing multimodal SE benchmarks evaluate end-to-end repair, entangling localization with patch synthesis and obscuring whether visual input helped, hurt, or was ignored. We introduce \textbf{MM-IssueLoc}, a controlled benchmark and evaluation protocol for repository-level localization with visual evidence. MM-IssueLoc contains 652 issue-PR instances across 23 languages, with annotations for 7 image categories and 4 relevance levels. It provides file-level and function-level gold labels, paired text-only and with-image evaluation, and VCE-based diagnostics that convert images into structured textual evidence. We evaluate LLM-based and retrieval-based systems, including MM-IssueLoc-VL-Emb as a controlled multimodal retriever. Results show that existing systems remain far from reliable multimodal repository localization: the strongest agent reaches 38.96 file Acc@5 and 22.45 function Acc@10, while the strongest retriever reaches 33.86 function Acc@10. Cross-benchmark comparisons show that high localization scores on text-dominant SWE benchmarks do not transfer cleanly to multimodal issue localization. MM-IssueLoc turns visual evidence into an explicit evaluation variable, enabling future work to test whether systems improve by using visual evidence for localization, rather than by relying on text-only cues or downstream patch-generation effects.</p></details>
+</article>
+<article>
+  <h2>2. MedFailBench: A Clinician-Built Open-Source Benchmark for Medical AI Safety Boundary Inspection</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Most medical AI benchmarks measure whether a model knows the correct answer. MedFailBench asks a different question: which safety boundary failed?</p>
+  <p><a href="http://arxiv.org/abs/2607.15166v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Most medical AI benchmarks measure whether a model knows the correct answer. MedFailBench asks a different question: which safety boundary failed? We present a clinician-built synthetic benchmark and failure atlas that labels medical AI errors by severity (1--5) and safety gate type (missed urgent escalation, unsafe remote dosing, unsafe discharge reassurance, evidence fabrication, unsafe protocol execution, source support gap). The current public release (v0.2.1) contains 44 clinician-reviewed synthetic cases with severity annotations, a live HuggingFace leaderboard preview, a safety gate taxonomy, a clinical severity rubric, and an automated pipeline for archiving model-response screening runs. No patient data, clinical validation claims, or model rankings are included. MedFailBench is released under Apache-2.0 and CC-BY-4.0 and carries the Zenodo DOI 10.5281/zenodo.21205535.</p></details>
+</article>
+<article>
+  <h2>3. Concept-Guided Spatial Regularization for World Models in Atari Pong</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> We therefore propose Concept-Guided Spatial Regularization (CGSReg), an auxiliary pixel reconstruction loss applied to segmented concept regions. Experiments show that CGSReg improves both closed-loop rollouts and pixel-space zero-shot MBRL in DreamerV3, DIAMOND, and TWISTER.</p>
+  <p><a href="http://arxiv.org/abs/2607.15142v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>World models are usually evaluated as components of model-based reinforcement learning (MBRL) systems, while the world models themselves are rarely studied in isolation. We examine five representative visual world-model agents in Atari Pong: DreamerV3, DIAMOND, TWISTER, Simulus, and STORM. After reproducing their training pipelines and matching the reported agent performance, we freeze the learned world models and evaluate them with a closed-loop rollout diagnostic: a policy trained separately from the corresponding MBRL agent interacts with each frozen model, and the generated video trajectories are inspected for visual and dynamical errors. Across all five models, the rollouts contain clear failures, including ball disappearance, incorrect ball motion, and invalid ball-paddle interactions. Beyond visual trajectories, we further evaluate them with pixel-space zero-shot MBRL, where a new policy is trained entirely inside a frozen world model and then evaluated in the real environment. Across all five models, the resulting policies substantially underperform those produced by the corresponding original MBRL training pipelines. The gap is particularly large for DreamerV3, whose mean return drops from -5.5 to -20.9, near the minimum Pong return of -21. We hypothesize that insufficient modeling of task-critical concepts, such as the ball in Pong, may contribute to these failures. We therefore propose Concept-Guided Spatial Regularization (CGSReg), an auxiliary pixel reconstruction loss applied to segmented concept regions. Experiments show that CGSReg improves both closed-loop rollouts and pixel-space zero-shot MBRL in DreamerV3, DIAMOND, and TWISTER. Its effects vary across the remaining models and evaluation metrics, indicating that CGSReg alone does not address all world-model bottlenecks.</p></details>
+</article>
+<article>
+  <h2>4. Ray-based phase error correction for miniaturized DOE projector-based FPP under single-directional hyperbolic projection</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> We propose a ray-based phase error correction framework that models phase artifacts along projection rays from the projector pinhole, incorporating projector geometry without re-lying on image-domain processing or neighboring pixels. A projector pinhole estimation method based on a single-directional hyperbolic fringe pattern is introduced, through which projector geometry can be recovered without stereo calibration.</p>
+  <p><a href="http://arxiv.org/abs/2607.15139v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Fringe Projection Profilometry (FPP) systems using miniaturized DOE pro-jectors often suffer from severe phase artifacts due to nonlinear projection characteristics and limited pattern controllability. We propose a ray-based phase error correction framework that models phase artifacts along projection rays from the projector pinhole, incorporating projector geometry without re-lying on image-domain processing or neighboring pixels. A projector pinhole estimation method based on a single-directional hyperbolic fringe pattern is introduced, through which projector geometry can be recovered without stereo calibration. In addition, a data-efficient strategy constructs the re-finement model from a single calibration pose. Experiments on miniaturized DOE projector-based FPP systems demonstrate significant improvements in reconstruction accuracy under nonlinear projection conditions, confirming the robustness and physical consistency of the proposed approach.</p></details>
+</article>
+<article>
+  <h2>5. Swift gives a new BAT-GLIMPSE: Gamma-ray Localization using Imaging and Mosaic techniques for Pointing and Slew Epochs</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> The Burst Alert Telescope (BAT) onboard the Neil Gehrels Swift Observatory is capable of localizing gamma-ray transients with arcminute precision, enabling rapid multi-wavelength follow-up. However, onboard triggering is disabled during spacecraft slews, preventing the autonomous detection and localization of transients occurring during these intervals.</p>
+  <p><a href="http://arxiv.org/abs/2607.15130v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>The Burst Alert Telescope (BAT) onboard the Neil Gehrels Swift Observatory is capable of localizing gamma-ray transients with arcminute precision, enabling rapid multi-wavelength follow-up. However, onboard triggering is disabled during spacecraft slews, preventing the autonomous detection and localization of transients occurring during these intervals. We present here BAT-GLIMPSE, a fully autonomous, open-source pipeline for the low-latency localization of transient gamma-ray sources in Swift-BAT data. Making use of the BatAnalysis package, the pipeline combines coded-mask imaging and mosaic techniques, automatically selecting the appropriate analysis according to the spacecraft attitude and enabling localization searches during both pointing observations and spacecraft slews. We validate the performance of BAT-GLIMPSE on a sample of 66 GRBs reported in GUANO circulars. The pipeline successfully recovers arcminute positions for 43 events, consistent with published localizations, with typical offsets of $\lesssim5$ arcminutes. Approximately $88\%$ of the GRBs occurring during spacecraft slews are recovered through imaging or mosaic analyses. During the fourth LIGO-Virgo-KAGRA observing run, the role of BAT-GLIMPSE was crucial in the search for gamma-ray counterparts of gravitational waves, particularly in response to pre-merger alerts which triggered the slew of the Swift spacecraft with extremely low latency. Operating synergistically with NITRATES, BAT-GLIMPSE fills the critical gap left by slew intervals and, together, the two pipelines are estimated to double the onboard arcminute-localization rate of Swift-BAT, unlocking the full potential of the Swift mission for time-domain and multi-messenger astrophysics.</p></details>
+</article>
+<article>
+  <h2>6. DAPGNet: Dynamic Adaptive Physics-Guided Graph Diffusion Network for Hyperspectral Image Classification</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> It improves AA over the strongest competing method by 3.64 to 7.31 percentage points across the four datasets.</p>
+  <p><a href="http://arxiv.org/abs/2607.15128v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Hyperspectral image (HSI) classification requires reliable pixel-relation modeling under spectral variability, mixed pixels, and heterogeneous boundaries. Existing graph-based HSI classifiers usually construct graph topology from spatial proximity, superpixel connectivity, or learned feature affinity. However, the spectral physical prior carried by contiguous bands has limited influence on topology estimation and message propagation. This paper presents DAPGNet, a dynamic adaptive physics-guided graph diffusion network that injects a structure-constrained physical prior into relation-level graph learning. DAPGNet first encodes contiguous spectral responses into node-wise multiscale physical-prior representations. A two-stage graph constructor then combines spectral-spatial affinity, physical-prior consistency, and spatial distance to form a physical-prior-aware sparse topology. During graph diffusion, learned edge weights are transformed into additive attention biases, while a physical gate performs node-wise and feature-wise interpolation between graph-aggregated features and projected physical-prior features. Cross-scale fusion integrates node states from different diffusion depths, and the network is optimized with main classification, auxiliary supervision, and second-order spectral smoothness regularization. Experiments on Indian Pines, WHU-Hi-LongKou, Houston2013, and Houston2018 show that DAPGNet achieves the best OA, AA, and Kappa among representative CNN-, Transformer-, Mamba-, and graph-based baselines. It improves AA over the strongest competing method by 3.64 to 7.31 percentage points across the four datasets. Ablation and sensitivity analyses further support the complementary effects of physical-prior extraction, prior-aware topology construction, physics-gated propagation, and spectral smoothness regularization.</p></details>
+</article>
+<article>
+  <h2>7. Long-Context Fine-Tuning with Limited VRAM</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> 207.02 tokens/s), and the HGA-to-dense throughput ratio improves from 1K to 2K; because HGA keeps the attended historical set per token approximately constant while dense work per token grows, we expect this lead to widen as context grows. Dense attention is used for the main quality and retrieval comparisons so that they measure the learned weights and remain compatible with standard generation frameworks.</p>
+  <p><a href="http://arxiv.org/abs/2607.15105v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Parameter-efficient fine-tuning reduces model and optimizer memory, but dense attention still makes long training sequences expensive. We combine Hierarchical Global Attention (HGA) with segment-wise backpropagation and tiered KV storage. Only the active segment remains differentiable in VRAM; older KV is detached into RAM or NVMe, and HGA loads a bounded set of exact historical tokens for each query block. On Qwen3-8B with 4-bit QLoRA and PG19, dense training on a 16 GB Quadro RTX 5000 fits 2,048 tokens but fails at 4,096, whereas HGA reaches 16,384 tokens with 15.28 GB peak VRAM. Under evaluation the same adapter runs through 131,072 tokens on this card; VRAM is not constant but grows gently with the resident chunk summaries, so RAM and NVMe capacity set the practical limit beyond these lengths. At the shared 2K training length, HGA-trained and dense-trained adapters obtain 2.7405 and 2.7383 nat under the same dense-attention readout, while the stock model obtains 2.9541. At this boundary HGA training is already marginally faster (217.75 vs. 207.02 tokens/s), and the HGA-to-dense throughput ratio improves from 1K to 2K; because HGA keeps the attended historical set per token approximately constant while dense work per token grows, we expect this lead to widen as context grows. Dense attention is used for the main quality and retrieval comparisons so that they measure the learned weights and remain compatible with standard generation frameworks. HGA can also be used for retrieval and generation; an optimized production-grade serving implementation is under development.</p></details>
+</article>
+<article>
+  <h2>8. QuReC: All-in-One Image Restoration with Query-Specific Guidance and Local-Global Response Calibration</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Existing methods typically rely on image-level prompts or shared guidance to handle diverse degradations. To this end, we propose QuReC, a unified framework for all-in-one image restoration.</p>
+  <p><a href="http://arxiv.org/abs/2607.15097v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>All-in-one image restoration aims to recover clean images degraded by multiple corruption types using a single unified model. Existing methods typically rely on image-level prompts or shared guidance to handle diverse degradations. However, such a paradigm becomes inadequate when degradations are spatially heterogeneous or even coexist in mixed forms within a single image. Yet spatially adaptive guidance alone is not sufficient, since accurate restoration also requires each spatial query to reliably aggregate complementary information from local neighborhoods and global contexts. To this end, we propose QuReC, a unified framework for all-in-one image restoration. QuReC consists of a Degradation-Guided Query Reconstruction Module (DQRM) and a Local-Global Response Calibration Module (LGRCM). Specifically, DQRM matches each spatial query against a degradation prototype space to reconstruct a query-specific degradation-aware representation, thereby providing fine-grained spatially adaptive restoration guidance. To further stabilize this query-wise matching process, we introduce a weakly supervised prototype matching learning strategy to improve optimization stability and degradation semantic consistency. Meanwhile, LGRCM performs local-global dual-branch aggregation and calibrates the aggregated responses with learnable priors, improving the reliability of feature aggregation and the coordination between local detail modeling and global context modeling. Extensive experiments demonstrate that QuReC achieves superior performance on multiple all-in-one image restoration benchmarks. The code is released at https://github.com/zhoushen1/QuReC.</p></details>
+</article>
+<article>
+  <h2>9. AlphaWiSE: Adaptive Weight Interpolation for Continual Multimodal Representation Learning</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Conventional continual-learning methods return a single checkpoint, which commits every retrieval direction to the same stability-plasticity trade-off. We propose AlphaWiSE, a post-hoc weight-space interpolation method that composes two frozen source checkpoints.</p>
+  <p><a href="http://arxiv.org/abs/2607.15094v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Multimodal models such as CLIP learn a shared embedding space for cross-modal retrieval, but continual adaptation to sequentially arriving data can disrupt the cross-modal alignment acquired from earlier phases. Conventional continual-learning methods return a single checkpoint, which commits every retrieval direction to the same stability-plasticity trade-off. We propose AlphaWiSE, a post-hoc weight-space interpolation method that composes two frozen source checkpoints. For each aligned parameter tensor identified by its checkpoint key, AlphaWiSE fits one scalar interpolation coefficient shared by all tensor entries. The coefficients are fitted on a smaller exemplar memory and used to materialize one interpolated checkpoint. The deployed model has the same architecture and parameter count as either source checkpoint, which does not require additional inference time. Extensive experiments on audio-image-text retrieval show consistent improvements over strong continual-learning baselines across multiple retrieval directions and evaluation metrics.</p></details>
+</article>
+<article>
+  <h2>10. Towards Hierarchical Structure Understanding of Newspaper Images</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> In this paper, we explore two complementary approaches for newspaper structure understanding. This approach leverages existing robust components while maintaining flexibility and interpretability.</p>
+  <p><a href="http://arxiv.org/abs/2607.15082v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Understanding newspaper images remains a challenging task due to their complex, nested hierarchical structures and dense, heterogeneous layouts. In this paper, we explore two complementary approaches for newspaper structure understanding. First, we present a modular bottom-up pipeline that combines state-of-the-art open-source models: YOLO for layout detection, LayoutReader for reading order prediction, and a custom algorithm for article segmentation. This approach leverages existing robust components while maintaining flexibility and interpretability. Second, we introduce Tiramisu (Tiered Transformers for Hierarchical Structure Understanding), a novel end-to-end transformer-based architecture that explicitly models document hierarchy through an iterative tiered process. Tiramisu performs section and article separation, block localization, semantic categorization, and reading order prediction using highly parallelized attention mechanisms. Finally, we release Finlam La Liberté, a new dataset designed specifically for evaluating hierarchical information retrieval in historical newspapers. Experimental results demonstrate the effectiveness of both approaches in reconstructing complex newspaper hierarchies, with comparative analysis highlighting their respective strengths for scalable document digitization. The Tiramisu training code, including the synthetic newspaper generator, is available at https://git.litislab.fr/tiramisu/tiramisu-newspaper-articles-extractor.</p></details>
+</article>
+</body>
+</html>
