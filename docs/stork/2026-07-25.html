@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Literature Digest 2026-07-25</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 960px; margin: 32px auto; line-height: 1.5; color: #1f2933; }
+    article { border-bottom: 1px solid #d9e2ec; padding: 20px 0; }
+    .meta { color: #52606d; font-size: 14px; }
+    .score { font-weight: 700; }
+  </style>
+</head>
+<body>
+  <h1>Literature Digest 2026-07-25</h1>
+  <p>Profile: <code>default</code>. Total recommendations: 10.</p>
+  <article>
+  <h2>1. Unified Video Dense Prediction from Disjoint Data</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> To mitigate this, we introduce UniD, a unified video model that jointly predicts eight dense scene properties-depth, surface normals, semantic segmentation, boundaries, human parts, albedo, shading, and materials-all learned from disjoint, domain-specific datasets. We propose a simple yet effective distillation step in which per-task experts supervise a unified backbone through lightweight task projectors, eliminating the need for annotation overlap or pseudo-labeling.</p>
+  <p><a href="http://arxiv.org/abs/2607.21592v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Scene understanding requires simultaneous prediction about geometry, appearance, and semantics. However, existing task-specific annotations are fragmented across incompatible, domain-specific datasets. Current unified systems circumvent this by restricting training to fully co-annotated data, or by incurring the large computational cost of pseudo-labeling. To mitigate this, we introduce UniD, a unified video model that jointly predicts eight dense scene properties-depth, surface normals, semantic segmentation, boundaries, human parts, albedo, shading, and materials-all learned from disjoint, domain-specific datasets. We propose a simple yet effective distillation step in which per-task experts supervise a unified backbone through lightweight task projectors, eliminating the need for annotation overlap or pseudo-labeling. Our key insight is that the strong visual priors of a pretrained diffusion model are sufficient to bridge the domain gaps introduced by disjoint training sources, enabling robust generalization to scene-task combinations never seen during training. UniD achieves competitive performance against per-task specialists and multi-task baselines, with strong generalization to out-of-distribution scenarios and enhanced temporal and cross-task consistency. Code and video results are available at https://unid-video.github.io/.</p></details>
+</article>
+<article>
+  <h2>2. Inference-Time Scaling of Diffusion Models via Progressive Seed Pruning</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Because final quality is highly sensitive to the initial noise seed, many approaches spend extra compute on seed search or resampling under a black-box reward, but typically maintaining a constant memory footprint throughout inference. Across diffusion and flow-matching backbones, \PSP \ consistently improves reward-guided selection and achieves higher GenEval scores (automated) and better human evaluation on prompt-alignment than best-of-$N$, importance-sampling, and tree-search baselines at matched compute.</p>
+  <p><a href="http://arxiv.org/abs/2607.21591v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Diffusion and flow-matching models dominate conditional image generation, yet inference-time scaling for these models is far less developed than for autoregressive language models. Because final quality is highly sensitive to the initial noise seed, many approaches spend extra compute on seed search or resampling under a black-box reward, but typically maintaining a constant memory footprint throughout inference. We show that relaxing this constraint enables an underexplored inference-time scaling axis: by front-loading exploration, evaluating many seeds early, and pruning aggressively, we can use a fixed compute budget more effectively. \emph{Progressive Seed Pruning} (\PSP) scores intermediate denoised estimates and progressively narrows the candidate set so that only promising trajectories are fully denoised, while keeping the total number of model evaluations fixed. Across diffusion and flow-matching backbones, \PSP \ consistently improves reward-guided selection and achieves higher GenEval scores (automated) and better human evaluation on prompt-alignment than best-of-$N$, importance-sampling, and tree-search baselines at matched compute. Project page: https://www.vision.caltech.edu/psp. Code: https://github.com/rogerioagjr/psp.</p></details>
+</article>
+<article>
+  <h2>3. XMM-Newton and Swift Unveil Another X-Ray Transient in NGC 4945, XMM J130514.64-493311.27</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> We propose that this X-ray source is an X-ray binary within NGC 4945 caught during its most recent active phase.</p>
+  <p><a href="http://arxiv.org/abs/2607.21587v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>NGC 4945 hosts a Compton-thick, low luminosity AGN and a nuclear starburst in its core and has been the subject of many previous X-ray investigations of the AGN emission structure, nuclear starburst properties, and ultraluminous X-ray (ULX) source populations. Indeed, NGC 4945 has proven to be a rich system for ULX and X-ray transients, with at least four X-ray transients being reported over the last 15 years. Here we report the detection of an X-ray transient source, XMM J130514.64-493311.27, in NGC 4945 in the latest and deepest XMM-Newton observation of NGC 4945 to-date. The source lies $\sim5.5&#x27;$ south of the nucleus and was not detected in any previous XMM-Newton or Chandra imaging, but the source was detected by Swift-XRT in 2008, 2019, and in 2022, the latter of which coincides roughly with our new XMM-Newton imaging; we are therefore tracing the most recent outburst of this object with XMM-Newton. The source is soft with $Γ\approx3$, and our spectroscopic analysis suggests the source is best characterized by a multicolor disk + power law model or, alternatively, a multicolor disk + thermal plasma model, with a 0.3-10 keV X-ray luminosity of $\sim2.2-2.3\times10^{38}$. We find no evidence for a counterpart in the optical, near-infrared, ultraviolet, or in the radio, but we identify a candidate counterpart in NEOWISE mid-IR light curves. We propose that this X-ray source is an X-ray binary within NGC 4945 caught during its most recent active phase.</p></details>
+</article>
+<article>
+  <h2>4. GraphVid: Interactive Graph-Controllable Video Generation</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> To enable flexible yet precise multi-subject control, we introduce $\textbf{GraphVid}$, a graph-conditioned image-to-video generation model that enables interactive control through structured interaction graphs. Despite using substantially less training data and fewer trainable parameters than prior motion-control methods, GraphVid delivers strong controllability and video quality.</p>
+  <p><a href="http://arxiv.org/abs/2607.21580v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Controllable video generation remains challenging due to the difficulty of specifying precise multi-object interactions using text prompts or motion-control inputs that primarily constrain pixel movement. In practice, trajectory-based control often requires users to draw accurate tracks for multiple objects, which scales poorly with scene complexity and becomes ambiguous under occlusion or overlap. To enable flexible yet precise multi-subject control, we introduce $\textbf{GraphVid}$, a graph-conditioned image-to-video generation model that enables interactive control through structured interaction graphs. We further curate $\textbf{GraphVid-Bench}$, a large-scale interaction-centric video dataset with structured relational annotations to enable training of interaction-aware video generation models. Despite using substantially less training data and fewer trainable parameters than prior motion-control methods, GraphVid delivers strong controllability and video quality. Compared with Motion-I2V, GraphVid reduces FID by up to 39.9% and FVD by 37.6%, while improving PSNR (9.87=&gt;15.98) and SSIM (0.38=&gt;0.61). Our results highlight the potential of structured semantic interfaces as a powerful paradigm for controllable video generation.</p></details>
+</article>
+<article>
+  <h2>5. Synthetic data generation framework for quality control automation in gravure printing</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> To overcome this limitation, this paper introduces a novel synthetic data generation framework tailored for rotogravure printing quality control. The proposed pipeline automatically generates high-fidelity images of specific printing defects (creases, streaks, misregistration, etc.) and outputs corresponding bounding boxes and annotations.</p>
+  <p><a href="http://arxiv.org/abs/2607.21577v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Quality control in printing, particularly in rotogravure printing, still depends on slow, costly, and subjective manual inspection. Automated surface defect detection is critical for maintaining high-quality standards in rotogravure printing. Deep learning models give prospects for automation. However, training robust deep learning models, such as YOLO or Vision Transformers, is heavily hindered by the extreme scarcity of real-world industrial defects images. To overcome this limitation, this paper introduces a novel synthetic data generation framework tailored for rotogravure printing quality control. The proposed pipeline automatically generates high-fidelity images of specific printing defects (creases, streaks, misregistration, etc.) and outputs corresponding bounding boxes and annotations. To validate the framework, a synthetic dataset of 7533 images was generated and used to train the state-of-the-art object-detection model RFDETR. Experimental results demonstrate that the model trained on our synthetic data achieves a Mean Average Precision (mAP) of 80.9\% on real industrial testing samples. This framework provides a zero-cost, rapid-deployment solution for automating defect inspection in printing lines without requiring massive manual data collection.</p></details>
+</article>
+<article>
+  <h2>6. Self-Supervised Learning of Structured Dynamics from Videos</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> We propose the Structured Dynamics Model (SDM), which explicitly separates the dominant source of temporal change from residual dynamics through future-feature prediction, rather than representing video change with a single entangled latent or with unstructured, spatially dense transition tokens.</p>
+  <p><a href="http://arxiv.org/abs/2607.21576v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Understanding motion in video is a fundamental challenge for visual learning, as frame-to-frame change entangles two sources of dynamics: camera motion and object motion. This decomposition has remained underexplored in representation learning, partly because these factors are tightly coupled in natural videos and difficult to supervise separately. Yet recovering it is important for learning robust motion representations that separate meaningful object dynamics from camera-induced variation. We study whether such structured motion representations can be recovered from frozen features of a pretrained image vision transformer. We propose the Structured Dynamics Model (SDM), which explicitly separates the dominant source of temporal change from residual dynamics through future-feature prediction, rather than representing video change with a single entangled latent or with unstructured, spatially dense transition tokens. Training combines self-supervised learning on real video with weak supervision of scene dynamics on synthetic Kubric data. We evaluate SDM on ProbeMotion, a new evaluation suite spanning synthetic and real videos with camera motion, object motion, and combined dynamics. SDM outperforms backbone baselines using global CLS or average-pooled features, and compares favorably to strongly supervised representations such as VGGT on several probes, despite using substantially weaker supervision. These results suggest that pretrained image models can be readily repurposed into structured video-dynamics representations, providing a useful inductive bias for learning and analyzing latent video dynamics.</p></details>
+</article>
+<article>
+  <h2>7. Generic degrees of real polynomial Keller maps with non-dense image</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> For a real polynomial map of constant nonzero Jacobian determinant, a real Keller map, with non-dense image, we determine the possible generic degrees. Such a degree is necessarily even, and by Campbell&#x27;s theorem different from two, hence at least four; we show conversely that every even integer $\geq4$ occurs, realized in dimension three by an explicit member of the deformation family of the July 2026 counterexample to the Jacobian conjecture.</p>
+  <p><a href="http://arxiv.org/abs/2607.21572v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>For a real polynomial map of constant nonzero Jacobian determinant, a real Keller map, with non-dense image, we determine the possible generic degrees. Such a degree is necessarily even, and by Campbell&#x27;s theorem different from two, hence at least four; we show conversely that every even integer $\geq4$ occurs, realized in dimension three by an explicit member of the deformation family of the July 2026 counterexample to the Jacobian conjecture. Hence for every $n\geq3$ the generic degrees of real Keller maps $\mathbb R^{n}\to\mathbb R^{n}$ with non-dense image are exactly the even integers $\geq4$; in dimension two the set is empty if the planar Jacobian conjecture holds, and in dimension one it is empty. Density is meant throughout in the Euclidean topology. An explicit degree-four real Keller map with empty real fibres along a slice of the target is due to Gallagher, and families realizing every generic degree $\geq3$ over $\mathbb C$ to Gallagher and to the base manuscript; both precede this note.</p></details>
+</article>
+<article>
+  <h2>8. MedGame: Storytelling Gamification Empowered by Large Language Models for Medical Education</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> We introduce \textit{MedGame}, a framework that transforms static clinical cases into structured, executable storytelling games. Experiments show that task-specific fine-tuning substantially improves open-source LLMs on MedGame Bench and narrows the gap with commercial models.</p>
+  <p><a href="http://arxiv.org/abs/2607.21570v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Large Language Models (LLMs) show promise for medical education, but most existing systems focus on localized interactions such as question answering or single-turn feedback, rather than organizing an entire clinical case into a decision-centered learning trajectory. We introduce \textit{MedGame}, a framework that transforms static clinical cases into structured, executable storytelling games. MedGame uses a dual-engine design: a Medical Narrative Designer synthesizes case-grounded clinical storylines with states and decision nodes, while a Story Director converts them into dependency-aware multimodal orchestration plans rendered by our released interactive platform. We construct MedGame Bench, a 5,000-case benchmark and evaluation protocol for Medical Narrative Generation and Story Direction. Experiments show that task-specific fine-tuning substantially improves open-source LLMs on MedGame Bench and narrows the gap with commercial models. A pilot student study further shows that learners perceive MedGame as more engaging and useful than text-only alternatives.</p></details>
+</article>
+<article>
+  <h2>9. Scene Parameter Saliency via Differentiable Light Transport</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Gradient-based saliency methods reveal which input features most influence a neural network&#x27;s output, and are a standard tool for model interpretability.</p>
+  <p><a href="http://arxiv.org/abs/2607.21562v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Gradient-based saliency methods reveal which input features most influence a neural network&#x27;s output, and are a standard tool for model interpretability. We observe that differentiable renderers, which are conventionally used for parameter optimisation, produce an analogous form of saliency: given any scalar metric evaluated on a rendered image, a single reverse-mode differentiation pass yields per-parameter gradients that identify which scene elements most influence the metric. We call these gradient fields metric saliency maps. Unlike neural saliency, which propagates attribution through learned weights, metric saliency propagates through the image formation process itself, including multi-bounce light transport, capturing parameter dependencies that are semi-opaque to manual inspection. We compute metric saliency maps for qualitatively different objectives: psychovisual glare indices, mean scene luminance, and neural perceptual scores. The saliency rankings differ substantially across metrics for the same scene, with parameters that dominate one objective being negligible for another. The saliency map is specific to the metric, not an intrinsic property of the scene. Our results suggest that differentiable renderers produce derivative images that are as informative for scene understanding as the primal images they were designed to generate.</p></details>
+</article>
+<article>
+  <h2>10. Visual Contrastive Self-Distillation</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Existing methods create this asymmetry either through privileged answers or visual evidence. For this purpose, we propose Visual Contrastive Self-Distillation, namely VCSD, which converts image-content removal into an on-policy self-distillation signal.</p>
+  <p><a href="http://arxiv.org/abs/2607.21556v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>On-policy self-distillation (OPSD) is promising as it removes the external teacher required by on-policy distillation (OPD), yet it still needs asymmetric information between teacher and student to ensure that the self-teacher provides a stronger learning signal than the student. Existing methods create this asymmetry either through privileged answers or visual evidence. We ask whether both can be removed, yielding a simpler form of OPSD driven purely by input conditioning. For this purpose, we propose Visual Contrastive Self-Distillation, namely VCSD, which converts image-content removal into an on-policy self-distillation signal. At each student-generated response prefix, the EMA teacher produces two next-token distributions under the same prompt and prefix -- one conditioned on the original image and the other on a content-erased control. Their token-wise log-probability difference highlights candidates whose likelihood is specifically increased by the instance-level visual content. We use this contrast to sharpen the teacher&#x27;s original-image distribution within its plausible support, and distill the resulting full-distribution target into the student. Using ViRL39K dataset, VCSD consistently outperforms matched OPSD across Qwen3-VL and Qwen3.5 models. For example, on Qwen3-VL, it improves the seven-benchmark aggregate from $62.27\% \rightarrow 67.04\%$ at 2B, $71.30\% \rightarrow 73.16\%$ at 4B, and $72.51\% \rightarrow 76.26\%$ at 8B. Furthermore, VCSD requires no external teacher, privileged answers, visual evidence signals, reasoning traces, or additional inference-time cost.</p></details>
+</article>
+</body>
+</html>
