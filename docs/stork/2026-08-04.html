@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Literature Digest 2026-08-04</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 960px; margin: 32px auto; line-height: 1.5; color: #1f2933; }
+    article { border-bottom: 1px solid #d9e2ec; padding: 20px 0; }
+    .meta { color: #52606d; font-size: 14px; }
+    .score { font-weight: 700; }
+  </style>
+</head>
+<body>
+  <h1>Literature Digest 2026-08-04</h1>
+  <p>Profile: <code>default</code>. Total recommendations: 10.</p>
+  <article>
+  <h2>1. PlantRig - From Bones to Branches: Adaptation of Autoregressive Rigging Models for Plant Skeletal Reconstruction</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Autoregressive rigging models such as UniRig and SkinTokens perform well on articulated characters, but their ability to generalize to plant structures remains largely unexplored, since plant topologies exhibit highly variable, non-canonical branching patterns that challenge learned skeletal priors. We evaluate these models for plant skeletal reconstruction using synthetic L-system-generated trees and real scanned data spanning monopodial, sympodial, whorled, and vine-like archetypes.</p>
+  <p><a href="http://arxiv.org/abs/2608.01072v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Autoregressive rigging models such as UniRig and SkinTokens perform well on articulated characters, but their ability to generalize to plant structures remains largely unexplored, since plant topologies exhibit highly variable, non-canonical branching patterns that challenge learned skeletal priors. We evaluate these models for plant skeletal reconstruction using synthetic L-system-generated trees and real scanned data spanning monopodial, sympodial, whorled, and vine-like archetypes. Preliminary testing showed UniRig collapsing complex branching into near-linear chains, while SkinTokens preserved topology better but over-segmented branches and produced an unstable output space, so we focused on UniRig for its greater stability. Diagnosis traced the collapse to sampling-level suppression of branch tokens, and further analysis showed the frozen mesh encoder had limited sensitivity to structural variation, pointing to a geometric bottleneck in the tokenization pipeline rather than a purely learned bias. Building on these findings, we applied multi-round fine-tuning over multiple procedurally generated synthetic datasets. Across rounds, the model progressively recovered accurate branching topology and generalized beyond branch-only structures to plants with foliage, a harder case given the zero-thickness, mesh-normal-dependent geometry of leaves. The resulting model generalized well across diverse plant forms without leaf-specific architectural changes, indicating that targeted fine-tuning can substantially close the domain gap between character-rigging priors and plant skeletal structure. As such, our work points toward a viable path for automated plant rigging across both branch topology and foliage type, even those not considered in our findings.</p></details>
+</article>
+<article>
+  <h2>2. OC-VLA++: Monocular Geometry-Guided Cross-View Consistency for Viewpoint-Robust Robotic Manipulation</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> We propose OC-VLA++, an extension of OC-VLA for viewpoint generalization under limited camera coverage. Experiments demonstrate substantial improvements in unseen-view generalization under limited camera coverage, with performance degrading more gracefully under increasing camera displacement.</p>
+  <p><a href="http://arxiv.org/abs/2608.01066v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>We propose OC-VLA++, an extension of OC-VLA for viewpoint generalization under limited camera coverage. While OC-VLA grounds robot actions in the camera coordinate system to align action supervision with visual observations, camera-space grounding alone can still overfit to the few viewpoints observed during training. OC-VLA++ addresses this limitation by introducing geometry-guided paired-view supervision and an explicit cross-view action-equivariance objective. Given paired observations of the same manipulation scene from geometrically related viewpoints, the model is trained such that their camera-space predictions correspond to the same robot-frame action. This objective explicitly supervises how action predictions should transform across viewpoints, rather than relying solely on image-level augmentation. Experiments demonstrate substantial improvements in unseen-view generalization under limited camera coverage, with performance degrading more gracefully under increasing camera displacement. These results establish cross-view action equivariance as an effective complement to observation-centric action grounding for robust real-world deployment.</p></details>
+</article>
+<article>
+  <h2>3. One Query, Many Scales: Sparse Mixture-of-Experts for Efficient Hierarchical Cross-View Geo-Localization</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> We introduce GeoMoE, a sparse mixture-of-experts dual encoder that decouples global multi-scale representation learning from local hierarchical search. We further introduce VIGOR-M, a four-city benchmark with an explicit parent--child satellite hierarchy and held-out half-step galleries for single-resolution, cross-resolution, and hierarchical evaluation.</p>
+  <p><a href="http://arxiv.org/abs/2608.01060v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Cross-view geo-localization (CVGL) retrieves geo-tagged satellite imagery for a ground-view query. Most systems exhaustively search a flat, fixed-resolution gallery, incurring high cost over large areas and adapting poorly to satellite resolution changes. Autoregressive coarse-to-fine alternatives reduce comparisons but bind later predictions to earlier decisions and a predefined hierarchy. We introduce GeoMoE, a sparse mixture-of-experts dual encoder that decouples global multi-scale representation learning from local hierarchical search. Global multi-scale supervision and content-adaptive routing map ground and satellite images across resolutions into a globally comparable embedding space. At inference, each image is encoded once, and probabilistic beam search follows parent--child links to score a small candidate subset. Later levels reuse these descriptors rather than features generated by preceding levels, limiting feature-level error propagation and hierarchy coupling. We further introduce VIGOR-M, a four-city benchmark with an explicit parent--child satellite hierarchy and held-out half-step galleries for single-resolution, cross-resolution, and hierarchical evaluation. GeoMoE achieves 95.78% R@40m on Just Zoom In, 2.77 percentage points above the previous best, and 62.39% R@1 on VIGOR-M. The latter requires 0.885 MMAC/query for descriptor matching, 5.27% of an exhaustive L3 scan, while exceeding the strongest exhaustive baseline by 3.12 percentage points in R@1. One model trained on L1, L2, and L3 also outperforms a matched dense control across all six galleries and transfers to three withheld resolutions. By decoupling globally trained embeddings from local hierarchical search, GeoMoE jointly improves localization accuracy, search efficiency, and cross-resolution transfer.</p></details>
+</article>
+<article>
+  <h2>4. Extended KAFR: A kinematic-adaptive paradigm for the efficient analysis of surgical video</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> However, laparoscopic surgery introduces additional challenges: manual camera control causes frequent motion artifacts, and image quality is generally lower than robotic systems.</p>
+  <p><a href="http://arxiv.org/abs/2608.01058v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Artificial Intelligence is increasingly applied to surgical video analysis for phase segmentation, skill assessment, and workflow optimization. A key challenge is the length of surgical recordings, often one to several hours, creating substantial computational burden. We previously developed Kinematics-Adaptive Frame Recognition (KAFR) for robotic surgery, showing that tracking tool motion effectively identifies informative frames while filtering redundant content. However, laparoscopic surgery introduces additional challenges: manual camera control causes frequent motion artifacts, and image quality is generally lower than robotic systems. This study evaluates whether KAFR generalizes to laparoscopic surgery using the Cholec80 benchmark, comprising 80 laparoscopic cholecystectomy procedures annotated for seven surgical phases. KAFR operates in three stages: a fine-tuned YOLO model detects and segments surgical tools; frames are adaptively selected based on tool displacement or velocity variation; and an X3D model classifies selected frames into surgical phases. KAFR achieved a 91.0\% F1 score using only 0.58\% of frames for phase classification, representing an approximately seven-fold reduction compared to typical 4\% frame sampling, while maintaining performance comparable to LoViT (90.2\%) and Trans-SVNet (89.7\%). These results demonstrate that kinematics-based frame selection transfers effectively to the challenging laparoscopic environment.</p></details>
+</article>
+<article>
+  <h2>5. Credit the Right Box: Marginal Contribution Assignment for Structured Visual Perception</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> However, existing group-relative reinforcement learning methods provide only response-level supervision, creating a granularity mismatch for structured multi-object prediction: a single advantage is broadcast to all tokens in a response, without distinguishing individual box contributions. To address this mismatch, we propose MCR-GRPO, a marginal contribution assignment framework that derives box-level credit directly from each sampled response.</p>
+  <p><a href="http://arxiv.org/abs/2608.01055v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Multimodal Large Language Models (MLLMs) are increasingly expected to solve structured perception tasks that require visual recognition, language-to-object binding, object cardinality preservation, and precisely localized grounding and segmentation outputs. However, existing group-relative reinforcement learning methods provide only response-level supervision, creating a granularity mismatch for structured multi-object prediction: a single advantage is broadcast to all tokens in a response, without distinguishing individual box contributions. To address this mismatch, we propose MCR-GRPO, a marginal contribution assignment framework that derives box-level credit directly from each sampled response. Specifically, Marginal Contribution Reward (MCR) estimates each predicted box&#x27;s contribution through a leave-one-out comparison, measuring how the matched set value changes when the box is removed from the response. After within-response normalization, records that improve the set value receive positive credit, while redundant or harmful ones are suppressed. To make marginal attribution stable and informative, we further introduce a Continuous Matched Set Value Evaluator that integrates permutation-invariant matching, count-aware normalization, and graded localization. MCR-GRPO maps normalized box-level marginal advantages to the token spans that generated each box, preserving GRPO&#x27;s response-level comparison while enabling box-aware optimization of structured multi-object grounding. Experiments across REC, DOD, segmentation, and counting benchmarks show state-of-the-art performance over prior GRPO-based baselines.</p></details>
+</article>
+<article>
+  <h2>6. Identification and Study of Irregular Radio Sources with SKA Continuum Surveys</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> The identification and classification of these sources will require a combination of machine-learning methods, quantitative morphology measurements, multi-wavelength host-galaxy association, and expert visual inspection.</p>
+  <p><a href="http://arxiv.org/abs/2608.01054v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Radio galaxies show a wide range of morphologies, from regular double-lobed systems to more complex and distorted radio structures. In this chapter, we focus on irregular radio morphologies, defined as sources in which the radio jets and lobes deviate from a straight and symmetric structure. Bent-tail radio galaxies and winged radio galaxies are two important examples of such sources. Bent-tail radio galaxies show curved jets or lobes, mainly shaped by the interaction between radio plasma and the dense intracluster or intragroup medium. Winged radio galaxies show faint off-axis emission, which may be related to plasma backflow, jet reorientation, episodic activity, galaxy mergers, or environmental asymmetry. The Square Kilometre Array (SKA) continuum surveys will provide the sensitivity, angular resolution, frequency coverage, and image quality required to identify and study large samples of such irregular radio galaxies. These data will make it possible to detect faint extended structures, including diffuse tails, weak bridges, remnant lobes, and low-surface-brightness wings. The identification and classification of these sources will require a combination of machine-learning methods, quantitative morphology measurements, multi-wavelength host-galaxy association, and expert visual inspection. The study of irregular radio galaxies with SKA data will help to connect radio morphology with host-galaxy properties, Active Galactic Nucleus (AGN) activity, jet power, and surrounding environment. Such studies will provide important insight into jet-environment interactions, AGN feedback, the dynamical state of galaxy groups and clusters, and the evolution of radio galaxies across cosmic time.</p></details>
+</article>
+<article>
+  <h2>7. Struct-GStream: Towards Efficient Free-Viewpoint Video Streaming at Low-Bitrates with Structured 3D Gaussians</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Methods based on neural rendering achieve high-fidelity image quality in FVV construction. However, most of these methods are unable to achieve real-time rendering and often require complete video sequences to train.</p>
+  <p><a href="http://arxiv.org/abs/2608.01053v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Constructing photorealistic Free-Viewpoint Videos (FVVs) of dynamic scenes from a set of posed 2D images has been an intriguing yet challenging task in computer vision. Methods based on neural rendering achieve high-fidelity image quality in FVV construction. However, most of these methods are unable to achieve real-time rendering and often require complete video sequences to train. Despite the existence of some online training methods capable of rendering FVVs in real time, they struggle to meet the requirements for storage and training time for downstream applications. To overcome this problem, we propose Struct-GStream, which can achieve efficient FVV streaming using structured 3D Gaussians (3DGs). Specifically, we introduce dynamic anchor points to generate structured 3DGs to construct basic scenes and model approximate scene movements based on the assumption of local rigidity in object motion. Besides, we introduce a global free 3DGs patching strategy involving free 3DGs&#x27; generation, pruning, and optimization to patch and model deficient areas and emerging objects. Our method achieves fast training at low bitrates while maintaining high rendering quality. Extensive experiments demonstrate that Struct-GStream significantly outperforms existing online training methods for FVV construction in terms of training time, storage, and rendering quality while maintaining competitive rendering speed.</p></details>
+</article>
+<article>
+  <h2>8. Investigations of MWISP Bubbles: Identification and Analysis of Enclosed Molecular Bubbles by Weight Fields</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> We present the Bubble-Weight Fields (BWFields) framework, a PPV-based method that for the first time enables the automated and objective identification and analysis of enclosed molecular bubbles directly from spectral-line data cubes. BWFields establishes a scalable and physically interpretable framework for molecular-bubble studies in large surveys, enabling systematic investigations of stellar feedback in the Galactic interstellar medium.</p>
+  <p><a href="http://arxiv.org/abs/2608.01052v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Molecular bubbles are widely used as tracers of stellar feedback; yet, their identification in spectral-line surveys remains challenging because both cavity morphology and kinematic structure must be assessed consistently in position--position--velocity (PPV) space. We present the Bubble-Weight Fields (BWFields) framework, a PPV-based method that for the first time enables the automated and objective identification and analysis of enclosed molecular bubbles directly from spectral-line data cubes. BWFields constructs a bubble-weight field, $W_{l,b,v}$, which encodes cumulative evidence for cavity interiors by aggregating topological signatures across multiple signal-to-noise tiers and velocity-integration scales. Contiguous cavity interiors are segmented as weight-clumps and associated with surrounding molecular gas, linking candidate bubbles to the structure of their host clouds. Shell morphology is characterized using radial intensity profiles and emission-defined intensity skeletons, which capture the shell geometry as traced by the observed emission. Bubble kinematics are quantified using azimuthally sampled position-velocity (PV) diagnostics, along with a turbulence-normalized expansion significance, which serves as a direct measure of the expansion-like velocity organisation. Applied to MWISP $^{13}$CO observations of the G17 region, BWFields identifies a population of bubble candidates with a broad range of morphologies and velocity structures in complex environments. BWFields establishes a scalable and physically interpretable framework for molecular-bubble studies in large surveys, enabling systematic investigations of stellar feedback in the Galactic interstellar medium.</p></details>
+</article>
+<article>
+  <h2>9. Decoy Images Amplify Caption-Mediated Defenses Against Encoded Jailbreaks</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> We report a counter-intuitive interaction between image inputs and existing black-box defenses on Vision--Language Models (VLMs): pairing an encoded jailbreak prompt with an unrelated decoy image can sharply lower attack success rate (ASR). The operative change is in the defense pipeline, not in the image.</p>
+  <p><a href="http://arxiv.org/abs/2608.01043v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>We report a counter-intuitive interaction between image inputs and existing black-box defenses on Vision--Language Models (VLMs): pairing an encoded jailbreak prompt with an unrelated decoy image can sharply lower attack success rate (ASR). The operative change is in the defense pipeline, not in the image. Across five frontier VLMs, two encoded-attack families, and three black-box defenses, a caption-mediated defense (ECSO) that leaves ASR essentially unchanged on text-only encoded input drops it by up to $73$pp once a content-free decoy is attached; every non-saturated contrast is significant under exact McNemar tests. We advance two hypotheses for this pattern, supported by indirect evidence rather than pipeline introspection, since a black-box threat model precludes inspecting vendor internals: caption-mediated defenses branch on image presence, and intrinsic image-side safety engages on image-resident content. Three controls constrain the explanation. Blank-canvas and natural-photograph decoys reproduce the effect on every model, implicating image presence rather than content; the effect replicates on three open-weight VLMs served with no moderation layer, so it is not a vendor-filtering artifact; and a non-symbolic, meaning-based encoder reproduces it, so it is not specific to symbolic obfuscation. Attaching a decoy unconditionally is not deployable --- it raises benign refusal to $20$--$79\%$, an inflation of $+10$ to $+67$pp --- but gating attachment on a lightweight encoded-input detector returns benign refusal to the text baseline while preserving the safety gain wherever the detector fires, making detector recall the binding constraint. Under adaptive attacks that target the caption-mediated re-check, the effect degrades but holds. We frame this as an observation about pipeline interaction, not as a robust defense.</p></details>
+</article>
+<article>
+  <h2>10. The equality case of Ehrhart&#x27;s volume conjecture</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> We prove that every full-dimensional compact convex body in $\mathbb R^n$ whose barycenter is its unique interior lattice point and whose volume is $(n+1)^n/n!$ is a unimodular image of the simplex $(n+1)Δ_n-(1,\dots,1)$. This resolves the equality case of Ehrhart&#x27;s volume conjecture, as a counterpart of the inequality part recently proved by OpenAI.</p>
+  <p><a href="http://arxiv.org/abs/2608.01040v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>We prove that every full-dimensional compact convex body in $\mathbb R^n$ whose barycenter is its unique interior lattice point and whose volume is $(n+1)^n/n!$ is a unimodular image of the simplex $(n+1)Δ_n-(1,\dots,1)$. This resolves the equality case of Ehrhart&#x27;s volume conjecture, as a counterpart of the inequality part recently proved by OpenAI. The main result of this paper is obtained by generative AI, particularly GPT-5.6-sol, Fable 5, and the Danus system.</p></details>
+</article>
+</body>
+</html>
