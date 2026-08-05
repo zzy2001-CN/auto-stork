@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Literature Digest 2026-08-05</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 960px; margin: 32px auto; line-height: 1.5; color: #1f2933; }
+    article { border-bottom: 1px solid #d9e2ec; padding: 20px 0; }
+    .meta { color: #52606d; font-size: 14px; }
+    .score { font-weight: 700; }
+  </style>
+</head>
+<body>
+  <h1>Literature Digest 2026-08-05</h1>
+  <p>Profile: <code>default</code>. Total recommendations: 10.</p>
+  <article>
+  <h2>1. TDVR: Joint Text Disambiguation and Viewpoint Reasoning for Zero-Shot 3D Visual Grounding</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> However, the effectiveness of existing methods is significantly hindered by the ambiguous query text and deficient viewpoints. To address these issues, we propose TDVR, a training-free reasoning framework that disambiguates the input text and infers accurate viewpoints for zero-shot 3D visual grounding.</p>
+  <p><a href="http://arxiv.org/abs/2608.03763v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Zero-shot 3D visual grounding aims to localize specific objects based on textual descriptions and 3D visual input. However, the effectiveness of existing methods is significantly hindered by the ambiguous query text and deficient viewpoints. To address these issues, we propose TDVR, a training-free reasoning framework that disambiguates the input text and infers accurate viewpoints for zero-shot 3D visual grounding. First, we construct semantic 3D scene graph from the detected instances in the 3D point cloud. Subsequently, we put the original query, appearance and spatial relationship descriptions into the LLM for fusion, thereby disambiguating the initial input. We leverage chain-of-thought reasoning to generate the structured representation of disambiguated query. Then taking the scene graph and structured query as input, we get the optimal view via viewpoint reasoning to solve the problem of missing viewpoints during grounding. Based on the obtained optimal viewpoint, we further discriminate the distracting objects, enabling the model with the ability to distinguish similar instances. After that, we match the category text and appearance images with the query by computing the similarity of feature vectors. Finally, the target object was identified by integrating the viewpoint score, confusion score, category score, and appearance score. Compared with previous methods, our TDVR has stronger capabilities in viewpoint reasoning, similar object discrimination, and ambiguous query understanding. Experimental results on the public ScanRefer dataset show that our method outperforms the existing state-of-the-art methods by 15.25% and 14.46% in Acc@0.25 and Acc@0.5 respectively, demonstrating the effectiveness of our TDVR in addressing ambiguous query text and deficient viewpoints.</p></details>
+</article>
+<article>
+  <h2>2. Unsupervised Adversarial Domain Adaptation for Uterine layer Segmentation: From Labeled Cine to Unlabeled Dynamic EPI MRI</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> We introduce a dynamic multi-echo gradient echo EPI framework for simultaneous characterization and correlation of uterine peristaltic activity and time-resolved T2* changes at 0.55T. Inherent susceptibility artifacts, reduced resolution, and burden of manual uterine layer annotation are addressed by an unsupervised adversarial domain adaptation framework, transferring segmentation knowledge from labeled cine MRI to unlabeled dynamic EPI.</p>
+  <p><a href="http://arxiv.org/abs/2608.03762v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Uterine peristalsis is a key physiological phenomenon responsible for various functions across the menstrual cycle, intimately linked to uterine wall microstructure. Alterations in uterine motion and tissue properties are implicated in the etiology of gynecological diseases, yet these processes have been studied in isolation. We introduce a dynamic multi-echo gradient echo EPI framework for simultaneous characterization and correlation of uterine peristaltic activity and time-resolved T2* changes at 0.55T. Inherent susceptibility artifacts, reduced resolution, and burden of manual uterine layer annotation are addressed by an unsupervised adversarial domain adaptation framework, transferring segmentation knowledge from labeled cine MRI to unlabeled dynamic EPI. We implemented Unet-LSTM with multi-scale domain discriminators that exploits temporal layer dynamics. A Dice score of 0.88 and Jaccard index of 0.80 was achieved. Mean T2* values were 108ms, 76ms, and 124ms for the myometrium, junctional zone, and endometrium. A negative correlation between junctional zone area and T2* was observed in 14/39 cases, providing first insights into oxygenation patterns associated with junctional zone contraction and motion, demonstrating feasibility of assessing the interplay between contractility and dynamic T2* changes.</p></details>
+</article>
+<article>
+  <h2>3. GORDON: Graph-based Object-centric Rewards for Decomposition of Long-Horizon Manipulation</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> In this work, we propose GORDON, a graph-based object-centric reward learning framework that learns dense rewards from action-free video demonstrations. To align the representation with semantic task progress, we introduce an activity-aware weighted pooling mechanism that emphasizes task-relevant objects while masking robot-dominated motion.</p>
+  <p><a href="http://arxiv.org/abs/2608.03753v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Learning long-horizon manipulation skills with reinforcement learning remains challenging due to the complexity of reward design, the limited guidance of sparse rewards, and the high cost of manual subtask annotation. Visual demonstrations can provide supervision for reward learning, but rewards learned from raw pixels can be brittle and sensitive to visual variation, background appearance, and robot motion. In this work, we propose GORDON, a graph-based object-centric reward learning framework that learns dense rewards from action-free video demonstrations. Each visual scene is represented as a graph of detected objects and spatial relations, and a graph neural network is trained in a self-supervised manner to embed these graphs into a task-aligned latent space. To align the representation with semantic task progress, we introduce an activity-aware weighted pooling mechanism that emphasizes task-relevant objects while masking robot-dominated motion. The dense reward is then computed as distances in the learned latent space of the current state to demonstrated goal configurations, providing a measure of task progress. In long-horizon tasks, the temporal profile of this reward reveals stage-wise object-state transitions, enabling automatic subtask discovery without manual segmentation. The discovered segments are then used to train subtask-specific rewards and specialized policies that are composed sequentially. Experiments on seven manipulation tasks on MAGICAL and ManiSkill3 benchmarks show that our object-centric reward improves reinforcement learning in short-horizon settings and enables successful policy learning in complex long-horizon tasks through automatic decomposition, achieving an average success rate of 74.4% across the long-horizon tasks (on average approximately +35 p.p. vs. best learned baseline and approximately +25 p.p. vs. oracle).</p></details>
+</article>
+<article>
+  <h2>4. Agents Catching Agents: Shortcut Cascades and Benchmark Gaming in Clinical Multi-Agent Systems</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Clinical decision support is moving toward committees of language-model agents deliberating on a shared workspace. We ask whether such committees can be gamed by shortcuts, cues a benchmark rewards but a clinician would ignore.</p>
+  <p><a href="http://arxiv.org/abs/2608.03744v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Clinical decision support is moving toward committees of language-model agents deliberating on a shared workspace. We ask whether such committees can be gamed by shortcuts, cues a benchmark rewards but a clinician would ignore. Across seven cohorts on six public datasets spanning text (MedQA-USMLE, MedMCQA, MIMIC-CXR reports), imaging (NIH ChestX-ray14, MIMIC-CXR-JPG, CheXpert) and tabular ICU records (SUPPORT2), Gemini committees resist these cues in isolation (flip 5-16%), yet a socially plausible shortcut spreads: when two peers assert the same wrong answer, the holdout under test adopts it in 38% of cases, as does a false &quot;pre-screen&quot; system flag, on both capability tiers. Of three oversight agents, a gate cannot separate adoption from honest agreement (false-positive rate 100%); a same-lineage judge reading only the transcript flags adoption on text (precision 100%, recall 93%) but collapses onto the gate in imaging; a referee that privately re-queries the holdout transfers to imaging (77-88% precision, 13-21% false-positive rate). Tripling a cue&#x27;s visual salience does not move contagion, whereas a second peer voice raises it by half again. Gaming a hidden rubric is near-silent: only 1/10 text and 1/134 imaging drifters name the rubric they moved toward. What games a committee is social plausibility, and only a referee independent of self-report catches it. Code: https://github.com/criticaldata/benchmaxxing</p></details>
+</article>
+<article>
+  <h2>5. Can LLMs Test Terminal User Interfaces?</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Yet they lack a dedicated testing methodology. We release the coverage tool tuicov at https://github.com/tui-testing/tuicov and the testing framework tuibot at https://github.com/tui-testing/tuibot.</p>
+  <p><a href="http://arxiv.org/abs/2608.03743v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Terminal User Interfaces (TUIs) combine the stateful, screen-oriented behaviour of GUIs with terminal deployment and are now common in developer tools. Yet they lack a dedicated testing methodology. We survey 197 real-world TUI applications: only 12% of test code exercises the interface, and 45% of those tests never send input, checking a static frame instead. We turn these applications into a headless benchmark spanning ratatui/Rust, bubbletea/Go, textual/Python, and ink/TypeScript, packaging each as an instrumented Docker image. We record line and widget coverage where reliable, rendered terminal states, and crashes. Under equal wall-clock budgets, we compare four frontier LLMs with random exploration. No model dominates. Random is a strong time-budgeted baseline, but its crash advantage comes from higher throughput: per interaction, LLM guidance is more efficient and uniquely reaches input-gated faults. Automatically deriving launch inputs yields the largest practical gain, enabling applications that otherwise never start. Line coverage poorly predicts crash discovery, weakening it as a proxy for test effectiveness. Automated TUI testing is feasible but far from solved, and honest baselines matter more than model choice. We release the coverage tool tuicov at https://github.com/tui-testing/tuicov and the testing framework tuibot at https://github.com/tui-testing/tuibot.</p></details>
+</article>
+<article>
+  <h2>6. Failure-Informed Image Self-Augmentation for Multimodal Large Language Model Self-Improvement</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> However, existing MLLM self-augmentation methods are largely text-centric, while image augmentation remains underexplored and typically relies on generic or handcrafted transformations that are weakly aligned with the model&#x27;s actual incapability. We propose Failure-informed Image Self-Augmentation (\textbf{FISA}), a framework for MLLM self-improvement that constructs augmented images from the model&#x27;s own failure cases.</p>
+  <p><a href="http://arxiv.org/abs/2608.03733v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Multimodal large language models (MLLMs) have achieved remarkable performance across vision-language tasks, but their progress depends heavily on large-scale, high-quality multimodal data that are costly to annotate. Self-augmentation offers a promising alternative by enabling models to expand their own training data without external supervision. However, existing MLLM self-augmentation methods are largely text-centric, while image augmentation remains underexplored and typically relies on generic or handcrafted transformations that are weakly aligned with the model&#x27;s actual incapability. We propose Failure-informed Image Self-Augmentation (\textbf{FISA}), a framework for MLLM self-improvement that constructs augmented images from the model&#x27;s own failure cases. Our method generates visually challenging yet answer-preserving image complications, verifies their utility through self-examination, and applies dual fidelity filtering to avoid semantic distortion. Experiments on visual question answering benchmarks show that the proposed method consistently improves performance across both in-distribution and out-of-distribution settings. Further experiments validate the compatibility of FISA with existing textual self-augmentation approaches, the superior data efficiency of the synthesized samples over generic image augmentation baselines, and the practical effectiveness of the proposed filtering strategy.</p></details>
+</article>
+<article>
+  <h2>7. CARE-Bench: Benchmarking Patient-Facing LLM Triage</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> We introduce CARE-Bench, a source-grounded benchmark that evaluates sequential patient-facing triage as a four-label per-turn current-action task. Prompting improves 10 of 11 models, with prompted macro-F1 ranging from 46.9 to 63.4, but substantial threshold errors remain.</p>
+  <p><a href="http://arxiv.org/abs/2608.03731v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Patient-facing medical LLMs and agents increasingly answer symptom questions before clinician contact, where the key safety question is what action the user should take next. We introduce CARE-Bench, a source-grounded benchmark that evaluates sequential patient-facing triage as a four-label per-turn current-action task. CARE-Bench contains 500 cases and 1,059 evaluated patient-disclosure prefixes reconstructed from medical dialogue, consultation, and follow-up-question sources. We evaluate 11 models on 269 held-out rounds under unprompted and minimally prompted open-ended protocols, using a fixed GPT-5.5 mapper to code each response into the four-label action space. Unprompted macro-F1 remains low, ranging from 31.2 to 50.4. Prompting improves 10 of 11 models, with prompted macro-F1 ranging from 46.9 to 63.4, but substantial threshold errors remain. Prompted models often recommend care before needed clarification is obtained; when the correct action was to ask for more information, only 33.5% of prompted outputs preserved the step. The persistence of these errors after prompting suggests that patient-facing triage is not a simple prompting problem and supports explicit evaluation of action timing before deployment.</p></details>
+</article>
+<article>
+  <h2>8. SAT-Edge-Agent: Hardware-in-the-Loop Edge-Agent Orchestration for Onboard Satellite Intelligence</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> These results establish a reproducible HIL boundary for observable satellite edge-agent orchestration, but do not establish detector accuracy, a new geolocation method, calibrated energy efficiency, or flight readiness.</p>
+  <p><a href="http://arxiv.org/abs/2608.03728v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Onboard satellite intelligence requires a task layer that translates mission intent into local tool calls, exposes execution state, and returns machine-consumable artifacts under communication and power constraints. We present SAT-Edge-Agent, a hardware-in-the-loop (HIL) edge-agent system deployed on a commercial off-the-shelf ARM-based heterogeneous edge system-on-chip. A browser workspace and FastAPI agent coordinate a local OpenAI-compatible language service with a project-internal YOLO-style oriented-object-detection endpoint that returns FAIR1M metadata-backed structured results. Two fixed FAIR1M workloads, one single-image and one serial two-image request, were repeated 20 times each and completed 20/20 attempts. Mean Full-Agent latency was 29.353 s and 60.937 s, with empirical P95 values of 31.166 s and 66.882 s. Mean detector time was 861.386 ms and 1510.920 ms, only 2.93% and 2.48% of the corresponding Full-Agent means. Profiling indicates that most visible latency occurs outside detector execution. Mean CPU utilization was 20.761% and 20.482%. A 200-ms NPU-load field averaged 100% for both workloads, but it represents a shared-accelerator software field rather than detector-only occupancy or calibrated utilization. The public evidence package provides sanitized request-level records, redacted JSON, normalized SSE examples, and scripts reproducing the reported statistics. These results establish a reproducible HIL boundary for observable satellite edge-agent orchestration, but do not establish detector accuracy, a new geolocation method, calibrated energy efficiency, or flight readiness.</p></details>
+</article>
+<article>
+  <h2>9. Statistical Study of Solar Prominence Plumes Based on NVST H$α$ Observations</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> These results establish a statistical framework for prominence plumes and reveal diversity in their dynamical evolution and triggering mechanisms.</p>
+  <p><a href="http://arxiv.org/abs/2608.03726v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Plumes are one of the most representative dynamic features observed in prominences and play a key role in mass and magnetic transport within them. However, their physical nature and triggering processes remain actively debated. Based on limb H$α$ observations from the New Vacuum Solar Telescope (NVST) during 2013--2025, we statistically investigated 34 plumes with clear and complete evolutions by developing an automated image-processing pipeline. It is revealed that plume lifetimes mainly range from 300 s to 700 s, with vertical displacements between 3--7 Mm. The mean widths and velocities are concentrated in the range of 0.5--1.5 Mm and 10--20 km s$^{-1}$, respectively. Besides wide distribution ranges, plume parameters exhibit irregular evolution fluctuations, indicating that the formation and evolution of various plumes may exhibit different physical patterns. Correlation analysis among the parameters further reveals that: (1) Positive correlations were found among lifetime, vertical displacement, and mean width, indicating an intrinsic coupling between the temporal and spatial scales of plumes. (2) Trajectory curvature is negatively correlated with lifetime, vertical displacement, and velocity. Accelerating and width-contracting plumes typically have lower curvature, suggesting that curvature may reflect environmental influences and the stability of plumes. (3) Plumes with higher initial velocities were more likely to be accompanied by precursor brightening, suggesting that these plumes may be triggered by magnetic reconnection. Furthermore, we infer that some plumes in non-bubble regions may be inherently driven by mini-filament eruptions. These results establish a statistical framework for prominence plumes and reveal diversity in their dynamical evolution and triggering mechanisms.</p></details>
+</article>
+<article>
+  <h2>10. Towards Reliable and Reproducible Fetal Brain Biometry: A Deep Learning Approach Using MRI</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> While automated approaches have been proposed, reproducible methods remain limited, particularly those providing anatomically interpretable landmark localization. We present a fully automated deep learning-based framework for reliable and reproducible brain biometry from 3D super-resolution-reconstructed fetal brain MRI.</p>
+  <p><a href="http://arxiv.org/abs/2608.03724v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Fetal brain biometry is essential for quantitative assessment of brain development, supporting gestational age estimation, developmental monitoring, and detection of abnormalities. In clinical practice, measurements are manually performed, making them time-consuming and prone to variability. While automated approaches have been proposed, reproducible methods remain limited, particularly those providing anatomically interpretable landmark localization. We present a fully automated deep learning-based framework for reliable and reproducible brain biometry from 3D super-resolution-reconstructed fetal brain MRI. The proposed four-step pipeline derives biometric parameters by jointly estimating linear measurements and their corresponding anatomical landmarks. A 3D convolutional neural network is trained to regress landmark coordinates from brain segmentation label maps, followed by measurement-specific geometric optimization to refine landmark positions and compute measurements. The pipeline is evaluated on two publicly available fetal MRI datasets comprising 150 volumes (gestational age range: 20-37 weeks) acquired across different scanners and protocols, assessing five key biometric measurements across varying acquisition settings and providing a comprehensive evaluation of both measurement accuracy and landmark localization using quantitative metrics and visual assessment. Compared with the only available automated pipeline, the proposed method achieves comparable or improved accuracy for most measurements. In conclusion, we introduce a straightforward pipeline for reliable biometry estimations, with efficiency, interpretability and scalability that support integration into clinical workflows.</p></details>
+</article>
+</body>
+</html>
