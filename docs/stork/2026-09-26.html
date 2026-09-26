@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Literature Digest 2026-09-26</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 960px; margin: 32px auto; line-height: 1.5; color: #1f2933; }
+    article { border-bottom: 1px solid #d9e2ec; padding: 20px 0; }
+    .meta { color: #52606d; font-size: 14px; }
+    .score { font-weight: 700; }
+  </style>
+</head>
+<body>
+  <h1>Literature Digest 2026-09-26</h1>
+  <p>Profile: <code>default</code>. Total recommendations: 10.</p>
+  <article>
+  <h2>1. Seeing the subtle: lesion-aware multi-scale fusion for scribble-supervised segmentation</h2>
+  <p class="meta">Semantic Scholar · Multimedia Systems · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> 摘要缺失，需人工判断</p>
+  <p><a href="https://www.semanticscholar.org/paper/fd56a64b0b00abe7f0e5fa5cf7a29d6f66b04f6e">Open record</a></p>
+  
+  
+</article>
+<article>
+  <h2>2. OmniFabric: Coherent UV Space Texture Synthesis for 3D Garment Reconstruction</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Existing methods often bake environmental illumination and shadows directly into the texture map, or they fail to maintain global structural coherence, making the resulting assets unusable for physical simulation and relighting. In this work, we introduce OmniFabric, a novel approach that synthesizes globally coherent texture maps directly within the 2D sewing pattern space.</p>
+  <p><a href="http://arxiv.org/abs/2609.30234v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Automated generation of production-ready 3D garment assets from a single image is a central challenge in digital content creation. While recent generative models have significantly advanced 3D geometry reconstruction, synthesizing high-quality textures remains a bottleneck. Existing methods often bake environmental illumination and shadows directly into the texture map, or they fail to maintain global structural coherence, making the resulting assets unusable for physical simulation and relighting. In this work, we introduce OmniFabric, a novel approach that synthesizes globally coherent texture maps directly within the 2D sewing pattern space. Given a single reference image, our pipeline utilizes an estimated 3D mesh and generative priors of powerful Vision-Language Models (VLM) to establish a complete but coarse texture initialization across the unwrapped sewing patterns. We then leverage a specialized diffusion transformer, trained via an automated synthetic data engine and conditioned on 3D positional features, to refine this initialization directly in the canonical UV domain. This effectively removes distortion and baked-in artifacts to extract a clean and normalized texture map that preserves the original garment design. Extensive experiments demonstrate that OmniFabric significantly outperforms state-of-the-art baselines, yielding photorealistic 3D garments with high-quality textures.</p></details>
+</article>
+<article>
+  <h2>3. PoEM: Predicting RL Outcomes from Existing Policies</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> We answer this in the affirmative by introducing PoEM, a framework to predict the outputs of RL on a new reward function using a set of models already post-trained on other rewards. We experimentally validate our approach across synthetic and real rewards, spanning both text and image modalities.</p>
+  <p><a href="http://arxiv.org/abs/2609.30226v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Foundation models are post-trained with reinforcement learning (RL) to maximize specific rewards, such as human alignment, correctness, or instruction following. This post-training process is computationally intensive, sometimes unstable, and has to be run from scratch every time the reward model changes or when we want to combine multiple rewards. We hence ask: given a new reward function, is it possible to predict the RL outcomes without actually running RL on it? We answer this in the affirmative by introducing PoEM, a framework to predict the outputs of RL on a new reward function using a set of models already post-trained on other rewards. First, we show that if the new reward function can be written as a linear combination of existing ones, then the new policy in log-space can be written as a linear combination of the existing log-policies. Surprisingly, even in cases where the rewards are not linearly connected, we observe that often log-policies from RL training span an approximately low-rank subspace across rewards. To our benefit, the weighting coefficients for this combination can be estimated using only the reward or basis policy outputs on the samples. We turn these observations into an algorithm that takes post-trained models and a new reward function, and approximates the target RL policy without actually running any additional RL training. We experimentally validate our approach across synthetic and real rewards, spanning both text and image modalities.</p></details>
+</article>
+<article>
+  <h2>4. BiCC: Bidirectional Connected-Component Loss for Instance-Aware Segmentation</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> We introduce the bidirectional connected-component loss (BiCC), which pairs annotation- and prediction-derived partitions to score predicted components on their own scale. It significantly improves over DiceCE on three datasets and matches it on two; CC-DiceCE instead loses up to 0.363 precision by favoring recall.</p>
+  <p><a href="http://arxiv.org/abs/2609.30223v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Common segmentation losses aggregate errors voxel-wise, so lesions influence the objective in proportion to their volume, giving small but clinically critical lesions disproportionately little weight. Instance-aware losses aim to address this mismatch by assigning each lesion its own term. However, blob loss and CC-DiceCE derive their regions solely from annotations, so false-positive components receive no instance-level term. This matters in computer-assisted review, where each false-positive component may require separate inspection, making precision and false-positive burden important alongside recall. We introduce the bidirectional connected-component loss (BiCC), which pairs annotation- and prediction-derived partitions to score predicted components on their own scale. By deriving instances from the predictions, this branch directly penalizes false-positive components regardless of their size. The balance parameter $α$ allows control over the lesion-wise precision-recall trade-off. Across five datasets with five-fold cross-validation using nnU-Net, BiCC outperforms CC-DiceCE in lesion-wise F1 on four datasets and blob loss on all five. It significantly improves over DiceCE on three datasets and matches it on two; CC-DiceCE instead loses up to 0.363 precision by favoring recall. Code is available at https://github.com/TIO-IKIM/BiCC-Loss.</p></details>
+</article>
+<article>
+  <h2>5. The Alignment Illusion in Multimodal Large Language Models</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Because this component is essentially one-dimensional, we introduce the principal-angle gap (PA gap), defined as the difference between the top two principal-angle cosines, which separates weight-induced similarity from multi-directional visual structure.</p>
+  <p><a href="http://arxiv.org/abs/2609.30210v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Layer-wise visual-text similarity in Multimodal Large Language Models (MLLMs) is widely interpreted as evidence that the language model progressively integrates visual content into a shared representation space. This reading rests on the assumption that scalar alignment scores reflect content-level cross-modal interaction. To test this assumption, we apply controlled interventions to the visual stream. Across 13 MLLMs from five families spanning 0.5B to 72B parameters, replacing projector-output visual tokens with Gaussian noise sharply reduces task accuracy, yet four standard scalar measures (CKA, SVCCA, MIR, and the leading principal-angle cosine) fail to consistently separate the corrupted stream from the original. We call this failure the alignment illusion and trace it to the shared language-model pathway: anisotropic MLP down-projections pull visual and text tokens toward common output directions, producing weight-induced alignment. Because this component is essentially one-dimensional, we introduce the principal-angle gap (PA gap), defined as the difference between the top two principal-angle cosines, which separates weight-induced similarity from multi-directional visual structure. Under graded visual corruption, the PA gap tracks task accuracy more consistently than the scalar scores we consider; under a structured but irrelevant image, it further exposes regimes in which internal geometry and task accuracy come apart. Internal visual-text alignment in MLLMs is therefore best read as a geometric diagnostic of the visual stream inside the language model rather than a direct proxy for content-level cross-modal interaction, and is most informative when calibrated by controlled task evidence.</p></details>
+</article>
+<article>
+  <h2>6. Differential Double Blind Fourier Holography (diff-DBFH)</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Existing wavefront-sensing approaches span a broad range of architectures, but many require dedicated interferometric hardware, rely on computationally intensive nonlinear or iterative reconstruction algorithms or provide only limited wavefront information. Focal-plane wavefront-sensing methods are particularly attractive because they can operate without dedicated metrology hardware, and among these, Double Blind Fourier Holography (DBFH) stands out as a robust and computationally light alternative to nonlinear and iterative solvers.</p>
+  <p><a href="http://arxiv.org/abs/2609.30183v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>High-performance optical systems, including space telescopes, require wavefront-sensing and correction capabilities to achieve resolution near the diffraction limit. Existing wavefront-sensing approaches span a broad range of architectures, but many require dedicated interferometric hardware, rely on computationally intensive nonlinear or iterative reconstruction algorithms or provide only limited wavefront information. Focal-plane wavefront-sensing methods are particularly attractive because they can operate without dedicated metrology hardware, and among these, Double Blind Fourier Holography (DBFH) stands out as a robust and computationally light alternative to nonlinear and iterative solvers. Here we introduce differential Double Blind Fourier Holography (diff-DBFH), a two-image variant of DBFH based on a small pupil-plane amplitude perturbation. Inspired by differential Optical Transfer Function (dOTF), diff-DBFH leverages the linear framework of DBFH to produce a more precise wavefront estimate. We derive the diff-DBFH formalism, compare its performance against dOTF using numerical simulations on a segmented aperture geometry inspired by the Habitable Worlds Observatory, analyze its sensitivity under noisy conditions, and demonstrate the method experimentally using an optical bench model of the same aperture.</p></details>
+</article>
+<article>
+  <h2>7. Cone-beam artifact reduction in Gamma Knife CBCT images using a line-arc-line scan trajectory</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> A line-arc-line trajectory provides the largest image quality improvement among the investigated trajectories, with no noticeable cone-beam artifacts in the CBCT images: the axial interfaces between modules of the Catphan are well defined, and the superior edge of the phantom on the axial axis is sharper by 92\%, compared with the current arc trajectory. For the head CBCT images, the proposed trajectory removes most of the cone-beam artifact on the superior side of the skull, characteristic of the current Gamma Knife CBCT images.</p>
+  <p><a href="http://arxiv.org/abs/2609.30169v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Objective. Gamma Knife cone-beam computed tomography (CBCT) images suffer from distinct cone-beam artifacts for some patients, due to the conical X-ray beam which is oriented to intersect the detector perpendicularly at its inferior edge. The use of an exotic scan trajectory which provides more complete sampling across the field of view than the current arc can reduce cone-beam artifacts. In this study, the feasibility of a line-arc-line scan trajectory for the Gamma Knife CBCT is assessed through a proof of concept. Approach. Using a customized research Gamma Knife, a Catphan 503 and an anthropomorphic head phantom are imaged for different exotic scan trajectories, consisting of combinations of arcs and lines. The CBCT images for each trajectory are then reconstructed with an iterative algorithm. Main results. A line-arc-line trajectory provides the largest image quality improvement among the investigated trajectories, with no noticeable cone-beam artifacts in the CBCT images: the axial interfaces between modules of the Catphan are well defined, and the superior edge of the phantom on the axial axis is sharper by 92\%, compared with the current arc trajectory. For the head CBCT images, the proposed trajectory removes most of the cone-beam artifact on the superior side of the skull, characteristic of the current Gamma Knife CBCT images. The artifact reduction also leads to a visual improvement in terms of uniformity in both phantoms. Significance. A line-arc-line CBCT scan trajectory would be feasible on the Gamma Knife with limited changes to the current configuration, and could produce images with improved image quality.</p></details>
+</article>
+<article>
+  <h2>8. CTrex: A Research-Oriented Framework for Kernel- and Projection-Level Algorithm Development in CT Reconstruction</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Existing reconstruction frameworks efficiently support standard geometries and workflows but offer limited control over how projection operators are discretized and evaluated. This restricts methodological exploration when accuracy depends on ray sampling, interpolation, or operator coupling.</p>
+  <p><a href="http://arxiv.org/abs/2609.30166v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Micro-computed tomography (micro-CT) is increasingly applied to imaging scenarios in which object motion, deformation, truncated fields of view, continuous rotation, or unconventional scanning protocols violate assumptions underlying classical reconstruction pipelines. Existing reconstruction frameworks efficiently support standard geometries and workflows but offer limited control over how projection operators are discretized and evaluated. This restricts methodological exploration when accuracy depends on ray sampling, interpolation, or operator coupling. We introduce CTrex, a research-oriented, GPU-accelerated iterative reconstruction framework that exposes the projection-correction-backprojection pipeline down to the kernel level. Rather than treating these operators as fixed black boxes, CTrex represents them as editable computational building blocks within a unified iterative structure. This allows non-ideal acquisition effects to be incorporated directly into the numerical operators rather than treated as external corrections. CTrex combines GPU-level accessibility with an extensible geometry formulation based on homogeneous-coordinate view matrices, allowing rigid and affine transformations, detector misalignments, and time-varying geometries to be expressed consistently. It supports circular, helical, offset, and conveyor-belt trajectories while keeping GPU kernels agnostic to the trajectory definition. Applications in motion- and deformation-aware reconstruction, event-based 4D imaging, cylindrical-coordinate reconstruction, and extended-field-of-view CT illustrate how operator-level adaptations enable strategies difficult to realize in conventional frameworks. CTrex provides a flexible platform for CT reconstruction research under realistic and unconventional imaging conditions.</p></details>
+</article>
+<article>
+  <h2>9. Multimodal Thinking with Renderable Programs</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> We introduce SVGLM, a framework that uses scalable vector graphics (SVG) primitives to connect text and image in reasoning tasks.</p>
+  <p><a href="http://arxiv.org/abs/2609.30130v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Current vision-language models (VLMs) excel at visual content understanding and text-based reasoning, yet their structure limits the advancement of incorporating images into the reasoning chain. Though Omnimodal models have made efforts in unifying text and image generation, they focus on visual tasks in the open-domain, lacking tractability due to rasterized or latent representations of images. We introduce SVGLM, a framework that uses scalable vector graphics (SVG) primitives to connect text and image in reasoning tasks. We exploit the duality of SVG as both image description and text instructions, yielding a more compact, interpretable solution to equip general VLMs with the capability of generating images within the reasoning process. We provide a large curated dataset of SVG-based image editing dataset, as well as the paradigm to tune open-source VLMs. Experiments on a mathematical reasoning benchmark demonstrate that SVGLM achieves strong SVG generation power as well as think-with-image intelligence. Our results highlight SVG as a suitable medium for building more robust digital domain agents, bridging the gap between text-based thinking and pixel-based images.</p></details>
+</article>
+<article>
+  <h2>10. Melanin- and linewidth-corrected pulse-oximetry</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> One proposed mechanism is spectral coloring: melanin contributes to reshaping the detected spectrum of a broad-linewidth source, making the wavelength-dependent parameters behind calibration skin-tone-dependent. Accuracy is practically indistinguishable between the three approaches, yet the saturation error&#x27;s dependence on melanin falls from +2.8 to +1.2 to +0.1 percentage points per unit melanin volume fraction---consistent with the spectral-coloring theory.</p>
+  <p><a href="http://arxiv.org/abs/2609.30122v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Current pulse oximeters tend to overestimate arterial saturation in darkly pigmented patients, increasing occult hypoxemia rates. One proposed mechanism is spectral coloring: melanin contributes to reshaping the detected spectrum of a broad-linewidth source, making the wavelength-dependent parameters behind calibration skin-tone-dependent. Diffuse optics theory allows for a melanin- and linewidth-corrected calibration equation, which to our knowledge has never been tested in vivo. In this work, we fit the empirical linear equation, the diffuse optics theoretical equation, and its corrected form to the public OpenOximetry Repository---considering 98 patients with paired arterial blood-draws, raw photoplethysmograms, and skin reflectance spectra. Accuracy is practically indistinguishable between the three approaches, yet the saturation error&#x27;s dependence on melanin falls from +2.8 to +1.2 to +0.1 percentage points per unit melanin volume fraction---consistent with the spectral-coloring theory. None of these dependencies on melanin are statistically resolved here---a cohort roughly ten times larger is needed---so the correction is backed by theory and its expected direction. All three calibration approaches carry two degrees of freedom: the theoretical equation drops into existing calibration procedures, and its melanin-aware form needs a per-patient skin-tone measurement. This work demonstrates how the theoretical pulse oximetry model can be applied in calibration.</p></details>
+</article>
+</body>
+</html>
