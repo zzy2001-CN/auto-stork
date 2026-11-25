@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Literature Digest 2026-11-25</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 960px; margin: 32px auto; line-height: 1.5; color: #1f2933; }
+    article { border-bottom: 1px solid #d9e2ec; padding: 20px 0; }
+    .meta { color: #52606d; font-size: 14px; }
+    .score { font-weight: 700; }
+  </style>
+</head>
+<body>
+  <h1>Literature Digest 2026-11-25</h1>
+  <p>Profile: <code>default</code>. Total recommendations: 10.</p>
+  <article>
+  <h2>1. PointX: Multi-View Consistent Intrinsics by Querying Surface Points</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Recovering these intrinsics from images is ambiguous, and methods that predict them per pixel give the same surface point a different decomposition in every view. We introduce PointX, a simple feed-forward model that predicts intrinsics per 3D surface point instead.</p>
+  <p><a href="http://arxiv.org/abs/2611.33157v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>The appearance of a scene is determined by the albedo, roughness, metallicity and normal of every point on its surface, and by the light that reaches it, its irradiance. Recovering these intrinsics from images is ambiguous, and methods that predict them per pixel give the same surface point a different decomposition in every view. We introduce PointX, a simple feed-forward model that predicts intrinsics per 3D surface point instead. A multi-view transformer encodes a set of unposed images, and for any queried surface point, PointX pools the point&#x27;s tokens across the views in which it appears and decodes the point&#x27;s intrinsics once. Each point of a 3D reconstruction of the scene, such as a point cloud or a mesh, thus receives a single prediction, which is exactly consistent across views by construction and enables view-consistent relighting and editing. The same model also predicts per-view maps, from one image or many, by querying the point seen at every pixel. These maps agree across views up to the precision of the estimated geometry and correspondences. PointX is significantly more consistent than existing methods, while remaining competitive in accuracy from a single image and improving as views are added. Project page: https://pointx-paper.github.io/</p></details>
+</article>
+<article>
+  <h2>2. BioLoom: Scaling Biomedical Vision-Language Models by Learning from the Structure of Scientific Articles</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> The development of biomedical vision-language models (VLMs) with contrastive image-text pretraining has been driven by scaling to increasingly large and diverse image-text datasets. Beyond scaling, further progress can come from learning richer representations from existing data.</p>
+  <p><a href="http://arxiv.org/abs/2611.33151v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>The development of biomedical vision-language models (VLMs) with contrastive image-text pretraining has been driven by scaling to increasingly large and diverse image-text datasets. Beyond scaling, further progress can come from learning richer representations from existing data. We hypothesize that the structure of scientific literature itself provides an additional source of supervision: figures, panels, captions, and accompanying article text encode rich relationships across modalities. Yet, treating these as independent image-text pairs overlooks their relationships. To address this limitation, we incorporate these structural relationships into contrastive image-text supervision. We preserve exact image-text matches while introducing weaker positive supervision for related pairs, such as a panel and the caption of a sibling panel. We upweight cross-article negatives of the same content type to encourage finer discrimination. We also enrich panel descriptions using visual content, original figure captions, and mentioning paragraphs. Pairing panels with these descriptions and whole figures with their original captions yields Loom52M, a dataset of 52.4 million image-text pairs spanning scientific charts and biomedical images. Using Loom52M, BioLoom (DFN-2B) achieves 56.82% domain-balanced mean accuracy across 67 zero-shot classification tasks from 43 datasets in 10 domains, compared with 48.77% for MedPMC-CLIP. On BioLoomBench with concise captions and BioMedFlickr, it achieves bidirectional mean Recall@1 of 63.20% and 10.59%, versus 46.37% and 7.55% for the respective strongest evaluated baselines, BiomedCLIP and MedPMC-CLIP. Code, datasets, benchmarks, and models are available at https://bioloom-clip.github.io/.</p></details>
+</article>
+<article>
+  <h2>3. Lost on Campus: Evaluating Embodied Spatial Reasoning of Vision-Language Models in the Wild</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Our benchmark introduces a unified reasoning-action evaluation framework that seamlessly integrates diagnostic QA for isolated reasoning with closed-loop interactive navigation for active reasoning under multimodal instructions.</p>
+  <p><a href="http://arxiv.org/abs/2611.33145v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Embodied Spatial Reasoning (ESR) is central to deploying Vision-Language Models (VLMs) in real-world embodied tasks, yet remains inadequately evaluated. Existing benchmarks primarily assess spatial reasoning in static images or synthetic indoor environments, where semantic shortcuts often suffice, making it difficult to faithfully evaluate spatial reasoning capabilities in the wild. In light of this, we present Lost on Campus, a benchmark for evaluating ESR in large-scale real-world outdoor 3D environments reconstructed by 3D Gaussian Splatting. Our benchmark introduces a unified reasoning-action evaluation framework that seamlessly integrates diagnostic QA for isolated reasoning with closed-loop interactive navigation for active reasoning under multimodal instructions. To enable fine-grained diagnosis, we evaluate six capability aspects of ESR: action grounding, spatial foresight, metric awareness, goal-directed planning, ego-allocentric localization, and spatio-temporal consistency. Extensive experiments reveal that: (i) Compared to indoor settings, real-world outdoor environments impose substantially higher demands on spatial reasoning, where existing models exhibit poor performance; (ii) VLMs still struggle with fine-grained visual alignment, with failures in spatial foresight and ego-allocentric localization emerging as primary bottlenecks; (iii) Improving multimodal interaction capabilities and long-term spatial reasoning is crucial for advancing embodied intelligence. These findings highlight that faithful evaluation of ESR demands benchmarks tightly coupling perception, reasoning and action within realistic and continuous environments.</p></details>
+</article>
+<article>
+  <h2>4. VENUS: A Census of Strong Lensing in a 60-Cluster JWST Survey</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> We present strong-lensing models for the 57 galaxy clusters observed in Cycle 4 out of the 60 targeted by the JWST Vast Exploration for Nascent, Unexplored Sources (VENUS) program. Models for the remaining three clusters will be incorporated after their observations.</p>
+  <p><a href="http://arxiv.org/abs/2611.33142v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>We present strong-lensing models for the 57 galaxy clusters observed in Cycle 4 out of the 60 targeted by the JWST Vast Exploration for Nascent, Unexplored Sources (VENUS) program. Models for the remaining three clusters will be incorporated after their observations. The dataset comprises 5013 individual images, corresponding to 1733 multiply-imaged systems, of which 912 have spectroscopic redshift measurements and 227 are newly identified. Using this new wealth of observations, we construct parametric lens models with our $\mathtt{AstroLensPy}$ software, reproducing the observed image positions with an average image-plane precision $Δ_{\rm RMS}$ of $0.54&#x27;&#x27;$. With a total imaging area of $576$ arcmin$^2$, VENUS offers the largest homogeneous set of cluster strong-lensing models to date. The clusters yield a combined area of $191$ arcmin$^{2}$ magnified by $|μ|\geq3$ for a source $z_s=10$, for example, establishing the VENUS fields as a premier survey for high-redshift studies. Among our sample, the clusters MACS J0717.5+3745, RXC J0600.1-2007 and PLCK G287.0+32.9 display the largest Einstein radii ($\geq 60&#x27;&#x27;$) and magnified areas ($\mathcal{A}_{z_s=10}^{|μ|\geq3} \geq 9$ arcmin$^2$) for a source $z_s=10$, and therefore constitute the most potent gravitational telescopes known to date. Finally, leveraging the statistical power of the sample, we derive scaling relations between various lensing observables (Einstein radius, magnified area, projected mass) and the SZ/X-ray-inferred cluster mass, $M_{500,c}$.</p></details>
+</article>
+<article>
+  <h2>5. Exploratory Midtraining for Robot Policies</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Robot policies predominantly learn from human-collected data emphasizing competent behavior, limiting coverage of the low-level behaviors needed to support autonomous improvement. We also examine how this coverage supports downstream adaptation and online improvement.</p>
+  <p><a href="http://arxiv.org/abs/2611.33130v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Robot policies predominantly learn from human-collected data emphasizing competent behavior, limiting coverage of the low-level behaviors needed to support autonomous improvement. We study how a form of midtraining can be used to build coverage over diverse low-level behaviors that connect challenging states of the robot and its environment to states from which further progress is possible (&quot;connected behavioral coverage&quot;). We also examine how this coverage supports downstream adaptation and online improvement. To this end, we introduce $β$-Data, a dataset collected via adversarial teleoperation, where a human adversary reversibly perturbs the environment while a human operator continues toward completion without resetting. We relabel trajectory segments with local outcomes in natural language and finetune a pretrained policy conditioned on recent action history. The resulting policy exhibits sustained use of more low-level behaviors. Across manipulation tasks in simulation and on three real-robot platforms, our approach yields more favorable data scaling laws, better zero-shot generalization, and more effective use of additional rollout time than training on standard demonstrations. During online finetuning, these policies need fewer rollouts to collect successful experience and reach higher success rates, suggesting that midtraining can prepare robots for both more robust task execution and continued autonomous improvement. Our project page and robot videos are available at https://kshitiz-1225.github.io/exploratory-midtraining-robot-policies/.</p></details>
+</article>
+<article>
+  <h2>6. Neural Implicit Representation for Bathymetry Estimation using Sidescan Sonar Imagery</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> However, the inherent ambiguity in measurements and the limited observation coverage of sonar datasets degrade the performance of state-of-the-art methods for underwater bathymetry estimation from SSS. In this paper, we propose a differentiable neural rendering framework for SSS that enables effective estimation of bathymetry from SSS measurements.</p>
+  <p><a href="http://arxiv.org/abs/2611.33118v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Bathymetry measurement and estimation is critical for understanding the structure of underwater environments. While multibeam echosounders (MBES) provide accurate depth measurements, their deployment on surface vessels limits spatial resolution in deep water. Sidescan sonar (SSS), in contrast, can be deployed on autonomous underwater vehicles (AUVs) to operate closer to the seafloor, enabling high-resolution acoustic imaging. However, the inherent ambiguity in measurements and the limited observation coverage of sonar datasets degrade the performance of state-of-the-art methods for underwater bathymetry estimation from SSS. In this paper, we propose a differentiable neural rendering framework for SSS that enables effective estimation of bathymetry from SSS measurements. Our approach incorporates a measurement model based on SSS geometry, explicitly accounting for its wide elevation aperture and associated ambiguities. We evaluate our method on both synthetic and real-world datasets, demonstrating improved robustness and accuracy compared to alternative approaches.</p></details>
+</article>
+<article>
+  <h2>7. Hesperos &amp; Eosphoros: A Coupled Differentiable Forced-Photometry Operator and Forward Model for SPHEREx Spectrophotometry</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> We present Hesperos &amp; Eosphoros, a forced-photometry operator and a forward model that, respectively, perform and model the spectrophotometric measurement of the Spectro-Photometer for the History of the Universe, Epoch of Reionization, and Ices Explorer (SPHEREx). Implemented as GPU-accelerated, differentiable JAX programs, the two may be directly composed to measure the response of a downstream product (e.g., the galaxy density field) with respect to a modeled systematic or perturbation through the full measurement pipeline.</p>
+  <p><a href="http://arxiv.org/abs/2611.33092v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>We present Hesperos &amp; Eosphoros, a forced-photometry operator and a forward model that, respectively, perform and model the spectrophotometric measurement of the Spectro-Photometer for the History of the Universe, Epoch of Reionization, and Ices Explorer (SPHEREx). Implemented as GPU-accelerated, differentiable JAX programs, the two may be directly composed to measure the response of a downstream product (e.g., the galaxy density field) with respect to a modeled systematic or perturbation through the full measurement pipeline. We describe their design and demonstrate the composition on the response of an astrometric perturbation, and demonstrate how these may be used to generate direct measurement/pipeline response templates $\partial({\rm reconstructed\ density})/\partial({\rm systematic\ amplitude})$ for known image-level effects. Hesperos achieves a factor of $\sim700\times$ increased throughput per node-hour at production scale compared to the prior CPU-based Tractor measurement, previously the limiting step in the experiment&#x27;s data processing, and propagates automatic derivatives through the full production measurement operator. We validate the measurement operator Hesperos against the public SPHEREx fork of The Tractor, and the forward model Eosphoros against the SPHEREx Sky Simulator and the renders themselves independently against GalSim. Taken together, this represents a powerful increase in capability for scaling, iterating, and optimizing galaxy clustering measurement pipelines.</p></details>
+</article>
+<article>
+  <h2>8. A model colloidal gel former for the measurement of inter-particle forces</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Recently, an emulsion system has been introduced where not only the coordinates, but also contacts and compressive forces between the droplets can be determined [Dong &lt;em&gt;et al. Finally, we implement an improved measure of local stress in our experiments, which can be directly compared with the corresponding quantity in simulations.</p>
+  <p><a href="http://arxiv.org/abs/2611.33091v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Tracking of particle coordinates in colloidal model systems is an established technique. Recently, an emulsion system has been introduced where not only the coordinates, but also contacts and compressive forces between the droplets can be determined [Dong &lt;em&gt;et al. J. Chem. Phys.&lt;/em&gt; &lt;strong&gt;156&lt;/strong&gt; 214907 (2022). Here we develop this system to control both the density mismatch and refractive index contrast between the emulsion droplets and the solvent. The former is important in minimizing sedimentation due to gravity and the latter is necessary for 3d imaging with confocal microscopy. By mapping our system carefully to computer simulation, we quantify interdroplet forces and packing geometries in depletion gels and probe the relationship between local structure and compressive stress. The simulations also provide ensemble measurements of the attractive part of the force between droplets and related quantities such as the stress tensor. Finally, we implement an improved measure of local stress in our experiments, which can be directly compared with the corresponding quantity in simulations. We find that locally rigid minimum energy clusters are associated with regions of higher stress in the gel network.</p></details>
+</article>
+<article>
+  <h2>9. SUPRA: Synthesizing Amyloid PET from MRI and Plasma Biomarkers with an Explicit Regional SUVR Prior</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Amyloid positron emission tomography (PET) quantifies brain amyloid-$β$ as a standardized uptake value ratio (SUVR), but is costly and not widely available. Structural magnetic resonance imaging (MRI) is routine, and plasma biomarkers such as phosphorylated tau 217 (p-tau217) are becoming practical.</p>
+  <p><a href="http://arxiv.org/abs/2611.33061v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Amyloid positron emission tomography (PET) quantifies brain amyloid-$β$ as a standardized uptake value ratio (SUVR), but is costly and not widely available. Structural magnetic resonance imaging (MRI) is routine, and plasma biomarkers such as phosphorylated tau 217 (p-tau217) are becoming practical. Synthesizing amyloid PET from MRI alone is ill-posed, because brain anatomy reveals little about amyloid burden. We present SUPRA (SUVR prior-guided amyloid synthesis), which divides this task between MRI and plasma biomarkers. A regression maps the plasma panel to regional SUVR levels, painted onto the subject&#x27;s MRI segmentation as an explicit prior. A 3D network then adds a residual correction guided by MRI. The output is in absolute SUVR, and the model also runs on p-tau217 alone. On the Alzheimer&#x27;s Disease Neuroimaging Initiative (ADNI) cohort (111 test pairs), SUPRA reaches a peak signal-to-noise ratio (PSNR) of 23.4 dB, against at most 20.7 dB for four published models, and rank correlations of 0.56 to 0.67 with true SUVR in the composite cortex, an early-accumulation region and the striatum, against at most 0.24. In a second, cognitively unimpaired cohort with other plasma platforms (143 test pairs), it reaches 22.8 dB and 0.32 to 0.61, against at most 21.4 dB and 0.20. Its area under the curve for amyloid positivity is 0.91 and 0.82, against at most 0.63. Ablations show that plasma supplies the amyloid information and the network the image quality. Combining MRI with a blood test yields synthetic amyloid PET that is realistic and tracks burden across regions.</p></details>
+</article>
+<article>
+  <h2>10. Spectrify: Framework for Hyperspectral Image Generation Using Computer Graphics</h2>
+  <p class="meta">arXiv · Unknown venue · 2026</p>
+  <p class="score">Score: 20.0</p>
+  <p><strong>Reason:</strong> recent publication</p>
+  <p><strong>Innovation:</strong> Hyperspectral images (HSIs) record the full spectrum of light at every pixel, so projecting an HSI through a camera&#x27;s spectral sensitivities gives that camera&#x27;s RAW image, and one HSI can supply training data for hyperspectral reconstruction and camera-pipeline methods. We present Spectrify, a framework that converts 3D scene datasets into HSIs, together with a library of reflectance spectra labeled by material and compiled from close-range hyperspectral datasets and spectrophotometer measurements.</p>
+  <p><a href="http://arxiv.org/abs/2611.33042v1">Open record</a></p>
+  
+  <details><summary>Abstract</summary><p>Hyperspectral images (HSIs) record the full spectrum of light at every pixel, so projecting an HSI through a camera&#x27;s spectral sensitivities gives that camera&#x27;s RAW image, and one HSI can supply training data for hyperspectral reconstruction and camera-pipeline methods. Real HSIs, however, are slow and expensive to capture, and the largest datasets hold only about 1,000 images. High-level vision commonly replaces scarce real data with images rendered from 3D scenes. Low-level tasks, however, need physically correct spectra, which requires spectral rendering with a measured spectrum for every material in a scene, and existing spectral renderings cover only a handful of scenes, mostly with a simplified image formation model. We present Spectrify, a framework that converts 3D scene datasets into HSIs, together with a library of reflectance spectra labeled by material and compiled from close-range hyperspectral datasets and spectrophotometer measurements. In Spectrify, spectra follow the material: each object receives a physically based optical model and measured reflectance spectra or optical constants from its material category, each lamp an emission spectrum of its type and the sky a modeled daylight spectrum, and Mitsuba 3 path-traces the full light transport of each scene per wavelength. We show that a hyperspectral reconstruction network trained only on our synthetic HSIs generalizes to unseen real datasets better than networks trained on the largest real HSI datasets on most test sets, and that assigning spectra by material category instead of by color alone improves this transfer on every test set. RAW images projected from our HSIs are also useful training data for color constancy, performing on par with existing synthetic RAW generators. We release the 4,500 rendered HSIs, the code of Spectrify and its material-labeled reflectance library.</p></details>
+</article>
+</body>
+</html>
